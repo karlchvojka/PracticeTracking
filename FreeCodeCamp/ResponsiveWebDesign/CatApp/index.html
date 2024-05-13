@@ -47,30 +47,32 @@
         <form
           action="https://freecatphotoapp.com/submit-cat-photo"
         >
-          <label>
-            <input 
-              id="indoor"
-              name="indoor-outdoor"
-              type="radio"
-              value="indoor"
-            >
-              indoor
-          </label>
-          <label>
-            <input 
-              id="outdoor"
-              name="indoor-outdoor"
-              type="radio"
-              value="outdoor"
-            > 
-              Outdoor
-          </label>
-          <input
-            name="catphotourl"
-            placeholder="cat photo URL"
-            required
-            type="text"
-          />
+          <fieldset>
+            <label>
+              <input 
+                id="indoor"
+                name="indoor-outdoor"
+                type="radio"
+                value="indoor"
+              >
+                indoor
+            </label>
+            <label>
+              <input 
+                id="outdoor"
+                name="indoor-outdoor"
+                type="radio"
+                value="outdoor"
+              > 
+                Outdoor
+            </label>
+            <input
+              name="catphotourl"
+              placeholder="cat photo URL"
+              required
+              type="text"
+            />
+          </fieldset>
           <button type="submit">Submit</button>
         </form>
       </section>
