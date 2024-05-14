@@ -11,3 +11,7 @@ h1, h2, p {
   margin: 0 auto;
   width: 80%;
 }
+
+.flavor {
+  text-align: left;
+}
