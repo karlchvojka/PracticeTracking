@@ -20,6 +20,10 @@ h2 {
   font-size: 30px;
 }
 
+a {
+  color: black;
+}
+
 hr {
   background-color: brown;
   border: 0;
