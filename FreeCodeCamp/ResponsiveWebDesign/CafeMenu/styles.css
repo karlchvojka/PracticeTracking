@@ -21,8 +21,8 @@ h2 {
 
 hr {
   background-color: brown;
-  border-color: brown;
-  height: 3px;
+  border: 0;
+  height: 4px;
 }
 
 .menu {
