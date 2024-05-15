@@ -20,9 +20,10 @@ h2 {
   font-size: 30px;
 }
 
-a {
+a{
   color: black;
 }
+a:visited { color: grey}
 
 hr {
   background-color: brown;
