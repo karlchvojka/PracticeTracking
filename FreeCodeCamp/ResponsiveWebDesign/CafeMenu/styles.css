@@ -34,6 +34,10 @@ hr {
   width: 80%;
 }
 
+.established {
+  font-style: italic;
+}
+
 .item p {
   display: inline-block;
   font-size: 18px;
@@ -55,6 +59,4 @@ hr {
   margin-top: 25px;
 }
 
-.established {
-  font-style: italic;
-}
+/* FOOTER */
