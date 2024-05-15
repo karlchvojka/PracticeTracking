@@ -37,6 +37,11 @@ a:active {
   color: brown;
 }
 
+img {
+  display: block;
+  margin: 0 auto; 
+}
+
 hr {
   background-color: brown;
   border: 0;
