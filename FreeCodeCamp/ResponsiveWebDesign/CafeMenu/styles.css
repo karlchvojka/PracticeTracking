@@ -23,9 +23,17 @@ h2 {
 a{
   color: black;
 }
-a:active { color: white; }
-a:hover { color: brown; }
-a:visited { color: grey; }
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
 
 hr {
   background-color: brown;
