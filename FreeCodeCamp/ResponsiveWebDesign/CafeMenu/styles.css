@@ -9,6 +9,7 @@ h1, h2, p {
 .menu {
   background-color: burlywood;
   margin: 0 auto;
+  padding: 20px;
   width: 80%;
 }
 
