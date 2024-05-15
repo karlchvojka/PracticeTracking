@@ -7,6 +7,10 @@ h1, h2, p {
   text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Impact;
+}
+
 .menu {
   background-color: burlywood;
   margin: 0 auto;
