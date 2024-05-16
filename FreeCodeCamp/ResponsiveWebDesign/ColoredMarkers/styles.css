@@ -15,8 +15,9 @@ h1 {
 
 .sleeve {
   background-color: white;
-  width: 110px; 
   height: 25px;
+  opacity: 0.5;
+  width: 110px; 
 }
 
 .red {
