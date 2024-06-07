@@ -32,6 +32,7 @@ fieldset:last-of-type {
 
 input, textarea, select {
   margin: 10px 0 0 0;
+  min-height: 2em;
   width: 100%;
 }
 
@@ -39,7 +40,6 @@ input, textarea {
   background-color: #0a0a23;
   border: solid 1px #0a0a23;
   color: #ffffff;
-  min-height: 2em;
 }
 
 .inline {
