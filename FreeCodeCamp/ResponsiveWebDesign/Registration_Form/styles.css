@@ -17,6 +17,7 @@ form {
   margin: 0 auto;
   max-width: 500px;
   min-width: 300px;
+  padding-bottom: 2em;
   width: 60vw;
 }
 
