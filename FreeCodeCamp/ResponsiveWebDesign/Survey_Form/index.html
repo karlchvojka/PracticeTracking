@@ -10,16 +10,17 @@
     <p id="description">A quick survery to gather some general information for Eve Online Players.</p>
     <form id="survey-form">
       <div class="input-group">
-        <label id="name" for="name">Name</label>
+        <label id="name-label" for="name">Name</label>
         <input 
           id="name"
+          placeholder="Enter your Name"
           required
           type="text"
         />
       </div>
 
       <div class="input-group">
-        <label id="email" for="email">Email</label>
+        <label id="email-label" for="email">Email</label>
         <input 
           id="email"
           name="email"
@@ -29,6 +30,16 @@
         />
       </div>
 
+      <div class="input-group">
+        <label id="number-label" for="age">Age</label>
+        <input 
+          id="number"
+          min="10"
+          max="99"
+          placeholder="Age"
+          type="number"
+        />
+      </div>
     </form>
   </body>
 </html>
