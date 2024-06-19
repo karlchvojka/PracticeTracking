@@ -3,155 +3,184 @@
   <head>
     <title>Survey Form</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Eve Online Survey</h1>
-    <p id="description">A quick survery to gather some general information for Eve Online Players.</p>
-    <form id="survey-form">
-      <div class="input-group">
-        <label id="name-label" for="name">Name</label>
-        <input 
-          id="name"
-          placeholder="Enter your Name"
-          required
-          type="text"
-        />
+    <div class="container padding_spacing">
+      <div id="page_title_wrap" class="padding_spacing">
+        <h1 id="title">Eve Online Survey</h1>
+        <p id="description">A quick survery to gather some general information for Eve Online Players.</p>
       </div>
 
-      <div class="input-group">
-        <label id="email-label" for="email">Email</label>
-        <input 
-          id="email"
-          name="email"
-          placeholder="Enter Your Email"
-          required
-          type="email"
-        />
-      </div>
+      <div id="survey_form_wrap" class="padding_spacing">
+        <form id="survey-form">
+          <div class="input-group">
+            <label id="name-label" for="name">Name:</label>
+            <input
+              class="lb_border"
+              id="name"
+              placeholder="Enter your Name"
+              required
+              type="text"
+            />
+          </div>
 
-      <div class="input-group">
-        <label id="number-label" for="age">Age</label>
-        <input 
-          id="number"
-          min="10"
-          max="99"
-          placeholder="Age"
-          type="number"
-        />
-      </div>
+          <div class="input-group">
+            <label id="email-label" for="email">Email:</label>
+            <input
+              class="lb_border"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+              type="email"
+            />
+          </div>
 
-      <div class="input-group">
-        <label id="account-label" for="accounts"># of Accounts</label>
-        <input 
-          id="accounts"
-          min="1"
-          max="99"
-          placeholder="0"
-          type="number"
-        />
-      </div>
+          <section class="grid_layout_container grid_three_col">
+            <div class="input-group">
+              <label id="number-label" for="age">Age:</label>
+              <input
+                class="lb_border"
+                id="number"
+                min="10"
+                max="99"
+                placeholder="Age"
+                type="number"
+              />
+            </div>
 
-      <div class="input-group">
-        <p>Which option best describes your playstyle?</p>
-        <select id="dropdown" name="playstyle" class="form-control" required>
-          <option disabled selected value>Select Playstyle</option>
-          <option value="Industry">Industry</option>
-          <option value="Combat">Combat</option>
-          <option value="Piracy">Piracy</option>
-        </select> 
-      </div>
+            <div class="input-group">
+              <label id="account-label" for="accounts"># of Accounts:</label>
+              <input
+                class="lb_border" 
+                id="accounts"
+                min="1"
+                max="99"
+                placeholder="0"
+                type="number"
+              />
+            </div>
 
-      <div class="input-group">
-        <p>Would you recommend Eve Online to a friend?</p>
-        <label>
-          <input 
-            class="input-radio"
-            checked
-            name="eve-recommend"
-            type="radio"
-            value="definetly"
-          >
-          Definetly
-        </label>
-        <label>
-          <input
-            class="input-radio"
-            name="eve-recommend"
-            type="radio"
-            value="Maybe"
-          >
-          Maybe
-        </label>
-        <label>
-          <input
-            class="input-radio"
-            name="eve-recommend"
-            type="radio"
-            value="No"
-          >
-          No
-        </label>
-      </div>
+            <div class="input-group">
+              <p class="para-label">Playstyle:</p>
+              <select class="lb_border" id="dropdown" name="playstyle" class="form-control" required>
+                <option disabled selected value>Select Playstyle</option>
+                <option value="Industry">Industry</option>
+                <option value="Combat">Combat</option>
+                <option value="Piracy">Piracy</option>
+              </select> 
+            </div>
+          </section>
 
-      <div class="input-group">
-        <p>What area's of space do you spend time in?<span class="subNote">(Check All That Apply)</span></span></p>
-        <label>
-          <input 
-            class="input-checkbox"
-            name="space"
-            type="checkbox"
-            value="high-sec"
-          >
-          High-Sec
-        </label>
-        <label>
-          <input 
-            class="input-checkbox"
-            name="space"
-            type="checkbox"
-            value="low-sec"
-          >
-          Low-Sec
-        </label>
-        <label>
-          <input 
-            class="input-checkbox"
-            name="space"
-            type="checkbox"
-            value="null-sec"
-          >
-          Null-Sec
-        </label>
-        <label>
-          <input 
-            class="input-checkbox"
-            name="space"
-            type="checkbox"
-            value="wormhole"
-          >
-          Wormhole (J-Space)
-        </label>
-        <label>
-          <input 
-            class="input-checkbox"
-            name="space"
-            type="checkbox"
-            value="Pochven"
-          >
-          Pochven
-        </label>
-      </div>
+          <section class="grid_layout_container grid_two_col">
+            <section class="multi_choice_section">
+              <div class="input-group">
+                <p class="para-label">Would you recommend Eve Online to a friend?</p>
+                <label class="option-label">
+                  <input 
+                    class="input-radio"
+                    checked
+                    name="eve-recommend"
+                    type="radio"
+                    value="definetly"
+                  >
+                  Definetly
+                </label>
+                <label class="option-label">
+                  <input
+                    class="input-radio"
+                    name="eve-recommend"
+                    type="radio"
+                    value="Maybe"
+                  >
+                  Maybe
+                </label>
+                <label class="option-label">
+                  <input
+                    class="input-radio"
+                    name="eve-recommend"
+                    type="radio"
+                    value="No"
+                  >
+                  No
+                </label>
+              </div>
+            </section>
+            
+            <section class="multi_choice_section">
+              <div class="input-group">
+                <p class="para-label">What area's of space do you spend time in? <span class="subNote">(Check All That Apply)</span></span></p>
+                <label class="option-label">
+                  <input 
+                    class="input-checkbox"
+                    name="space"
+                    type="checkbox"
+                    value="high-sec"
+                  >
+                  High-Sec
+                </label>
+                <label class="option-label">
+                  <input 
+                    class="input-checkbox"
+                    name="space"
+                    type="checkbox"
+                    value="low-sec"
+                  >
+                  Low-Sec
+                </label>
+                <label class="option-label">
+                  <input 
+                    class="input-checkbox"
+                    name="space"
+                    type="checkbox"
+                    value="null-sec"
+                  >
+                  Null-Sec
+                </label>
+                <label class="option-label">
+                  <input 
+                    class="input-checkbox"
+                    name="space"
+                    type="checkbox"
+                    value="wormhole"
+                  >
+                  Wormhole (J-Space)
+                </label>
+                <label class="option-label">
+                  <input 
+                    class="input-checkbox"
+                    name="space"
+                    type="checkbox"
+                    value="Pochven"
+                  >
+                  Pochven
+                </label>
+              </div>
+            </section>
+          </section>
 
-      <div class="input-group">
-        <p>Describe your Eve Online experience so far.</p>
-        <textarea
-          class="input-textarea"
-          id="experiences"
-          name="experiences"
-          placeholder="Describe your Eve Online Experience Here."
-          ></textarea>
+          <div class="input-group">
+            <p class="para-label">Describe your Eve Online experience so far:</p>
+            <textarea
+              class="input-textarea lb_border"
+              id="experiences"
+              name="experiences"
+              placeholder="Describe your Eve Online Experience Here."
+              ></textarea>
+          </div>
+
+          <div class="input-group">
+            <button
+              id="submit_button"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+      </form>
       </div>
-    </form>
+    </div>
   </body>
 </html>
