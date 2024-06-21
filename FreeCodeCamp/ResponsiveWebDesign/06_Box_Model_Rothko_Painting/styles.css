@@ -19,6 +19,7 @@
 
 .one {
   background-color: #efb762;
+  border-radius: 9px;
   box-shadow: 0 0 3px 3px #efb762;
   height: 150px;
   margin: 20 auto;
