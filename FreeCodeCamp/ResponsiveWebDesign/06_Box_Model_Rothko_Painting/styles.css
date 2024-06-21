@@ -33,6 +33,7 @@
 
 .three {
   background-color: #b20403;
+  filter: blur(2px);
   height: 28%;
   margin: auto;
   width: 91%;
