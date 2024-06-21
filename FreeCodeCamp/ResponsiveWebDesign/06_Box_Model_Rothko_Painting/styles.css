@@ -1,5 +1,6 @@
 .canvas {
   background-color: #4d0f00;
+  filter: blur(2px);
   height: 600px;
   overflow: hidden;
   width: 500px;
