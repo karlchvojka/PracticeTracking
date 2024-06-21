@@ -3,3 +3,7 @@
   height: 600px;
   width: 500px;
 }
+
+.frame {
+  border: 50px solid black;
+}
