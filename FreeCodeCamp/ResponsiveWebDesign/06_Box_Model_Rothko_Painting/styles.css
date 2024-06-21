@@ -28,6 +28,7 @@
 
 .two {
   background-color: #8f0401;
+  border-radius: 8px 10px;
   box-shadow: 0 0 3px 3px #8f0401;
   height: 200px;
   margin: 0 auto 20px auto;
