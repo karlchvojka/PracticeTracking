@@ -32,8 +32,8 @@
   border-radius: 8px 10px;
   box-shadow: 0 0 3px 3px #8f0401;
   height: 200px;
-  transform: rotate(0.4deg);
   margin: 0 auto 20px auto;
+  transform: rotate(0.4deg);
   width: 475px;
 }
 
@@ -44,5 +44,6 @@
   filter: blur(2px);
   height: 28%;
   margin: auto;
+  transform: rotate(-0.2deg);
   width: 91%;
 }
