@@ -1,6 +1,7 @@
 .canvas {
   background-color: #4d0f00;
   height: 600px;
+  padding: 1px;
   width: 500px;
 }
 
@@ -13,6 +14,7 @@
 
 .one {
   background-color: #efb762;
+  margin: 0 auto;
   height: 150px;
   width: 425px;
 }
