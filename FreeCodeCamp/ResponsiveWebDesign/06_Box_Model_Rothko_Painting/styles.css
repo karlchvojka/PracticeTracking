@@ -13,6 +13,10 @@
   width: 500px;
 }
 
+.one, .two {
+  filter: blur(1px)
+}
+
 .one {
   background-color: #efb762;
   margin: 20 auto;
