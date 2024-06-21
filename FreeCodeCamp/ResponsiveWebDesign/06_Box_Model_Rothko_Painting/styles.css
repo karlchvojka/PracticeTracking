@@ -22,5 +22,6 @@
 .two {
   background-color: #8f0401;
   height: 200px;
+  margin: auto;
   width: 475px;
 }
