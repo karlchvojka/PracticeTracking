@@ -22,7 +22,7 @@
 .two {
   background-color: #8f0401;
   height: 200px;
-  margin: auto;
+  margin: 0 auto 20px auto;
   width: 475px;
 }
 
