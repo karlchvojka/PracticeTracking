@@ -6,5 +6,6 @@
 
 .frame {
   border: 50px solid black;
+  padding: 50px;
   width: 500px;
 }
