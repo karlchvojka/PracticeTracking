@@ -1,5 +1,6 @@
 .canvas {
   background-color: #4d0f00;
+  padding: 1px;
   height: 600px;
   width: 500px;
 }
