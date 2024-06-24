@@ -14,3 +14,6 @@ body {
 /* GLOBAL LAYOUT STYLES */
 
 /* By Class Styles */
+.label {
+  border: 2px solid black;
+}
