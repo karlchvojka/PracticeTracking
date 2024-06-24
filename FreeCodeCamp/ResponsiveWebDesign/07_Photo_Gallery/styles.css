@@ -1,0 +1,18 @@
+/* GLOBAL STYLES */
+
+/* GLOBAL FONT STYLES */
+
+/* GLOBAL LAYOUT STYLES */
+
+/* GLOBAL ELEMENT STYLES */
+img {
+  border: 5px solid blue;
+  padding: 5px;
+  width: 100%;
+}
+
+/* By Class Styles */
+.gallery {
+  border: 5px solid red;
+  width: 50%;
+}
