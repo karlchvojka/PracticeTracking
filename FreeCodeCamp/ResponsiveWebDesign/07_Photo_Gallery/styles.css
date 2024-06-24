@@ -1,5 +1,7 @@
 /* GLOBAL STYLES */
-
+* {
+  box-sizing: content-box;
+}
 /* GLOBAL FONT STYLES */
 
 /* GLOBAL LAYOUT STYLES */
