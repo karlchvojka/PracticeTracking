@@ -3,8 +3,6 @@
   box-sizing: border-box;
 }
 
-/* GLOBAL FONT STYLES */
-
 /* GLOBAL ELEMENT STYLES */
 html {
   font-size: 16px;
@@ -12,6 +10,12 @@ html {
 
 body {
   font-family: Open Sans, sans-serif;
+}
+
+/* GLOBAL FONT STYLES */
+
+h1 {
+  font-weight: 800;
 }
 
 /* GLOBAL LAYOUT STYLES */
