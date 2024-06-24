@@ -3,6 +3,10 @@
 /* GLOBAL FONT STYLES */
 
 /* GLOBAL ELEMENT STYLES */
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: Open Sans, sans-serif;
 }
