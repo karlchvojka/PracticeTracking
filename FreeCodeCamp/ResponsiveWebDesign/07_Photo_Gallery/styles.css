@@ -16,6 +16,7 @@ body {
 /* By Class Styles */
 .gallery {
   display: flex;
+  flex-direction: row;
 }
 
 .gallery img {
