@@ -4,9 +4,14 @@
 }
 /* GLOBAL FONT STYLES */
 
-/* GLOBAL LAYOUT STYLES */
-
 /* GLOBAL ELEMENT STYLES */
+body {
+  background-color: #f5f6f7;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* GLOBAL LAYOUT STYLES */
 
 /* By Class Styles */
 .gallery img {
