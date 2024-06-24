@@ -27,6 +27,7 @@ body {
 }
 
 .gallery img {
+  border-radius: 10px;
   height: 300px;
   max-width: 350px;
   object-fit: cover;
