@@ -1,4 +1,7 @@
 /* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+}
 
 /* GLOBAL FONT STYLES */
 
