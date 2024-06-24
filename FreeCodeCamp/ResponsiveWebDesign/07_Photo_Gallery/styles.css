@@ -14,6 +14,10 @@ body {
 /* GLOBAL LAYOUT STYLES */
 
 /* By Class Styles */
+.gallery {
+  display: flex;
+}
+
 .gallery img {
   height: 300px;
   max-width: 350px;
