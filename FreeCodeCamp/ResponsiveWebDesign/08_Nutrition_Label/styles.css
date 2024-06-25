@@ -3,22 +3,7 @@
   box-sizing: border-box;
 }
 
-/* GLOBAL ELEMENT STYLES */
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: Open Sans, sans-serif;
-}
-
 /* GLOBAL FONT STYLES */
-
-h1 {
-  letter-spacing: 0.15px;
-  margin: -4px 0;
-  text-align: center;
-}
 
 p {
   display: flex;
@@ -30,10 +15,24 @@ p {
   font-weight: 800;
 }
 
+/* GLOBAL ELEMENT STYLES */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+}
+
+header h1 {
+  letter-spacing: 0.15px;
+  margin: -4px 0;
+  text-align: center;
+}
+
 /* GLOBAL LAYOUT STYLES */
 
 /* By Class Styles */
-
 .divider {
   border-bottom: 1px solid #888989;
   margin: 2px 0;
