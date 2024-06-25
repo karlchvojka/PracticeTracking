@@ -27,6 +27,12 @@ p {
 /* GLOBAL LAYOUT STYLES */
 
 /* By Class Styles */
+
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+
 .label {
   border: 2px solid black;
   margin: 20px auto;
