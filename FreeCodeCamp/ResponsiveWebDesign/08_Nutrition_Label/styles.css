@@ -69,3 +69,9 @@ header h1 {
 .calories-info h2 {
   margin: 0;
 }
+
+.left-container p {
+  font-size: 2em;
+  font-weight: 700;
+  margin: -5px -2px;
+}
