@@ -60,6 +60,12 @@ header h1 {
   border: 0;
 }
 
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .calories-info h2 {
   margin: 0;
 }
