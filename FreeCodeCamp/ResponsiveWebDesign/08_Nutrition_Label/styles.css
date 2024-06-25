@@ -105,4 +105,6 @@ header h1 {
 .note {
   font-size: 0.6rem;
   margin: 5px 0px;
+  padding: 0 8px;
+  text-indent: -8px;
 }
