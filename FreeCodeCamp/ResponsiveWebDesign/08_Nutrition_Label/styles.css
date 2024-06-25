@@ -21,7 +21,9 @@ h1 {
 }
 
 p {
+  display: flex;
   margin: 0;
+  justify-content: space-between;
 }
 
 .bold {
