@@ -59,3 +59,7 @@ header h1 {
   background-color: black;
   border: 0;
 }
+
+.calories-info h2 {
+  margin: 0;
+}
