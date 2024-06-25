@@ -60,6 +60,10 @@ header h1 {
   border: 0;
 }
 
+.medium {
+  height: 5px;
+}
+
 .calories-info {
   display: flex;
   justify-content: space-between;
