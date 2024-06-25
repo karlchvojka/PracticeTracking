@@ -70,6 +70,11 @@ header h1 {
   margin: 0;
 }
 
+.calories-info span {
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
 .left-container p {
   font-size: 2em;
   font-weight: 700;
