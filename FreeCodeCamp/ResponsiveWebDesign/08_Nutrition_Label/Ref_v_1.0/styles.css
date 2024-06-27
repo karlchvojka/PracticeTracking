@@ -1,6 +1,8 @@
 /* GLOBAL STYLES */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -20,6 +22,11 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 0.85rem;
+  margin: 3px 0px 0px 0px;
+}
+
 p {
   margin: 0;
 }
@@ -32,6 +39,28 @@ p {
 /* GLOBAL ELEMENT STYLES */
 
 /* GLOBAL LAYOUT STYLES */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#calories_Info p {
+  margin: -5px -2px;
+}
+
+#calories_Info .left_Container p {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#calories_Info .right_Container p {
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+
 #nut_Label_Wrap {
   border: 2px solid black;
   margin: 20px auto;
@@ -40,10 +69,16 @@ p {
 }
 
 .bor_Small {
-  border-bottom: 1px solid black;
+  border-bottom: 0.5px solid black;
   margin-bottom: 2px;
+}
+
+.bor_Mid {
+  border-bottom: 3px solid black;
+  padding-bottom: 2px;
 }
 
 .bor_Large {
   border-bottom: 9px solid black;
+  padding-bottom: 2px;
 }
