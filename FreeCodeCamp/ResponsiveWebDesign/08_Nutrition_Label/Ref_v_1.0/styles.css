@@ -25,6 +25,9 @@ p {
 }
 
 /* Font Modifiers */
+.bold {
+  font-weight: 800;
+}
 
 /* GLOBAL ELEMENT STYLES */
 
@@ -34,4 +37,13 @@ p {
   margin: 20px auto;
   padding: 0 7px;
   width: 270px;
+}
+
+.bor_Small {
+  border-bottom: 1px solid black;
+  margin-bottom: 2px;
+}
+
+.bor_Large {
+  border-bottom: 9px solid black;
 }
