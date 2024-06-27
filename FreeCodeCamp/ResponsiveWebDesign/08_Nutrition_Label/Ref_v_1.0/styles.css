@@ -7,10 +7,31 @@ html {
   font-size: 16px;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* GLOBAL FONT STYLES */
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 0.15px;
+  margin: -4px 0;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
 
 /* Font Modifiers */
 
 /* GLOBAL ELEMENT STYLES */
 
 /* GLOBAL LAYOUT STYLES */
+#nut_Label_Wrap {
+  border: 2px solid black;
+  margin: 20px auto;
+  padding: 0 7px;
+  width: 270px;
+}
