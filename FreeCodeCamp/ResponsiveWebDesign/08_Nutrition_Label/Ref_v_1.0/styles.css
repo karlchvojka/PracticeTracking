@@ -1,0 +1,120 @@
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* GLOBAL FONT STYLES */
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 0.15px;
+  margin: -4px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 0.85rem;
+  margin: 3px 0px 0px 0px;
+}
+
+p {
+  margin: 0;
+}
+
+/* Font Modifiers */
+.bold {
+  font-weight: 800;
+}
+
+/* GLOBAL ELEMENT STYLES */
+
+footer {
+  p {
+    font-size: 0.6rem;
+    margin: 5px 0px;
+    padding: 0px;
+  }
+}
+
+/* GLOBAL LAYOUT STYLES */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* GLOBAL LAYOUT MODIFIERS */
+.bor_Small {
+  border-bottom: 0.5px solid black;
+  margin-bottom: 2px;
+}
+
+.bor_Mid {
+  border-bottom: 5px solid black;
+  padding-bottom: 2px;
+}
+
+.bor_Large {
+  border-bottom: 9px solid black;
+  padding-bottom: 2px;
+}
+
+/* STYLES BY ID */
+
+#nut_Label_Wrap {
+  border: 2px solid black;
+  margin: 20px auto;
+  padding: 0 7px;
+  width: 270px;
+}
+
+#calories_Info p {
+  margin: -5px -2px;
+}
+
+#calories_Info .left_Container p {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#calories_Info .right_Container p {
+  font-size: 2.4em;
+  font-weight: 700;
+}
+ 
+#daily_Val_Wrap {
+  font-size: 0.85rem;
+
+  .sub_Title {
+    display: flex;
+    font-weight: 800;
+    justify-content: flex-end;
+  }
+
+  #day_Val_Chart {
+
+    .chart_Item {
+      padding: 0px 0px 1px 0px;
+      width: 100%;
+
+      .indent {
+        margin-left: 1em;
+      }
+
+      .chart_Item_Left p span {
+        margin-right: 3px;
+      }
+    } 
+  }
+}
