@@ -46,6 +46,31 @@ p {
   align-items: flex-end;
 }
 
+/* GLOBAL LAYOUT MODIFIERS */
+.bor_Small {
+  border-bottom: 0.5px solid black;
+  margin-bottom: 2px;
+}
+
+.bor_Mid {
+  border-bottom: 5px solid black;
+  padding-bottom: 2px;
+}
+
+.bor_Large {
+  border-bottom: 9px solid black;
+  padding-bottom: 2px;
+}
+
+/* STYLES BY ID */
+
+#nut_Label_Wrap {
+  border: 2px solid black;
+  margin: 20px auto;
+  padding: 0 7px;
+  width: 270px;
+}
+
 #calories_Info p {
   margin: -5px -2px;
 }
@@ -59,26 +84,29 @@ p {
   font-size: 2.4em;
   font-weight: 700;
 }
+ 
+#daily_Val_Wrap {
+  font-size: 0.85rem;
 
+  .sub_Title {
+    display: flex;
+    font-weight: 800;
+    justify-content: flex-end;
+  }
 
-#nut_Label_Wrap {
-  border: 2px solid black;
-  margin: 20px auto;
-  padding: 0 7px;
-  width: 270px;
-}
+  #day_Val_Chart {
 
-.bor_Small {
-  border-bottom: 0.5px solid black;
-  margin-bottom: 2px;
-}
+    .chart_Item {
+      padding: 0px 0px 1px 0px;
+      width: 100%;
 
-.bor_Mid {
-  border-bottom: 3px solid black;
-  padding-bottom: 2px;
-}
+      .indent {
+        margin-left: 1em;
+      }
 
-.bor_Large {
-  border-bottom: 9px solid black;
-  padding-bottom: 2px;
+      .chart_Item_Left p span {
+        margin-right: 3px;
+      }
+    } 
+  }
 }
