@@ -6,5 +6,8 @@ body {
 }
 
 #logo {
-  width: max(10rem, 18vw)
+  aspect-ratio: 35/4;
+  background-color: #0a0a23;
+  padding: 0.4rem;
+  width: max(10rem, 18vw);
 }
