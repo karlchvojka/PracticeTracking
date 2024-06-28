@@ -38,6 +38,14 @@ p {
 
 /* GLOBAL ELEMENT STYLES */
 
+footer {
+  p {
+    font-size: 0.6rem;
+    margin: 5px 0px;
+    padding: 0px;
+  }
+}
+
 /* GLOBAL LAYOUT STYLES */
 
 .container {
