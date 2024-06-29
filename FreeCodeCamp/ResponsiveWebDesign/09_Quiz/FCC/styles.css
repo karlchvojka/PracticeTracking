@@ -124,6 +124,12 @@ input {
   padding-top: 5px;
 }
 
+p {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
