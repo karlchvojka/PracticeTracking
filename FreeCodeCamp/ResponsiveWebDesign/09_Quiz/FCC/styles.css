@@ -54,6 +54,10 @@ nav > ul > li {
   display: block;
 }
 
+nav > ul > li > a {
+  color: #dfdfe2;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
