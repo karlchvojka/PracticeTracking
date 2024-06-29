@@ -49,6 +49,10 @@ h1, h2 {
   font-family: Verdana, sans-serif
 }
 
+.info {
+  padding: 2px 0 0 2px;
+}
+
 p::before {
   content: "Question #";
 }
