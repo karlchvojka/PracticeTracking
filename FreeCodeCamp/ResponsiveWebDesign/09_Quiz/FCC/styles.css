@@ -32,6 +32,10 @@ h1, h2 {
   font-family: Verdana, sans-serif
 }
 
+p::before {
+  content: "Question #";
+}
+
 nav {
   width: 50%;
   max-width: 300px;
