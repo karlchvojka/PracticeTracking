@@ -10,6 +10,7 @@ body {
   height: 50px;
   background-color: #1b1b32;
   display: flex;
+  justify-content: ;
 }
 
 #logo {
@@ -54,8 +55,15 @@ nav > ul > li {
   display: block;
 }
 
-nav > ul > li > a {
+li > a {
   color: #dfdfe2;
+}
+
+
+nav li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
 }
 
 .sr-only {
