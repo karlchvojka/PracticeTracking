@@ -100,6 +100,12 @@ nav li:hover {
 input {
   font-size: 16px;
 }
+
+.info > input {
+  width: 50%;
+  text-align: left;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
