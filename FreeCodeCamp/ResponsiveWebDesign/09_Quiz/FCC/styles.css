@@ -116,6 +116,11 @@ input {
   text-align: right;
 }
 
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
 .question-block {
   text-align: left;
   display: block;
