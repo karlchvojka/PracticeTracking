@@ -129,6 +129,11 @@ input {
   padding-top: 5px;
 }
 
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+
 p {
   margin-top: 5px;
   padding-left: 15px;
