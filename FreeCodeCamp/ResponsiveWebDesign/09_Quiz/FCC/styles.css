@@ -33,6 +33,12 @@ main {
   padding-top: 50px;
 }
 
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
 h2 {
   border-bottom: 4px solid #dfdfe2;
 }
