@@ -160,6 +160,11 @@ footer, footer a {
   color: #ffffff;
 }
 
+address {
+  text-align: center;
+  padding: 2rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
