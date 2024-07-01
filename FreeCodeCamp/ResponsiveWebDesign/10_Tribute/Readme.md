@@ -20,8 +20,8 @@
   2. [x] Header element with:
     - [x] ID of title
     - [x] has string that describes page
-  3. Figure or div:
-    - ID of img-div
+  3. [x] Figure or div:
+    - [x] ID of img-div
   4. Within #img-div element
     - img element with id of image
   5. Within #img-div element
