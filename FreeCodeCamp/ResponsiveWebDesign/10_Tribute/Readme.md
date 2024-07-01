@@ -24,9 +24,9 @@
     - [x] ID of img-div
   4. [x] Within #img-div element
     - [x] img element with id of image
-  5. Within #img-div element
-    - element with id of img-caption
-    - Text that describes image
+  5. [x] Within #img-div element
+    - [x] element with id of img-caption
+    - [x] Text that describes image
   6. element with id of tribute-info
     - text content about the subject
   7. element with
