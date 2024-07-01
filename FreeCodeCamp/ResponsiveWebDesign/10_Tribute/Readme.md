@@ -22,8 +22,8 @@
     - [x] has string that describes page
   3. [x] Figure or div:
     - [x] ID of img-div
-  4. Within #img-div element
-    - img element with id of image
+  4. [x] Within #img-div element
+    - [x] img element with id of image
   5. Within #img-div element
     - element with id of img-caption
     - Text that describes image
