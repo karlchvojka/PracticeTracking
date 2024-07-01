@@ -14,9 +14,9 @@
 
 ## Project Todo
 
-  1. Main element with:
-    - ID of main
-    - Contains all other elements
+  1. [x] Main element with:
+    - [x] ID of main
+    - [x] Contains all other elements
   2. Header element with:
     - ID of title
     - has string that describes page
