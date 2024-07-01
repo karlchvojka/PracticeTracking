@@ -33,7 +33,7 @@
     - [x] id of tribute-link
     - [x] links to an outside site
     - [x] contains additional info
-  8. image should have
-    - max-width and height properties
+  8. [x] image should have
+    - [x] max-width and height properties
   9. img element
     - should be centered within parent
