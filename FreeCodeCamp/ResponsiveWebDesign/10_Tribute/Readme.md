@@ -27,12 +27,12 @@
   5. [x] Within #img-div element
     - [x] element with id of img-caption
     - [x] Text that describes image
-  6. element with id of tribute-info
-    - text content about the subject
-  7. element with
-    - id of tribute-link
-    - links to an outside site
-    - contains additional info
+  6. [x] element with id of tribute-info
+    - [x] text content about the subject
+  7. [x] element with
+    - [x] id of tribute-link
+    - [x] links to an outside site
+    - [x] contains additional info
   8. image should have
     - max-width and height properties
   9. img element
