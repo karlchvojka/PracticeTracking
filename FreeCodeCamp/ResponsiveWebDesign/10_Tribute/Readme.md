@@ -35,5 +35,5 @@
     - [x] contains additional info
   8. [x] image should have
     - [x] max-width and height properties
-  9. img element
-    - should be centered within parent
+  9. [x] img element
+    - [x] should be centered within parent
