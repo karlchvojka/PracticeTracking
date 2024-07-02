@@ -21,6 +21,7 @@ html {
   padding-left: 2px;
   width: 949px;
   height: 180px;
+  overflow:hidden;
 }
 
 .key {
