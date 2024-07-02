@@ -33,6 +33,12 @@ body {
   z-index: 1;
 }
 
+.cat-left-inner-ear {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #3b3b4f;
+}
+
 .cat-right-ear {
   position: absolute;
   top: -26px;
