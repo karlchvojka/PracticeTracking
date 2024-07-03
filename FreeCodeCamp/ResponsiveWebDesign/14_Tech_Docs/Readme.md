@@ -1,5 +1,32 @@
 # Project Requirements
 
+## Todos
+
+- [] Main element
+  - [] ID of "main-doc"
+- [] "several" section elements
+  - [] Each with class "main-section" (min = 5)
+- [] First element within each section is a header element
+  - [] Each header should have text describing topic
+- [] Each .main-section should have ID that corresponds with header
+- [] .main-section elements should contain atleast 10 p elemets total
+- [] .main-section elements should contain atleast 5 code elements total
+- [] .main-section elements should contain atleast 5 li items total.
+- [] nav element with a id of navbar
+- [] navbar should contain one header element with text that desc topic
+- [] navbar should contain a elements with:
+  - [] class of nav-link
+  - [] should be one for every .main-section
+- [] #navbar header comes before any link element
+- [] .nav-link should
+  - [] contain text that = header text within the section
+- [] When you click on navbar element
+  - [] page should navigate to that section
+- [] Navbar should have multiple sizes
+  - [] regular sized devices (laptops, desktop):
+    - [] #navbar should be on left side always visible.
+- [] Should use at least one mediaquery
+
 ## User Stories
 
 1. You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
