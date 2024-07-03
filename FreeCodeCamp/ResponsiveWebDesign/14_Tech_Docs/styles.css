@@ -1,7 +1,23 @@
+/* GLOBAL STYLES */
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+
 html {
   box-sizing: border-box;
 }
 
-*, ::before, ::after {
-  box-sizing: inherit;
-}
+/* GLOBAL FONT STYLES */
+
+/* Font Modifiers */
+
+/* GLOBAL ELEMENT STYLES */
+
+/* GLOBAL LAYOUT STYLES */
+
+/* GLOBAL LAYOUT MODIFIERS */
+
+/* STYLES BY ID */
+
+/* STYLES BY CLASS */
