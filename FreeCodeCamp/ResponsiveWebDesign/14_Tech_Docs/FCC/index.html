@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TRPC Technical Documentation Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>TRCP Docs</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Getting_Started">Getting Started</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Concepts">Concepts</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Quickstart">Quickstart</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#React_Query_Integration">React Query Integration</a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <article>
+        <p>tRPC allows you to easily build & consume fully typesafe APIs without schemas or code generation.</p>
+
+        <p>As TypeScript and static typing increasingly becomes a best practice in web development, API contracts
+          present a major pain point. We need better ways to statically type our API endpoints and share those types
+          between our client and server (or server-to-server). We set out to build a simple library for building
+          typesafe APIs that leverages the full power of modern TypeScript.</p>
+
+        <h3>An Alternative to traditional REST or GraphQL</h3>
+
+        <p>Currently, GraphQL is the dominant way to implement typesafe APIs in TypeScript (and it's amazing!). Since
+          GraphQL is designed as a language-agnostic specification for implementing APIs, it doesn't take full advantage
+          of the power of a language like TypeScript.</p>
+
+        <p>If your project is built with full-stack TypeScript, you can share types directly between your client and
+          server, without relying on code generation.</p>
+      </article>
+    </section>
+    <section id="Getting_Started" class="main-section">
+      <header>Getting Started</header>
+      <article>
+        <h3>Use tRPC</h3>
+        <p>"Using tRPC" means different things to different people. The goal of this page is to guide you to the right
+          resources based on your goals.</p>
+
+        <h4>Becoming productive in an existing tRPC project</h4>
+        <ul>
+          <li>Read the concepts page.</li>
+          <li>Become familiar with routers, procedures, context, and middleware.</li>
+          <li>If you are using React, read about useQuery, useMutation and useUtils.</li>
+        </ul>
+        <h4>Creating a new project</h4>
+        <p>Since tRPC can live inside of many different frameworks, you will first need to decide where you want to use
+          it.</p>
+        <p>On the backend, there are adapters for a range of frameworks as well as vanilla Node.js. On the frontend, you
+          can use our React or Next.js integrations, a third-party integration for a variety of other frameworks, or the
+          Vanilla Client, which works anywhere JavaScript runs.</p>
+
+        <p>After choosing your stack, you can either scaffold your app using a template, or start from scratch using the
+          documentation for your chosen backend and frontend integration.</p>
+
+        <h4>Adding tRPC to an existing project</h4>
+        <p>Adding tRPC to an existing project is not significantly different from starting a new project, so the same
+          resources apply. The main challenge is that it can feel difficult to know how to integrate tRPC with your
+          existing application. Here are some tips:</p>
+        <ul>
+          <li>You don't need to port all of your existing backend logic to tRPC. A common migration strategy is to
+            initially only use tRPC for new endpoints, and only later migrate existing endpoints to tRPC.</li>
+          <li>If you're not sure where to start, check the documentation for your backend adapter and frontend
+            implementation, as well as the example apps.</li>
+          <li>If you are looking for some inspiration of how tRPC might look as part of a larger codebase, there are
+            some examples in Open-source projects using tRPC.</li>
+        </ul>
+      </article>
+    </section>
+    <section id="Concepts" class="main-section">
+      <header>Concepts</header>
+      <article>
+        <h3>What is RPC? What mindset should I adopt?</h3>
+        <h4>It's just functions</h4>
+        <p>RPC is short for "Remote Procedure Call". It is a way of calling functions on one computer (the server) from
+          another computer (the client). With traditional HTTP/REST APIs, you call a URL and get a response. With RPC,
+          you call a function and get a response.</p>
+
+        <code>
+          // HTTP/REST
+          const res = await fetch('/api/users/1');
+          const user = await res.json();
+
+          // RPC
+          const user = await api.users.getById({ id: 1 });
+        </code>
+        <p>tRPC (TypeScript Remote Procedure Call) is one implementation of RPC, designed for TypeScript monorepos. It
+          has its own flavor, but is RPC at its heart.</p>
+
+        <h4>Don't think about HTTP/REST implementation details</h4>
+        <p>If you inspect the network traffic of a tRPC app, you'll see that it's fairly standard HTTP requests and
+          responses, but you don't need to think about the implementation details while writing your application code.
+          You call functions, and tRPC takes care of everything else. You should ignore details like HTTP Verbs, since
+          they carry meaning in REST APIs, but in RPC form part of your function names instead, for instance:
+          <code>getUser(id)</code> instead of <code>GET /users/:id</code>.
+        </p>
+
+        <h3>Vocabulary</h3>
+        <p>Below are some terms that are used frequently in the tRPC ecosystem. We'll be using these throughout the
+          documentation, so it's good to get familiar with them. Most of these concepts also have their own pages in the
+          documentation.</p>
+
+        <table width="100%">
+          <thead>
+            <tr>
+              <th>Term</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a>Procedure</a>
+              </td>
+              <td>
+                <p>API endpoint - can be a query, mutation, or subscription.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Query</a></td>
+              <td>
+                <p>A procedure that gets some data.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Mutation</a></td>
+              <td>
+                <p>A procedure that creates, updates, or deletes some data.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Subscription</a></td>
+              <td>
+                <p>A procedure that creates a persistent connection and listens to changes.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Router</a></td>
+              <td>
+                <p>A collection of procedures (and/or other routers) under a shared namespace.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Context</a></td>
+              <td>
+                <p>Stuff that every procedure can access. Commonly used for things like session state and database
+                  connections.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Middleware</a></td>
+              <td>
+                <p>A function that can run code before and after a procedure. Can modify context.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Validation</a></td>
+              <td>
+                <p>"Does this input data contain the right stuff?"</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+    <section id="Quickstart" class="main-section">
+      <header>Quickstart</header>
+      <article>
+        <p>tRPC combines concepts from REST and GraphQL. If you are unfamiliar with either, take a look at the key
+          Concepts.</p>
+        <h3>Installation</h3>
+        <p>tRPC is split between several packages, so you can install only what you need. Make sure to install the
+          packages you want in the proper sections of your codebase. For this quickstart guide we'll keep it simple and
+          use the vanilla client only. For framework guides, checkout usage with React and usage with Next.js.</p>
+        <p>Start off by installing the @trpc/server and @trpc/client packages:</p>
+
+        <code>
+          npm install @trpc/server@next @trpc/client@next
+        </code>
+
+        <h4>Defining a backend router</h4>
+
+        <p>Let's walk through the steps of building a typesafe API with tRPC. To start, this API will contain three
+          endpoints with these TypeScript signatures:</p>
+
+        <code>
+          type User = { id: string; name: string; };
+
+          userList: () => User[];
+          userById: (id: string) => User;
+          userCreate: (data: { name: string }) => User;
+        </code>
+
+        <h4>1. Create a router instance</h4>
+        <p>First, let's initialize the tRPC backend. It's good convention to do this in a separate file and export
+          reusable helper functions instead of the entire tRPC object.</p>
+
+        <div class="code_Container">
+          <div class="code_Title">
+            <header>server/trpc.ts</header>
+          </div>
+          <div class="code_Container">
+            <code>
+              import { initTRPC } from '@trpc/server';
+               
+              /**
+              * Initialization of tRPC backend
+              * Should be done only once per backend!
+              */
+              const t = initTRPC.create();
+               
+              /**
+              * Export reusable router and procedure helpers
+              * that can be used throughout the router
+              */
+              export const router = t.router;
+              export const publicProcedure = t.procedure;
+            </code>
+          </div>
+        </div>
+
+        <p>Next, we'll initialize our main router instance, commonly referred to as <code>appRouter</code>, in which
+          we'll later add procedures to. Lastly, we need to export the type of the router which we'll later use on the
+          client side.</p>
+
+        <div class="code_Container">
+          <div class="code_Title">
+            <header>server/index.ts</header>
+          </div>
+          <div class="code_Container">
+            <code>
+              import { router } from './trpc';
+               
+              const appRouter = router({
+                // ...
+              });
+               
+              // Export type router type signature,
+              // NOT the router itself.
+              export type AppRouter = typeof appRouter;
+            </code>
+          </div>
+        </div>
+
+        <h4>2. Add a query procedure</h4>
+        <p>Use <code>publicProcedure.query()</code> to add a query procedure to the router.</p>
+
+        <p>The following creates a query procedure called <code>userList</code> that returns a list of users from our
+          database:</p>
+
+        <div class="code_Container">
+          <div class="code_Title">
+            <header>server/index.ts</header>
+          </div>
+          <div class="code_Container">
+            <code>
+              import { db } from './db';
+              import { publicProcedure, router } from './trpc';
+               
+              const appRouter = router({
+                userList: publicProcedure
+                  .query(async () => {
+                    // Retrieve users from a datasource, this is an imaginary database
+                    const users = await db.user.findMany();
+                    return users;
+                  }),
+              });
+            </code>
+          </div>
+        </div>
+
+      </article>
+    </section>
+    <section id="React_Query_Integration" class="main-section">
+      <header>React Query Integration</header>
+    </section>
+  </main>
+
+</body>
+
+</html>
