@@ -9,9 +9,9 @@
 - [x] First element within each section is a header element
   - [x] Each header should have text describing topic
 - [x] Each .main-section should have ID that corresponds with header
-- [] .main-section elements should contain atleast 10 p elemets total
-- [] .main-section elements should contain atleast 5 code elements total
-- [] .main-section elements should contain atleast 5 li items total.
+- [x] .main-section elements should contain atleast 10 p elemets total
+- [x] .main-section elements should contain atleast 5 code elements total
+- [x] .main-section elements should contain atleast 5 li items total.
 - [x] nav element with a id of navbar
 - [x] navbar should contain one header element with text that desc topic
 - [x] navbar should contain a elements with:
@@ -20,8 +20,8 @@
 - [x] #navbar header comes before any link element
 - [x] .nav-link should
   - [x] contain text that = header text within the section
-- [] When you click on navbar element
-  - [] page should navigate to that section
+- [x] When you click on navbar element
+  - [x] page should navigate to that section
 - [] Navbar should have multiple sizes
   - [] regular sized devices (laptops, desktop):
     - [] #navbar should be on left side always visible.
