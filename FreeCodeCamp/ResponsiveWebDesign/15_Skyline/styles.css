@@ -30,6 +30,9 @@ body {
   height: 100%;
 }
 
+.building-wrap {
+}
+
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
   display: flex;
