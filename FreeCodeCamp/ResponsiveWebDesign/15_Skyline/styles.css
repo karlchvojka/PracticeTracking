@@ -20,22 +20,11 @@ body {
 .foreground-buildings {
   position: absolute;
   top: 0;
-}
-
-.background-buildings {
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-}
-
-.foreground-buildings {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  align-items: flex-end;
-  justify-content: space-evenly;
 }
 
 .bb1 {
