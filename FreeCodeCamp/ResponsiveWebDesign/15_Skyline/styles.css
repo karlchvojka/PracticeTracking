@@ -27,6 +27,7 @@ body {
   height: 100%;
 }
 
+/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
   display: flex;
   flex-direction: column;
@@ -77,6 +78,7 @@ body {
   background-color: var(--building-color4);
 }
 
+/* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
 .fb1 {
   width: 10%;
   height: 60%;
