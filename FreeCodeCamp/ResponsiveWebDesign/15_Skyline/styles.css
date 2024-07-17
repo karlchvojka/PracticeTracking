@@ -39,8 +39,11 @@ body {
 
 .bb1a {
   width: 70%;
-  height: 10%;
   background-color: var(--building-color1);
+}
+
+.bb1-window {
+  height: 10%;
   background: linear-gradient(var(--building-color1), var(--window-color1));
 }
 
