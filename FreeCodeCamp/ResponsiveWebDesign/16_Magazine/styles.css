@@ -110,3 +110,11 @@ main {
     font-size: 2.4rem;
     text-align: center;
 }
+
+.quote::before {
+  content:'" ';
+}
+
+.quote::after {
+  content:' "';
+}
