@@ -27,6 +27,10 @@ a:link, a:hover {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
 main {
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
