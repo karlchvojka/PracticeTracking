@@ -81,4 +81,5 @@ main {
 .social-icons {
     display: grid;
     font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr);
 }
