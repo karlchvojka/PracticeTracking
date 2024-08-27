@@ -90,3 +90,8 @@ main {
     grid-auto-flow: column;
     grid-template-columns: repeat(5, 1fr);
 }
+
+.first-paragraph::first-letter {
+    color: orangered;
+    font-size: 6rem;
+}
