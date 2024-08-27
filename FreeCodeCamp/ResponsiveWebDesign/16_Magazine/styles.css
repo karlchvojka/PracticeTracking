@@ -93,5 +93,7 @@ main {
 
 .first-paragraph::first-letter {
     color: orangered;
+    float: left;
     font-size: 6rem;
+    margin-right: 1rem;
 }
