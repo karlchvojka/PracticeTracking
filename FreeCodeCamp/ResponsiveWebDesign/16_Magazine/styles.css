@@ -7,3 +7,9 @@
 html {
     font-size: 62.5%;
 }
+
+body {
+    background-color: rgb(20, 30, 40);
+    color: linen;
+    font-family: Baskervville, serif;
+}
