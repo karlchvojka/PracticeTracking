@@ -45,6 +45,7 @@ main {
 }
 
 .text {
+    column-width: 25rem;
     font-size: 1.8rem;
     grid-column: 2 / 3;
     letter-spacing: 0.6px;
