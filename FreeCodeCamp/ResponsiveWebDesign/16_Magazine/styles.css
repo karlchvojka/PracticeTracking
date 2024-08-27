@@ -52,3 +52,9 @@ main {
     grid-column: 1 / -1;
     position: relative;
 }
+
+.hero-title {
+    color: orangered;
+    font-size: 8rem;
+    text-align: center;
+}
