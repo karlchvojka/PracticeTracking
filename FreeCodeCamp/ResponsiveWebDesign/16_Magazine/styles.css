@@ -49,6 +49,7 @@ main {
     font-size: 1.8rem;
     grid-column: 2 / 3;
     letter-spacing: 0.6px;
+    text-align: justify;
 }
 
 .hero {
