@@ -79,6 +79,7 @@ main {
 }
 
 .social-icons {
+    align-items: center;
     display: grid;
     font-size: 3rem;
     grid-auto-columns: 1fr;
