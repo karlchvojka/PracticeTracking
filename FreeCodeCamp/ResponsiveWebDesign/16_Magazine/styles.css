@@ -125,3 +125,7 @@ main {
     grid-template-columns: 1fr 2fr;
     margin-bottom: 3rem;
 }
+
+.lists {
+    list-style-type: none;
+}
