@@ -58,3 +58,9 @@ main {
     font-size: 8rem;
     text-align: center;
 }
+
+.hero-subtitle {
+    color: orangered;
+    font-size: 2.4rem;
+    text-align: center;
+}
