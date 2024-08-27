@@ -4,6 +4,7 @@
 
 * {
     margin: 0;
+    z-index: auto;
 }
 
 html {
@@ -19,13 +20,16 @@ body {
 
 header {
     background-color: #f0f9ff;
-    filter: drop-shadow(2.5px 2.5px 5px rgba(0, 0, 0, 0.5));
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     display: flex;
     flex-direction: row;
     max-height: 100px;
     justify-content: space-between;
     padding: 1rem;
+    position:fixed;
+    top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 header #header-img {
@@ -55,3 +59,13 @@ header #nav-bar ul li a:link, header#nav-bar ul li a:hover {
 header #nav-bar ul li a:hover {
     color: orangered;
 }
+
+#hero {
+    background-image: url("https://kinesis-ergo.com/wp-content/uploads/KB360-GBR_HERO-2000x1199-1.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 800px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    margin-top: 100px;
+}
+
