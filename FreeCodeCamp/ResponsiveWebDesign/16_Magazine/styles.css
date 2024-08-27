@@ -146,3 +146,7 @@ main {
     grid-template-rows: repeat(3, min-content);
     place-items: center;
 }
+
+.image-1, .image-3 {
+    grid-column: 1 / -1;
+}
