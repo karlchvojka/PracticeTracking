@@ -132,7 +132,6 @@ header #nav_bar ul li a:active, header #nav_Bar ul li a:link, header#nav_Bar ul 
     padding: 1rem;
 }
 
-/* TODO: Alphabetization of Properties */
 #review iframe {
     height: calc(95vw/1.77);
     width: 95%;
