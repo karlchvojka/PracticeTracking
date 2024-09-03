@@ -1,3 +1,4 @@
+/* --- GLOBAL CSS --- */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -17,10 +18,26 @@ body {
     font-family: Raleway, sans-serif;
     line-height: 1.5;
 }
+/* --- END GLOBAL CSS --- */
 
-/* Font Styles */
-h2 {
+/* --- FONT STYLES --- */
+h2, h3, h4, h5, h6 {
     font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 4.5rem;
+}
+
+h4 {
+    font-size: 4rem;
+}
+
+h5 {
+    font-size: 3.5rem;
 }
 
 p {
@@ -28,19 +45,19 @@ p {
     margin-bottom: 1rem;
 }
 
+/* TODO: Insert Link styles here. */
+
+/* --- END FONT STYLES --- */
+
 .content {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
 }
 
+/* TODO: Alphabetization */
 .content .content-inner {
     max-width: 85%;
     margin: 5rem auto;
     padding-bottom:5rem;
-}
-
-.content h2 {
-    text-align: center;
-    text-transform: uppercase;
 }
 
 header {
@@ -73,6 +90,8 @@ header #nav-bar ul li {
     margin: 1rem;
 }
 
+/* TODO: Link styles and colors can be combined into font style. */
+/* TODO: Is font-size: needed? */
 header #nav-bar ul li a:link, header#nav-bar ul li a:hover {
     color: #0369a1;
     font-weight: 700;
@@ -104,8 +123,6 @@ header #nav-bar ul li a:hover {
 
 #features #featWrap p {
     color: #0369a1;
-    font-size: 1.5rem;
-    line-height: 1.5;
 }
 
 #features #featWrap div {
@@ -116,13 +133,68 @@ header #nav-bar ul li a:hover {
     padding: 1rem;
 }
 
+/* TODO: Link colors and styles can be combined into global style */
 #features #featWrap p a:link, #features #featWrap p a:hover {
     color: orangered;
     text-decoration: none;
     text-transform: uppercase;
 }
 
+/* TODO: Alphabetization of Properties */
 #review iframe {
     width: 95%;
     height: calc(95vw/1.77);
+}
+
+#pricingWrap {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, auto);
+}
+
+#pricingWrap .pricingItem {
+    background-color: #dbeafe;
+    border: 1px solid lightblue;
+    color: #0369a1;
+    padding: 1rem;
+}
+
+#pricingWrap .pricingItem div > h3 {
+    font-size: 1.5rem;
+}
+
+#pricingWrap .pricingItem div > p {
+    font-size: 1rem;
+}
+
+#contact {
+    box-shadow: none;
+}
+
+#contact #form_Wrapper {
+    background-color: #dbeafe;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    max-width: 50%;
+    margin: 2.5rem auto;
+    padding: 1rem;
+}
+
+#contact #form_Wrapper #form input {
+    display: block;
+    width: 100%;
+}
+
+#contact #form_Wrapper #form input#submit {
+    display: block;
+    line-height: 1;
+    margin: 20px auto;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: auto;
+}
+
+#contact #legal_Disclaimer p {
+    font-size: 1rem;
 }
