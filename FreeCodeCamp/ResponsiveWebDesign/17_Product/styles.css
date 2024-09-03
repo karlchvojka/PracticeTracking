@@ -45,7 +45,16 @@ p {
     margin-bottom: 1rem;
 }
 
-/* TODO: Insert Link styles here. */
+a:link, a:visited {
+    color: orangered;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #78350f;
+    cursor: pointer;
+}
 
 /* --- END FONT STYLES --- */
 
@@ -53,10 +62,9 @@ p {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
 }
 
-/* TODO: Alphabetization */
-.content .content-inner {
-    max-width: 85%;
+.content .content_Inner {
     margin: 5rem auto;
+    max-width: 85%;
     padding-bottom:5rem;
 }
 
@@ -74,34 +82,25 @@ header {
     z-index: 100;
 }
 
-header #header-img {
-    width: auto;
+header #header_Img {
     max-height: 100px;
+    width: auto;
 }
 
-header #nav-bar ul {
+header #nav_Bar ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
 }
 
-header #nav-bar ul li {
+header #nav_Bar ul li {
     margin: 1rem;
 }
 
-/* TODO: Link styles and colors can be combined into font style. */
-/* TODO: Is font-size: needed? */
-header #nav-bar ul li a:link, header#nav-bar ul li a:hover {
-    color: #0369a1;
-    font-weight: 700;
+header #nav_bar ul li a:active, header #nav_Bar ul li a:link, header#nav_Bar ul li a:hover {
     font-size: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-header #nav-bar ul li a:hover {
-    color: orangered;
+    font-weight: 700;
 }
 
 #hero {
@@ -113,7 +112,7 @@ header #nav-bar ul li a:hover {
     margin-top: 100px;
 }
 
-#features #featWrap {
+#features #feat_Wrap {
     display: grid;
     gap: 1rem;
     grid-auto-flow: row;
@@ -121,11 +120,11 @@ header #nav-bar ul li a:hover {
     grid-template-rows: repeat(3, auto);
 }
 
-#features #featWrap p {
+#features #feat_Wrap p {
     color: #0369a1;
 }
 
-#features #featWrap div {
+#features #feat_Wrap div {
     background-color: #dbeafe;
     border: 1px solid lightblue;
     border-radius: 10px;
@@ -133,38 +132,31 @@ header #nav-bar ul li a:hover {
     padding: 1rem;
 }
 
-/* TODO: Link colors and styles can be combined into global style */
-#features #featWrap p a:link, #features #featWrap p a:hover {
-    color: orangered;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 /* TODO: Alphabetization of Properties */
 #review iframe {
-    width: 95%;
     height: calc(95vw/1.77);
+    width: 95%;
 }
 
-#pricingWrap {
+#pricing_Wrap {
     display: grid;
     gap: 1rem;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, auto);
 }
 
-#pricingWrap .pricingItem {
+#pricing_Wrap .pricing_Item {
     background-color: #dbeafe;
     border: 1px solid lightblue;
     color: #0369a1;
     padding: 1rem;
 }
 
-#pricingWrap .pricingItem div > h3 {
+#pricing_Wrap .pricing_Item div > h3 {
     font-size: 1.5rem;
 }
 
-#pricingWrap .pricingItem div > p {
+#pricing_Wrap .pricing_Item div > p {
     font-size: 1rem;
 }
 
@@ -192,9 +184,14 @@ header #nav-bar ul li a:hover {
     margin: 20px auto;
     padding: 0.5rem;
     text-transform: uppercase;
-    width: auto;
+    width: 50%;
 }
 
-#contact #legal_Disclaimer p {
+footer {
+    background-color: #dbeafe;
+    padding-top: 1rem;
+}
+
+footer.content #legal_Disclaimer p {
     font-size: 1rem;
 }
