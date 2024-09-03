@@ -59,49 +59,69 @@ a:hover {
 /* --- END FONT STYLES --- */
 
 /* --- STYLES --- */
-.content {
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
-}
-
-.content .content_Inner {
-    margin: 5rem auto;
-    max-width: 85%;
-    padding-bottom:5rem;
-}
-
 header {
     background-color: #f0f9ff;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    display: flex;
-    flex-direction: row;
-    max-height: 100px;
-    justify-content: space-between;
+    display: block;
     padding: 1rem;
-    position:fixed;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
 }
 
-header #header_Img {
-    max-height: 100px;
+main {
+    margin-top: 300px;
+}
+
+footer {
+    background-color: #dbeafe;
+    padding-top: 1rem;
+}
+
+footer .content_Inner {
+    margin-bottom: 0px;
+}
+
+.content {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+}
+
+.content_Inner {
+    margin: 0 auto;
+    max-width:85%;
+    padding: 2rem;
+}
+
+#logo_Wrap {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#logo_Wrap img {
+    display: block;
+    margin: 0 auto;
+    max-height: 80px;
     width: auto;
 }
+    
+#nav_Bar {
+    width: 100%;
+}
 
-header #nav_Bar ul {
-    display: flex;
-    flex-direction: row;
+#nav_Bar ul {
     list-style: none;
-    justify-content: space-between;
+    padding: 0px;
 }
 
-header #nav_Bar ul li {
-    margin: 1rem;
-}
-
-header #nav_bar ul li a:active, header #nav_Bar ul li a:link, header#nav_Bar ul li a:hover {
+#nav_Bar ul li a:active, #nav_Bar ul li a:link, #nav_Bar ul li a:hover {
+    background-color: lightblue;
+    border-radius: 10px;
+    display: block;
     font-size: 1.5rem;
     font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
 }
 
 #hero {
@@ -109,8 +129,6 @@ header #nav_bar ul li a:active, header #nav_Bar ul li a:link, header#nav_Bar ul 
     background-position:center;
     background-repeat: no-repeat;
     height: 800px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    margin-top: 100px;
 }
 
 #features #feat_Wrap {
@@ -160,16 +178,12 @@ header #nav_bar ul li a:active, header #nav_Bar ul li a:link, header#nav_Bar ul 
     font-size: 1rem;
 }
 
-#contact {
-    box-shadow: none;
-}
-
 #contact #form_Wrapper {
     background-color: #dbeafe;
     border: 1px solid lightblue;
     border-radius: 10px;
-    max-width: 50%;
     margin: 2.5rem auto;
+    max-width: 50%;
     padding: 1rem;
 }
 
@@ -187,12 +201,7 @@ header #nav_bar ul li a:active, header #nav_Bar ul li a:link, header#nav_Bar ul 
     width: 50%;
 }
 
-footer {
-    background-color: #dbeafe;
-    padding-top: 1rem;
-}
-
-footer.content #legal_Disclaimer p {
+#legal_Disclaimer p {
     font-size: 1rem;
 }
 
@@ -215,7 +224,54 @@ footer.content #legal_Disclaimer p {
 
 /* --- LARGE STYLES (LG) --- */
 @media (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 80px;
+        padding: 1rem;
+    }
 
+    main {
+        margin-top: 80px;
+    }
+
+    #logo_Wrap {
+        margin-bottom: 0px;
+        max-height: 150px;
+    }
+
+    #logo_Wrap img {
+        display: block;
+        height: 100%;
+        margin: inherit;
+        width: auto;
+    }
+
+    #nav_Bar {
+        max-width: 75%;
+        min-width: auto;
+    }
+    
+    #nav_Bar ul {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #nav_Bar ul li {
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 1rem;
+    }
+
+    #nav_Bar ul li a:active, #nav_Bar ul li a:link, #nav_Bar ul li a:hover {
+        background-color: transparent;
+        margin-bottom: 0;
+    }
 }
 /* --- END LARGE STYLES --- */
 
