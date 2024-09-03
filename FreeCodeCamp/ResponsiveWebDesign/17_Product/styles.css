@@ -126,9 +126,10 @@ footer .content_Inner {
 
 #hero {
     background-image: url("https://kinesis-ergo.com/wp-content/uploads/KB360-GBR_HERO-2000x1199-1.jpg");
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
+    background-size: cover;
+    height: 20rem;
 }
 
 #features #feat_Wrap {
@@ -271,6 +272,10 @@ footer .content_Inner {
     #nav_Bar ul li a:active, #nav_Bar ul li a:link, #nav_Bar ul li a:hover {
         background-color: transparent;
         margin-bottom: 0;
+    }
+
+    #hero {
+        height: 30rem;
     }
 }
 /* --- END LARGE STYLES --- */
