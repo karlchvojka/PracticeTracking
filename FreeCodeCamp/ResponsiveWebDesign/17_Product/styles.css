@@ -58,6 +58,7 @@ a:hover {
 
 /* --- END FONT STYLES --- */
 
+/* --- STYLES --- */
 .content {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
 }
@@ -194,3 +195,34 @@ footer {
 footer.content #legal_Disclaimer p {
     font-size: 1rem;
 }
+
+/* --- MEDIA QUERIES --- */
+/* Queries are based on the Tailwindcss Styles */
+/* For more details, see: https://tailwindcss.com/docs/responsive-design */
+/* --- --- */
+
+/* --- MOBILE STYLES (SM) --- */
+@media (min-width: 640px) {
+
+}
+/* --- END MOBILE STYLES --- */
+
+/* --- MEDIUM STYLES (MD) --- */
+@media (min-width: 768px) {
+
+}
+/* --- END MEDIUM STYLES --- */
+
+/* --- LARGE STYLES (LG) --- */
+@media (min-width: 1024px) {
+
+}
+/* --- END LARGE STYLES --- */
+
+/* --- EXTRA LARGE STYLES (XL) --- */
+@media (min-width: 1280px) {
+
+}
+/* --- END EXTRA LARGE STYLES --- */
+
+/* --- END STYLES */
