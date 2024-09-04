@@ -29,6 +29,11 @@ html {
     width: 20%;
 }
 
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+
 .line {
     background-color: black;
     height: 2px;
