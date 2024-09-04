@@ -1,0 +1,370 @@
+/* --- GLOBAL CSS --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    z-index: auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    scroll-padding-top: 300px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    color: #3b94cb;
+    font-family: Raleway, sans-serif;
+    line-height: 1.5;
+}
+
+/* --- END GLOBAL CSS --- */
+
+/* --- FONT STYLES --- */
+h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+a:link, a:visited {
+    color: orangered;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #78350f;
+    cursor: pointer;
+}
+
+/* --- END FONT STYLES --- */
+
+/* --- STYLES --- */
+header {
+    background-color: #f0f9ff;
+    display: block;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+main {
+    margin-top: 300px;
+}
+
+footer {
+    background-color: #dbeafe;
+    padding-top: 1rem;
+}
+
+footer .content_Inner {
+    margin-bottom: 0px;
+}
+
+.content {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+}
+
+.content_Inner {
+    margin: 0 auto;
+    max-width:90%;
+    padding: 2rem 0;
+}
+
+#logo_Wrap {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#logo_Wrap img {
+    display: block;
+    margin: 0 auto;
+    max-height: 80px;
+    width: auto;
+}
+    
+#nav_Bar {
+    width: 100%;
+}
+
+#nav_Bar ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#nav_Bar ul li a:active, #nav_Bar ul li a:link, #nav_Bar ul li a:hover {
+    background-color: lightblue;
+    border-radius: 10px;
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+#hero {
+    background-image: url("https://kinesis-ergo.com/wp-content/uploads/KB360-GBR_HERO-2000x1199-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+}
+
+#features #feat_Wrap {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: columns;
+    grid-template-rows: repeat(3, auto);
+}
+
+#features #feat_Wrap p {
+    color: #0369a1;
+}
+
+#features #feat_Wrap div {
+    background-color: #dbeafe;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+#review iframe {
+    height: calc(95vw/1.77);
+    width: 95%;
+}
+
+#pricing_Wrap {
+    display: grid;
+    gap: 2rem;
+    grid-auto-flow: columns;
+}
+
+#pricing_Wrap .pricing_Item {
+    background-color: #dbeafe;
+    border: 1px solid lightblue;
+    color: #0369a1;
+    padding: 1rem;
+    width: 100%;
+}
+
+#pricing_Wrap .pricing_Item div {
+    margin-bottom: 1rem;
+    min-height: auto;
+}
+
+#pricing_Wrap .pricing_Item div > h3 {
+    font-size: 1.5rem;
+}
+
+#pricing_Wrap .pricing_Item div > h4 {
+    font-size: 1rem;
+    text-align: left;
+}
+
+#pricing_Wrap .pricing_Item div > p {
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+#pricing_Wrap .pricing_Item div.shop_Link {
+    margin-bottom: 0px;
+}
+
+#pricing_Wrap .pricing_Item div.shop_Link p {
+    margin-bottom: 0px;
+}
+
+#pricing_Wrap .pricing_Item div a:link, #pricing_Wrap .pricing_Item div a:hover {
+    display: block;
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact #form_Wrapper {
+    background-color: #dbeafe;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 2.5rem;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+#contact #form_Wrapper label {
+    font-size: 1.5rem;
+}
+
+#contact #form_Wrapper #form input {
+    border: 1px solid lightblue;
+    display: block;
+    padding: 15px;
+    width: 100%;
+}
+
+#contact #form_Wrapper #form input#submit {
+    display: block;
+    line-height: 1;
+    margin: 20px auto;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+#contact #form_Wrapper #form input#submit:hover {
+    cursor: pointer;
+}
+
+#legal_Disclaimer p {
+    font-size: 1rem;
+}
+
+/* --- MEDIA QUERIES --- */
+/* Queries are based on the Tailwindcss Styles */
+/* For more details, see: https://tailwindcss.com/docs/responsive-design */
+/* --- --- */
+
+/* --- LARGE STYLES (LG) --- */
+@media (min-width: 1024px) {
+    html {
+        scroll-padding-top: 100px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 80px;
+        padding: 1rem;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    #logo_Wrap {
+        margin-bottom: 0px;
+        max-height: 150px;
+    }
+
+    #logo_Wrap img {
+        display: block;
+        height: 100%;
+        margin: inherit;
+        width: auto;
+    }
+
+    #nav_Bar {
+        max-width: 75%;
+        min-width: auto;
+    }
+    
+    #nav_Bar ul {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #nav_Bar ul li {
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 1rem;
+    }
+
+    #nav_Bar ul li a:active, #nav_Bar ul li a:link, #nav_Bar ul li a:hover {
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+
+    #hero {
+        height: 30rem;
+    }
+
+    #features #feat_Wrap {
+        gap: 1rem;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    #pricing #pricing_Wrap {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, 30.33%);
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item {
+        padding: 1rem;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item div {
+        margin-bottom: 0px;
+        min-height: 75px;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item .shop_Link {
+        min-height: 25px;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item h3 {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item p {
+        font-size: 1rem;
+    }
+
+    #contact #form_Wrapper {
+        margin: 2.5rem auto;
+        max-width: 50%;
+        padding: 1rem;
+    }
+}
+/* --- END LARGE STYLES --- */
+
+/* --- END STYLES --- */
