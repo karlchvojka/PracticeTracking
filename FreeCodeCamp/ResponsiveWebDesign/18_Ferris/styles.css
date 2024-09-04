@@ -20,6 +20,12 @@ html {
 
 /* --- STYLES --- */
 
+.cabin {
+    background-color: red;
+    height: 20%;
+    width: 20%;
+}
+
 .line {
     background-color: black;
     height: 2px;
