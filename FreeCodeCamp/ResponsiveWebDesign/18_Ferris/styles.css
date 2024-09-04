@@ -22,7 +22,6 @@ html {
 
 @keyframes cabins {
     0% {
-        background-color: yellow;
         transform: rotate(0deg);
     }
     50% {
