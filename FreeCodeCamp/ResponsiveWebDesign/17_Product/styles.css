@@ -158,7 +158,7 @@ footer .content_Inner {
 
 #pricing_Wrap {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-auto-flow: columns;
 }
 
@@ -167,6 +167,12 @@ footer .content_Inner {
     border: 1px solid lightblue;
     color: #0369a1;
     padding: 1rem;
+    width: 100%;
+}
+
+#pricing_Wrap .pricing_Item div {
+    min-height: auto;
+    margin-bottom: 1rem;
 }
 
 #pricing_Wrap .pricing_Item div > h3 {
@@ -180,6 +186,11 @@ footer .content_Inner {
 
 #pricing_Wrap .pricing_Item div > p {
     font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+#pricing_Wrap .pricing_Item div.shop_Link {
+    margin-bottom: 0px;
 }
 
 #pricing_Wrap .pricing_Item div.shop_Link p {
@@ -298,14 +309,27 @@ footer .content_Inner {
 
     #pricing #pricing_Wrap {
         grid-auto-flow: row;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 30.33%);
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
     }
 
     #pricing #pricing_Wrap .pricing_Item {
         padding: 1rem;
     }
 
+    #pricing #pricing_Wrap .pricing_Item div {
+        min-height: 75px;
+        margin-bottom: 0px;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item .shop_Link {
+        min-height: 25px;
+    }
+
     #pricing #pricing_Wrap .pricing_Item h3 {
+        display: block;
         font-size: 1.5rem;
     }
 
