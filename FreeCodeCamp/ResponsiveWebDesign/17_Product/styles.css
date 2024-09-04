@@ -159,8 +159,7 @@ footer .content_Inner {
 #pricing_Wrap {
     display: grid;
     gap: 1rem;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(3, auto);
+    grid-auto-flow: columns;
 }
 
 #pricing_Wrap .pricing_Item {
@@ -174,10 +173,23 @@ footer .content_Inner {
     font-size: 1.5rem;
 }
 
+#pricing_Wrap .pricing_Item div > h4 {
+    font-size: 1rem;
+    text-align: left;
+}
+
 #pricing_Wrap .pricing_Item div > p {
     font-size: 1rem;
 }
 
+#pricing_Wrap .pricing_Item div.shop_Link p {
+    margin-bottom: 0px;
+}
+
+#pricing_Wrap .pricing_Item div a:link, #pricing_Wrap .pricing_Item div a:hover {
+    display: block;
+    text-align: center;
+}
 #contact #form_Wrapper {
     background-color: #dbeafe;
     border: 1px solid lightblue;
@@ -282,6 +294,23 @@ footer .content_Inner {
         grid-auto-flow: row;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
+    }
+
+    #pricing #pricing_Wrap {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    #pricing #pricing_Wrap .pricing_Item {
+        padding: 1rem;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item h3 {
+        font-size: 1.5rem;
+    }
+
+    #pricing #pricing_Wrap .pricing_Item p {
+        font-size: 1rem;
     }
 }
 /* --- END LARGE STYLES --- */
