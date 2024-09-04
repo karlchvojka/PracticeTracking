@@ -30,6 +30,10 @@ html {
     width: 50%;
 }
 
+.line:nth-of-type(2) {
+    transform: rotate(60deg);
+}
+
 #wheel {
     border: 2px solid black;
     border-radius: 50%;
