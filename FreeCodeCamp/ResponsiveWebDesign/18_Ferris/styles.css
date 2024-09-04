@@ -43,7 +43,7 @@ html {
 /* --- STYLES --- */
 
 .cabin {
-    animation: cabins 10s linear infinite;
+    animation: cabins 10s ease-in-out infinite;
     background-color: red;
     border: 2px solid;
     height: 20%;
