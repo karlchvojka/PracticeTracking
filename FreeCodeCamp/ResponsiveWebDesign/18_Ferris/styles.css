@@ -30,6 +30,9 @@ html {
     50% {
         background-color: purple;
     }
+    75% {
+        background-color: yellow;
+    }
     100% {
         transform: rotate(-360deg);
     }
