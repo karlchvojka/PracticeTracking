@@ -102,7 +102,9 @@ html {
 
 #wheel {
     animation-duration: 10s;
+    animation-iteration-count: infinite;
     animation-name: wheel;
+    animation-timing-function: linear;
     border: 2px solid black;
     border-radius: 50%;
     height: 55vw;
