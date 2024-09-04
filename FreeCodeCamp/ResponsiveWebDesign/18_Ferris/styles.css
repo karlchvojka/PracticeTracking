@@ -101,6 +101,8 @@ html {
 }
 
 #wheel {
+    animation-duration: 10s;
+    animation-name: wheel;
     border: 2px solid black;
     border-radius: 50%;
     height: 55vw;
