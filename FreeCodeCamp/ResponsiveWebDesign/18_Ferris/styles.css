@@ -18,6 +18,11 @@ html {
 }
 /* --- END GLOBAL CSS --- */
 
+/* --- ANIMATION KEYFRAMES --- */
+@keyframes wheel {
+}
+/* --- END ANIMATION KEYFRAMES --- */
+
 /* --- STYLES --- */
 
 .cabin {
