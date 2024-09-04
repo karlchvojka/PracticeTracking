@@ -1,0 +1,14 @@
+/* --- GLOBAL CSS --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    z-index: auto;
+}
+
+*:focus {
+    outline: none;
+}
+/* --- END GLOBAL CSS --- */
