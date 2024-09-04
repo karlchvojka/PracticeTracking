@@ -25,6 +25,7 @@ html {
     border: 2px solid;
     height: 20%;
     position: absolute;
+    transform-origin: 50% 0%;
     width: 20%;
 }
 
