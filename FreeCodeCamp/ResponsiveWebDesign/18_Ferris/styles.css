@@ -19,6 +19,16 @@ html {
 /* --- END GLOBAL CSS --- */
 
 /* --- ANIMATION KEYFRAMES --- */
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 @keyframes wheel {
     0% {
         transform: rotate(0deg);
@@ -27,6 +37,7 @@ html {
         transform: rotate(360deg);
     }
 }
+
 /* --- END ANIMATION KEYFRAMES --- */
 
 /* --- STYLES --- */
