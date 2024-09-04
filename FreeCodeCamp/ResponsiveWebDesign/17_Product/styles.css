@@ -8,6 +8,10 @@
     z-index: auto;
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     font-size: 16px;
     scroll-padding-top: 300px;
@@ -176,8 +180,8 @@ footer .content_Inner {
 }
 
 #pricing_Wrap .pricing_Item div {
-    min-height: auto;
     margin-bottom: 1rem;
+    min-height: auto;
 }
 
 #pricing_Wrap .pricing_Item div > h3 {
@@ -206,17 +210,34 @@ footer .content_Inner {
     display: block;
     text-align: center;
 }
+
+#contact h3 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+#contact p {
+    text-align: center;
+}
+
 #contact #form_Wrapper {
     background-color: #dbeafe;
     border: 1px solid lightblue;
     border-radius: 10px;
-    margin: 2.5rem auto;
-    max-width: 50%;
+    margin: 0;
+    margin-top: 2.5rem;
+    max-width: 100%;
     padding: 1rem;
 }
 
+#contact #form_Wrapper label {
+    font-size: 1.5rem;
+}
+
 #contact #form_Wrapper #form input {
+    border: 1px solid lightblue;
     display: block;
+    padding: 15px;
     width: 100%;
 }
 
@@ -229,6 +250,10 @@ footer .content_Inner {
     width: 50%;
 }
 
+#contact #form_Wrapper #form input#submit:hover {
+    cursor: pointer;
+}
+
 #legal_Disclaimer p {
     font-size: 1rem;
 }
@@ -237,18 +262,6 @@ footer .content_Inner {
 /* Queries are based on the Tailwindcss Styles */
 /* For more details, see: https://tailwindcss.com/docs/responsive-design */
 /* --- --- */
-
-/* --- MOBILE STYLES (SM) --- */
-@media (min-width: 640px) {
-
-}
-/* --- END MOBILE STYLES --- */
-
-/* --- MEDIUM STYLES (MD) --- */
-@media (min-width: 768px) {
-
-}
-/* --- END MEDIUM STYLES --- */
 
 /* --- LARGE STYLES (LG) --- */
 @media (min-width: 1024px) {
@@ -329,8 +342,8 @@ footer .content_Inner {
     }
 
     #pricing #pricing_Wrap .pricing_Item div {
-        min-height: 75px;
         margin-bottom: 0px;
+        min-height: 75px;
     }
 
     #pricing #pricing_Wrap .pricing_Item .shop_Link {
@@ -345,13 +358,13 @@ footer .content_Inner {
     #pricing #pricing_Wrap .pricing_Item p {
         font-size: 1rem;
     }
+
+    #contact #form_Wrapper {
+        margin: 2.5rem auto;
+        max-width: 50%;
+        padding: 1rem;
+    }
 }
 /* --- END LARGE STYLES --- */
-
-/* --- EXTRA LARGE STYLES (XL) --- */
-@media (min-width: 1280px) {
-
-}
-/* --- END EXTRA LARGE STYLES --- */
 
 /* --- END STYLES --- */
