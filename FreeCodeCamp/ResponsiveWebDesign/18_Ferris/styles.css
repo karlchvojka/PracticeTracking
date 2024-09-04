@@ -20,6 +20,12 @@ html {
 
 /* --- STYLES --- */
 
+.line {
+    background-color: black;
+    height: 2px;
+    width: 50%;
+}
+
 #wheel {
     border: 2px solid black;
     border-radius: 50%;
