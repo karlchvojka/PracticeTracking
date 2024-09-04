@@ -43,6 +43,7 @@ html {
 /* --- STYLES --- */
 
 .cabin {
+    animation: cabins 10s linear infinite;
     background-color: red;
     border: 2px solid;
     height: 20%;
