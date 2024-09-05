@@ -199,14 +199,16 @@ body {
     width: 90%;
 }
 
-#shirt {
+#penguin_Shirt {
     font-family: Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
 }
 
-#shirt div {
+#penguin_Shirt div {
     font-weight: initial;
+    left: 12px;
+    top: 22.5px;
 }
 
 #sun {
