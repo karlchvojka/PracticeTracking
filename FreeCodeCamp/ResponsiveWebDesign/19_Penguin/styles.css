@@ -31,6 +31,7 @@ body {
     height: 300px;
     position: absolute;
     width: 300px;
+    z-index: 1;
 }
 
 #ground {
