@@ -65,6 +65,8 @@ body {
 
 #sun {
     background-color: yellow;
+    border-radius: 50%;
     height: 200px;
+    position: absolute;
     width: 200px;
 }
