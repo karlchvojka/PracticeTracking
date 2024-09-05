@@ -83,8 +83,11 @@ body {
 }
 
 #penguin-body::before {
+    background-color: gray;
     content: '';
+    height: 45%;
     position: absolute;
+    width: 50%;
 }
 
 #penguin-head {
