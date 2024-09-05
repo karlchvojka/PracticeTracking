@@ -98,9 +98,14 @@ body {
     height: 10%;
 }
 
+.beak.bottom {
+    left: 42%;
+    top: 65%;
+    width: 16%;
+}
+
 .beak.top {
     left: 40%;
-    position: relative;
     top: 60%;
     width: 20%;
 }
