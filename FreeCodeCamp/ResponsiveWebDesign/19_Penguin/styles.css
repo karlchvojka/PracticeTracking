@@ -44,6 +44,8 @@ body {
 .arm.left {
     left: 5%;
     top: 35%;
+    transform: rotate(130deg) scaleX(-1);
+    transform-origin: top left;
 }
 
 .arm.right {
