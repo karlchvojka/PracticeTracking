@@ -46,6 +46,10 @@ body {
 }
 
 .arm.left {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+    animation-timing-function: linear;
     left: 5%;
     top: 35%;
     transform: rotate(130deg) scaleX(-1);
