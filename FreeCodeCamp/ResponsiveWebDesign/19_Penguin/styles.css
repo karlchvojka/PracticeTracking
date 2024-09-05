@@ -202,6 +202,10 @@ body {
     position: absolute;
 }
 
+#penguin:active {
+    transform: scale(1.5);
+}
+
 #penguin_Body {
     background: linear-gradient(
         45deg,
