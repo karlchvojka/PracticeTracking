@@ -62,3 +62,9 @@ body {
     margin-top: 75px;
     width: 300px;
 }
+
+#sun {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+}
