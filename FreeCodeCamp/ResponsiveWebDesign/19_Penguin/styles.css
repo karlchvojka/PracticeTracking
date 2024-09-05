@@ -26,6 +26,12 @@ body {
 }
 /* --- END GLOBAL CSS --- */
 
+#back-mountain {
+    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+    height: 300px;
+    width: 300px;
+}
+
 #ground {
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
     height: 400px;
