@@ -65,6 +65,10 @@ body {
     z-index: 4;
 }
 
+#penguin * {
+    position: absolute;
+}
+
 #penguin-body {
     background: linear-gradient(
         45deg,
