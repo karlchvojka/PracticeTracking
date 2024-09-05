@@ -33,7 +33,7 @@ body {
 /* --- END GLOBAL CSS --- */
 
 .face {
-    background-color: white;
+    background-color: var(--penguin-face);
     border-radius: 70% 70% 60% 60%;
     height: 70%;
     position: relative;
@@ -130,7 +130,7 @@ body {
 }
 
 #penguin_Head #chin {
-    background-color: white;
+    background-color: var(--penguin-face);
     border-radius: 70% 70% 100% 100%;
     height: 70%;
     left: 5%;
