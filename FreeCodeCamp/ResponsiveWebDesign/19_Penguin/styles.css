@@ -37,7 +37,10 @@ body {
 
 .face.left {
     left: 5%;
-    position: relative;
+}
+
+.face.right {
+    right: 5%;
 }
 
 #back_Mountain {
