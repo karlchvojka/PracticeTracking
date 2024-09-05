@@ -1,6 +1,7 @@
 /* --- CSS VARIABLES --- */
 :root {
     --penguin-face: white;
+    --penguin-skin: gray;
     --penguin-picorna: orange;
 }
 /* --- END CSS VARIABLES --- */
@@ -194,7 +195,7 @@ body {
 }
 
 #penguin_Body::before {
-    background-color: gray;
+    background-color: var(--penguin-skin);
     border-radius: 0% 0% 100% 100%;
     content: '';
     height: 45%;
@@ -206,7 +207,7 @@ body {
 }
 
 #penguin_Head {
-    background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+    background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228));
     border-radius: 70% 70% 65% 65%;
     height: 45%;
     left: 25%;
