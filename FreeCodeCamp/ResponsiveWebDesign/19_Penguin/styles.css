@@ -18,6 +18,12 @@ body {
 }
 /* --- END GLOBAL CSS --- */
 
+/* --- KEYFRAMES --- */
+
+@keyframes wave {
+}
+
+/* --- END KEYFRAMES --- */
 .arm {
     background: linear-gradient(90deg, gray, rgb(209, 210, 199));
     border-radius: 30% 30% 30% 120%;
