@@ -65,6 +65,12 @@ body {
     z-index: 4;
 }
 
+#penguin-head {
+    background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+    height: 45%;
+    width: 50%;
+}
+
 #sun {
     background-color: yellow;
     border-radius: 50%;
