@@ -90,6 +90,7 @@ body {
     position: relative;
     top: 10%;
     width: 50%;
+    z-index: 1;
 }
 
 #sun {
