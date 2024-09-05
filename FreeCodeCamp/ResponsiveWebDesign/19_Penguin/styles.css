@@ -68,5 +68,7 @@ body {
     border-radius: 50%;
     height: 200px;
     position: absolute;
+    right: -75px;
+    top: -75px;
     width: 200px;
 }
