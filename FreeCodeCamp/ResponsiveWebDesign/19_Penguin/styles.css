@@ -77,7 +77,10 @@ body {
 
 .blush {
     background-color: pink;
+    border-radius: 50% 50% 50% 50%;
     height: 10%;
+    position: relative;
+    top: 65%;
     width: 15%;
 }
 
