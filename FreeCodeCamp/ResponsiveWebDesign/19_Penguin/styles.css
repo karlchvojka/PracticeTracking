@@ -194,6 +194,7 @@ body {
     margin: auto;
     margin-top: 75px;
     position: relative;
+    transition: transform 1ms ease-in-out 0ms;
     width: 300px;
     z-index: 4;
 }
