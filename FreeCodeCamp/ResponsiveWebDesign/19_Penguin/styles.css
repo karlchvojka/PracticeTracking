@@ -60,7 +60,10 @@ body {
 
 .eye-lid {
     background-color: var(--penguin-face);
+    border-radius: 50% 50% 50% 50%;
     height: 100%;
+    left: -23%;
+    top: 25%;
     width: 150%;
 }
 
