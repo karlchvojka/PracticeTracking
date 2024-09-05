@@ -49,6 +49,12 @@ body {
     right: 5%;
 }
 
+.eye {
+    background-color: black;
+    height: 17%;
+    width: 15%;
+}
+
 #back_Mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     height: 300px;
