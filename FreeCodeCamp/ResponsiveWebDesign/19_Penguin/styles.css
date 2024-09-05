@@ -37,6 +37,7 @@ body {
 #left-mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     height: 300px;
+    position: absolute;
     width: 300px;
 }
 
