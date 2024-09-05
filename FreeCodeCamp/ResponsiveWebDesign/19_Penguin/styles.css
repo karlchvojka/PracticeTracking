@@ -28,6 +28,8 @@ body {
 
 #penguin {
     height: 300px;
+    margin: auto;
+    margin-top: 75px;
     width: 300px;
 }
 
