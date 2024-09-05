@@ -1,3 +1,10 @@
+/* --- CSS VARIABLES --- */
+:root {
+    --cyber-blue: #00abdf;
+    --orange: #DE6F00;
+}
+/* --- END CSS VARIABLES --- */
+
 /* --- GLOBAL CSS --- */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -13,6 +20,7 @@
 }
 
 html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     scroll-padding-top: 100px;
 }
@@ -41,5 +49,49 @@ h5 {
     font-size: 2.5rem;
 }
 
+a:link, a:visited {
+    color: var(--cyber-blue);
+}
+
+a:hover {
+    color: var(--orange);
+}
 /* --- END FONT STYLES --- */
     
+/* --- ELEMENT STYLES --- */
+
+header {
+    -webkit-box-shadow: 0px 5px 10px 1px var(--cyber-blue);
+    box-shadow: 0px 5px 10px 1px var(--cyber-blue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+/* --- END ELEMENT STYLES --- */
+
+/* --- STYLES --- */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
+
+#navbar ul li a:link, #navbar ul li a:visited {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* --- END STYLES --- */
