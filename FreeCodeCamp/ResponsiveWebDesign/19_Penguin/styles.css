@@ -30,6 +30,8 @@ body {
     background-color: white;
     border-radius: 70% 70% 60% 60%;
     height: 70%;
+    position: relative;
+    top: 15%;
     width: 60%;
 }
 
