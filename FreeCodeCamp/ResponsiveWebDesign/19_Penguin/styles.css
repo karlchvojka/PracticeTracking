@@ -119,6 +119,14 @@ body {
     width: 15%;
 }
 
+.foot.left {
+    left: 25%;
+}
+
+.foot.right {
+    right: 25%;
+}
+
 #back_Mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     height: 300px;
