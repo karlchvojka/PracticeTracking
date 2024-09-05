@@ -1,6 +1,7 @@
 /* --- CSS VARIABLES --- */
 :root {
     --penguin-face: white;
+    --penguin-picorna: orange;
 }
 /* --- END CSS VARIABLES --- */
 
@@ -93,7 +94,7 @@ body {
 }
 
 .beak {
-    background-color: orange;
+    background-color: var(--penguin-picorna);
     border-radius: 50% 50% 50% 50%;
     height: 10%;
 }
@@ -111,7 +112,7 @@ body {
 }
 
 .foot {
-    background-color: orange;
+    background-color: var(--penguin-picorna);
     border-radius: 50% 50% 50% 50%;
     height: 30%;
     top: 85%;
