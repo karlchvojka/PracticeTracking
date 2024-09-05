@@ -112,7 +112,9 @@ body {
 
 .foot {
     background-color: orange;
+    border-radius: 50% 50% 50% 50%;
     height: 30%;
+    top: 85%;
     width: 15%;
 }
 
