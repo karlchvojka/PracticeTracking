@@ -117,6 +117,7 @@ body {
     height: 30%;
     top: 85%;
     width: 15%;
+    z-index: -1;
 }
 
 .foot.left {
