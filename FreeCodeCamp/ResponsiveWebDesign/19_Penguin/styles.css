@@ -199,6 +199,12 @@ body {
     width: 90%;
 }
 
+#shirt {
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 #sun {
     background-color: yellow;
     border-radius: 50%;
