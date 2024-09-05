@@ -40,6 +40,7 @@ body {
     position: absolute;
     transform: skew(0deg, 44deg);
     width: 300px;
+    z-index: 2;
 }
 
 #penguin {
