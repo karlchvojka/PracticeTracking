@@ -92,6 +92,12 @@ body {
     right: 15%;
 }
 
+.beak {
+    background-color: orange;
+    border-radius: 50% 50% 50% 50%;
+    height: 10%;
+}
+
 #back_Mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     height: 300px;
