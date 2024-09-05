@@ -37,6 +37,7 @@ body {
 .arm {
     background: linear-gradient(90deg, gray, rgb(209, 210, 199));
     height: 60%;
+    transform-origin: 0% 0%;
     width: 30%;
 }
 
