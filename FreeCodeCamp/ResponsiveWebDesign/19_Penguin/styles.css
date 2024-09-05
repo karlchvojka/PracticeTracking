@@ -83,6 +83,9 @@ body {
     background: linear-gradient(45deg, gray, rgb(239, 240, 228));
     border-radius: 70% 70% 65% 65%;
     height: 45%;
+    left: 25%;
+    position: relative;
+    top: 10%;
     width: 50%;
 }
 
