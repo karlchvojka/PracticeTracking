@@ -35,6 +35,11 @@ body {
     width: 60%;
 }
 
+.face.left {
+    left: 5%;
+    position: relative;
+}
+
 #back_Mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     height: 300px;
