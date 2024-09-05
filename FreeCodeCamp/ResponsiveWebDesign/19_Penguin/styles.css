@@ -29,6 +29,7 @@ body {
 #back-mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     height: 300px;
+    position: absolute;
     width: 300px;
 }
 
