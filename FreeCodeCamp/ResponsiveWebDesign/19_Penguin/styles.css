@@ -26,6 +26,12 @@ body {
 }
 /* --- END GLOBAL CSS --- */
 
+.face {
+    background-color: white;
+    height: 70%;
+    width: 60%;
+}
+
 #back_Mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     height: 300px;
