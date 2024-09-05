@@ -51,7 +51,9 @@ h5 {
 }
 
 a:link, a:visited {
-    color: var(--cyber-blue);
+    color: var(--orange);
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 a:hover {
@@ -62,8 +64,8 @@ a:hover {
 /* --- ELEMENT STYLES --- */
 
 header {
-    -webkit-box-shadow: 0px 5px 10px 1px var(--cyber-blue);
-    box-shadow: 0px 5px 10px 1px var(--cyber-blue);
+    -webkit-box-shadow: 0px 5px 6px 5px var(--cyber-blue);
+    box-shadow: 0px 5px 6px 5px var(--cyber-blue);
     position: fixed;
     top: 0;
     left: 0;
@@ -71,6 +73,7 @@ header {
 }
 
 main {
+    background-color: #1e293b;
     margin-top:55px;
 }
 
@@ -80,6 +83,11 @@ ul {
 /* --- END ELEMENT STYLES --- */
 
 /* --- STYLES --- */
+.content {
+    border-top: 2px solid var(--cyber-blue);
+    padding: 2rem;
+}
+
 #navbar {
     background-color: #ffffff;
     display: flex;
@@ -119,5 +127,32 @@ ul {
 
 #welcome-section p {
     color: #ffffff;
+}
+
+#projects_Wrap {
+    column-gap: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+#projects h2 {
+    margin-bottom:1rem;
+}
+
+#projects_Wrap h3, #projects_Wrap h4, #projects_Wrap p {
+    margin-bottom: 1rem;
+}
+
+#projects_Wrap h3, #projects_Wrap h4 {
+    font-size: 1.75rem;
+    line-height: 1;
+    text-align: left;
+}
+
+#projects_Wrap p {
+    color: var(--cyber-blue);
 }
 /* --- END STYLES --- */
