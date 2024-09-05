@@ -1,6 +1,7 @@
 /* --- CSS VARIABLES --- */
 :root {
     --cyber-blue: #00abdf;
+    --hover-blue: #164e63;
     --orange: #DE6F00;
 }
 /* --- END CSS VARIABLES --- */
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -57,7 +59,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: var(--orange);
+    color: var(--hover-blue);
 }
 /* --- END FONT STYLES --- */
     
@@ -80,12 +82,21 @@ main {
 ul {
     list-style: none;
 }
+
+footer {
+    background-color: #ffffff;
+    border-top: 4px solid var(--cyber-blue);
+    color: var(--orange);
+    font-weight: bold;
+    padding: 2rem;
+}
 /* --- END ELEMENT STYLES --- */
 
 /* --- STYLES --- */
 .content {
     border-top: 2px solid var(--cyber-blue);
     padding: 2rem;
+    text-align: center;
 }
 
 #navbar {
@@ -136,6 +147,11 @@ ul {
     grid-template-columns: repeat(3, auto);
     margin: 0 auto;
     max-width: 85%;
+    text-align: left;
+}
+
+#projects_Wrap article * {
+    text-align: left;
 }
 
 #projects h2 {
@@ -149,10 +165,29 @@ ul {
 #projects_Wrap h3, #projects_Wrap h4 {
     font-size: 1.75rem;
     line-height: 1;
-    text-align: left;
 }
 
 #projects_Wrap p {
     color: var(--cyber-blue);
 }
+
+#contact #contact_Wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+#contact p {
+    color: var(--cyber-blue);
+}
+
+#contact #contact_Wrapper .contact_Link {
+    font-size: 2.4rem;
+    padding: 1.5rem 2rem;
+    transition: transform 0.5s ease-out;
+}
+
 /* --- END STYLES --- */
