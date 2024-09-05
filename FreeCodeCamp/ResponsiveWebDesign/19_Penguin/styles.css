@@ -7,22 +7,6 @@
 /* --- END CSS VARIABLES --- */
 
 /* --- GLOBAL CSS --- */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    z-index: auto;
-}
-
-*:focus {
-    outline: none;
-}
-
-html {
-    font-size: 16px;
-}
 
 body {
     background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
@@ -49,8 +33,9 @@ body {
 }
 
 .arm.right {
-    right: -5%;
-    top: 0%;
+    right: 10%;
+    top: 25%;
+    transform: rotate(-45deg);
 }
 
 .face {
