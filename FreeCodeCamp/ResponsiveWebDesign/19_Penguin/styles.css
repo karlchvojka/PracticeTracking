@@ -75,6 +75,12 @@ body {
     right: 25%;
 }
 
+.blush {
+    background-color: pink;
+    height: 10%;
+    width: 15%;
+}
+
 #back_Mountain {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     height: 300px;
