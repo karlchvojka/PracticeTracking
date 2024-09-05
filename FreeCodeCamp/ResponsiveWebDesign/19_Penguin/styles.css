@@ -200,9 +200,13 @@ body {
 }
 
 #penguin_Shirt {
+    color: #6a6969;
     font-family: Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
+    left: 127.5px;
+    top: 165px;
+    z-index: 1;
 }
 
 #penguin_Shirt div {
