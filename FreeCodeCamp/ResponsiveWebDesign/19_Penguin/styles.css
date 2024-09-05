@@ -205,6 +205,10 @@ body {
     font-weight: bold;
 }
 
+#shirt div {
+    font-weight: initial;
+}
+
 #sun {
     background-color: yellow;
     border-radius: 50%;
