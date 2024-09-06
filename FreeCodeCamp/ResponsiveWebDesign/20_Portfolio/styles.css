@@ -23,7 +23,7 @@
 html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 50px;
 }
 /* --- END GLOBAL CSS --- */
 
@@ -31,25 +31,34 @@ html {
 h1, h2, h3, h4, h5, h6 {
     color: var(--cyber-blue);
     font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
 }
 
-h2 {
+h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
 }
 
-h3 {
-    font-size: 3.5rem;
-}
-
-h4 {
+h2 {
     font-size: 3rem;
 }
 
-h5 {
+h3 {
     font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 a:link, a:visited {
@@ -60,6 +69,10 @@ a:link, a:visited {
 
 a:hover {
     color: var(--hover-blue);
+}
+
+p {
+    font-size: 1rem;
 }
 /* --- END FONT STYLES --- */
     
@@ -76,7 +89,7 @@ header {
 
 main {
     background-color: #1e293b;
-    margin-top:55px;
+    margin-top: 55px;
 }
 
 ul {
@@ -91,7 +104,6 @@ footer {
     padding: 2rem;
 }
 /* --- END ELEMENT STYLES --- */
-
 /* --- STYLES --- */
 .content {
     border-top: 2px solid var(--cyber-blue);
@@ -122,10 +134,9 @@ footer {
 
 #welcome-section {
     align-items: center;
-    background-color: #1e293b;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 50px);
     justify-content: center;
     padding: 0 10%;
     text-align: center;
@@ -133,12 +144,12 @@ footer {
 }
 
 #welcome-section h1 {
-    font-size: 5rem;
+    margin-bottom: 2rem;
 }
 
 #welcome-section p {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #projects_Wrap {
@@ -193,14 +204,71 @@ footer {
 
 /* --- MEDIUM STYLES (MD) --- */
 @media (min-width: 768px) {
+    /* --- RESPONSIVE FONT STYLES --- */
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+    /* --- END RESPONSIVE FONT STYLES --- */
+
     #navbar ul {
         width: 50%;
+    }
+
+    #welcome-section p {
+        font-size: 2rem;
     }
 }
 /* --- END MEDIUM STYLES --- */
 
 /* --- LARGE STYLES (LG) --- */
 @media (min-width: 1024px) {
+    /* --- RESPONSIVE FONT STYLES --- */
+    
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+    }
+
+    h6 {
+        font-size: 2rem;
+    }
+    /* --- END RESPONSIVE FONT STYLES --- */
+
     #navbar ul {
         width: 40%;
     }
