@@ -63,6 +63,7 @@ h6 {
 
 a:link, a:visited {
     color: var(--orange);
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -127,7 +128,6 @@ footer {
 }
 
 #navbar ul li a:link, #navbar ul li a:visited {
-    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -153,34 +153,35 @@ footer {
 }
 
 #projects_Wrap {
+    color: var(--cyber-blue);
     column-gap: 1rem;
     display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(3, auto);
-    margin: 0 auto;
-    max-width: 85%;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    margin: 0;
+    max-width: 100%;
     text-align: left;
+}
+
+#projects_Wrap article {
+    border: 1px solid var(--cyber-blue);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
 }
 
 #projects_Wrap article * {
+    margin-bottom: 1rem;
     text-align: left;
 }
 
-#projects h2 {
-    margin-bottom:1rem;
-}
-
-#projects_Wrap h3, #projects_Wrap h4, #projects_Wrap p {
-    margin-bottom: 1rem;
+#projects_Wrap article p:last-of-type {
+    margin-bottom: 0px;
 }
 
 #projects_Wrap h3, #projects_Wrap h4 {
     font-size: 1.75rem;
     line-height: 1;
-}
-
-#projects_Wrap p {
-    color: var(--cyber-blue);
 }
 
 #contact #contact_Wrapper {
@@ -272,6 +273,11 @@ footer {
     #navbar ul {
         width: 40%;
     }
+
+    #projects #projects_Wrap {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(1, auto);
+    }
 }
 /* --- END LARGE STYLES --- */
 
@@ -279,6 +285,11 @@ footer {
 @media (min-width: 1280px) {
     #navbar ul {
         width: 25%;
+    }
+
+    #projects_Wrap {
+        margin: 0 auto;
+        max-width: 1200px;
     }
 }
 /* --- END EXTRA LARGE STYLES --- */
