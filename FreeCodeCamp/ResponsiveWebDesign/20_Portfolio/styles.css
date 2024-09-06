@@ -138,6 +138,7 @@ footer {
 
 #welcome-section p {
     color: #ffffff;
+    font-size: 2rem;
 }
 
 #projects_Wrap {
@@ -189,5 +190,29 @@ footer {
     padding: 1.5rem 2rem;
     transition: transform 0.5s ease-out;
 }
+
+/* --- MEDIUM STYLES (MD) --- */
+@media (min-width: 768px) {
+    #navbar ul {
+        width: 50%;
+    }
+}
+/* --- END MEDIUM STYLES --- */
+
+/* --- LARGE STYLES (LG) --- */
+@media (min-width: 1024px) {
+    #navbar ul {
+        width: 40%;
+    }
+}
+/* --- END LARGE STYLES --- */
+
+/* --- EXTRA LARGE STYLES (XL) --- */
+@media (min-width: 1280px) {
+    #navbar ul {
+        width: 25%;
+    }
+}
+/* --- END EXTRA LARGE STYLES --- */
 
 /* --- END STYLES --- */
