@@ -82,9 +82,9 @@ p {
 header {
     -webkit-box-shadow: 0px 5px 6px 5px var(--cyber-blue);
     box-shadow: 0px 5px 6px 5px var(--cyber-blue);
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
 }
 
@@ -123,8 +123,8 @@ footer {
 #navbar ul {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 1rem 1.5rem;
+    width: 100%;
 }
 
 #navbar ul li a:link, #navbar ul li a:visited {
@@ -186,11 +186,11 @@ footer {
 
 #contact #contact_Wrapper {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
 }
 
 #contact p {
