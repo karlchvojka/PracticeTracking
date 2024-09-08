@@ -1,5 +1,5 @@
 const character = "#";
 const count = 8;
 const rows = [];
-for(let i = 0; "condition"; "iteration") {
+for(let i = 0; i < count; "iteration") {
 }
