@@ -5,6 +5,7 @@
  * @function
  * @param {string} character Character to be used within the Generator
  * @param {number} count How many rows the Pyramid will have
+ * @param {boolean} inverted Assigns if the Pyramid should be generated upside down
  * @param {array} rows Variable to hold the rows of the pyramid
  * @param {string} result String to be printed in the console
  * @returns {string}
@@ -12,6 +13,7 @@
 // Variable Declarations:
 const character = "#";
 const count = 8;
+let inverted = true;
 const rows = [];
 
 /**
