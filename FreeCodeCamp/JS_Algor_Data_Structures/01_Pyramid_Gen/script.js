@@ -34,7 +34,7 @@ for(let i = 1; i <= count; i++) {
 }
 */
 
-if ("false") {
+if ("") {
     console.log("Condition is true")
 }
 
