@@ -46,7 +46,9 @@ for (let i = count; i > 0; i--) {
 */
 
 const numbers = [1, 2, 3];
-console.log(numbers)
+const unshifted = numbers.unshift(5);
+console.log(unshifted);
+console.log(numbers);
 
 let result = "";
 
