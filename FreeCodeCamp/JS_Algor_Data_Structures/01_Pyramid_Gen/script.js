@@ -14,6 +14,15 @@ const character = "#";
 const count = 8;
 const rows = [];
 
+/**
+ * Pad Row - Function
+ *
+ * Function to add padding to a row of characters
+ * @function
+ * @param {number} rowNumber Which row the iterator is currently on
+ * @param {number} rowCount How many total rows there are
+ * @returns {string} Row with padding applied to both side of the pyramid.
+ */
 function padRow(rowNumber, rowCount) {
     return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
