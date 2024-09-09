@@ -34,13 +34,8 @@ for(let i = 1; i <= count; i++) {
 }
 */
 
-if ("") {
-    console.log("Condition is true");
-} else if (5 < 10) {
-    console.log("5 is less than 10");
-} else {
-    console.log("This is the else block");
-}
+let continueLoop = false;
+let done = 0;
 
 let result = "";
 
