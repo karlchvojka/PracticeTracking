@@ -35,7 +35,9 @@ for(let i = 1; i <= count; i++) {
 */
 
 if ("") {
-    console.log("Condition is true")
+    console.log("Condition is true");
+} else if (5 < 10) {
+    console.log("5 is less than 10");
 }
 
 let result = "";
