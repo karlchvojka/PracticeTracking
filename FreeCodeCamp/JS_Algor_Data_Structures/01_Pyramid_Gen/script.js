@@ -11,9 +11,9 @@
  * @returns {string}
  */
 // Variable Declarations:
-const character = "#";
-const count = 8;
-let inverted = true;
+const character = "!";
+const count = 10;
+let inverted = false;
 const rows = [];
 
 /**
