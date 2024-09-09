@@ -7,7 +7,6 @@
  * @param {number} count How many rows the Pyramid will have
  * @param {array} rows Variable to hold the rows of the pyramid
  * @param {string} result String to be printed in the console
- * @param {number} done for testing
  * @returns {string}
  */
 // Variable Declarations:
@@ -33,14 +32,11 @@ function padRow(rowNumber, rowCount) {
 for(let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
-*/
-
-let done = 0;
 
 while (rows.length < count) {
-    done++;
     rows.push(padRow(rows.length + 1, count));
 }
+*/
 
 let result = "";
 
