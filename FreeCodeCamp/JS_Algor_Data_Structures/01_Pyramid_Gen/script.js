@@ -38,10 +38,12 @@ while (rows.length < count) {
 }
 */
 
-// Creates the pyramid, but updside down.
+/*
+Creates the pyramid, but updside down.
 for (let i = count; i > 0; i--) {
     rows.push(padRow(i, count));
 }
+*/
 
 let result = "";
 
