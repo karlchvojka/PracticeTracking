@@ -4,6 +4,15 @@ const rows = [];
 function padRow(name) {
     return name;
 }
+
+// Function Review:
+function addTwoNumbers(num1, num2) {
+    return num1 + num2;
+}
+
+let sum = addTwoNumbers(5, 10);
+console.log(sum);
+
 const call = padRow("Logan");
 console.log(call);
 for(let i = 0; i < count; i = i + 1) {
