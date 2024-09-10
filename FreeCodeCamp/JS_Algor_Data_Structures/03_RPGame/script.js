@@ -224,6 +224,14 @@ function goCave() {
 }
 
 /**
+ * Go Fight
+ *
+ * Handles combat logic
+ * @function
+ */ 
+function goFight() {}
+
+/**
  * Go to Store
  *
  * Handles 'Go to store' button press function.
