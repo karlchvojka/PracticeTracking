@@ -243,6 +243,9 @@ function sellWeapon() {
 
         // Remove first weapon from inventory
         let currentWeapon = inventory.shift();
+
+        // Set Display Text
+        text.innerText = "You sold a " + currentWeapon + ".";
     }
 }
 
