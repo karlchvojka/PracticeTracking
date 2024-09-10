@@ -9,6 +9,15 @@ body {
 /* --- END GLOBAL STYLES */
 
 /* --- STYLES --- */
+#game {
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 30px auto 0px auto;
+    max-height: 400px;
+    max-width: 500px;
+    padding: 10px;
+}
+
 #text {
     background-color: #0a0a23;
     color: #ffffff;
