@@ -26,3 +26,5 @@ let health = 100;
 let inventory = ["stick"];
 let xp = 0;
 /* --- END PLAYER STAT VARIABLES --- */
+
+function goStore() {}
