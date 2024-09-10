@@ -211,7 +211,10 @@ function fightDragon() {
  * Handles 'Fight Slime' button press function.
  * @function fightSlime
  */
-function fightSlime() {}
+function fightSlime() {
+    fighting = 0;
+    goFight();
+}
 
 /**
  * Go to Cave
