@@ -329,7 +329,7 @@ function attack() {
     health -= monsters[fighting].level;
 
     // Update monster Variables
-    monsterHealth -= weapons[currentWeaponIndex].power;
+    monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
 
     // Update Display text
     text.innerText = "The " + monsters[fighting].name + " attacks.";
