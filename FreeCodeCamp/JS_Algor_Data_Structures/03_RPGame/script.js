@@ -336,6 +336,11 @@ function attack() {
     monsterHealthText.innerText = monsterHealth;
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
+
+    // If Player health is 0, call lose
+    if (health <= 0) {
+        lose();
+    }
 }
 
 /**
