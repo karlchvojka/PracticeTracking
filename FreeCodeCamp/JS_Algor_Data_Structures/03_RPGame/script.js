@@ -256,7 +256,9 @@ function goCave() {
  * Handles combat logic
  * @function
  */
-function goFight() {}
+function goFight() {
+    update(locations[3]);
+}
 
 /**
  * Go to Store
