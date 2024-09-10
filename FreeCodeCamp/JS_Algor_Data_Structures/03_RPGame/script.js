@@ -327,6 +327,7 @@ function sellWeapon() {
 function attack() {
     // Update Display text
     text.innerText = "The " + monsters[fighting].name + " attacks.";
+    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
 }
 
 /**
