@@ -324,7 +324,10 @@ function sellWeapon() {
  * Handles attacking enemy
  * @function attack
  */
-function attack() {}
+function attack() {
+    // Update Display text
+    text.innerText = "The " + monsters[fighting].name + " attacks.";
+}
 
 /**
  * Dodge
