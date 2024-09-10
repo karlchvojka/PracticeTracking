@@ -7,6 +7,7 @@ const button3 = document.querySelector("#button3");
 // Visual Elements
 const goldText = document.querySelector("#goldText");
 const healthText = document.querySelector("#healthText");
+const monsterHealthText = document.querySelector("#monsterHealth");
 const monsterName = document.querySelector("#monsterName");
 const monsterStats = document.querySelector("monsterStats");
 const text = document.querySelector("#text");
