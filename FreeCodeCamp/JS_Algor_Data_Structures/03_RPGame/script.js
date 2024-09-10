@@ -149,6 +149,9 @@ button3.onclick = fightDragon;
 /* --- GLOBAL FUNCTIONS */
 // TODO: Add Update function docs
 function update(location) {
+    // Hide monster display
+    monsterStats.style.display = "none";
+
     // Reassign Element Text
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
