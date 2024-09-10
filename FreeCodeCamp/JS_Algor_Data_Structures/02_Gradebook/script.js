@@ -25,6 +25,14 @@ function getAverage(scores) {
 
 }
 
+/**
+ * Get Letter Grade  - FCC Project
+ *
+ * Returns a sting value representing the number score.
+ * @function getGrade
+ * @param {number} score Number value of the score
+ * @return {string}
+ */
 function getGrade(score) {
     if (score === 100) {
         return "A++";
@@ -41,6 +49,23 @@ function getGrade(score) {
     }
 }
 
-console.log(getGrade(96));
-console.log(getGrade(82));
-console.log(getGrade(56));
+/**
+ * Has Passing Grade - FCC Project
+ *
+ * Returns a boolean if the grade is passing or not
+ * @function hasPassingGrade
+ * @param {number} score Number value of the score
+ * @return {boolean}
+ */
+function hasPassingGrade(score) {
+    if (getGrade(score) === "F") {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+console.log(hasPassingGrade(100));
+console.log(hasPassingGrade(53));
+console.log(hasPassingGrade(87));
+console.log(hasPassingGrade(43));
