@@ -35,6 +35,16 @@ let xp = 0;
 
 /* --- INTERFACE FUNCTIONS --- */
 /**
+ * Fight Dragon
+ *
+ * Handles 'Fight Dragon' button press function.
+ * @function fightDragon
+ */
+function fightDragon() {
+    console.log("Fighting Dragon.");
+}
+
+/**
  * Go to Cave
  *
  * Handles 'Go to cave' button press function.
