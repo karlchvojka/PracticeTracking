@@ -1,5 +1,5 @@
 // Interface Variables:
-let button1 = document.querySelector("#button1");
+const button1 = document.querySelector("#button1");
 
 // Game Variables:
 let fighting;
