@@ -149,7 +149,7 @@ function buyWeapon() {
 
         // Update interface for display.
         goldText.innerText = gold;
-        let newWeapon = weapons;
+        let newWeapon = weapons[currentWeaponIndex];
         text.innerText = "You now have a new weapon.";
     }
 }
