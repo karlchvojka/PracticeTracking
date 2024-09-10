@@ -6,6 +6,7 @@
 
 /* --- GAME DATA ---*/
 let fighting;
+// TODO: Organize Locations Alphabetically
 const locations = [
     {
         name: "town square",
@@ -48,6 +49,19 @@ const locations = [
             "Go to town square"
         ],
         text: "You enter the cave. You see some monsters."
+    },
+    {
+        name: "fight",
+        "button func": [
+            attack,
+            dodge,
+            goTown
+        ],
+        "button text": [
+            "Attack",
+            "Dodge",
+            "Run"
+        ]
     }
 ];
 const monsters = [
