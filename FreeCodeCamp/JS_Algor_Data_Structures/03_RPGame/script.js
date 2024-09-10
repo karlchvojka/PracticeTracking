@@ -34,6 +34,20 @@ const locations = [
             "Go to town square"
         ],
         text: "You enter the store."
+    },
+    {
+        name: "cave",
+        "button func": [
+            fightSlime,
+            fightBeast,
+            goTown
+        ],
+        "button text": [
+            "Fight Slime",
+            "Fight fanged beast",
+            "Go to town square"
+        ],
+        text: "You enter the cave. You see some monsters."
     }
 ];
 let monsterHealth;
