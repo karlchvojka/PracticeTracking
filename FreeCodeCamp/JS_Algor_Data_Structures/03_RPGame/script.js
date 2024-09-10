@@ -33,7 +33,7 @@ let inventory = ["stick"];
 let xp = 0;
 /* --- END PLAYER STAT VARIABLES --- */
 
-/* --- INTERFACE FUNCTIONS --- */
+/* --- INTERFACE FUNCTION DECLARATIONS --- */
 /**
  * Fight Dragon
  *
@@ -63,4 +63,11 @@ function goCave() {
 function goStore() {
     console.log("Going to store");
 }
-/* --- END INTERFACE FUNCTIONS --- */
+/* --- END INTERFACE FUNCTION DECLARATIONS --- */
+
+/* --- EVENT HANDLER ASSIGNMENTS --- */
+
+// Interface Element Event Handlers
+button1.onclick = goStore;
+
+/* --- END EVENT HANDLER ASSIGNMENTS --- */
