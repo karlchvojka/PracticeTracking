@@ -139,7 +139,10 @@ function buyHealth() {
  * Handles 'Buy Weapon' button press function.
  * @function buyWeapon
  */
-function buyWeapon() {}
+function buyWeapon() {
+    if (gold >= 30) {
+    }
+}
 
 /**
  * Fight Beast
