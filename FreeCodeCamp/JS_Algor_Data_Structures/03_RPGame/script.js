@@ -7,7 +7,14 @@
 /* --- GAME DATA ---*/
 let fighting;
 const locations = [
-    {name: "town square"}
+    {
+        name: "town square",
+        "button text": [
+            "Go to store",
+            "Go to cave",
+            "Fight dragon"
+        ]
+    }
 ];
 let monsterHealth;
 /* --- END GAME DATA --- */
