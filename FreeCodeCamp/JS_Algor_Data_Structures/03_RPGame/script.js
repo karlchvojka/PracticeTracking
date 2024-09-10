@@ -400,5 +400,7 @@ function defeatMonster() {
  * Handles loosing a combat
  * @function lose
  */
-function lose() {}
+function lose() {
+    update(locations[5]);
+}
 /* --- END COMBAT FUNCTIONS --- */
