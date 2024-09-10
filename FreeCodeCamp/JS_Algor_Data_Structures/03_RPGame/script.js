@@ -140,23 +140,25 @@ function buyHealth() {
  * @function buyWeapon
  */
 function buyWeapon() {
-    // Check if player has required gold
-    if (gold >= 30) {
-        // Calculate remaining gold.
-        gold -= 30;
-        // Update current weapon index
-        currentWeaponIndex++;
+    if (currentWeaponIndex < 3) {
+        // Check if player has required gold
+        if (gold >= 30) {
+            // Calculate remaining gold.
+            gold -= 30;
+            // Update current weapon index
+            currentWeaponIndex++;
 
-        // Update interface for display.
-        goldText.innerText = gold;
-        let newWeapon = weapons[currentWeaponIndex].name;
-        text.innerText = "You now have a " + newWeapon + ".";
+            // Update interface for display.
+            goldText.innerText = gold;
+            let newWeapon = weapons[currentWeaponIndex].name;
+            text.innerText = "You now have a " + newWeapon + ".";
 
-        // Update inventory
-        inventory.push(newWeapon);
-        text.innerText += " In your inventory you have: " + inventory;
-    } else {
-        text.innerText = "You do not have enough gold to buy a weapon.";
+            // Update inventory
+            inventory.push(newWeapon);
+            text.innerText += " In your inventory you have: " + inventory;
+        } else {
+            text.innerText = "You do not have enough gold to buy a weapon.";
+        }
     }
 }
 
