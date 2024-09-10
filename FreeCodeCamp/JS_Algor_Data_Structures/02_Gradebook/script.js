@@ -65,7 +65,23 @@ function hasPassingGrade(score) {
     }
 }
 
-console.log(hasPassingGrade(100));
-console.log(hasPassingGrade(53));
-console.log(hasPassingGrade(87));
-console.log(hasPassingGrade(43));
+/**
+ * Student Message - FCC Project
+ *
+ * Returns a string to send to student.
+ * @function studentMsg
+ * @param {array} totalScores Array of numbers of the class scores
+ * @param {number} studentScore A individual students score
+ * @return {string}
+ */
+function studentMsg(totalScores, studentScore) {
+    if (hasPassingGrade(studentScore) === true) {
+        return "Class average: " + getAverage(totalScores) + ". Your grade: " + getGrade(studentScore) + ". You passed the course.";
+    } else {
+        return "Class average: " + getAverage(totalScores) + ". Your grade: " + getGrade(studentScore) + ". You failed the course.";
+    }
+}
+const classScores = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89];
+console.log(studentMsg(classScores, 37));
+console.log(studentMsg(classScores, 60));
+console.log(studentMsg(classScores, 100));
