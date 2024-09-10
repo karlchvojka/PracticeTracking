@@ -73,9 +73,9 @@ function update(location) {
     text.innerText = "You are in the town square. You see a sign that says\"Store\"."
 
     // Reassign Element Event Handlers
-    button1.onclick = goStore;
-    button2.onclick = goCave;
-    button3.onclick = fightDragon;
+    button1.onclick = location["button func"][0];
+    button2.onclick = location["button func"][1];
+    button3.onclick = location["button func"][2];
 }
 
 /* --- END GLOBAL FUNCTIONS */
