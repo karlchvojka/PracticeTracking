@@ -124,3 +124,8 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 /* --- END EVENT HANDLER ASSIGNMENTS --- */
+
+/* --- TEMPORARY --- */
+const cat = {}
+console.log(cat);
+/* --- END TEMPORARY --- */
