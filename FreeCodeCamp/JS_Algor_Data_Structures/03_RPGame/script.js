@@ -51,6 +51,7 @@ const locations = [
     }
 ];
 let monsterHealth;
+const weapons = [];
 /* --- END GAME DATA --- */
 
 /* --- INTERFACE VARIABLES --- */
