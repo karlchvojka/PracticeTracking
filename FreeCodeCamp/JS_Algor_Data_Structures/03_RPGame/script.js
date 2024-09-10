@@ -367,6 +367,10 @@ function defeatMonster() {
 
     // Increase Player XP on defeat
     xp += monsters[fighting].level;
+
+    // Update Display values.
+    goldText.innerText = gold;
+    xpText.innerText = xp;
 }
 
 /**
