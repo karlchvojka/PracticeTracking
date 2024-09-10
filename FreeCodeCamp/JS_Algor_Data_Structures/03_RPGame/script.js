@@ -404,3 +404,20 @@ function lose() {
     update(locations[5]);
 }
 /* --- END COMBAT FUNCTIONS --- */
+
+function restart() {
+    // Reset All variables
+    currentWeaponIndex = 0;
+    gold = 50;
+    health = 100;
+    inventory = ["stick"];
+    xp = 0;
+
+    // Reset Display Values
+    goldText.innerText = gold;
+    healthText.innerText = health;
+    xpText.innerText = xp.
+
+    // Send player back to town.
+    goTown();
+}
