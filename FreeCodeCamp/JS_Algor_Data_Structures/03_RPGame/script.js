@@ -161,7 +161,13 @@ button3.onclick = fightDragon;
 /* --- END DEFAULT EVENT HANDLERS --- */
 
 /* --- GLOBAL FUNCTIONS */
-// TODO: Add Update function docs
+/**
+ * Update
+ *
+ * Handles updating the interface on location change.
+ * @function {update}
+ * @param {object} location Data for location
+ */
 function update(location) {
     // Hide monster display
     monsterStats.style.display = "none";
@@ -170,7 +176,7 @@ function update(location) {
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
-    text.innerText = location.text;
+    text.innerHTML = location.text;
 
     // Reassign Element Event Handlers
     button1.onclick = location["button func"][0];
