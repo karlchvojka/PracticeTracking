@@ -76,7 +76,7 @@ const locations = [
             "Go to town square",
             "Go to town square"
         ],
-        text: "The monster screams Arg! as it dies. You gain experience points and find gold."
+        text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
     }
 ];
 const monsters = [
