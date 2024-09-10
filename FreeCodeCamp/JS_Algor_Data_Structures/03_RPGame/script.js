@@ -179,7 +179,7 @@ button3.onclick = fightDragon;
  * Restart Game
  *
  * Handles restarting the game.
- * @function {restart}
+ * @function restart
  */
 function restart() {
     // Reset Game variables
@@ -202,7 +202,7 @@ function restart() {
  * Update
  *
  * Handles updating the interface on location change.
- * @function {update}
+ * @function update
  * @param {object} location Data for location
  */
 function update(location) {
@@ -225,7 +225,7 @@ function update(location) {
  * Win Game
  *
  * Handles winning the game.
- * @function {winGame}
+ * @function winGame
  */
 function winGame() {
     update(locations[6]);
@@ -337,8 +337,8 @@ function goCave() {
 /**
  * Go Fight
  *
- * Handles combat logic
- * @function
+ * Preps interface for combat
+ * @function goFight
  */
 function goFight() {
     // Update Interface to fight options
