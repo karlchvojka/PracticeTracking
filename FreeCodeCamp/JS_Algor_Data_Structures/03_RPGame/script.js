@@ -162,6 +162,29 @@ button3.onclick = fightDragon;
 
 /* --- GLOBAL FUNCTIONS */
 /**
+ * Restart Game
+ *
+ * Handles restarting the game.
+ * @function {restart}
+ */
+function restart() {
+    // Reset Game variables
+    currentWeaponIndex = 0;
+    inventory = ["stick"];
+    gold = 50;
+    health = 100;
+    xp = 0;
+
+    // Reset display variables
+    goldText.innerText = gold;
+    healthText.innerText = health;
+    xpText.innerText = xp;
+
+    // Reset player position
+    goTown();
+}
+
+/**
  * Update
  *
  * Handles updating the interface on location change.
@@ -437,20 +460,3 @@ function lose() {
     update(locations[5]);
 }
 /* --- END COMBAT FUNCTIONS --- */
-
-function restart() {
-    // Reset All variables
-    currentWeaponIndex = 0;
-    gold = 50;
-    health = 100;
-    inventory = ["stick"];
-    xp = 0;
-
-    // Reset Display Values
-    goldText.innerText = gold;
-    healthText.innerText = health;
-    xpText.innerText = xp.
-
-    // Send player back to town.
-    goTown();
-}
