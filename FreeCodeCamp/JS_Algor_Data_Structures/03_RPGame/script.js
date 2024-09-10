@@ -1,3 +1,9 @@
+/**
+ * RPG Game - FCC Project
+ *
+ * The RPG Game project fom the 'JS Algorithms and Data Structures section of the FCC Curriculum.
+*/
+
 /* --- INTERFACE VARIABLES --- */
 // Interactable Elements
 const button1 = document.querySelector("#button1");
@@ -27,6 +33,24 @@ let inventory = ["stick"];
 let xp = 0;
 /* --- END PLAYER STAT VARIABLES --- */
 
+/* --- INTERFACE FUNCTIONS --- */
+/**
+ * Go to Cave
+ *
+ * Handles 'Go to cave' button press function.
+ * @function goCave
+ */
+function goCave() {
+    console.log("Going to cave.");
+}
+
+/**
+ * Go to Store
+ *
+ * Handles 'Go to store' button press function.
+ * @function goStore
+ */
 function goStore() {
     console.log("Going to store");
 }
+/* --- END INTERFACE FUNCTIONS --- */
