@@ -325,6 +325,9 @@ function sellWeapon() {
  * @function attack
  */
 function attack() {
+    // Update Player Variables
+    health -= monsters[fighting].level;
+
     // Update Display text
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
