@@ -364,6 +364,9 @@ function dodge() {
 function defeatMonster() {
     // Give gold reward when monster is defeated
     gold += Math.floor(monsters[fighting].level * 6.7);
+
+    // Increase Player XP on defeat
+    xp += monsters[fighting].level;
 }
 
 /**
