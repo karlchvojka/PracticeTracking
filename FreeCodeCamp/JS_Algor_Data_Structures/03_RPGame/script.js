@@ -132,7 +132,7 @@ function goStore() {}
  * @function goTown
  */
 function goTown() {
-    update(locations);
+    update(locations[0]);
 }
 
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
