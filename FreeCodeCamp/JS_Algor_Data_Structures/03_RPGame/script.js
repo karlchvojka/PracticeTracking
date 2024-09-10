@@ -68,8 +68,8 @@ let xp = 0;
 function update(location) {
     // Reassign Element Text
     button1.innerText = location["button text"][0];
-    button2.innerText = "Go to cave";
-    button3.innerText = "Fight dragon";
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
     text.innerText = "You are in the town square. You see a sign that says\"Store\"."
 
     // Reassign Element Event Handlers
