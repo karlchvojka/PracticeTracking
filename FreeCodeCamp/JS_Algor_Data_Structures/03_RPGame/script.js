@@ -61,7 +61,8 @@ const locations = [
             "Attack",
             "Dodge",
             "Run"
-        ]
+        ],
+        text: "You are fighting a monster."
     }
 ];
 const monsters = [
@@ -112,7 +113,7 @@ const goldText = document.querySelector("#goldText");
 const healthText = document.querySelector("#healthText");
 const monsterHealthText = document.querySelector("#monsterHealth");
 const monsterName = document.querySelector("#monsterName");
-const monsterStats = document.querySelector("monsterStats");
+const monsterStats = document.querySelector("#monsterStats");
 const text = document.querySelector("#text");
 const xpText = document.querySelector("#xpText");
 /* --- END INTERFACE VARIABLES --- */
@@ -257,9 +258,14 @@ function goCave() {
  * @function
  */
 function goFight() {
+    // Update Interface to fight options
     update(locations[3]);
+    monsterStats.style.display = "block";
+
+    // Display current monsters info.
     monsterHealth = monsters[fighting].health;
-    monsterStats.style.display = 'block';
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsterHealth;
 }
 
 /**
