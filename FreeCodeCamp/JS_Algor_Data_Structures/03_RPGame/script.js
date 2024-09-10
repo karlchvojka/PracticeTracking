@@ -371,6 +371,10 @@ function defeatMonster() {
     // Update Display values.
     goldText.innerText = gold;
     xpText.innerText = xp;
+
+    // TODO: Update comment
+    // Send Player to next
+    update(locations[4]);
 }
 
 /**
