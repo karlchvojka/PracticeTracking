@@ -105,6 +105,10 @@ function buyHealth() {
     // Calculate remaining gold and health.
     gold -= 10;
     health += 10;
+
+    // Reassign Player variables for display.
+    gold.innerText = gold;
+    health.innerText = health;
 }
 
 /**
