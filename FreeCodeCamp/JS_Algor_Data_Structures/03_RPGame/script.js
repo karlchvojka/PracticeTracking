@@ -101,7 +101,10 @@ function update(location) {
  * Handles 'Buy Health' button press function.
  * @function buyHealth
  */
-function buyHealth() {}
+function buyHealth() {
+    // Calculate remaining gold.
+    gold = gold - 10;
+}
 
 /**
  * Buy Weapon
