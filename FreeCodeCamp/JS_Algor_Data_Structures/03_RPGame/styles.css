@@ -9,6 +9,12 @@ body {
 /* --- END GLOBAL STYLES */
 
 /* --- STYLES --- */
+#controls, #stats {
+    border: 1px solid #0a0a23;
+    color: #0a0a23;
+    padding: 5px;
+}
+
 #game {
     background-color: #ffffff;
     color: #ffffff;
