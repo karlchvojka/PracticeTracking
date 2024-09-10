@@ -232,7 +232,10 @@ function goTown() {
  * Handles Selling of weapon from inventory.
  * @function sellWeapon
  */
-function sellWeapon() {}
+function sellWeapon() {
+    // If inventory has more than 1 weapon
+    if (inventory.length > 1) {}
+}
 
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
 
