@@ -1,1 +1,2 @@
-console.log("Hello World");
+// Variable Declarations
+let xp = 0;
