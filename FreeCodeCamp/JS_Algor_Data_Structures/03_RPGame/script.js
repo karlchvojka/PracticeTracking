@@ -126,6 +126,8 @@ button3.onclick = fightDragon;
 /* --- END EVENT HANDLER ASSIGNMENTS --- */
 
 /* --- TEMPORARY --- */
-const cat = {}
+const cat = {
+    name: "Whiskers"
+}
 console.log(cat);
 /* --- END TEMPORARY --- */
