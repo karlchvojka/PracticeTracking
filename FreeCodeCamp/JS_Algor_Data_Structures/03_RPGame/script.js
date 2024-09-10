@@ -103,8 +103,8 @@ function update(location) {
  */
 function buyHealth() {
     // Calculate remaining gold and health.
-    gold = gold - 10;
-    health = health + 10;
+    gold -= 10;
+    health += 10;
 }
 
 /**
