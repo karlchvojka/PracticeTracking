@@ -98,6 +98,14 @@ function buyHealth() {}
 function buyWeapon() {}
 
 /**
+ * Fight Beast
+ *
+ * Handles 'Fight Beast' button press function.
+ * @function fightBeast
+ */
+function fightBeast() {}
+
+/**
  * Fight Dragon
  *
  * Handles 'Fight Dragon' button press function.
@@ -106,6 +114,14 @@ function buyWeapon() {}
 function fightDragon() {
     console.log("Fighting Dragon.");
 }
+
+/**
+ * Fight Slime
+ *
+ * Handles 'Fight Slime' button press function.
+ * @function fightSlime
+ */
+function fightSlime() {}
 
 /**
  * Go to Cave
