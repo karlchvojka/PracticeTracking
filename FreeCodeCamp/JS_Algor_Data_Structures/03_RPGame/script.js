@@ -6,7 +6,9 @@
 
 /* --- GAME DATA ---*/
 let fighting;
-const locations = [];
+const locations = [
+    {name: "town square"}
+];
 let monsterHealth;
 /* --- END GAME DATA --- */
 
