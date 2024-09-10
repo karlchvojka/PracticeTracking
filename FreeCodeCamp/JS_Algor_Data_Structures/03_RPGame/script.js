@@ -127,7 +127,7 @@ button3.onclick = fightDragon;
 
 /* --- TEMPORARY --- */
 const cat = {
-    name:"Whiskers",
+    name: "Whiskers",
     "Number of legs": 4
 }
 console.log(cat.name);
