@@ -409,7 +409,7 @@ function sellWeapon() {
  */
 function attack() {
     // Update Player Variables
-    health -= monsters[fighting].level;
+    health -= getMonsterAttackValue(monsters[fighting].level);
 
     // Update monster Variables
     monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
