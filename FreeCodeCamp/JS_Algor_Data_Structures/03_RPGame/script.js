@@ -111,6 +111,12 @@ let inventory = ["stick"];
 let xp = 0;
 /* --- END PLAYER STAT VARIABLES --- */
 
+/* --- DEFAULT EVENT HANDLERS --- */
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+/* --- END DEFAULT EVENT HANDLERS --- */
+
 /* --- GLOBAL FUNCTIONS */
 // TODO: Add Update function docs
 function update(location) {
@@ -285,11 +291,3 @@ function sellWeapon() {
 }
 
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
-
-/* --- EVENT HANDLER ASSIGNMENTS --- */
-
-// Interface Element Event Handlers
-button1.onclick = goStore;
-button2.onclick = goCave;
-button3.onclick = fightDragon;
-/* --- END EVENT HANDLER ASSIGNMENTS --- */
