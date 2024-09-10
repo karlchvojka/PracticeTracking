@@ -291,3 +291,22 @@ function sellWeapon() {
 }
 
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
+
+/* --- COMBAT FUNCTIONS --- */
+
+/**
+ * Attack
+ *
+ * Handles attacking enemy
+ * @function attack
+ */
+function attack() {}
+
+/**
+ * Dodge
+ *
+ * Handles dodging enemy attack
+ * @function dodge
+ */
+function dodge() {}
+/* --- END COMBAT FUNCTIONS --- */
