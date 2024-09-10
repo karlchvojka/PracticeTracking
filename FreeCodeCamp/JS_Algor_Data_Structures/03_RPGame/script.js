@@ -1,8 +1,13 @@
-// Variable Declarations
-let currentWeaponIndex = 0;
+// Interface Variables:
+let button1 = document.querySelector("#button1");
+
+// Game Variables:
 let fighting;
+let monsterHealth;
+
+// Player Stat Variables:
+let currentWeaponIndex = 0;
 let gold = 50;
 let health = 100;
 let inventory = ["stick"];
-let monsterHealth;
 let xp = 0;
