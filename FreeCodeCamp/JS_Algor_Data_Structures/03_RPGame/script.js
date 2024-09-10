@@ -35,6 +35,22 @@ let xp = 0;
 
 /* --- INTERFACE FUNCTION DECLARATIONS --- */
 /**
+ * Buy Health
+ *
+ * Handles 'Buy Health' button press function.
+ * @function buyHealth
+ */
+function buyHealth() {}
+
+/**
+ * Buy Weapon
+ *
+ * Handles 'Buy Weapon' button press function.
+ * @function buyWeapon
+ */
+function buyWeapon() {}
+
+/**
  * Fight Dragon
  *
  * Handles 'Fight Dragon' button press function.
@@ -72,6 +88,15 @@ function goStore() {
     button2.onclick = buyWeapon;
     button3.onclick = goTown;
 }
+
+/**
+ * Go to Town
+ *
+ * Handles 'Go to town square' button press function.
+ * @function goTown
+ */
+function goTown() {}
+
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
 
 /* --- EVENT HANDLER ASSIGNMENTS --- */
