@@ -160,6 +160,12 @@ function buyWeapon() {
             text.innerText = "You do not have enough gold to buy a weapon.";
         }
     } else {
+        // If player has most powerful weapon
+        // Set Text and function of second button
+        button2.innerText = "Sell weapon for 15 gold";
+        button2.onclick = sellWeapon;
+
+        // Set Display text
         text.innerText = "You already have the most powerful weapon!";
     }
 }
