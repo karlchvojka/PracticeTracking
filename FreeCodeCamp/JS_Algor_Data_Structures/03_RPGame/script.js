@@ -184,6 +184,15 @@ function update(location) {
     button3.onclick = location["button func"][2];
 }
 
+/**
+ * Win Game
+ *
+ * Handles winning the game.
+ * @function {winGame}
+ */
+function winGame() {
+    update(locations[6]);
+}
 /* --- END GLOBAL FUNCTIONS */
 
 /* --- INTERFACE FUNCTION DECLARATIONS --- */
