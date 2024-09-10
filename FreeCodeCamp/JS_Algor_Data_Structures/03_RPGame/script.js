@@ -123,7 +123,9 @@ function goCave() {
  * Handles 'Go to store' button press function.
  * @function goStore
  */
-function goStore() {}
+function goStore() {
+    update(locations[1]);
+}
 
 /**
  * Go to Town
