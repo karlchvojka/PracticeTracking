@@ -228,7 +228,7 @@ function goCave() {
  *
  * Handles combat logic
  * @function
- */ 
+ */
 function goFight() {}
 
 /**
