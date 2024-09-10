@@ -140,7 +140,7 @@ function buyHealth() {
  * @function buyWeapon
  */
 function buyWeapon() {
-    if (currentWeaponIndex < weapons.length) {
+    if (currentWeaponIndex < weapons.length - 1) {
         // Check if player has required gold
         if (gold >= 30) {
             // Calculate remaining gold.
