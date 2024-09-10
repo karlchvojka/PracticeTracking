@@ -95,7 +95,7 @@ let xp = 0;
 /* --- END PLAYER STAT VARIABLES --- */
 
 /* --- GLOBAL FUNCTIONS */
-
+// TODO: Add Update function docs
 function update(location) {
     // Reassign Element Text
     button1.innerText = location["button text"][0];
