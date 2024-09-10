@@ -131,7 +131,9 @@ function goStore() {}
  * Handles 'Go to town square' button press function.
  * @function goTown
  */
-function goTown() {}
+function goTown() {
+    update();
+}
 
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
 
