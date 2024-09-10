@@ -33,6 +33,12 @@ let inventory = ["stick"];
 let xp = 0;
 /* --- END PLAYER STAT VARIABLES --- */
 
+/* --- GLOBAL FUNCTIONS */
+
+function update(location) {}
+
+/* --- END GLOBAL FUNCTIONS */
+
 /* --- INTERFACE FUNCTION DECLARATIONS --- */
 /**
  * Buy Health
