@@ -27,4 +27,6 @@ let inventory = ["stick"];
 let xp = 0;
 /* --- END PLAYER STAT VARIABLES --- */
 
-function goStore() {}
+function goStore() {
+    console.log("Going to store");
+}
