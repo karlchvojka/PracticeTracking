@@ -361,7 +361,10 @@ function dodge() {
  * Handles defeating a monster in combat
  * @function defeatMonster
  */
-function defeatMonster() {}
+function defeatMonster() {
+    // Give gold reward when monster is defeated
+    gold += Math.floor(monsters[fighting].level * 6.7);
+}
 
 /**
  * Lose
