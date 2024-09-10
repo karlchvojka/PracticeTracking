@@ -19,7 +19,21 @@ const locations = [
             "Go to cave",
             "Fight dragon"
         ],
-        "text": "You are in the town square. You see a sign that says \"Store\"."
+        text: "You are in the town square. You see a sign that says \"Store\"."
+    },
+    {
+        name: "store",
+        "button func": [
+            buyHealth,
+            buyWeapon,
+            goTown
+        ],
+        "button text": [
+            "Buy 10 health (10 gold)",
+            "Buy weapon (30 gold)",
+            "Go to town square"
+        ],
+        text: "You enter the store."
     }
 ];
 let monsterHealth;
