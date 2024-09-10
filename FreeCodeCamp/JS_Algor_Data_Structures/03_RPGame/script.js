@@ -332,6 +332,8 @@ function attack() {
     monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
 
     // Update Display text
+    healthText.innerText = health;
+    monsterHealthText.innerText = monsterHealth;
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
 }
