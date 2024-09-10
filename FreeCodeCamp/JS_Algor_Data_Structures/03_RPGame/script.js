@@ -4,6 +4,12 @@
  * The RPG Game project fom the 'JS Algorithms and Data Structures section of the FCC Curriculum.
 */
 
+/* --- GAME DATA ---*/
+let fighting;
+const locations = [];
+let monsterHealth;
+/* --- END GAME DATA --- */
+
 /* --- INTERFACE VARIABLES --- */
 // Interactable Elements
 const button1 = document.querySelector("#button1");
@@ -19,11 +25,6 @@ const monsterStats = document.querySelector("monsterStats");
 const text = document.querySelector("#text");
 const xpText = document.querySelector("#xpText");
 /* --- END INTERFACE VARIABLES --- */
-
-/* --- GAME VARIABLES --- */
-let fighting;
-let monsterHealth;
-/* --- END GAME VARIABLES --- */
 
 /* --- PLAYER STAT VARIABLES --- */
 let currentWeaponIndex = 0;
