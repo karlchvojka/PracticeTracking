@@ -67,7 +67,7 @@ let xp = 0;
 
 function update(location) {
     // Reassign Element Text
-    button1.innerText = "Go to store";
+    button1.innerText = location["button text"];
     button2.innerText = "Go to cave";
     button3.innerText = "Fight dragon";
     text.innerText = "You are in the town square. You see a sign that says\"Store\"."
