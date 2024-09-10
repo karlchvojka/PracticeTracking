@@ -65,7 +65,18 @@ let xp = 0;
 
 /* --- GLOBAL FUNCTIONS */
 
-function update(location) {}
+function update(location) {
+    // Reassign Element Text
+    button1.innerText = "Go to store";
+    button2.innerText = "Go to cave";
+    button3.innerText = "Fight dragon";
+    text.innerText = "You are in the town square. You see a sign that says\"Store\"."
+
+    // Reassign Element Event Handlers
+    button1.onclick = goStore;
+    button2.onclick = goCave;
+    button3.onclick = fightDragon;
+}
 
 /* --- END GLOBAL FUNCTIONS */
 
@@ -112,18 +123,7 @@ function goCave() {
  * Handles 'Go to store' button press function.
  * @function goStore
  */
-function goStore() {
-    // Reassign Element Text
-    button1.innerText = "Buy 10 health (10 gold)";
-    button2.innerText = "Buy weapon (30 gold)";
-    button3.innerText = "Go to town square";
-    text.innerText = "You enter the store.";
-
-    // Reassign Button Event Handlers
-    button1.onclick = buyHealth;
-    button2.onclick = buyWeapon;
-    button3.onclick = goTown;
-}
+function goStore() {}
 
 /**
  * Go to Town
@@ -131,18 +131,7 @@ function goStore() {
  * Handles 'Go to town square' button press function.
  * @function goTown
  */
-function goTown() {
-    //Reassign Element Text
-    button1.innerText = "Go to store";
-    button2.innerText = "Go to cave";
-    button3.innerText = "Fight dragon";
-    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
-
-    // Reassign Button Event Handlers
-    button1.onclick = goStore;
-    button2.onclick = goCave;
-    button3.onclick = fightDragon;
-}
+function goTown() {}
 
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
 
