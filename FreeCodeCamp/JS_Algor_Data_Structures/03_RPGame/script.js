@@ -18,7 +18,8 @@ const locations = [
             "Go to store",
             "Go to cave",
             "Fight dragon"
-        ]
+        ],
+        "text": "You are in the town square. You see a sign that says \"Store\"."
     }
 ];
 let monsterHealth;
