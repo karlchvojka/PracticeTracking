@@ -246,6 +246,7 @@ function sellWeapon() {
 
         // Set Display Text
         text.innerText = "You sold a " + currentWeapon + ".";
+        text.innerText += " In your inventory you have: " + inventory;
     }
 }
 
