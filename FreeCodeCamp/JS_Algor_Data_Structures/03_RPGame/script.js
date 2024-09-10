@@ -328,6 +328,9 @@ function attack() {
     // Update Player Variables
     health -= monsters[fighting].level;
 
+    // Update monster Variables
+    monsterHealth -= weapons[currentWeaponIndex].power;
+
     // Update Display text
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
