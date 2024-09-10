@@ -352,4 +352,20 @@ function attack() {
  * @function dodge
  */
 function dodge() {}
+
+/**
+ * Defeat Monster
+ *
+ * Handles defeating a monster in combat
+ * @function defeatMonster
+ */
+function defeatMonster() {}
+
+/**
+ * Lose
+ *
+ * Handles loosing a combat
+ * @function lose
+ */
+function lose() {}
 /* --- END COMBAT FUNCTIONS --- */
