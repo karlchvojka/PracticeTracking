@@ -111,6 +111,8 @@ function buyHealth() {
         // Reassign Player variables for display.
         gold.innerText = gold;
         health.innerText = health;
+    } else {
+        text.innerText = "You do not have enough gold to buy health."
     }
 }
 
