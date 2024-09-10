@@ -91,6 +91,20 @@ const locations = [
             "REPLAY?"
         ],
         text: "You die. &#x2620;"
+    },
+    {
+        name: "win",
+        "button func": [
+            restart,
+            restart,
+            restart
+        ],
+        "button text": [
+            "REPLAY?",
+            "REPLAY?",
+            "REPLAY?"
+        ],
+        text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
     }
 ];
 const monsters = [
