@@ -9,6 +9,10 @@ body {
 /* --- END GLOBAL STYLES */
 
 /* --- STYLES --- */
+.stats {
+    padding-right: 10px;
+}
+
 #controls, #stats {
     border: 1px solid #0a0a23;
     color: #0a0a23;
