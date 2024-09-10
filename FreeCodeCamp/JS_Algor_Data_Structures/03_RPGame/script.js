@@ -61,7 +61,7 @@ function goCave() {
  * @function goStore
  */
 function goStore() {
-    console.log("Going to store");
+    button1.innerText = "Buy 10 health (10 gold)";
 }
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
 
