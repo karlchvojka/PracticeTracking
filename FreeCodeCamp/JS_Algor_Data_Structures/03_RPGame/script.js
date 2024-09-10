@@ -241,7 +241,8 @@ function sellWeapon() {
         // Set display text:
         goldText.innerText = gold;
 
-        let currentWeapon;
+        // Remove first weapon from inventory
+        let currentWeapon = inventory.shift();
     }
 }
 
