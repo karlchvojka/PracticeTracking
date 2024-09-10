@@ -234,7 +234,13 @@ function goTown() {
  */
 function sellWeapon() {
     // If inventory has more than 1 weapon
-    if (inventory.length > 1) {}
+    if (inventory.length > 1) {
+        // Calculate new gold amount
+        gold += 15;
+
+        // Set display text:
+        goldText.innerText = gold;
+    }
 }
 
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
