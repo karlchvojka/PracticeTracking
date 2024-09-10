@@ -193,7 +193,10 @@ function buyWeapon() {
  * Handles 'Fight Beast' button press function.
  * @function fightBeast
  */
-function fightBeast() {}
+function fightBeast() {
+    fighting = 1;
+    goFight();
+}
 
 /**
  * Fight Dragon
@@ -202,7 +205,8 @@ function fightBeast() {}
  * @function fightDragon
  */
 function fightDragon() {
-    console.log("Fighting Dragon.");
+    fighting = 2;
+    goFight();
 }
 
 /**
