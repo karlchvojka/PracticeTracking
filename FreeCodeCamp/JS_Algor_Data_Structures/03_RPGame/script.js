@@ -144,7 +144,7 @@ function fightSlime() {}
  * @function goCave
  */
 function goCave() {
-    console.log("Going to cave.");
+    update(locations[2]);
 }
 
 /**
