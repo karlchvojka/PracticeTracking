@@ -226,6 +226,14 @@ function goTown() {
     update(locations[0]);
 }
 
+/**
+ * Sell Weapon
+ *
+ * Handles Selling of weapon from inventory.
+ * @function sellWeapon
+ */
+function sellWeapon() {}
+
 /* --- END INTERFACE FUNCTION DECLARATIONS --- */
 
 /* --- EVENT HANDLER ASSIGNMENTS --- */
