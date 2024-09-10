@@ -351,7 +351,9 @@ function attack() {
  * Handles dodging enemy attack
  * @function dodge
  */
-function dodge() {}
+function dodge() {
+    text.innerText = "You dodge the attack from the " + monsters[fighting].name;
+}
 
 /**
  * Defeat Monster
