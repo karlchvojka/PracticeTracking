@@ -240,6 +240,8 @@ function sellWeapon() {
 
         // Set display text:
         goldText.innerText = gold;
+
+        let currentWeapon;
     }
 }
 
