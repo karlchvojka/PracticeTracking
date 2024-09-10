@@ -61,10 +61,11 @@ function goCave() {
  * @function goStore
  */
 function goStore() {
-    // Reassign Button Text
+    // Reassign Element Text
     button1.innerText = "Buy 10 health (10 gold)";
     button2.innerText = "Buy weapon (30 gold)";
     button3.innerText = "Go to town square";
+    text.innerText = "You enter the store.";
 
     // Reassign Button Event Handlers
     button1.onclick = buyHealth;
