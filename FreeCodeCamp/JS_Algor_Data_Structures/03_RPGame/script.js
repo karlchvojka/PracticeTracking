@@ -9,6 +9,11 @@ let fighting;
 const locations = [
     {
         name: "town square",
+        "button func": [
+            goStore,
+            goCave,
+            fightDragon
+        ],
         "button text": [
             "Go to store",
             "Go to cave",
