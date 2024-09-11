@@ -25,4 +25,18 @@ function getRandomIndex() {
 
 const body = document.querySelector("body");
 const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
-console.log(bgHexCodeSpanElement);
+
+/**
+ * Change backgroud color
+ *
+ * Handles changing the background color and display text
+ * @function changeBackgroundColor
+ */
+function changeBackgroundColor() {
+    // Set common use variable
+    const color = darkColorsArr[getRandomIndex()];
+
+    bgHexCodeSpanElement.innerText = color;
+    body.style.backgroundColor = color;
+}
+changeBackgroundColor();
