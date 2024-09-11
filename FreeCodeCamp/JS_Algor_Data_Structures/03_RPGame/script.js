@@ -6,7 +6,6 @@
 
 /* --- GAME DATA ---*/
 let fighting;
-// TODO: Organize Locations Alphabetically
 const locations = [
     {
         name: "town square",
@@ -188,7 +187,8 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 /* --- END DEFAULT EVENT HANDLERS --- */
 
-/* --- GLOBAL FUNCTIONS */
+/* --- GLOBAL FUNCTIONS --- */
+
 /**
  * Easter Egg
  *
@@ -209,6 +209,7 @@ function easterEgg() {
 function isMonsterHit() {
     return Math.random() > .2 || health < 20;
 }
+
 /**
  * Restart Game
  *
@@ -264,9 +265,11 @@ function update(location) {
 function winGame() {
     update(locations[6]);
 }
+
 /* --- END GLOBAL FUNCTIONS */
 
 /* --- INTERFACE FUNCTION DECLARATIONS --- */
+
 /**
  * Buy Health
  *
@@ -476,7 +479,6 @@ function attack() {
     }
 }
 
-// TODO: Decide if this is the right place for this function.
 /**
  * Get monster attack value
  *
@@ -530,6 +532,7 @@ function defeatMonster() {
 function lose() {
     update(locations[5]);
 }
+
 /* --- END COMBAT FUNCTIONS --- */
 
 /* --- Temp --- */
@@ -540,10 +543,11 @@ function pickTwo() {
 function pickEight() {
     pick(8);
 }
-//TODO: Move/comment function:
+
 /**
  * Pick
  *
+ * Pick random number
  * @function pick
  * @param {string} guess Number guessed.
  */
