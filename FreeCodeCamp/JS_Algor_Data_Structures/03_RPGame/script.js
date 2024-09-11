@@ -441,7 +441,9 @@ function attack() {
  * @param {number} level Monsters level
  * @returns {number} The Monsters Attack value
  */
-function getMonsterAttackValue(level) {}
+function getMonsterAttackValue(level) {
+    const hit = (level * 5) - (Math.floor(Math.random() * xp));
+}
 
 /**
  * Dodge
