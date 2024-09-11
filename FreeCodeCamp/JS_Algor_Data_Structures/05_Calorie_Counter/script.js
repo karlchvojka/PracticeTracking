@@ -40,4 +40,15 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
+/**
+ * Is Invalid Input
+ *
+ * Checks for invalid inputs
+ * @function isInvalidInput
+ * @param {string} str Data from input
+ * @returns {boolean} True or false.
+ */
+function isInvalidInput(str) {
+}
+
 /* --- END GLOBAL FUNCTIONS ---*/
