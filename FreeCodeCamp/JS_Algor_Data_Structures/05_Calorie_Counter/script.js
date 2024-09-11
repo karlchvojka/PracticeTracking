@@ -25,6 +25,12 @@ const output = document.getElementById('output');
 let isError = false;
 /* --- END APP DATA --- */
 
+/* --- EVENT LISTENER ATTACHMENTS --- */
+
+addEntryButton.addEventListener("click", addEntry);
+
+/* --- END EVENT LISTENER ATTACMENTS --- */
+
 /* --- GLOBAL FUNCTIONS ---*/
 
 /**
