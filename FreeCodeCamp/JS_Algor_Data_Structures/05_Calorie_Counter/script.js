@@ -101,6 +101,7 @@ function getCaloriesFromInputs(list) {
         // Else add currVal to calories;
         calories += Number(currVal);
     }
+    return calories;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
