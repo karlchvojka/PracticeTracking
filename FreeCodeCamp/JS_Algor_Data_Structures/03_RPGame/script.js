@@ -176,6 +176,16 @@ button3.onclick = fightDragon;
 
 /* --- GLOBAL FUNCTIONS */
 /**
+ * Is Monster Hit
+ *
+ * Checks if Monster is hit
+ * @function isMonsterHit
+ * @returns {boolean}
+ */
+function isMonsterHit() {
+    return Math.random() > .2;
+}
+/**
  * Restart Game
  *
  * Handles restarting the game.
