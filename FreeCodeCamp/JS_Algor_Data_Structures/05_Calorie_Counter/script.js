@@ -129,6 +129,10 @@ function calculateCalories(e) {
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+
+    if(isError) {
+        return
+    }
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
