@@ -49,6 +49,7 @@ function cleanInputString(str) {
  * @returns {boolean} True or false.
  */
 function isInvalidInput(str) {
+    const regex = /e/g;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
