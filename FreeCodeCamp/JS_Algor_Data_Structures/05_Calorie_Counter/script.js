@@ -104,4 +104,13 @@ function getCaloriesFromInputs(list) {
     return calories;
 }
 
+/**
+ * Calculate Calories
+ *
+ * Caculates calories from input values
+ * @function calculateCalories
+ * @param {event:event:unknown} e - Unknown
+ */
+function calculateCalories(e) {}
+
 /* --- END GLOBAL FUNCTIONS ---*/
