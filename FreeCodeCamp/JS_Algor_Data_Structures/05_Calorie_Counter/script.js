@@ -1,3 +1,9 @@
+/**
+ *  Calorie Counter - FCC Project
+ *
+ *  Calorie Counter project from the 'JS Algorithms and Data Structures section of the FCC Curriculum/
+ */
+
 /* --- INTERFACE VARIABLES --- */
 
 const caldorieCounter = document.getElementById('calorie-counter');
