@@ -60,6 +60,7 @@ function isInvalidInput(str) {
  * @function addEntry
  */
 function addEntry() {
+    const targetId = "#" + entryDropdown.value;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
