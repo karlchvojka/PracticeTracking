@@ -77,6 +77,40 @@ function addEntry() {
 }
 
 /**
+ *  Calculate Calories
+ *
+ *  Calculates calories from input values
+ *  @function calculateCalories
+ *  @param {event:event:submit} e - Submit event of Entry form.
+ */
+function calculateCalories(e) {
+    e.preventDefault();
+    isError = false;
+
+    // Get inputs from form:
+    const breakfastNumberInputs = document.querySelectorAll('#breakfast input[type=number]');
+    const dinnerNumberInputs = document.querySelectorAll('#dinner input[type=number]');
+    const exerciseNumberInputs = document.querySelecotrAll('#exercise input[type=number]');
+    const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]');
+    const snacksNumberInputs = document.querySelectorAll('#snacks input[type=number]');
+
+    // Pull Calorie numbers from inputs.
+    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
+    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+
+    if (isError) {
+        return;
+    }
+
+    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
+}
+
+/**
  * Get Calories from Inputs.
  *
  * Will get calorie amounts from user inputs.
@@ -102,40 +136,6 @@ function getCaloriesFromInputs(list) {
         calories += Number(currVal);
     }
     return calories;
-}
-
-/**
- * Calculate Calories
- *
- * Caculates calories from input values
- * @function calculateCalories
- * @param {event:event:submit} e - Submit event of Entry form.
- */
-function calculateCalories(e) {
-    e.preventDefault();
-    isError = false;
-
-    // Get Inputs from form
-    const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type=number]");
-    const dinnerNumberInputs = document.querySelectorAll("#dinner input[type=number]");
-    const exerciseNumberInputs = document.querySelectorAll("#exercise input[type=number]")
-    const lunchNumberInputs = document.querySelectorAll("#lunch input[type=number]");
-    const snacksNumberInputs = document.querySelectorAll("#snacks input[type=number]");
-
-    // Pull Calorie numbers from inputs
-    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
-    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
-    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
-    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
-    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
-    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
-
-    if(isError) {
-        return
-    }
-
-    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
-    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
