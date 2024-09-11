@@ -459,8 +459,7 @@ function defeatMonster() {
     goldText.innerText = gold;
     xpText.innerText = xp;
 
-    // TODO: Update comment
-    // Send Player to next
+    // Send player to win interface
     update(locations[4]);
 }
 
