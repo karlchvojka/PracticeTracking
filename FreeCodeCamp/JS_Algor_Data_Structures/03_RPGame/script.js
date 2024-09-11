@@ -69,7 +69,7 @@ const locations = [
         "button func": [
             goTown,
             goTown,
-            goTown
+            easterEgg
         ],
         "button text": [
             "Go to town square",
