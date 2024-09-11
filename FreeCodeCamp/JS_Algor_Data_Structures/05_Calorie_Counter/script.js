@@ -109,8 +109,11 @@ function getCaloriesFromInputs(list) {
  *
  * Caculates calories from input values
  * @function calculateCalories
- * @param {event:event:unknown} e - Unknown
+ * @param {event:event:submit} e - Submit event of Entry form.
  */
-function calculateCalories(e) {}
+function calculateCalories(e) {
+    e.preventDefault();
+    isError = false;
+}
 
 /* --- END GLOBAL FUNCTIONS ---*/
