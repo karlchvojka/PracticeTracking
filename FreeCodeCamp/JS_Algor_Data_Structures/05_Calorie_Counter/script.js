@@ -62,7 +62,7 @@ function isInvalidInput(str) {
 /**
  * Add Entry
  *
- * Allows user to add entries to the counter.
+ * Adds an entry box to the selected category.
  * @function addEntry
  */
 function addEntry() {
@@ -73,7 +73,7 @@ function addEntry() {
     <input id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" type="text" />
     <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
     <input id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" type="number" min="0" />`;
-    targetInputContainer.insertAdjacentHTML();
+    targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
