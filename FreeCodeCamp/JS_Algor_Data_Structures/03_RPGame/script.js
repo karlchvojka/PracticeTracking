@@ -518,3 +518,13 @@ function lose() {
     update(locations[5]);
 }
 /* --- END COMBAT FUNCTIONS --- */
+
+/* --- Temp --- */
+//TODO: Move/comment function:
+/**
+ * Pick
+ *
+ * @function pick
+ * @param {string} guess Stuff.
+ */
+function pick(guess) {}
