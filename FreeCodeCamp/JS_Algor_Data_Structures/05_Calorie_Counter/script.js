@@ -67,6 +67,7 @@ function addEntry() {
     <input id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" type="text" />
     <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
     <input id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" type="number" min="0" />`;
+    targetInputContainer.innerHTML += HTMLString;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
