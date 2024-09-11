@@ -520,6 +520,13 @@ function lose() {
 /* --- END COMBAT FUNCTIONS --- */
 
 /* --- Temp --- */
+function pickTwo() {
+    pick(2);
+}
+
+function pickEight() {
+    pick(8);
+}
 //TODO: Move/comment function:
 /**
  * Pick
