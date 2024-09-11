@@ -34,6 +34,8 @@ let isError = false;
  * @function cleanInputString
  * @param {string} str Data from input.
  */
-function cleanInputString(str) {}
+function cleanInputString(str) {
+    const regex = /hello/;
+}
 
 /* --- END GLOBAL FUNCTIONS ---*/
