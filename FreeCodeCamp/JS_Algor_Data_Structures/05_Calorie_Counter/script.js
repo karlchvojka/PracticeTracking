@@ -24,3 +24,16 @@ const output = document.getElementById('output');
 /* --- APP DATA --- */
 let isError = false;
 /* --- END APP DATA --- */
+
+/* --- GLOBAL FUNCTIONS ---*/
+
+/**
+ * Clean Input String
+ *
+ * Remove non-numeric variables
+ * @function cleanInputString
+ * @param {string} str Data from input.
+ */
+function cleanInputString(str) {}
+
+/* --- END GLOBAL FUNCTIONS ---*/
