@@ -548,4 +548,6 @@ function pickEight() {
  * @function pick
  * @param {string} guess Stuff.
  */
-function pick(guess) {}
+function pick(guess) {
+    const numbers = [];
+}
