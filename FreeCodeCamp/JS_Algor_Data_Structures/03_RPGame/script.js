@@ -432,6 +432,17 @@ function attack() {
     }
 }
 
+// TODO: Decide if this is the right place for this function.
+/**
+ * Get monster attack value
+ *
+ * Handles getting a monster attack value
+ * @function getMonsterAttackValue
+ * @param {number} level Monsters level
+ * @returns {number} The Monsters Attack value
+ */
+function getMonsterAttackValue(level) {}
+
 /**
  * Dodge
  *
