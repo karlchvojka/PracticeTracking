@@ -46,11 +46,20 @@ function cleanInputString(str) {
  * Checks for invalid inputs
  * @function isInvalidInput
  * @param {string} str Data from input
- * @returns {array} Array from the match() return.
+ * @returns {array} Array from the match() return or null.
  */
 function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
     return str.match(regex);
+}
+
+/**
+ * Add Entry
+ *
+ * Allows user to add entries to the counter.
+ * @function addEntry
+ */
+function addEntry() {
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
