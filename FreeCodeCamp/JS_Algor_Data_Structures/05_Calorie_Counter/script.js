@@ -36,10 +36,8 @@ let isError = false;
  * @returns {string} sanitized string.
  */
 function cleanInputString(str) {
-    console.log("original string: ", str);
     const regex = /[+-\s]/g;
     return str.replace(regex, "");
 }
-console.log(cleanInputString("+-99"));
 
 /* --- END GLOBAL FUNCTIONS ---*/
