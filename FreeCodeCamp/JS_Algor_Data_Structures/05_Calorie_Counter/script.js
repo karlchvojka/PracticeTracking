@@ -65,7 +65,8 @@ function addEntry() {
     const HTMLString = `
     <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
     <input id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" type="text" />
-    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>`;
+    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+    <input id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" type="number" min="0" />`;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
