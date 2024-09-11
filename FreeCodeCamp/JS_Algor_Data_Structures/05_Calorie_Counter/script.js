@@ -81,11 +81,12 @@ function addEntry() {
  *
  * Will get calorie amounts from user inputs.
  * @function getCaloriesFromInputs
- * @param {} list unknown.
+ * @param {array} list NodeList of Inputs.
  * @returns {} unknown
  */
 function getCaloriesFromInputs(list) {
     let calories = 0;
+    for (const item of list) {}
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
