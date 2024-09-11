@@ -176,6 +176,16 @@ button3.onclick = fightDragon;
 
 /* --- GLOBAL FUNCTIONS */
 /**
+ * Easter Egg
+ *
+ * Shhh. Its a secret.
+ * @function easterEgg
+ */
+function easterEgg() {
+    update(locations[7]);
+}
+
+/**
  * Is Monster Hit
  *
  * Checks if Monster is hit
