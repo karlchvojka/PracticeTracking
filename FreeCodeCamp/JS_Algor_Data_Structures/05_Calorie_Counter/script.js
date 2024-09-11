@@ -20,3 +20,7 @@ const clearButton = document.getElementById('clear');
 const output = document.getElementById('output');
 
 /* --- END INTERFACE VARIABLES --*/
+
+/* --- APP DATA --- */
+let isError = false;
+/* --- END APP DATA --- */
