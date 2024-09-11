@@ -76,4 +76,15 @@ function addEntry() {
     targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
+/**
+ * Get Calories from Inputs.
+ *
+ * Will get calorie amounts from user inputs.
+ * @function getCaloriesFromInputs
+ * @param {} list unknown.
+ * @returns {} unknown
+ */
+function getCaloriesFromInputs(list) {
+}
+
 /* --- END GLOBAL FUNCTIONS ---*/
