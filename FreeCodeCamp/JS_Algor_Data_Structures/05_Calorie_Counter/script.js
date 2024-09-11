@@ -46,11 +46,11 @@ function cleanInputString(str) {
  * Checks for invalid inputs
  * @function isInvalidInput
  * @param {string} str Data from input
- * @returns {array} Regex matching result.
+ * @returns {array} Array from the match() return.
  */
 function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
     return str.match(regex);
 }
-
+console.log(isInvalidInput("1e3"));
 /* --- END GLOBAL FUNCTIONS ---*/
