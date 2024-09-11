@@ -281,8 +281,8 @@ function buyHealth() {
         health += 10;
 
         // Reassign Player variables for display.
-        gold.innerText = gold;
-        health.innerText = health;
+        goldText.innerText = gold;
+        healthText.innerText = health;
     } else {
         text.innerText = "You do not have enough gold to buy health."
     }
@@ -442,6 +442,8 @@ function sellWeapon() {
  * @function attack
  */
 function attack() {
+    text.innerText = "The " + monsters[fighting].name + " attacks.";
+    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
     // Update Player Variables
     health -= getMonsterAttackValue(monsters[fighting].level);
 
@@ -455,8 +457,6 @@ function attack() {
     // Update Display text
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
-    text.innerText = "The " + monsters[fighting].name + " attacks.";
-    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
 
     // If Player health is 0, call lose
     if (health <= 0) {
@@ -487,7 +487,6 @@ function attack() {
  */
 function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
-    console.log(hit);
     return hit > 0 ? hit : 0;
 }
 
