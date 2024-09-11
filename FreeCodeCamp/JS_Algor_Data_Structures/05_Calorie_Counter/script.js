@@ -91,11 +91,15 @@ function getCaloriesFromInputs(list) {
         const currVal = cleanInputString(item.value);
         const invalidInputMatch = isInvalidInput(currVal);
 
+        // If Input is invalid, send the user an alert and return null
         if (invalidInputMatch) {
             alert(`Invalid Input: ${invalidInputMatch[0]}`);
             isError = true;
             return null;
         }
+
+        // Else add currVal to calories;
+        calories += Number(currVal);
     }
 }
 
