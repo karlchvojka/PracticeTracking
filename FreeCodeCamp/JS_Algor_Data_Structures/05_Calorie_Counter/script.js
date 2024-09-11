@@ -35,7 +35,7 @@ let isError = false;
  * @param {string} str Data from input.
  */
 function cleanInputString(str) {
-    const regex = /hello/;
+    const regex = /\+-/;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
