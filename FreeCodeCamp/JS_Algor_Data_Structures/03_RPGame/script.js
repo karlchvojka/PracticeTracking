@@ -444,6 +444,9 @@ function attack() {
             defeatMonster();
         }
     }
+
+    // Check if weapon breaks
+    if (Math.random() <= .1) {}
 }
 
 // TODO: Decide if this is the right place for this function.
