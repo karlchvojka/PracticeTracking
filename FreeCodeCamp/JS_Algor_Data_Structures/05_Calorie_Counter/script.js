@@ -124,6 +124,7 @@ function calculateCalories(e) {
 
     // Pull Calorie numbers from inputs
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
