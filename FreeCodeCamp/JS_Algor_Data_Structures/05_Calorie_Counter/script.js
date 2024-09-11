@@ -85,6 +85,7 @@ function addEntry() {
  * @returns {} unknown
  */
 function getCaloriesFromInputs(list) {
+    let calories = 0;
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
