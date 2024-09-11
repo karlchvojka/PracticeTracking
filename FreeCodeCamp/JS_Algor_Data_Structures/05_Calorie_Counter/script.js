@@ -30,12 +30,14 @@ let isError = false;
 /**
  * Clean Input String
  *
- * Remove non-numeric variables
+ * Remove +, -, and whitespace variables
  * @function cleanInputString
  * @param {string} str Data from input.
+ * @returns {string} sanitized string.
  */
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
+    return str.replace(regex, "");
 }
 
 /* --- END GLOBAL FUNCTIONS ---*/
