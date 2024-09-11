@@ -105,6 +105,20 @@ const locations = [
             "REPLAY?"
         ],
         text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
+    },
+    {
+        name: "easter egg",
+        "button func": [
+            pickTwo,
+            pickEight,
+            goTown
+        ],
+        "button text": [
+            "2",
+            "8",
+            "Go to town square?"
+        ],
+        text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"
     }
 ];
 const monsters = [
