@@ -148,4 +148,11 @@ function getCaloriesFromInputs(list) {
     return calories;
 }
 
+/**
+ * Clear Form
+ *
+ * Resets form
+ * @function clearForm
+ */
+function clearForm() {}
 /* --- END GLOBAL FUNCTIONS ---*/
