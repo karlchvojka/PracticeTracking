@@ -163,5 +163,6 @@ function clearForm() {
     }
 
     budgetNumberInput.value = "";
+    output.innerText = "";
 }
 /* --- END GLOBAL FUNCTIONS ---*/
