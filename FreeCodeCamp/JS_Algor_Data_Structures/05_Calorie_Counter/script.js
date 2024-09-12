@@ -6,7 +6,7 @@
 
 /* --- INTERFACE VARIABLES --- */
 
-const caldorieCounter = document.getElementById('calorie-counter');
+const calorieCounter = document.getElementById('calorie-counter');
 
 // Input Element Variables
 const budgetNumberInput = document.getElementById('budget');
@@ -28,6 +28,7 @@ let isError = false;
 /* --- EVENT LISTENER ATTACHMENTS --- */
 
 addEntryButton.addEventListener("click", addEntry);
+calorieCounter.addEventListener("submit", addEntry);
 
 /* --- END EVENT LISTENER ATTACMENTS --- */
 
