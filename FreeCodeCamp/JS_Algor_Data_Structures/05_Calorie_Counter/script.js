@@ -154,5 +154,7 @@ function getCaloriesFromInputs(list) {
  * Resets form
  * @function clearForm
  */
-function clearForm() {}
+function clearForm() {
+    const inputContainers = document.querySelectorAll('.input-container');
+}
 /* --- END GLOBAL FUNCTIONS ---*/
