@@ -156,8 +156,12 @@ function getCaloriesFromInputs(list) {
  */
 function clearForm() {
     const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+
+    // Reset all form fields
     for (const container of inputContainers) {
         container.innerHTML = "";
     }
+
+    budgetNumberInput.value = "";
 }
 /* --- END GLOBAL FUNCTIONS ---*/
