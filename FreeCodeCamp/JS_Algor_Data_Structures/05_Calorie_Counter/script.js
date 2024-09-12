@@ -28,7 +28,8 @@ let isError = false;
 /* --- EVENT LISTENER ATTACHMENTS --- */
 
 addEntryButton.addEventListener("click", addEntry);
-calorieCounter.addEventListener("submit", addEntry);
+calorieCounter.addEventListener("submit", calculateCalories);
+clearButton.addEventListener("click", clearForm);
 
 /* --- END EVENT LISTENER ATTACMENTS --- */
 
