@@ -11,6 +11,9 @@ const roundResultsMsg = document.getElementById("results-msg");
 const winnerMsgElement = document.getElementById("winner-msg");
 const optionsContainer = document.querySelector(".options-container");
 const resetGameBtn = document.getElementById("reset-game-btn");
+const rockBtn = document.getElementById("rock-btn");
+const paperBtn = document.getElementById("paper-btn");
+const scissorsBtn = document.getElementById("scissors-btn");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
@@ -46,7 +49,7 @@ function hasPlayerWonTheRound(player, computer) {
  */
 function getRoundResults(userOption) {
     const computerResult = getRandomComputerResult();
-    const playerResult = hasPlayerWonTheRound(userOption);
+    const playerResult = hasPlayerWonTheRound(userOption, computerResult);
 
     if (playerResult) {
         playerScore++;
@@ -100,6 +103,22 @@ function resetGame() {
     roundResultsMsg.innerText = "";
 }
 /* --- END GAME LOGIC --- */
+
+/* --- EVENT LISTENERS --- */
+resetGameBtn.addEventListener('click', resetGame);
+
+rockBtn.addEventListener('click', function() {
+    showResults("Rock");
+});
+
+paperBtn.addEventListener('click', function() {
+    showResults("Paper");
+});
+
+scissorsBtn.addEventListener('click', function() {
+    showResults("Scissors"); 
+});
+/* --- END EVENT LISTENERS --- */
 
 /* --- COMPUTER PLAYER FUNCTIONS --- */
 
