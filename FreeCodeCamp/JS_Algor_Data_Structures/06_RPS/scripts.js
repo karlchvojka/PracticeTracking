@@ -4,9 +4,29 @@
  *  Rock Paper Scissors game project from the 'JS Algorithms and Data Structures' section of the FCC Curriculum
  */
 
-/* -- INTERFACE VARIABLES -- */
+/* --- INTERFACE VARIABLES --- */
 
-/* --- END INTERFACE VARIABLES ---*/
+/* --- END INTERFACE VARIABLES --- */
+
+/* --- GAME LOGIC --- */
+/**
+ * Has Player won the round.
+ *
+ * Check if player has won the round.
+ * @function hasPlayerWonTheRound
+ * @param {string} player The Players selection
+ * @param {string} computer The Computers option
+ * @returns {boolean} Round result
+ */
+function hasPlayerWonTheRound(player, computer) {
+    return (
+        (player === "Rock" && computer === "Scissors") ||
+        (player === "Scissors" && computer === "Paper") ||
+        (player === "Paper" && computer === "Rock")
+    );
+}
+
+/* --- END GAME LOGIC --- */
 
 /* --- COMPUTER PLAYER FUNCTIONS --- */
 
@@ -20,9 +40,8 @@
 function getRandomComputerResult() {
     const options = ["Rock", "Paper", "Scissors"];
     
-    const guess = Math.floor(Math.random() * 3 + 0);
-    return options[guess];
+    const randomIndex = Math.floor(Math.random() * options.length);
+    return options[randomIndex];
 }
 
-console.log(getRandomComputerResult());
 /* --- END COMPUTER PLAYER FUNCTIONS --- */
