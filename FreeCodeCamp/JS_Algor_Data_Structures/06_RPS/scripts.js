@@ -81,6 +81,24 @@ function showResults(userOption) {
         optionsContainer.style.display = "none";
     }
 }
+
+/**
+ * Reset the Game
+ *
+ * Resets the game and the interface.
+ * @function resetGame
+ * @returns
+ */
+function resetGame() {
+    computerScore = 0;
+    playerScore = 0;
+    computerScoreSpanElement.innerText = computerScore;
+    playerScoreSpanElement.innerText = playerScore;
+    resetGameBtn.style.display = "none";
+    optionsContainer.style.display = "block";
+    winnerMsgElement.innerText = "";
+    roundResultsMsg.innerText = "";
+}
 /* --- END GAME LOGIC --- */
 
 /* --- COMPUTER PLAYER FUNCTIONS --- */
