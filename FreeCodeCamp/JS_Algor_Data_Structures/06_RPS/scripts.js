@@ -6,6 +6,10 @@
 
 /* --- INTERFACE VARIABLES --- */
 
+/* Score Tracking */
+let playerScore = 0;
+let computerScore = 0;
+
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- GAME LOGIC --- */
@@ -24,6 +28,29 @@ function hasPlayerWonTheRound(player, computer) {
         (player === "Scissors" && computer === "Paper") ||
         (player === "Paper" && computer === "Rock")
     );
+}
+
+/**
+ * Get Round Results
+ *
+ * Get the results of the round.
+ * @function getRoundResults
+ * @param {string} userOption The Players selection
+ * @returns {string} String with a message and result
+ */
+function getRoundResults(userOption) {
+    const computerResult = getRandomComputerResult();
+    const playerResult = hasPlayerWonTheRound(userOption);
+
+    if (playerResult) {
+        playerScore++;
+        return `Player wins! ${userOption} beats ${computerResult}`;
+    } else if (computerResult === userOption) {
+       return `It's a tie! Both chose ${userOption}`;
+    } else {
+        computerScore++;
+        return `Computer wins! ${computerResult} beats ${userOption}`;
+    }
 }
 
 /* --- END GAME LOGIC --- */
