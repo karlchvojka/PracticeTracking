@@ -5,12 +5,15 @@
  */
 
 /* --- INTERFACE VARIABLES --- */
+const playerScoreSpanElement = document.getElementById("player-score");
+const computerScoreSpanElement = document.getElementById("computer-score");
+const roundResultsMsg = document.getElementById("results-msg");
+/* --- END INTERFACE VARIABLES --- */
 
-/* Score Tracking */
+/* --- APP DATA --- */
 let playerScore = 0;
 let computerScore = 0;
-
-/* --- END INTERFACE VARIABLES --- */
+/* --- END APP DATA --- */
 
 /* --- GAME LOGIC --- */
 /**
@@ -53,6 +56,20 @@ function getRoundResults(userOption) {
     }
 }
 
+/**
+ *  Show Results
+ *
+ *  Show round results message
+ *  @function showResults
+ *  @param {string} userOption The Players Selection
+ *  @returns {string} Round Results Message
+ */ 
+function showResults(userOption) {
+    roundResultsMsg.innerText = getRoundResults(userOption);
+    computerScoreSpanElement.innerText = computerScore;
+    playerScoreSpanElement.innerText = playerScore;
+}
+showResults("Rock");
 /* --- END GAME LOGIC --- */
 
 /* --- COMPUTER PLAYER FUNCTIONS --- */
