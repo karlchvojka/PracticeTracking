@@ -8,5 +8,16 @@
 
 /* --- END INTERFACE VARIABLES ---*/
 
-/* --- GLOBAL FUNCTIONS --- */
-/* --- END GLOBAL FUNCTIONS --- */
+/* --- COMPUTER PLAYER FUNCTIONS --- */
+
+/**
+ * Get Random Computer Result
+ *
+ * Chooses the Computer player's option for current round
+ * @function getRandomComputerResult
+ * @returns {string} Computer option.
+ */
+function getRandomComputerResult() {
+    const options = ["Rock", "Paper", "Scissors"];
+}
+/* --- END COMPUTER PLAYER FUNCTIONS --- */
