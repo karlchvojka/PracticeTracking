@@ -19,5 +19,10 @@
  */
 function getRandomComputerResult() {
     const options = ["Rock", "Paper", "Scissors"];
+    
+    const guess = Math.floor(Math.random() * 3 + 0);
+    return options[guess];
 }
+
+console.log(getRandomComputerResult());
 /* --- END COMPUTER PLAYER FUNCTIONS --- */
