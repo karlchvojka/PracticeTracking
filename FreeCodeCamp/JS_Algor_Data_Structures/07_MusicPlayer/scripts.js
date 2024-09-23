@@ -97,6 +97,10 @@ let userData = {
 const audio = new Audio();
 /* --- END GLOBAL APP VARIABLES --- */
 
+/* --- EVENT LISTENERS --- */
+playButton.addEventListener("click", () => {});
+/* --- END EVENT LISTENERS --- */
+
 /* --- APP LOGIC --- */
 
 /**
