@@ -110,7 +110,6 @@ const getCurrentSongIndex = () => {
     return userData?.songs.indexOf(userData?.currentSong);
 };
 
-// TODO: Flush out function documentation
 /**
  * Highlight Current Song
  *
@@ -179,6 +178,7 @@ const playSong = (id) => {
     userData.currentSong = song;
 
     playButton.classList.add("playing");
+    highlightCurrentSong();
     audio.play();
 };
 
