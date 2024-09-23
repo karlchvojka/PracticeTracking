@@ -24,6 +24,7 @@ const checkString = (userInput) => {
 
     /* --- Function Variables --- */
     const origInput = userInput;
+    let resultMessage = "";
     let reversedString = "";
     /* --- End Function Variables --- */
 
@@ -45,9 +46,16 @@ const checkString = (userInput) => {
 
     // Reverse cleaned string.
     reversedString = [...cleanResult].reverse().join('');
-    console.log("Sanitized: ", cleanResult);
-    console.log("reversed: ", reversedString);
 
+    // Check for palindrome:
+    if (cleanResult === reversedString) {
+        resultMessage = `<p>${origInput} is a palindrome.</p>`;
+    } else {
+        resultMessage = `<p>${origInput} is not a palindrome.</p>`;
+    }
+    console.log("Orig: ", origInput);
+    console.log("Rev: ", reversedString);
+    console.log(resultMessage);
     /* --- End Function Logic --- */
 }
 
