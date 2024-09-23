@@ -46,16 +46,15 @@ const checkString = (userInput) => {
 
     // Reverse cleaned string.
     reversedString = [...cleanResult].reverse().join('');
-
     // Check for palindrome:
     if (cleanResult === reversedString) {
         resultMessage = `<p>${origInput} is a palindrome.</p>`;
     } else {
         resultMessage = `<p>${origInput} is not a palindrome.</p>`;
     }
-    console.log("Orig: ", origInput);
-    console.log("Rev: ", reversedString);
-    console.log(resultMessage);
+
+    // Return result message
+    result.innerHTML = resultMessage;
     /* --- End Function Logic --- */
 }
 
