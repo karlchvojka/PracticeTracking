@@ -232,8 +232,12 @@ const renderSongs = (array) => {
  * @function setPlayerDisplay
  */
 const setPlayerDisplay = () => {
+    // Interface Element Selectors
     const playingSong = document.getElementById("player-song-title");
     const songArtist = document.getElementById("player-song-artist");
+    // Function data Variables
+    const currentArtist = userData?.currentSong?.artist;
+    const currentTitle = userData?.currentSong?.title;
 };
 
 /**
