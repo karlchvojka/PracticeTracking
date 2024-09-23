@@ -232,7 +232,9 @@ const renderSongs = (array) => {
  * Sets Play Button Accessible text
  * @function setPlayButtonAccessibleText
  */
-const setPlayButtonAccessibleText = () => {};
+const setPlayButtonAccessibleText = () => {
+    const song = userData?.currentSong || userData?.songs[0];
+};
 
 /**
  * Set Player Display
