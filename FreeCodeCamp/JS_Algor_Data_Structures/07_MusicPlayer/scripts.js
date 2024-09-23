@@ -126,12 +126,12 @@ const renderSongs = (array) => {
     playlistSongs.innerHTML = songsHTML;
 };
 
-// TODO: Finish docs of sortSongs function.
 /**
  * Sort Songs
  *
  * Sorts songs in playlist by title.
  * @function sortSongs
+ * @returns {array} Songs array sorted alphabetically.
  */
 const sortSongs = () => {
     userData?.songs.sort((a, b) => {
@@ -151,4 +151,4 @@ const sortSongs = () => {
 
 /* --- END APP LOGIC --- */
 
-renderSongs(userData?.songs);
+renderSongs(sortSongs());
