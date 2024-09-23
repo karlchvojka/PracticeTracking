@@ -107,7 +107,9 @@ const audio = new Audio();
  * @function playSong
  * @param {number} id Number representing the ID of a song.
  */
-const playSong = (id) => {};
+const playSong = (id) => {
+    const song = userData?.songs.find((song) => song.id === id);
+};
 
 /**
  * Render the songs.
