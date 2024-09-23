@@ -96,3 +96,7 @@ let userData = {
 /* --- GLOBAL APP VARIABLES --- */
 const audio = new Audio();
 /* --- END GLOBAL APP VARIABLES --- */
+
+const printGreeting = () => {
+    console.log("Hello there!");
+}
