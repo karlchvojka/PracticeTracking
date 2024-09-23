@@ -256,6 +256,15 @@ const setPlayerDisplay = () => {
 };
 
 /**
+ * Shuffle
+ *
+ * Handles shuffle button functionality.
+ * @function shuffle
+ */
+const shuffle = () => {
+}
+
+/**
  * Sort Songs
  *
  * Sorts songs in playlist by title.
