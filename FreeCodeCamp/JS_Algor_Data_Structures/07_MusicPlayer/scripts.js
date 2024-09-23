@@ -8,7 +8,7 @@
 const nextButton = document.getElementById("next");
 const pauseButton = document.getElementById("pause");
 const playButton = document.getElementById("play");
-const playlistSongs = document.getElementById("playlistSongs");
+const playlistSongs = document.getElementById("playlist-songs");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 /* --- END INTERFACE VARIABLES --- */
@@ -99,14 +99,13 @@ const audio = new Audio();
 
 /* --- APP LOGIC --- */
 
-// TODO: FINISH FILLING OUT FUNCTIONS
 /**
  * Render the songs.
  *
  * Renders the songs into the playlist
  * @function renderSongs
  * @param {array} Array Array of songs
- * @returns {string} TBD
+ * @returns {string} Represents each song in the Songs array
  */
 const renderSongs = (array) => {
     const songsHTML = array.map((song) => {
@@ -125,6 +124,8 @@ const renderSongs = (array) => {
     }).join("");
 
     playlistSongs.innerHTML = songsHTML;
-}
+};
 
 /* --- END APP LOGIC --- */
+
+renderSongs(userData?.songs);
