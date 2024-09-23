@@ -96,3 +96,18 @@ let userData = {
 /* --- GLOBAL APP VARIABLES --- */
 const audio = new Audio();
 /* --- END GLOBAL APP VARIABLES --- */
+
+/* --- APP LOGIC --- */
+
+// TODO: FINISH FILLING OUT FUNCTIONS
+/**
+ * Render the songs.
+ *
+ * Renders the songs into the playlist
+ * @function renderSongs
+ * @param {array} Array Array of songs
+ * @returns {string} TBD
+ */
+const renderSongs = (array) => {}
+
+/* --- END APP LOGIC --- */
