@@ -87,6 +87,8 @@ const allSongs = [
     }
 ];
 let userData = {
+    currentSong: null,
+    songCurrentTime: 0,
     songs: [...allSongs]
 };
 /* --- END APP DATA --- */
