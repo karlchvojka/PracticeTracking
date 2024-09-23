@@ -97,16 +97,6 @@ let userData = {
 const audio = new Audio();
 /* --- END GLOBAL APP VARIABLES --- */
 
-/* --- EVENT LISTENERS --- */
-playButton.addEventListener("click", () => {
-    if (userData?.currentSong === null) {
-        playSong(userData?.songs[0].id);
-    } else {
-        playSong(userData?.currentSong.id);
-    }
-});
-/* --- END EVENT LISTENERS --- */
-
 /* --- APP LOGIC --- */
 
 /**
@@ -133,7 +123,6 @@ const playSong = (id) => {
     audio.play();
 };
 
-// TODO: Flush out pauseSong documentation
 /**
  * Pause song
  *
@@ -197,5 +186,18 @@ const sortSongs = () => {
 };
 
 /* --- END APP LOGIC --- */
+
+/* --- EVENT LISTENERS --- */
+
+playButton.addEventListener("click", () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[0].id);
+    } else {
+        playSong(userData?.currentSong.id);
+    }
+});
+
+pauseButton.addEventListener("click", pauseSong);
+/* --- END EVENT LISTENERS --- */
 
 renderSongs(sortSongs());
