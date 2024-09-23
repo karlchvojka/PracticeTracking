@@ -117,6 +117,8 @@ const deleteSong = (id) => {
     renderSongs(userData?.songs);
     highlightCurrentSong();
     setPlayButtonAccessibleText();
+    if (userData?.songs.length === 0) {
+    }
 };
 
 /**
