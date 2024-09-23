@@ -14,5 +14,14 @@ const shuffleButton = document.getElementById("shuffle");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
-const allSongs = [];
+const allSongs = [
+    {
+        id: 0,
+        title: "Scratching The Surface",
+        artist: "Quincy Larson",
+        duration: "4:25",
+        src: "https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3"
+    }
+];
+
 /* --- END APP DATA --- */
