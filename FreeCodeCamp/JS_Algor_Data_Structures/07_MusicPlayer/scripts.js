@@ -140,7 +140,9 @@ const playSong = (id) => {
  * Pauses the currently playing song
  * @function pauseSong
  */
-const pauseSong = () => {};
+const pauseSong = () => {
+    userData.songCurrentTime = audio.currentTime;
+};
 
 /**
  * Render the songs.
