@@ -98,7 +98,11 @@ const audio = new Audio();
 /* --- END GLOBAL APP VARIABLES --- */
 
 /* --- EVENT LISTENERS --- */
-playButton.addEventListener("click", () => {});
+playButton.addEventListener("click", () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[0].id);
+    }
+});
 /* --- END EVENT LISTENERS --- */
 
 /* --- APP LOGIC --- */
