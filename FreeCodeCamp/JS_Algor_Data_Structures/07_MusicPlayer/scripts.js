@@ -133,6 +133,15 @@ const playSong = (id) => {
     audio.play();
 };
 
+// TODO: Flush out pauseSong documentation
+/**
+ * Pause song
+ *
+ * Pauses the currently playing song
+ * @function pauseSong
+ */
+const pauseSong = () => {};
+
 /**
  * Render the songs.
  *
