@@ -128,7 +128,13 @@ const pauseSong = () => {
  * Handles click event for the previous button
  * @function playPreviousSong
  */
-const playPreviousSong = () => {};
+const playPreviousSong = () => {
+    if (userData?.currentSong === null) {
+        return;
+    } else {
+        const currentSongIndex = getCurrentSongIndex();
+    }
+};
 
 /**
  * Play Song
