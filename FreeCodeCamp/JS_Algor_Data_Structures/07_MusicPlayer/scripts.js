@@ -134,6 +134,15 @@ const playSong = (id) => {
     audio.play();
 };
 
+// TODO: Flush out playNextSong Docs
+/**
+ * Play Next Song
+ *
+ * Plays the next song in the playlist.
+ * @function playNextSong
+ */
+const playNextSong = () => {};
+
 /**
  * Pause song
  *
