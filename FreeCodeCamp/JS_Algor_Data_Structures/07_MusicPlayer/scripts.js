@@ -226,6 +226,14 @@ const renderSongs = (array) => {
 };
 
 /**
+ * Set Player Display
+ *
+ * Sets Player Display
+ * @function setPlayerDisplay
+ */
+const setPlayerDisplay = () => {};
+
+/**
  * Sort Songs
  *
  * Sorts songs in playlist by title.
