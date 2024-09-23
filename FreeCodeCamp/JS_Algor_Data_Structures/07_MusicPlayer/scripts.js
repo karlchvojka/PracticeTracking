@@ -312,6 +312,8 @@ playButton.addEventListener("click", () => {
     }
 });
 
+shuffleButton.addEventListener("click", shuffle);
+
 /* --- END EVENT LISTENERS --- */
 
 renderSongs(sortSongs());
