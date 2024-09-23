@@ -123,6 +123,14 @@ const pauseSong = () => {
 };
 
 /**
+ * Play Previous Song
+ *
+ * Handles click event for the previous button
+ * @function playPreviousSong
+ */
+const playPreviousSong = () => {};
+
+/**
  * Play Song
  *
  * Plays a song, chosen by ID.
