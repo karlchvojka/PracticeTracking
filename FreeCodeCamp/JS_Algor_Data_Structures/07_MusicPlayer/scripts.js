@@ -5,7 +5,10 @@
  */
 
 /* --- INTERFACE VARIABLES --- */
+const nextButton = document.getElementById("next");
+const pauseButton = document.getElementById("pause");
 const playButton = document.getElementById("play");
 const playlistSongs = document.getElementById("playlistSongs");
-const pauseButton = document.getElementById("pause");
+const previousButton = document.getElementById("previous");
+const shuffleButton = document.getElementById("shuffle");
 /* --- END INTERFACE VARIABLES --- */
