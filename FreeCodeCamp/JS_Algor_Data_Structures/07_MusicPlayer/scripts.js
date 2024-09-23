@@ -122,7 +122,7 @@ const renderSongs = (array) => {
                     </svg>
                 </button>
             </li>`;
-    });
+    }).join("");
 }
 
 /* --- END APP LOGIC --- */
