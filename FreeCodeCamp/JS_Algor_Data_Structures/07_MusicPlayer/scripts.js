@@ -108,6 +108,8 @@ const audio = new Audio();
  * @param {array} Array Array of songs
  * @returns {string} TBD
  */
-const renderSongs = (array) => {}
+const renderSongs = (array) => {
+    const songsHTML = array.map();
+}
 
 /* --- END APP LOGIC --- */
