@@ -31,6 +31,9 @@ body {
 /* --- END ELEMENT STYLES */
 
 /* --- STYLES */
+#result {
+    min-height: 50px;
+}
 /* --- END STYLES */
 
 /* --- MEDIA QUERIES */
