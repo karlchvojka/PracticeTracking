@@ -101,6 +101,8 @@ const audio = new Audio();
 playButton.addEventListener("click", () => {
     if (userData?.currentSong === null) {
         playSong(userData?.songs[0].id);
+    } else {
+        playSong(userData?.currentSong.id);
     }
 });
 /* --- END EVENT LISTENERS --- */
