@@ -111,6 +111,18 @@ const getCurrentSongIndex = () => {
 };
 
 /**
+ * Pause Song
+ *
+ * Pauses the currently playing song
+ * @function pauseSong
+ */
+const pauseSong = () => {
+    userData.songCurrentTime = audio.currentTime;
+    playButton.classList.remove("playing");
+    audio.pause();
+};
+
+/**
  * Play Song
  *
  * Plays a song, chosen by ID.
@@ -134,7 +146,6 @@ const playSong = (id) => {
     audio.play();
 };
 
-// TODO: Flush out playNextSong Docs
 /**
  * Play Next Song
  *
@@ -149,18 +160,6 @@ const playNextSong = () => {
         const nextSong = userData?.songs[currentSongIndex + 1];
         playSong(nextSong.id);
     }
-};
-
-/**
- * Pause song
- *
- * Pauses the currently playing song
- * @function pauseSong
- */
-const pauseSong = () => {
-    userData.songCurrentTime = audio.currentTime;
-    playButton.classList.remove("playing");
-    audio.pause();
 };
 
 /**
@@ -216,6 +215,8 @@ const sortSongs = () => {
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
+
+nextButton.addEventListener("click", playNextSong);
 
 playButton.addEventListener("click", () => {
     if (userData?.currentSong === null) {
