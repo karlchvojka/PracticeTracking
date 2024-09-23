@@ -12,3 +12,7 @@ const playlistSongs = document.getElementById("playlistSongs");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 /* --- END INTERFACE VARIABLES --- */
+
+/* --- APP DATA --- */
+const allSongs = [];
+/* --- END APP DATA --- */
