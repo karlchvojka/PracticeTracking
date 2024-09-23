@@ -133,7 +133,9 @@ const renderSongs = (array) => {
  * Sorts songs in playlist by title.
  * @function sortSongs
  */
-const sortSongs = () => {};
+const sortSongs = () => {
+    userData?.songs.sort();
+};
 
 /* --- END APP LOGIC --- */
 
