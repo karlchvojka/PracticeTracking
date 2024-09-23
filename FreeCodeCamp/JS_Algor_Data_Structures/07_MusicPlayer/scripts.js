@@ -99,7 +99,6 @@ const audio = new Audio();
 
 /* --- APP LOGIC --- */
 
-// TODO: Flush out remaining docs.
 /**
  * Play Song
  *
@@ -119,6 +118,9 @@ const playSong = (id) => {
     }
 
     userData.currentSong = song;
+
+    playButton.classList.add("playing");
+    audio.play();
 };
 
 /**
