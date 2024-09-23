@@ -100,3 +100,4 @@ const audio = new Audio();
 const printGreeting = () => {
     console.log("Hello there!");
 }
+printGreeting();
