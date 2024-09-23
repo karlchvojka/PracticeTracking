@@ -99,6 +99,15 @@ const audio = new Audio();
 
 /* --- APP LOGIC --- */
 
+// TODO: Flush out getCurrentSongIndex docs
+/**
+ * Get Current Song Index
+ *
+ * Gets the current song index
+ * @function getCurrentSongIndex
+ */
+const getCurrentSongIndex = () => {};
+
 /**
  * Play Song
  *
