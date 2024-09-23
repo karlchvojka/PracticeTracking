@@ -238,6 +238,8 @@ const setPlayerDisplay = () => {
     // Function data Variables
     const currentArtist = userData?.currentSong?.artist;
     const currentTitle = userData?.currentSong?.title;
+    playingSong.textContent = currentTitle ? currentTitle : "";
+    songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
 /**
