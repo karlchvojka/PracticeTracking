@@ -134,7 +134,7 @@ const renderSongs = (array) => {
  * @function sortSongs
  */
 const sortSongs = () => {
-    userData?.songs.sort();
+    userData?.songs.sort((a, b) => {});
 };
 
 /* --- END APP LOGIC --- */
