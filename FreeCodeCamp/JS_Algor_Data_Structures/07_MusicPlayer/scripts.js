@@ -332,7 +332,10 @@ const sortSongs = () => {
 
 /* --- EVENT LISTENERS --- */
 
-audio.addEventListener("ended", () => {});
+audio.addEventListener("ended", () => {
+    const currentSongIndex = getCurrentSongIndex();
+    const nextSongExists = userData?.songs[currentSongIndex + 1] ? true : false;
+});
 
 nextButton.addEventListener("click", playNextSong);
 
