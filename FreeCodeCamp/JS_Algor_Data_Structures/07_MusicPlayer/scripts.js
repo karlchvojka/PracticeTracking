@@ -106,7 +106,9 @@ const audio = new Audio();
  * @function deleteSong
  * @param {number} id Song id to be deleted.
  */
-const deleteSong = (id) => {};
+const deleteSong = (id) => {
+    userData.songs = userData?.songs.filter((song) => song.id !== id);
+};
 
 /**
  * Get Current Song Index
