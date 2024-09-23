@@ -6,8 +6,9 @@
 
 /* --- INTERFACE VARIABLES --- */
 const paliCheckForm = document.getElementById("palindrome-check-form");
-const userInput = document.getElementById("text-input");
+const result = document.getElementById("result");
 const submitButton = document.getElementById("check-btn");
+const userInput = document.getElementById("text-input");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP LOGIC --- */
@@ -17,18 +18,31 @@ const submitButton = document.getElementById("check-btn");
  *
  * Checks the submitted string to see if its a palintrome.
  * @function checkString
- * @param {event} event Form Submit Event.
+ * @param {string} userEvent Text passed into the form.
  */
-const checkString = (input) => {
-    console.log("Function Test");
-    console.log(input);
+const checkString = (userInput) => {
+    /*
+     * Check if userInput is empty.
+     * If so, show an alert and end function
+     */
+    if (userInput === "") {
+        alert("Please input a value");
+        return
+    }
+
+    // Empty results div
+    result.replaceChildren();
+
+    // Sanitize string by removing non-alphanumeric and making string lowercase
+    const cleanResult = userInput.replace(/[^A-Za-z0-9]/gi, "").toLowerCase();
+    console.log("Sanitized: ", cleanResult);
 }
 
 /* --- END APP LOGIC  --- */
 
 /* --- EVENT LISTENERS --- */
-paliCheckForm.addEventListener("submit", (event) => {
+paliCheckForm.addEventListener("submit", (e) => {
     checkString(userInput.value);
-    event.preventDefault();
+    e.preventDefault();
 });
 /* --- END EVENT LISTENERS --- */
