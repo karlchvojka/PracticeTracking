@@ -227,6 +227,14 @@ const renderSongs = (array) => {
 };
 
 /**
+ * Set Play Button Accessible Text
+ *
+ * Sets Play Button Accessible text
+ * @function setPlayButtonAccessibleText
+ */
+const setPlayButtonAccessibleText = () => {};
+
+/**
  * Set Player Display
  *
  * Sets Player Display
