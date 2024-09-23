@@ -335,6 +335,9 @@ const sortSongs = () => {
 audio.addEventListener("ended", () => {
     const currentSongIndex = getCurrentSongIndex();
     const nextSongExists = userData?.songs[currentSongIndex + 1] ? true : false;
+    if (nextSongExists) {
+        playNextSong();
+    }
 });
 
 nextButton.addEventListener("click", playNextSong);
