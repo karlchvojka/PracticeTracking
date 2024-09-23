@@ -332,6 +332,8 @@ const sortSongs = () => {
 
 /* --- EVENT LISTENERS --- */
 
+audio.addEventListener("ended", () => {});
+
 nextButton.addEventListener("click", playNextSong);
 
 pauseButton.addEventListener("click", pauseSong);
