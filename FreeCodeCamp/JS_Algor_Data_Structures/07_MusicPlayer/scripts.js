@@ -100,6 +100,15 @@ const audio = new Audio();
 /* --- APP LOGIC --- */
 
 /**
+ * Delete song
+ *
+ * Deletes song from playlist
+ * @function deleteSong
+ * @param {number} id Song id to be deleted.
+ */
+const deleteSong = (id) => {};
+
+/**
  * Get Current Song Index
  *
  * Gets the current song index
