@@ -1,0 +1,53 @@
+/* --- GLOBAL CSS --- */
+
+/* --- CSS RESETS --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    z-index: auto;
+}
+
+html {
+    /* Set default font size. Represents 1rem */
+    font-size: 16px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+/* --- END CSS RESETS --- */
+
+/* --- END GLOBAL CSS --- */
+
+/* --- FONT STYLES --- */
+/* --- END FONT STYLES --- */
+
+/* --- ELEMENT STYLES --- */
+/* --- END ELEMENT STYLES */
+
+/* --- STYLES */
+/* --- END STYLES */
+
+/* --- MEDIA QUERIES */
+
+/* --- Mobile Styles (SM) --- */
+@media (min-width: 640px) {
+}
+
+/* --- Medium Styles (MD) --- */
+@media (min-width: 768px) {
+}
+
+/* --- Large Styles (LG) --- */
+@media (min-width: 1024px) {
+}
+
+/* --- Extra large Styles (XL) --- */
+@media (min-width: 1280px) {
+}
+/* --- END MEDIA QUERIES --- */
