@@ -6,7 +6,7 @@
 
 /* --- INTERFACE VARIABLES --- */
 const paliCheckForm = document.getElementById("palindrome-check-form");
-const stringInput = document.getElementById("text-input");
+const userInput = document.getElementById("text-input");
 const submitButton = document.getElementById("check-btn");
 /* --- END INTERFACE VARIABLES --- */
 
@@ -19,13 +19,16 @@ const submitButton = document.getElementById("check-btn");
  * @function checkString
  * @param {event} event Form Submit Event.
  */
-const checkString = (event) => {
-    console.log("Test");
-    event.preventDefault();
+const checkString = (input) => {
+    console.log("Function Test");
+    console.log(input);
 }
 
 /* --- END APP LOGIC  --- */
 
 /* --- EVENT LISTENERS --- */
-paliCheckForm.addEventListener("submit", checkString);
+paliCheckForm.addEventListener("submit", (event) => {
+    checkString(userInput.value);
+    event.preventDefault();
+});
 /* --- END EVENT LISTENERS --- */
