@@ -141,7 +141,11 @@ const playSong = (id) => {
  * Plays the next song in the playlist.
  * @function playNextSong
  */
-const playNextSong = () => {};
+const playNextSong = () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[0].id);
+    }
+};
 
 /**
  * Pause song
