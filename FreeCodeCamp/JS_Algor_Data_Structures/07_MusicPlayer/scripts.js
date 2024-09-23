@@ -99,6 +99,16 @@ const audio = new Audio();
 
 /* --- APP LOGIC --- */
 
+// TODO: Flush out remaining docs.
+/**
+ * Play Song
+ *
+ * Plays a song, chosen by ID.
+ * @function playSong
+ * @param {number} id Number representing the ID of a song.
+ */
+const playSong = (id) => {};
+
 /**
  * Render the songs.
  *
