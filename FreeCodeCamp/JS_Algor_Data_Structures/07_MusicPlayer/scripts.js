@@ -110,6 +110,18 @@ const getCurrentSongIndex = () => {
     return userData?.songs.indexOf(userData?.currentSong);
 };
 
+// TODO: Flush out function documentation
+/**
+ * Highlight Current Song
+ *
+ * Highlights the current song being played
+ * @function highlightCurrentSong
+ */
+const highlightCurrentSong = () => {
+    const playlistSongElements = document.querySelectorAll(".playlist-song");
+};
+
+
 /**
  * Pause Song
  *
