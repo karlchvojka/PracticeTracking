@@ -234,6 +234,10 @@ const sortSongs = () => {
 
 nextButton.addEventListener("click", playNextSong);
 
+pauseButton.addEventListener("click", pauseSong);
+
+previousButton.addEventListener("click", playPreviousSong);
+
 playButton.addEventListener("click", () => {
     if (userData?.currentSong === null) {
         playSong(userData?.songs[0].id);
@@ -242,7 +246,6 @@ playButton.addEventListener("click", () => {
     }
 });
 
-pauseButton.addEventListener("click", pauseSong);
 /* --- END EVENT LISTENERS --- */
 
 renderSongs(sortSongs());
