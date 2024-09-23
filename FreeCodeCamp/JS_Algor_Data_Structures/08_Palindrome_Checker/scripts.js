@@ -21,6 +21,13 @@ const userInput = document.getElementById("text-input");
  * @param {string} userEvent Text passed into the form.
  */
 const checkString = (userInput) => {
+
+    /* --- Function Variables --- */
+    const origInput = userInput;
+    let reversedString = "";
+    /* --- End Function Variables --- */
+
+    /* --- Function Logic --- */
     /*
      * Check if userInput is empty.
      * If so, show an alert and end function
@@ -34,8 +41,14 @@ const checkString = (userInput) => {
     result.replaceChildren();
 
     // Sanitize string by removing non-alphanumeric and making string lowercase
-    const cleanResult = userInput.replace(/[^A-Za-z0-9]/gi, "").toLowerCase();
+    const cleanResult = origInput.replace(/[^A-Za-z0-9]/gi, "").toLowerCase();
+
+    // Reverse cleaned string.
+    reversedString = [...cleanResult].reverse().join('');
     console.log("Sanitized: ", cleanResult);
+    console.log("reversed: ", reversedString);
+
+    /* --- End Function Logic --- */
 }
 
 /* --- END APP LOGIC  --- */
