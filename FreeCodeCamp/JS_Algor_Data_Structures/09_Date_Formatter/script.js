@@ -16,3 +16,4 @@ const year = date.getFullYear();
 /* --- END INTERFACE VARIABLES --- */
 
 const formattedDate = `${day}-${month}-${year}`;
+console.log(formattedDate);
