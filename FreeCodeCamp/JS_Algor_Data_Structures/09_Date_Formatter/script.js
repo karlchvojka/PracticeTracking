@@ -8,4 +8,5 @@
 const currentDateParagraph = document.getElementById("current-date");
 const date = new Date();
 const dateOptionsSelectElement = document.getElementById("date-options");
+const day = date.getDate();
 /* --- END INTERFACE VARIABLES --- */
