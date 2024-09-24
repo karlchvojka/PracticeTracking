@@ -10,4 +10,5 @@ const date = new Date();
 const dateOptionsSelectElement = document.getElementById("date-options");
 const day = date.getDate();
 const month = date.getMonth();
+const year = date.getFullYear();
 /* --- END INTERFACE VARIABLES --- */
