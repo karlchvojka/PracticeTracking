@@ -15,4 +15,4 @@ const month = date.getMonth();
 const year = date.getFullYear();
 /* --- END INTERFACE VARIABLES --- */
 
-const formattedDate = `${day} - ${month}`;
+const formattedDate = `${day}-${month}-${year}`;
