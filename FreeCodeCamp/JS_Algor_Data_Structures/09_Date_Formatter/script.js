@@ -21,7 +21,7 @@ currentDateParagraph.textContent = formattedDate;
 /* --- END APP LOGIC -- */
 
 /* --- TEMP --- */
-const exampleSentence = "selur pmaCedoCeerf".split("").reverse();
+const exampleSentence = "selur pmaCedoCeerf".split("").reverse().join("");
 console.log(exampleSentence);
 /* --- END TEMP --- */
 
