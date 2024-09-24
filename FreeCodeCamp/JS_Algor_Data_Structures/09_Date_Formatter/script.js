@@ -17,3 +17,7 @@ const year = date.getFullYear();
 
 const formattedDate = `${day}-${month}-${year}`;
 currentDateParagraph.textContent = formattedDate;
+
+/* --- EVENT LISTENERS --- */
+dateOptionsSelectElement.addEventListener("change", () => {});
+/* --- END EVENT LISTENERS --- */
