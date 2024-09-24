@@ -19,5 +19,7 @@ const formattedDate = `${day}-${month}-${year}`;
 currentDateParagraph.textContent = formattedDate;
 
 /* --- EVENT LISTENERS --- */
-dateOptionsSelectElement.addEventListener("change", () => {});
+dateOptionsSelectElement.addEventListener("change", () => {
+    switch (dateOptionsSelectElement.value) {}
+});
 /* --- END EVENT LISTENERS --- */
