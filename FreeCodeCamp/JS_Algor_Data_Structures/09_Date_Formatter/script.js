@@ -9,6 +9,7 @@ const currentDateParagraph = document.getElementById("current-date");
 const date = new Date();
 const dateOptionsSelectElement = document.getElementById("date-options");
 const day = date.getDate();
+const hours = date.getHours();
 const month = date.getMonth();
 const year = date.getFullYear();
 /* --- END INTERFACE VARIABLES --- */
