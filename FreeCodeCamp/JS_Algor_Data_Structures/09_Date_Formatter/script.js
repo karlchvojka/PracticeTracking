@@ -20,11 +20,6 @@ const formattedDate = `${day}-${month}-${year}`;
 currentDateParagraph.textContent = formattedDate;
 /* --- END APP LOGIC -- */
 
-/* --- TEMP --- */
-const exampleSentence = "selur pmaCedoCeerf".split("").reverse().join("");
-console.log(exampleSentence);
-/* --- END TEMP --- */
-
 /* --- EVENT LISTENERS --- */
 dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
