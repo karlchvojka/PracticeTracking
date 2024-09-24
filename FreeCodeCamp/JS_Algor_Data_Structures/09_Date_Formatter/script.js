@@ -15,8 +15,15 @@ const month = date.getMonth();
 const year = date.getFullYear();
 /* --- END INTERFACE VARIABLES --- */
 
+/* --- APP LOGIC --- */
 const formattedDate = `${day}-${month}-${year}`;
 currentDateParagraph.textContent = formattedDate;
+/* --- END APP LOGIC -- */
+
+/* --- TEMP --- */
+const exampleSentence = "selur pmaCedoCeerf".split();
+console.log(exampleSentence);
+/* --- END TEMP --- */
 
 /* --- EVENT LISTENERS --- */
 dateOptionsSelectElement.addEventListener("change", () => {
