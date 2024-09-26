@@ -223,6 +223,9 @@ const setPlayerCards = (arr = players) => {
 /* --- EVENT LISTENERS --- */
 playerDropdownList.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
+
+    switch(e.target.value) {
+    }
 });
 /* --- END EVENT LISTENERS --- */
 
