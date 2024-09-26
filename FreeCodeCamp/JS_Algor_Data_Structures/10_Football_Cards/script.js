@@ -15,7 +15,10 @@ const worldCupYear = document.getElementById("year");
 
 /* --- APP DATA --- */
 const myFavoriteFootballTeam = {
-    headCoach: {},
+    headCoach: {
+        coachName: "Carlos Bilardo",
+        matches: 7
+    },
     isWorldCupWinner: true,
     sport: "Football",
     team: "Argentina",
