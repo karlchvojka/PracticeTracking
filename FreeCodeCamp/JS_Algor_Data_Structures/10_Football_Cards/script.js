@@ -211,6 +211,7 @@ const setPlayerCards = (arr = players) => {
         position
     }) => {
        `<div class="player-card">
+            <h2>${name}</h2>
         </div>`
     });
 };
