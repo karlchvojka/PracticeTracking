@@ -14,7 +14,9 @@ const worldCupYear = document.getElementById("year");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
-const myFavoriteFootballTeam = {};
+const myFavoriteFootballTeam = {
+    team: "Argentina"
+};
 /* --- END APP DATA --- */
 
 /* --- APP LOGIC --- */
