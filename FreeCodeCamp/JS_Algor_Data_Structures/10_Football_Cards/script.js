@@ -183,8 +183,12 @@ const myFavoriteFootballTeam = {
 
 const { sport, players, team, year } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
+
+// Data Interface Assignments:
+headCoach.textContent = coachName;
 teamName.textContent = team;
 typeOfSport.textContent = sport;
+worldCupYear.textContent = year;
 
 // Data Config:
 Object.freeze(myFavoriteFootballTeam);
