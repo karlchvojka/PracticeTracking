@@ -20,6 +20,7 @@ const myFavoriteFootballTeam = {
         matches: 7
     },
     isWorldCupWinner: true,
+    players: [],
     sport: "Football",
     team: "Argentina",
     year: 1986
