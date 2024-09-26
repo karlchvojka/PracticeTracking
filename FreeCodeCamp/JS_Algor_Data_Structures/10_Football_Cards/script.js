@@ -203,7 +203,13 @@ Object.freeze(myFavoriteFootballTeam);
  * @param {array} arr Array of Players
  */
 const setPlayerCards = (arr = players) => {
-    playerCards.innerHTML += arr.map(() => {});
+    playerCards.innerHTML += arr.map(({
+        isCaptain,
+        name,
+        nickname,
+        number,
+        position
+    }) => {});
 };
 /* --- END APP LOGIC --- */
 
