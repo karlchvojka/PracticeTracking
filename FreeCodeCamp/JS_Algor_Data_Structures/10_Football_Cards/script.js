@@ -202,7 +202,9 @@ Object.freeze(myFavoriteFootballTeam);
  * @function setPlayerCards
  * @param {array} arr Array of Players
  */
-const setPlayerCards = (arr = players) => {};
+const setPlayerCards = (arr = players) => {
+    playerCards.innerHTML += arr.map(() => {});
+};
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
