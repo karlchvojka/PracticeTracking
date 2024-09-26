@@ -216,7 +216,7 @@ const setPlayerCards = (arr = players) => {
             <p>Number: ${number}</p>
             <p>Nickname: ${nickname ? nickname : "N/A"}</p>
         </div>`
-    });
+    }).join("");
 };
 /* --- END APP LOGIC --- */
 
