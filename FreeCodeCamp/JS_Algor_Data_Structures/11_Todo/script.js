@@ -19,6 +19,8 @@ const titleInput = document.getElementById("title-input");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
+let currentTask = {};
+const taskData = [];
 /* --- END APP DATA --- */
 
 /* --- APP LOGIC --- */
