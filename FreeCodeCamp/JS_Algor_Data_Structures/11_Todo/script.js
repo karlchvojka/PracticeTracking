@@ -27,4 +27,7 @@ const taskData = [];
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
+openTaskFormBtn.addEventListener("click", () => {
+    taskForm.classList.toggle("hidden");
+});
 /* --- END EVENT LISTENERS --- */
