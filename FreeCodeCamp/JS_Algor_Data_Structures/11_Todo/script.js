@@ -27,6 +27,10 @@ const taskData = [];
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
+closeTaskFormBtn.addEventListener("click", () => {
+    confirmCloseDialog.showModal();
+});
+
 openTaskFormBtn.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
