@@ -183,7 +183,7 @@ const myFavoriteFootballTeam = {
 
 const { sport, players, team, year } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
-
+typeOfSport.textContent = sport;
 // Data Config:
 Object.freeze(myFavoriteFootballTeam);
 /* --- END APP DATA --- */
