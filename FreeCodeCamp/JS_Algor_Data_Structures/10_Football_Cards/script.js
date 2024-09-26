@@ -182,6 +182,7 @@ const myFavoriteFootballTeam = {
 };
 
 const { sport, players, team, year } = myFavoriteFootballTeam;
+const { coachName } = myFavoriteFootballTeam.headCoach;
 
 // Data Config:
 Object.freeze(myFavoriteFootballTeam);
