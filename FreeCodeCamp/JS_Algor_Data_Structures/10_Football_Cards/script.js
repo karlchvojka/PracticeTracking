@@ -209,14 +209,16 @@ const setPlayerCards = (arr = players) => {
         nickname,
         number,
         position
-    }) => {
-       `<div class="player-card">
+    }) =>
+       `
+        <div class="player-card">
             <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
             <p>Position: ${position}</p>
             <p>Number: ${number}</p>
-            <p>Nickname: ${nickname ? nickname : "N/A"}</p>
-        </div>`
-    }).join("");
+            <p>Nickname: ${nickname !== null ? nickname : "N/A"}</p>
+        </div>
+        `
+    ).join("");
 };
 /* --- END APP LOGIC --- */
 
@@ -226,6 +228,7 @@ playerDropdownList.addEventListener("change", (e) => {
 
     switch(e.target.value) {
         case "nickname":
+            setPlayerCards(players.filter(player => player.nickname !== null));
     }
 });
 /* --- END EVENT LISTENERS --- */
