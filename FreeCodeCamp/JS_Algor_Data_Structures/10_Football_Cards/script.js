@@ -182,6 +182,7 @@ const myFavoriteFootballTeam = {
 };
 
 const sport = myFavoriteFootballTeam.sport;
+const team = myFavoriteFootballTeam.team;
 
 // Data Config:
 Object.freeze(myFavoriteFootballTeam);
