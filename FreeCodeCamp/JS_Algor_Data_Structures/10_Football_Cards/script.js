@@ -15,7 +15,11 @@ const worldCupYear = document.getElementById("year");
 
 /* --- APP DATA --- */
 const myFavoriteFootballTeam = {
-    team: "Argentina"
+    headCoach: {},
+    isWorldCupWinner: true,
+    sport: "Football",
+    team: "Argentina",
+    year: 1986
 };
 /* --- END APP DATA --- */
 
