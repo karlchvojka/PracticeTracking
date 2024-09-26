@@ -13,6 +13,10 @@ const typeOfSport = document.getElementById("sport");
 const worldCupYear = document.getElementById("year");
 /* --- END INTERFACE VARIABLES --- */
 
+/* --- APP DATA --- */
+const myFavoriteFootballTeam = {};
+/* --- END APP DATA --- */
+
 /* --- APP LOGIC --- */
 /* --- END APP LOGIC --- */
 
