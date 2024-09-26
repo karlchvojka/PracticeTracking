@@ -195,6 +195,14 @@ Object.freeze(myFavoriteFootballTeam);
 /* --- END APP DATA --- */
 
 /* --- APP LOGIC --- */
+/**
+ * Set Player Cards
+ *
+ * Shows player cards based on filter selection
+ * @function setPlayerCards
+ * @param {array} arr Array of Players
+ */
+const setPlayerCards = (arr = players) => {};
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
