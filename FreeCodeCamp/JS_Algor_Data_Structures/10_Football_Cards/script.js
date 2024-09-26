@@ -181,6 +181,8 @@ const myFavoriteFootballTeam = {
     year: 1986
 };
 
+const sport = myFavoriteFootballTeam.sport;
+
 // Data Config:
 Object.freeze(myFavoriteFootballTeam);
 /* --- END APP DATA --- */
