@@ -5,6 +5,7 @@
  */
 
 /* --- INTERFACE VARIABLES --- */
+const teamName = document.getElementById("team");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP LOGIC --- */
