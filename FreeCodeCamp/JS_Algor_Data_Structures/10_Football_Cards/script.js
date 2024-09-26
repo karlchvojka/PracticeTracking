@@ -221,5 +221,6 @@ const setPlayerCards = (arr = players) => {
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
+playerDropdownList.addEventListener("change", () => {});
 /* --- END EVENT LISTENERS --- */
 
