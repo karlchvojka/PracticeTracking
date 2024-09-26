@@ -209,7 +209,10 @@ const setPlayerCards = (arr = players) => {
         nickname,
         number,
         position
-    }) => {});
+    }) => {
+       `<div class="player-card">
+        </div>`
+    });
 };
 /* --- END APP LOGIC --- */
 
