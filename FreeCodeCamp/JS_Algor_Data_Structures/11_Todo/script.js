@@ -50,7 +50,7 @@ taskForm.addEventListener("submit", (e) => {
     // Verify the ID of current object, check if current task is in the array.
     const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
     const taskObj = {
-        id: `${titleInput.value.toLowerCase().split(" ").join("-")}`,
+        id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
     };
     console.log(taskObj);
 });
