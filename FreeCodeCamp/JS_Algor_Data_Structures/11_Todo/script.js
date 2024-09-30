@@ -55,5 +55,10 @@ taskForm.addEventListener("submit", (e) => {
         date: dateInput.value,
         description: descriptionInput.value
     };
+
+    // If the task does not exist in the array, add it.
+    if (dataArrIndex === -1) {
+        taskData.unshift(taskObj);
+    }
 });
 /* --- END EVENT LISTENERS --- */
