@@ -51,6 +51,9 @@ cancelBtn.addEventListener("click", () => {
 
 closeTaskFormBtn.addEventListener("click", () => {
     confirmCloseDialog.showModal();
+
+    // Check if Task form has values:
+    const formInputsContainValues = titleInput.value || dateInput.value || descriptionInput.value;
 });
 
 discardBtn.addEventListener("click", () => {
