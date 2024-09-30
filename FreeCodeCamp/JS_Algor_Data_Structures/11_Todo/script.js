@@ -54,6 +54,13 @@ closeTaskFormBtn.addEventListener("click", () => {
 
     // Check if Task form has values:
     const formInputsContainValues = titleInput.value || dateInput.value || descriptionInput.value;
+
+    // If there are values, show confirm close dialog. Else reset form:
+    if (formInputsContainValues) {
+        confirmCloseDialog.showModal();
+    } else {
+        reset();
+    }
 });
 
 discardBtn.addEventListener("click", () => {
