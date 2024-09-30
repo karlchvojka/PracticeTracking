@@ -25,6 +25,27 @@ const taskData = [];
 
 /* --- APP LOGIC --- */
 /**
+ * Add or Update Task
+ *
+ * Handles Adding or updating a task
+ * @function
+ */
+const addOrUpdateTask = () => {
+
+    const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
+    const taskObj = {
+        id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
+        title: titleInput.value,
+        date: dateInput.value,
+        description: descriptionInput.value
+    };
+
+    if (dataArrIndex === -1) {
+        taskData.unshift(taskObj);
+    }
+}
+
+/**
  * Reset Form
  *
  * Handles resetting the form fields
