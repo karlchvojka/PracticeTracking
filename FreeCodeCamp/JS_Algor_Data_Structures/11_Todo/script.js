@@ -24,13 +24,6 @@ const taskData = [];
 /* --- END APP DATA --- */
 
 /* --- APP LOGIC --- */
-/**
- * Get Data Array Index
- *
- * Checks if Data Array index is equal to the Current Task id
- * @function dataArrIndex
- */
-const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
@@ -53,5 +46,10 @@ openTaskFormBtn.addEventListener("click", () => {
 
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    // Verify the ID of current object, check if current task is in the array.
+    const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
+    const taskObj = {};
+    console.log(taskObj);
 });
 /* --- END EVENT LISTENERS --- */
