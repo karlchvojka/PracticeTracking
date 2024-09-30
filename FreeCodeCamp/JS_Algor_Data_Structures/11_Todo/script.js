@@ -91,6 +91,7 @@ taskForm.addEventListener("submit", (e) => {
         `
     });
 
-    taskForm.classList.toggle("hidden");
+    // Reset form:
+    reset();
 });
 /* --- END EVENT LISTENERS --- */
