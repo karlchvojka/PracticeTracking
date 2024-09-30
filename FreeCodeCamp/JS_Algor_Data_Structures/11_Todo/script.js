@@ -43,4 +43,8 @@ discardBtn.addEventListener("click", () => {
 openTaskFormBtn.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
+
+taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+});
 /* --- END EVENT LISTENERS --- */
