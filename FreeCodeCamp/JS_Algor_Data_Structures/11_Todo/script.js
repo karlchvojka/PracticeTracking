@@ -24,6 +24,13 @@ const taskData = [];
 /* --- END APP DATA --- */
 
 /* --- APP LOGIC --- */
+/**
+ * Reset Form
+ *
+ * Handles resetting the form fields
+ * @function reset
+ */
+const reset = () => {};
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
