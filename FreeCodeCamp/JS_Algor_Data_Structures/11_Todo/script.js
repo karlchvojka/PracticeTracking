@@ -30,7 +30,18 @@ const taskData = [];
  * Handles resetting the form fields
  * @function reset
  */
-const reset = () => {};
+const reset = () => {
+    // Reset Input fields:
+    dateInput.value = "";
+    descriptionInput.value = "";
+    titleInput.value = "";
+
+    // Toggle Task form
+    taskForm.classList.toggle("hidden");
+
+    // Reset current task obj
+    currentTask = {};
+};
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
