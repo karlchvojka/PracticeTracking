@@ -35,6 +35,11 @@ closeTaskFormBtn.addEventListener("click", () => {
     confirmCloseDialog.showModal();
 });
 
+discardBtn.addEventListener("click", () => {
+    confirmCloseDialog.close();
+    taskForm.classList.toggle("hidden");
+});
+
 openTaskFormBtn.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
