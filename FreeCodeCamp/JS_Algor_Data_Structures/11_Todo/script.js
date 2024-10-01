@@ -69,6 +69,7 @@ const deleteTask = (buttonEl) => {
  * @function editTask
  */
 const editTask = (buttonEl) => {
+    const dataArrIndex = taskData.findElement((item) => item.id === buttonEl.parentElement.id);
 }
 
 /**
