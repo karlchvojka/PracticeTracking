@@ -146,6 +146,6 @@ taskForm.addEventListener("submit", (e) => {
     });
 
     // Reset form:
-    reset();
+    addOrUpdateTask();
 });
 /* --- END EVENT LISTENERS --- */
