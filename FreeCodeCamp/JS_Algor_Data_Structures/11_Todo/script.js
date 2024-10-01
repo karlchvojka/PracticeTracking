@@ -98,6 +98,7 @@ const editTask = (buttonEl) => {
  * @function reset
  */
 const reset = () => {
+    addOrUpdateTaskBtn.innerText = "Add Task";
     // Reset Input fields:
     dateInput.value = "";
     descriptionInput.value = "";
