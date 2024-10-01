@@ -57,6 +57,9 @@ const addOrUpdateTask = () => {
  */
 const deleteTask = (buttonEl) => {
     const dataArrIndex = taskData.findElement((item) => item.id === buttonEl.parentElement.id);
+
+    buttonEl.parentElement.remove();
+    taskData.splice(dataArrIndex, 1);
 }
 
 /**
