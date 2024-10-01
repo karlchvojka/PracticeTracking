@@ -60,7 +60,7 @@ const addOrUpdateTask = () => {
  * @param {string} buttonEl The element containing the clicked button.
  */
 const deleteTask = (buttonEl) => {
-    const dataArrIndex = taskData.findElement((item) => item.id === buttonEl.parentElement.id);
+    const dataArrIndex = taskData.findIndex((item) => item.id === buttonEl.parentElement.id);
 
     buttonEl.parentElement.remove();
     taskData.splice(dataArrIndex, 1);
@@ -78,7 +78,7 @@ const deleteTask = (buttonEl) => {
  */
 const editTask = (buttonEl) => {
     // Get current task id
-    const dataArrIndex = taskData.findElement((item) => item.id === buttonEl.parentElement.id);
+    const dataArrIndex = taskData.findIndex((item) => item.id === buttonEl.parentElement.id);
     // Get Current task.
     currentTask = taskData[dataArrIndex];
 
@@ -139,13 +139,9 @@ if (taskData.length) {
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
-cancelBtn.addEventListener("click", () => {
-    confirmCloseDialog.close();
-});
+cancelBtn.addEventListener("click", () => confirmCloseDialog.close());
 
 closeTaskFormBtn.addEventListener("click", () => {
-    confirmCloseDialog.showModal();
-
     // Check if Task form has values:
     const formInputsContainValues = titleInput.value || dateInput.value || descriptionInput.value;
     const formInputValuesUpdated = titleInput.value !== currentTask.title || dateInput.value !== currentTask.date || descriptionInput.value !== currentTask.description;
@@ -169,34 +165,6 @@ openTaskFormBtn.addEventListener("click", () => {
 
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
-    // Verify the ID of current object, check if current task is in the array.
-    const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
-    const taskObj = {
-        id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
-        title: titleInput.value,
-        date: dateInput.value,
-        description: descriptionInput.value
-    };
-
-    // If the task does not exist in the array, add it.
-    if (dataArrIndex === -1) {
-        taskData.unshift(taskObj);
-    }
-
-    taskData.forEach(({id, title, date, description}) => {
-        tasksContainer.innerHTML += `
-            <div class="task" id="${id}">
-                <p><strong>Title: </strong>${title}</p>
-                <p><strong>Date: </strong>${date}</p>
-                <p><strong>Description: </strong>${description}</p>
-                <button type="button" class="btn">Edit</button>
-                <button type="button" class="btn">Delete</button>
-            </div>
-        `
-    });
-
-    // Reset form:
     addOrUpdateTask();
 });
 /* --- END EVENT LISTENERS --- */
