@@ -46,6 +46,8 @@ const addOrUpdateTask = () => {
         taskData[dataArrIndex] = taskObj;
     }
 
+    // Update localStorage data:
+    localStorage.setItem("data", JSON.stringify(taskData));
     updateTaskContainer();
     reset();
 }
