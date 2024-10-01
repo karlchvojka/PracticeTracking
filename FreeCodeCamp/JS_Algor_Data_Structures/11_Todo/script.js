@@ -79,6 +79,8 @@ const editTask = (buttonEl) => {
     dateInput.value = currentTask.date;
     descriptionInput.value = currentTask.description;
     titleInput.value = currentTask.title;
+
+    addOrUpdateTaskBtn.innerText = "Update Task";
 }
 
 /**
