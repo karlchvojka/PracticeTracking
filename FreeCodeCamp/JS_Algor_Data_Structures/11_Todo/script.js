@@ -130,6 +130,11 @@ const updateTaskContainer = () => {
         `
     });
 };
+
+// If taskData has length > 0 onLoad, update Task Container.
+if (taskData.length) {
+    updateTaskContainer();
+}
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
