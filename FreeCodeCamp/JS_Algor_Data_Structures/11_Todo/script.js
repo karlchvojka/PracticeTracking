@@ -20,7 +20,7 @@ const titleInput = document.getElementById("title-input");
 
 /* --- APP DATA --- */
 let currentTask = {};
-const taskData = [];
+const taskData = JSON.parse(localStorage.getItem("data")) || [];
 /* --- END APP DATA --- */
 
 /* --- APP LOGIC --- */
