@@ -53,7 +53,7 @@ const addOrUpdateTask = () => {
  *
  * Handles deleting task
  * @function deleteTask
- *
+ * @param {string} buttonEl The element containing the clicked button.
  */
 const deleteTask = (buttonEl) => {
     const dataArrIndex = taskData.findElement((item) => item.id === buttonEl.parentElement.id);
@@ -67,9 +67,11 @@ const deleteTask = (buttonEl) => {
  *
  * Handles editing an existing task.
  * @function editTask
+ * @param {string} buttonEl The element conaining the clicked button.
  */
 const editTask = (buttonEl) => {
     const dataArrIndex = taskData.findElement((item) => item.id === buttonEl.parentElement.id);
+    currentTask = taskData[dataArrIndex];
 }
 
 /**
