@@ -140,7 +140,7 @@ closeTaskFormBtn.addEventListener("click", () => {
     const formInputValuesUpdated = titleInput.value !== currentTask.title || dateInput.value !== currentTask.date || descriptionInput.value !== currentTask.description;
 
     // If there are values, show confirm close dialog. Else reset form:
-    if (formInputsContainValues) {
+    if (formInputsContainValues && formInputValuesUpdated) {
         confirmCloseDialog.showModal();
     } else {
         reset();
