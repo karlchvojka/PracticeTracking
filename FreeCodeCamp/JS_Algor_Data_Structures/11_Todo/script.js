@@ -63,6 +63,15 @@ const deleteTask = (buttonEl) => {
 }
 
 /**
+ * Edit Task
+ *
+ * Handles editing an existing task.
+ * @function editTask
+ */
+const editTask = (buttonEl) => {
+}
+
+/**
  * Reset Form
  *
  * Handles resetting the form fields
