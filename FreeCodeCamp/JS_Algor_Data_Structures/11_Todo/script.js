@@ -70,8 +70,15 @@ const deleteTask = (buttonEl) => {
  * @param {string} buttonEl The element conaining the clicked button.
  */
 const editTask = (buttonEl) => {
+    // Get current task id
     const dataArrIndex = taskData.findElement((item) => item.id === buttonEl.parentElement.id);
+    // Get Current task.
     currentTask = taskData[dataArrIndex];
+
+    // Set form values to current task values:
+    dateInput.value = currentTask.date;
+    descriptionInput.value = currentTask.description;
+    titleInput.value = currentTask.title;
 }
 
 /**
