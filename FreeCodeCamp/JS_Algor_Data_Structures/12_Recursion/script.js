@@ -20,6 +20,22 @@ const a = () => {
 }
 
 /**
+ * B
+ * @function b
+ */
+const b = () => {
+    return "is " + c();
+}
+
+/**
+ * C
+ * @function c
+ */
+const c = () => {
+    return "awesome!";
+}
+
+/**
  * Decimal To Binary
  * @function decimalToBinary
  * @param {string} input Input entry from Input Field.
