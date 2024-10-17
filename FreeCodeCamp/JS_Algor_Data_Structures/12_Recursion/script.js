@@ -13,6 +13,12 @@ const result = document.getElementById("result");
 
 /* --- APP LOGIC --- */
 /**
+ * Countdown
+ * @function countdown
+ * @param {num} number Amount to count down
+ */
+const countdown = (number) => {}
+/**
  * Decimal To Binary
  * @function decimalToBinary
  * @param {string} input Input entry from Input Field.
