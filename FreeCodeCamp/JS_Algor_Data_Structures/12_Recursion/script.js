@@ -66,5 +66,7 @@ numberInput.addEventListener("keydown", (e) => {
         checkUserInput();
     }
 });
+
+countdown(3);
 /* --- END APP LOGIC --- */
 
