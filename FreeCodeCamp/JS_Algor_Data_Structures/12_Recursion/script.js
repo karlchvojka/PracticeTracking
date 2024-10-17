@@ -12,6 +12,14 @@ const result = document.getElementById("result");
 
 /* --- APP LOGIC --- */
 /**
+ * A
+ * @function a
+ */
+const a = () => {
+    return "freeCodeCamp" + b();
+}
+
+/**
  * Decimal To Binary
  * @function decimalToBinary
  * @param {string} input Input entry from Input Field.
