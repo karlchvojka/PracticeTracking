@@ -15,10 +15,9 @@ const result = document.getElementById("result");
  * Decimal To Binary
  * @function decimalToBinary
  * @param {string} input Input entry from Input Field.
- *
  */
 const decimalToBinary = (input) => {
-    return "1";
+    return "1010";
 }
 
 /**
