@@ -15,7 +15,8 @@ const result = document.getElementById("result");
  * Check User Input.
  * @function
  */
-const checkUserInput = () => {}
-
+const checkUserInput = () => {
+    console.log(numberInput.value);
+}
 /* --- END APP LOGIC --- */
 
