@@ -16,7 +16,7 @@ const result = document.getElementById("result");
  * @function
  */
 const checkUserInput = () => {
-    if(!numberInput.value) {};
+    if(!numberInput.value || parseInt(numberInput.value)) {};
     console.log(numberInput.value);
 }
 
