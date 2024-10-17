@@ -18,6 +18,7 @@ const result = document.getElementById("result");
  *
  */
 const decimalToBinary = (input) => {
+    return "1";
 }
 
 /**
