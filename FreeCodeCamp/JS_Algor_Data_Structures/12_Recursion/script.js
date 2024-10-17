@@ -78,3 +78,4 @@ numberInput.addEventListener("keydown", (e) => {
 });
 /* --- END APP LOGIC --- */
 
+console.log(a());
