@@ -18,5 +18,7 @@ const result = document.getElementById("result");
 const checkUserInput = () => {
     console.log(numberInput.value);
 }
+
+convertBtn.addEventListener("click", checkUserInput);
 /* --- END APP LOGIC --- */
 
