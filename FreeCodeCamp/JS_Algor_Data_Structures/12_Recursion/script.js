@@ -17,7 +17,9 @@ const result = document.getElementById("result");
  * @param {string} input Input entry from Input Field.
  */
 const decimalToBinary = (input) => {
-    return "01110110";
+    const inputs = [];
+    const quotients = [];
+    const remainders = [];
 }
 
 /**
