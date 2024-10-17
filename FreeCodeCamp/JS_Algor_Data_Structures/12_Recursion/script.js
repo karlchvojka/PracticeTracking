@@ -22,7 +22,7 @@ const checkUserInput = () => {
 convertBtn.addEventListener("click", checkUserInput);
 
 numberInput.addEventListener("keydown", (e) => {
-    console.log(e);
+    if(e.key === "Enter") {}
 });
 /* --- END APP LOGIC --- */
 
