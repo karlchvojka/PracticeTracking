@@ -7,7 +7,7 @@
 /* --- INTERFACE VARIABLES --- */
 const callStack = [
     `a(): returns "freeCodeCamp " + b()`,
-    'b(): returns "is " + c()'
+    "b(): returns 'is ' + 'awesome!'"
 ];
 const convertBtn = document.getElementById("convert-btn");
 const numberInput = document.getElementById("number-input");
