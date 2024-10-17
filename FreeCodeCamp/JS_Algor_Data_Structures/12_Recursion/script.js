@@ -17,7 +17,9 @@ const result = document.getElementById("result");
  * @function countdown
  * @param {num} number Amount to count down
  */
-const countdown = (number) => {}
+const countdown = (number) => {
+    console.log(number);
+}
 /**
  * Decimal To Binary
  * @function decimalToBinary
