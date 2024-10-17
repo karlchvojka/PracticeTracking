@@ -16,6 +16,7 @@ const result = document.getElementById("result");
  * @function
  */
 const checkUserInput = () => {
+    if(numberInput.value === "") {};
     console.log(numberInput.value);
 }
 
