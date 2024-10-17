@@ -12,8 +12,17 @@ const result = document.getElementById("result");
 
 /* --- APP LOGIC --- */
 /**
+ * Decimal To Binary
+ * @function decimalToBinary
+ * @param {string} input Input entry from Input Field.
+ *
+ */
+const decimalToBinary = (input) => {
+}
+
+/**
  * Check User Input.
- * @function
+ * @function checkUserInput
  */
 const checkUserInput = () => {
     if (
