@@ -13,30 +13,6 @@ const result = document.getElementById("result");
 
 /* --- APP LOGIC --- */
 /**
- * A
- * @function a
- */
-const a = () => {
-    return "freeCodeCamp" + b();
-}
-
-/**
- * B
- * @function b
- */
-const b = () => {
-    return "is " + c();
-}
-
-/**
- * C
- * @function c
- */
-const c = () => {
-    return "awesome!";
-}
-
-/**
  * Decimal To Binary
  * @function decimalToBinary
  * @param {string} input Input entry from Input Field.
@@ -79,4 +55,3 @@ numberInput.addEventListener("keydown", (e) => {
 });
 /* --- END APP LOGIC --- */
 
-console.log(a());
