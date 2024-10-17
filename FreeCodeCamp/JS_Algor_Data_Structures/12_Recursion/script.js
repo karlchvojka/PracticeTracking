@@ -19,6 +19,7 @@ const result = document.getElementById("result");
 const decimalToBinary = (input) => {
     let binary = "";
     while (input > 0) {
+        binary = input % 2;
         input = Math.floor(input / 2);
     }
     result.innerText = binary;
