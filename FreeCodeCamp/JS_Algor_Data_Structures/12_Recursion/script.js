@@ -16,7 +16,11 @@ const result = document.getElementById("result");
  * @function
  */
 const checkUserInput = () => {
-    if(!numberInput.value || parseInt(numberInput.value)) {};
+    if (
+        !numberInput.value ||
+        isNaN(parseInt(numberInput.value)) ||
+        parseInt(numberInput.value) < 0) {
+    };
     console.log(numberInput.value);
 }
 
