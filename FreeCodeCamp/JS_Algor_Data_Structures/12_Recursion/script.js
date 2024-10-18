@@ -70,7 +70,8 @@ const checkUserInput = () => {
  */
 const showAnimation = () => {
     result.innerText = "Call Stack Animation";
-    
+   
+    /* --- @param {array} obj Object array Item --- */ 
     animationData.forEach((obj) => {});
 }
 
