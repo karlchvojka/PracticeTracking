@@ -12,23 +12,7 @@ const result = document.getElementById("result");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP LOGIC --- */
-/**
- * CountDownAndUp
- * @function countDownAndUp
- * @param {num} number Amount to count down
- */
-const countDownAndUp = (number) => {
-    console.log(number);
-    if (number === 0) {
-        console.log("Reached base case");
-        return;
-    } else {
-        countDownAndUp(number - 1);
-        console.log(number);
-    }
-}
-/**
- * Decimal To Binary
+/** Decimal To Binary
  * @function decimalToBinary
  * @param {string} input Input entry from Input Field.
  */
@@ -68,7 +52,5 @@ numberInput.addEventListener("keydown", (e) => {
         checkUserInput();
     }
 });
-
-countDownAndUp(3);
 /* --- END APP LOGIC --- */
 
