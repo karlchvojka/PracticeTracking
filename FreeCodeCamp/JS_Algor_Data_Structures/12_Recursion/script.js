@@ -89,7 +89,7 @@ const showAnimation = () => {
                 </p>
             `;
         }, obj.addElDelay);
-        setTimeout(() => {}, obj.showMsgDelay);
+        setTimeout(() => {document.getElementById(obj.inputVal)}, obj.showMsgDelay);
     });
 }
 
