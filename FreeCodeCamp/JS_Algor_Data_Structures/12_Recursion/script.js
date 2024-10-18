@@ -41,6 +41,12 @@ const checkUserInput = () => {
     numberInput.value = "";
 }
 
+/**
+ * Show Animation
+ * @function showAnimation
+ */
+const showAnimation = () => {}
+
 convertBtn.addEventListener("click", checkUserInput);
 
 numberInput.addEventListener("keydown", (e) => {
