@@ -15,6 +15,7 @@ const animationData = [
         inputVal: 2
     },
     {
+        msg: "",
         addElDelay: 2000,
         inputVal: 1
     }
