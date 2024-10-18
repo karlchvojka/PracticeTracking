@@ -72,7 +72,9 @@ const showAnimation = () => {
     result.innerText = "Call Stack Animation";
    
     /* --- @param {array} obj Object array Item --- */ 
-    animationData.forEach((obj) => {});
+    animationData.forEach((obj) => {
+        setTimeout(() => {}, obj.addElDelay);
+    });
 }
 
 convertBtn.addEventListener("click", checkUserInput);
