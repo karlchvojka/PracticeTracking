@@ -69,6 +69,6 @@ numberInput.addEventListener("keydown", (e) => {
     }
 });
 
-countdown(3);
+countDownAndUp(3);
 /* --- END APP LOGIC --- */
 
