@@ -74,7 +74,7 @@ const showAnimation = () => {
     /* --- @param {array} obj Object array Item --- */ 
     animationData.forEach((obj) => {
         setTimeout(() => {
-            animationContainer.innerHTML += ``;
+            animationContainer.innerHTML += `<p id=""></p>`;
         }, obj.addElDelay);
     });
 }
