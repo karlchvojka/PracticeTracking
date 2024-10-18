@@ -13,6 +13,10 @@ const animationData = [
     {
         addElDelay: 1500,
         inputVal: 2
+    },
+    {
+        addElDelay: 2000,
+        inputVal: 1
     }
 ];
 const callStack = [];
