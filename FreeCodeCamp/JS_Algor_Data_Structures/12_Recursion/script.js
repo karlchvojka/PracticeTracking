@@ -69,6 +69,7 @@ const checkUserInput = () => {
  * @function showAnimation
  */
 const showAnimation = () => {
+    result.innerText = "Call Stack Animation";
 }
 
 convertBtn.addEventListener("click", checkUserInput);
