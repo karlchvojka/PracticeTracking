@@ -13,16 +13,16 @@ const result = document.getElementById("result");
 
 /* --- APP LOGIC --- */
 /**
- * Countdown
- * @function countdown
+ * CountDownAndUp
+ * @function countDownAndUp
  * @param {num} number Amount to count down
  */
-const countdown = (number) => {
+const countDownAndUp = (number) => {
     console.log(number);
     if (number === 0) {
         return;
     } else {
-        countdown(number - 1);
+        countDownAndUp(number - 1);
     }
 }
 /**
