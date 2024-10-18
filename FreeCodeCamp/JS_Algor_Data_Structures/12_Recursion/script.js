@@ -17,6 +17,9 @@ const result = document.getElementById("result");
  * @param {string} input Input entry from Input Field.
  */
 const decimalToBinary = (input) => {
+    if (input === 0) {
+        return "";
+    }
 }
 
 /**
