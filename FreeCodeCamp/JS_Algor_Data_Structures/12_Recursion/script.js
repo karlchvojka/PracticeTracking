@@ -29,6 +29,8 @@ const decimalToBinary = (input) => {
  * @function checkUserInput
  */
 const checkUserInput = () => {
+    const inputInt = parseInt(numberInput.value);
+    
     if (
         !numberInput.value ||
         isNaN(parseInt(numberInput.value)) ||
