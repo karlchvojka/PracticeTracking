@@ -53,7 +53,11 @@ const checkUserInput = () => {
  * Show Animation
  * @function showAnimation
  */
-const showAnimation = () => {}
+const showAnimation = () => {
+    console.log("free");
+    console.log("Code");
+    console.log("Camp");
+}
 
 convertBtn.addEventListener("click", checkUserInput);
 
