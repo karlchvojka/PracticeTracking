@@ -54,7 +54,7 @@ const checkUserInput = () => {
  * @function showAnimation
  */
 const showAnimation = () => {
-    console.log("free");
+    setTimeout(() => {console.log("free")}, 500);
     setTimeout(() => {console.log("Code")}, 1000);
     console.log("Camp");
 }
