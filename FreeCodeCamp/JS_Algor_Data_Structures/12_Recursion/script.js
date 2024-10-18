@@ -74,7 +74,9 @@ const showAnimation = () => {
     /* --- @param {array} obj Object array Item --- */ 
     animationData.forEach((obj) => {
         setTimeout(() => {
-            animationContainer.innerHTML += `<p id="${obj.inputVal}"></p>`;
+            animationContainer.innerHTML += `
+                <p class="animation-frame" id="${obj.inputVal}"></p>
+            `;
         }, obj.addElDelay);
     });
 }
