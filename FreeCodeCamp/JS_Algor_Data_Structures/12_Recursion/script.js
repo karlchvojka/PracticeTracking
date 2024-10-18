@@ -5,7 +5,12 @@
  */
 
 /* --- INTERFACE VARIABLES --- */
-const animationData = [];
+const animationData = [
+    {
+        addElDelay: 1000,
+        inputVal: 5
+    }
+];
 const callStack = [];
 const convertBtn = document.getElementById("convert-btn");
 const numberInput = document.getElementById("number-input");
