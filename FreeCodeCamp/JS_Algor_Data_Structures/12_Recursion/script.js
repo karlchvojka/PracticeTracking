@@ -5,6 +5,7 @@
  */
 
 /* --- INTERFACE VARIABLES --- */
+const animationData = [];
 const callStack = [];
 const convertBtn = document.getElementById("convert-btn");
 const numberInput = document.getElementById("number-input");
