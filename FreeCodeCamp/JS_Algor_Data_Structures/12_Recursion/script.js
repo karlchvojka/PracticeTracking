@@ -19,6 +19,7 @@ const animationData = [
         inputVal: 1
     }
 ];
+const animationContainer = document.getElementById("animation-container");
 const callStack = [];
 const convertBtn = document.getElementById("convert-btn");
 const numberInput = document.getElementById("number-input");
