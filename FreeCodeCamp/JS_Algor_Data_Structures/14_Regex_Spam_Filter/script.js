@@ -16,7 +16,8 @@ const freeRegex = /free money/i;
 const helpRegex = /please help|assist me/i;
 const denyList = [
     helpRegex,
-    dollarRegex
+    dollarRegex,
+    freeRegex
 ];
 /* --- END APP DATA --- */
 
