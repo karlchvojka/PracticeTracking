@@ -14,6 +14,12 @@ const result = document.getElementById('result');
 /* --- END APP DATA --- */
 
 /* --- EVENT LISTENERS --- */
+
+/**
+ * Check Message Click Event.
+ *
+ * @fires Click click event
+ */
 checkMessageButton.addEventListener("click", () => {
     if (messageInput.value === '') {
         alert('Please enter a message.');
@@ -23,4 +29,11 @@ checkMessageButton.addEventListener("click", () => {
 /* --- END EVENT LISTENERS --- */
 
 /* --- APP LOGIC --- */
+
+/**
+ * Check if message is spam.
+ * @function isSpam
+ * @param {string} msg Input from web form.
+ */
+const isSpam = (msg) => false;
 /* --- END APP LOGIC --- */
