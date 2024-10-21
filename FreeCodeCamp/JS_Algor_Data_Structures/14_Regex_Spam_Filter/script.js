@@ -14,7 +14,12 @@ const result = document.getElementById('result');
 /* --- END APP DATA --- */
 
 /* --- EVENT LISTENERS --- */
-checkMessageButton.addEventListener("click", () => {});
+checkMessageButton.addEventListener("click", () => {
+    if (messageInput.value === '') {
+        alert('Please enter a message.');
+        return;
+    }
+});
 /* --- END EVENT LISTENERS --- */
 
 /* --- APP LOGIC --- */
