@@ -10,11 +10,11 @@ const messageInput = document.getElementById('message-input');
 const result = document.getElementById('result');
 /* --- END INTERFACE VARIABLES --- */
 
-/* --- DATA VARIABLES --- */
-const helpRegex = /please help|assist me/i;
-/* --- END DATA VARIABLES --- */
-
 /* --- APP DATA --- */
+const helpRegex = /please help|assist me/i;
+const denyList = [
+    helpRegex
+];
 /* --- END APP DATA --- */
 
 /* --- EVENT LISTENERS --- */
