@@ -12,7 +12,7 @@ const result = document.getElementById('result');
 
 /* --- APP DATA --- */
 const dollarRegex = /[0-9]+\s*(?:hundred|thousand|million|billion)?\s+dollars/i;
-const freeRegex = /(?:\s|^)fr[e3][e3] m[oO]n[e3]y\s/i;
+const freeRegex = /(?:\s|^)fr[e3][e3] m[oO]n[e3]y(?:$|\s)/i;
 const helpRegex = /please help|assist me/i;
 const denyList = [
     helpRegex,
