@@ -11,11 +11,12 @@ const result = document.getElementById('result');
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
+const dollarRegex = /dollars/i;
 const helpRegex = /please help|assist me/i;
 const denyList = [
-    helpRegex
+    helpRegex,
+    dollarRegex
 ];
-const dollarRegex = /dollars/i;
 /* --- END APP DATA --- */
 
 /* --- EVENT LISTENERS --- */
