@@ -11,7 +11,7 @@ const result = document.getElementById('result');
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
-const dollarRegex = /[0-9]+ (hundred|thousand|million|billion) dollars/i;
+const dollarRegex = /[0-9]+ (hundred|thousand|million|billion)? dollars/i;
 const helpRegex = /please help|assist me/i;
 const denyList = [
     helpRegex,
