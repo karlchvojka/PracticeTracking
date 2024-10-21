@@ -15,6 +15,7 @@ const helpRegex = /please help|assist me/i;
 const denyList = [
     helpRegex
 ];
+const dollarRegex = /dollars/i;
 /* --- END APP DATA --- */
 
 /* --- EVENT LISTENERS --- */
