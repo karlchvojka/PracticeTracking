@@ -11,7 +11,7 @@ const result = document.getElementById('result');
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- DATA VARIABLES --- */
-const helpRegex = /please help/;
+const helpRegex = /please help/i;
 /* --- END DATA VARIABLES --- */
 
 /* --- APP DATA --- */
