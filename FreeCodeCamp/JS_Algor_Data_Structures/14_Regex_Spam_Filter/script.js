@@ -44,5 +44,5 @@ checkMessageButton.addEventListener("click", () => {
  * @function isSpam
  * @param {string} msg Input from web form.
  */
-const isSpam = (msg) => helpRegex.test(msg);
+const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 /* --- END APP LOGIC --- */
