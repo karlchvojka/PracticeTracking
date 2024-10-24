@@ -27,7 +27,9 @@ const sortInputArray = (event) => {
  * @function updatedUI
  * @param {array} array Array of numbers.
  */
-const updatedUI = (array = []) => {};
+const updatedUI = (array = []) => {
+    array.forEach((num, i) => {});
+};
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
