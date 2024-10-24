@@ -20,14 +20,15 @@ const sortButton = document.getElementById("sort");
 const sortInputArray = (event) => {
     event.preventDefault();
     const inputValues = [...document.getElementsByClassName("values-dropdown")].map((dropdown) => Number(dropdown.value));
+    updateUI(inputValues);
 }
 
 /**
  * Update Ui with Sorted numbers
- * @function updatedUI
+ * @function updateUI
  * @param {array} array Array of numbers.
  */
-const updatedUI = (array = []) => {
+const updateUI = (array = []) => {
     array.forEach((num, i) => {
         const outputValueNode = document.getElementById(`output-value-${i}`);
         outputValueNode.innerText = num;
