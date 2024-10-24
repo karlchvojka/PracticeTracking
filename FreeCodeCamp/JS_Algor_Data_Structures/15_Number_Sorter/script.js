@@ -11,9 +11,6 @@ const sortButton = document.getElementById("sort");
 /* --- APP DATA --- */
 /* --- END APP DATA --- */
 
-/* --- EVENT LISTENERS --- */
-/* --- END EVENT LISTENERS --- */
-
 /* --- APP LOGIC --- */
 /**
  * Sort numbers inputed
@@ -24,3 +21,7 @@ const sortInputArray = (event) => {
     event.preventDefault();
 }
 /* --- END APP LOGIC --- */
+
+/* --- EVENT LISTENERS --- */
+sortButton.addEventListener("click", sortInputArray);
+/* --- END EVENT LISTENERS --- */
