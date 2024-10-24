@@ -21,6 +21,13 @@ const sortInputArray = (event) => {
     event.preventDefault();
     const inputValues = [...document.getElementsByClassName("values-dropdown")].map((dropdown) => Number(dropdown.value));
 }
+
+/**
+ * Update Ui with Sorted numbers
+ * @function updatedUI
+ * @param {array} array Array of numbers.
+ */
+const updatedUI = (array = []) => {};
 /* --- END APP LOGIC --- */
 
 /* --- EVENT LISTENERS --- */
