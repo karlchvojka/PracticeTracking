@@ -15,4 +15,10 @@ const sortButton = document.getElementById("sort");
 /* --- END EVENT LISTENERS --- */
 
 /* --- APP LOGIC --- */
+/**
+ * Sort numbers inputed
+ * @function sortInputArray
+ * @param {event} event Sort button click
+ */
+const sortInputArray = (event) => {}
 /* --- END APP LOGIC --- */
