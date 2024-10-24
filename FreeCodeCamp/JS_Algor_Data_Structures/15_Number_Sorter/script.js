@@ -28,7 +28,9 @@ const sortInputArray = (event) => {
  * @param {array} array Array of numbers.
  */
 const updatedUI = (array = []) => {
-    array.forEach((num, i) => {});
+    array.forEach((num, i) => {
+        const outputValueNode = document.getElementById(`output-value-${i}`);
+    });
 };
 /* --- END APP LOGIC --- */
 
