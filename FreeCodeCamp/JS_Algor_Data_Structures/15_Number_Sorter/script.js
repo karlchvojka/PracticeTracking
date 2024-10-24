@@ -5,6 +5,7 @@
  */
 
 /* --- INTERFACE VARIABLES --- */
+const sortButton = document.getElementById("sort");
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
