@@ -11,12 +11,14 @@ const result = document.getElementById('result');
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
+const dearRegex = /dear friend/i;
 const dollarRegex = /[0-9]+\s*(?:hundred|thousand|million|billion)?\s+dollars/i;
 const freeRegex = /(?:\s|^)fr[e3][e3] m[oO]n[e3]y(?:$|\s)/i;
 const helpRegex = /please help|assist me/i;
 const stockRegex = /(?:^|\s)[s5][t7][o0][c{[(]k [a@4]l[e3]r[t7](?:$|\s)/i;
 const denyList = [
     helpRegex,
+    dearRegex,
     dollarRegex,
     freeRegex,
     stockRegex
