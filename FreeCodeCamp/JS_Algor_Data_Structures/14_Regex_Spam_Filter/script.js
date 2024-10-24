@@ -11,7 +11,7 @@ const result = document.getElementById('result');
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- APP DATA --- */
-const dearRegex = /dear friend/i;
+const dearRegex = /(?:^|\s)d[e3][a@4]r fr[i1|][e3]nd(?:$|\s)/i;
 const dollarRegex = /[0-9]+\s*(?:hundred|thousand|million|billion)?\s+dollars/i;
 const freeRegex = /(?:\s|^)fr[e3][e3] m[oO]n[e3]y(?:$|\s)/i;
 const helpRegex = /please help|assist me/i;
