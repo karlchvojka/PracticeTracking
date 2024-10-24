@@ -20,5 +20,7 @@ const sortButton = document.getElementById("sort");
  * @function sortInputArray
  * @param {event} event Sort button click
  */
-const sortInputArray = (event) => {}
+const sortInputArray = (event) => {
+    event.preventDefault();
+}
 /* --- END APP LOGIC --- */
