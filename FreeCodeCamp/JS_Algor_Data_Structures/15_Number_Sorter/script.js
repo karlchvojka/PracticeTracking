@@ -13,6 +13,12 @@ const sortButton = document.getElementById("sort");
 
 /* --- APP LOGIC --- */
 /**
+ * Handle sorting numbers array
+ * @function bubbleSort
+ * @param {array} array Numbers array to be sorted
+ */
+const bubbleSort = (array) => {}
+/**
  * Sort numbers inputed
  * @function sortInputArray
  * @param {event} event Sort button click
