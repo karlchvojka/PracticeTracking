@@ -35,7 +35,9 @@ const bubbleSort = (array) => {
  * @function insertionSort
  * @param {array} array Numbers array to be sorted
  */
-const insertionSort = (array) => {}
+const insertionSort = (array) => {
+    for (let i = 1; i < array.length; i++) {}
+}
 /**
  * Selection Sort
  * @function selectionSort
