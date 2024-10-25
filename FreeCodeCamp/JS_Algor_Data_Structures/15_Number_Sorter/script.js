@@ -32,7 +32,8 @@ const bubbleSort = (array) => {
 const sortInputArray = (event) => {
     event.preventDefault();
     const inputValues = [...document.getElementsByClassName("values-dropdown")].map((dropdown) => Number(dropdown.value));
-    updateUI(inputValues);
+    const sortedValues = bubbleSort(inputValues);
+    updateUI(sortedValues);
 }
 
 /**
