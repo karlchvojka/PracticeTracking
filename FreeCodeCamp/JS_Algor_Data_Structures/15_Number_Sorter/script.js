@@ -18,7 +18,9 @@ const sortButton = document.getElementById("sort");
  * @param {array} array Numbers array to be sorted
  */
 const bubbleSort = (array) => {
-    for (let i=0; i < array.length; i++) {}
+    for (let i=0; i < array.length; i++) {
+        for (let j = 0; j < array.length - 1; j++) {}
+    }
 }
 /**
  * Sort numbers inputed
