@@ -28,6 +28,7 @@ const bubbleSort = (array) => {
             }
         }
     }
+    return array;
 }
 /**
  * Sort numbers inputed
