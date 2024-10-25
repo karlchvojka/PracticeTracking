@@ -30,6 +30,13 @@ const bubbleSort = (array) => {
     return array;
 }
 /**
+ * Selection Sort
+ * @function selectionSort
+ * @param {array} array Numbers array to be sorted
+ */
+const selectionSort = (array) => {
+}
+/**
  * Sort numbers inputed
  * @function sortInputArray
  * @param {event} event Sort button click
