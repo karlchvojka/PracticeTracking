@@ -28,6 +28,12 @@ const calculate = () => {
      * @type {string[]}
      */
     const array = value.split(/,\s*/g);
+    
+    /**
+     * Convert array into an array of numbers
+     * @type {number[]}
+     */
+    const numbers = array.map();
 
     /* --- END INTERFACE VARIABLES --- */
 };
