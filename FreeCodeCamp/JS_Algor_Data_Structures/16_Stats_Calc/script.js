@@ -45,6 +45,6 @@ const getMean = (array) => {
      * Sum of all variables in the array.
      * @type {number[]}
      */
-    const sum = array.reduce();
+    const sum = array.reduce((acc, el) => {acc + el});
 };
 /* --- END APP LOGIC --- */
