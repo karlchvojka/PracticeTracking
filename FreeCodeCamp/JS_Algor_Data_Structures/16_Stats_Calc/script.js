@@ -33,7 +33,7 @@ const calculate = () => {
      * Convert array into an array of numbers
      * @type {number[]}
      */
-    const numbers = array.map();
+    const numbers = array.map(el => {Number(el)});
 
     /* --- END INTERFACE VARIABLES --- */
 };
