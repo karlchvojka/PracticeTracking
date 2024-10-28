@@ -33,6 +33,8 @@ const calculate = () => {
      * @type {number[]}
      */
     const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
+
+    const mean = getMean(numbers);
 };
 
 /**
