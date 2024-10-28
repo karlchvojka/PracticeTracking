@@ -20,6 +20,13 @@
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 
 /**
+ * Get Median of submitted array
+ * @function getMedian
+ * @param {array} array Array of numbers submitted by user
+ */
+const getMedian = (array) => {};
+
+/**
  * Handles submitted numbers
  * @function calculate
  */
