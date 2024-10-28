@@ -16,7 +16,6 @@
  * @function calculate
  */
 const calculate = () => {
-    /* --- INTERFACE VARIABLES --- */
     /** 
      * A String of numbers entered by the user
      * @type {string}
@@ -34,7 +33,6 @@ const calculate = () => {
      * @type {number[]}
      */
     const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
-    /* --- END INTERFACE VARIABLES --- */
 };
 
 /**
@@ -42,5 +40,11 @@ const calculate = () => {
  * @function getMean
  * @param {array} array Array of numbers submitted by user
  */
-const getMean = (array) => {};
+const getMean = (array) => {
+    /**
+     * Sum of all variables in the array.
+     * @type {number[]}
+     */
+    const sum = array.reduce();
+};
 /* --- END APP LOGIC --- */
