@@ -41,19 +41,5 @@ const calculate = () => {
  * @param {array} array Array of numbers submitted by user
  * @returns {number} Mean of submitted array
  */
-const getMean = (array) => {
-    /**
-     * Sum of all variables in the array.
-     * @type {number[]}
-     */
-    const sum = array.reduce((acc, el) => {acc + el, 0});
-
-    /**
-     * Find Mean of the array.
-     * @type {number}
-     */
-    const mean = sum / array.length;
-    
-    return mean;
-};
+const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 /* --- END APP LOGIC --- */
