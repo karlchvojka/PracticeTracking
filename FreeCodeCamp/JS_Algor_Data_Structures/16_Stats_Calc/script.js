@@ -39,7 +39,7 @@ const calculate = () => {
      * Filter out not a numbers.
      * @type {string[]}
      */
-    const filtered = numbers.filter();
+    const filtered = numbers.filter(el => !isNaN(el));
 
     /* --- END INTERFACE VARIABLES --- */
 };
