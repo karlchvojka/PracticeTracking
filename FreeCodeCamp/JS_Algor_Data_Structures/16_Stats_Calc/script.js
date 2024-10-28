@@ -16,5 +16,12 @@
  * @function calculate
  */
 const calculate = () => {
+    /* --- INTERFACE VARIABLES --- */
+    /** 
+     * An array of numbers inputed by user
+     * @type {number[]}
+     */
+    const value = document.querySelector("#numbers").value;
+    /* --- END INTERFACE VARIABLES --- */
 };
 /* --- END APP LOGIC --- */
