@@ -22,6 +22,13 @@ const calculate = () => {
      * @type {string}
      */
     const value = document.querySelector("#numbers").value;
+    
+    /**
+     * Split value string into an array.
+     * @type {string[]}
+     */
+    const array = value.split(/,\s*/g);
+
     /* --- END INTERFACE VARIABLES --- */
 };
 /* --- END APP LOGIC --- */
