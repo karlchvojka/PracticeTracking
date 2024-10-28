@@ -33,14 +33,7 @@ const calculate = () => {
      * Convert array into an array of numbers
      * @type {number[]}
      */
-    const numbers = array.map(el => {Number(el)});
-
-    /**
-     * Filter out not a numbers.
-     * @type {string[]}
-     */
-    const filtered = numbers.filter(el => !isNaN(el));
-
+    const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
     /* --- END INTERFACE VARIABLES --- */
 };
 /* --- END APP LOGIC --- */
