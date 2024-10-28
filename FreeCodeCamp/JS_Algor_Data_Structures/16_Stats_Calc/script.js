@@ -46,5 +46,11 @@ const getMean = (array) => {
      * @type {number[]}
      */
     const sum = array.reduce((acc, el) => {acc + el, 0});
+
+    /**
+     * Find Mean of the array.
+     * @type {number}
+     */
+    const mean = sum / array.length;
 };
 /* --- END APP LOGIC --- */
