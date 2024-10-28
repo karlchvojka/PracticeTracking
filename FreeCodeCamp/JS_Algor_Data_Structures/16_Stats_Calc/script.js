@@ -18,8 +18,8 @@
 const calculate = () => {
     /* --- INTERFACE VARIABLES --- */
     /** 
-     * An array of numbers inputed by user
-     * @type {number[]}
+     * A String of numbers entered by the user
+     * @type {string}
      */
     const value = document.querySelector("#numbers").value;
     /* --- END INTERFACE VARIABLES --- */
