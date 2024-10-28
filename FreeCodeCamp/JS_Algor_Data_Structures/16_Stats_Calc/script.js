@@ -12,6 +12,14 @@
 
 /* --- APP LOGIC --- */
 /**
+ * Get Mean of submitted array
+ * @function getMean
+ * @param {array} array Array of numbers submitted by user
+ * @returns {number} Mean of submitted array
+ */
+const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
+
+/**
  * Handles submitted numbers
  * @function calculate
  */
@@ -45,11 +53,5 @@ const calculate = () => {
     document.querySelector("#mean").textContent = mean;
 };
 
-/**
- * Get Mean of submitted array
- * @function getMean
- * @param {array} array Array of numbers submitted by user
- * @returns {number} Mean of submitted array
- */
-const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
+
 /* --- END APP LOGIC --- */
