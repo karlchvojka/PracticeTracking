@@ -36,4 +36,11 @@ const calculate = () => {
     const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
     /* --- END INTERFACE VARIABLES --- */
 };
+
+/**
+ * Get Mean of submitted array
+ * @function getMean
+ * @param {array} array Array of numbers submitted by user
+ */
+const getMean = (array) => {};
 /* --- END APP LOGIC --- */
