@@ -35,6 +35,12 @@ const calculate = () => {
      */
     const numbers = array.map(el => {Number(el)});
 
+    /**
+     * Filter out not a numbers.
+     * @type {string[]}
+     */
+    const filtered = numbers.filter();
+
     /* --- END INTERFACE VARIABLES --- */
 };
 /* --- END APP LOGIC --- */
