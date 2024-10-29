@@ -28,6 +28,9 @@ console.log(isEven);
 const oddListMedian = testArr1[Math.floor(testArr1.length / 2)];
 console.log(oddListMedian);
 
+const evenListMedian = getMean(testArr2);
+console.log(evenListMedian);
+
 /**
  * Get Median of submitted array
  * @function getMedian
