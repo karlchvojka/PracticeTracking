@@ -68,9 +68,19 @@ const calculate = () => {
     const mean = getMean(numbers);
 
     /**
+     * Get Median Value
+     */
+    const median = getMedian(numbers);
+
+    /**
      * Display the mean value.
      */
     document.querySelector("#mean").textContent = mean;
+
+    /**
+     * Display Median value
+     */
+    document.querySelector("#median").textContent = median;
 };
 
 
