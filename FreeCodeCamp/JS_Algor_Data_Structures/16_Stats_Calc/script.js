@@ -97,6 +97,15 @@ const getRange = (array) => {
 }
 
 /**
+ * Get Variance of Submitted Array
+ * @function getVariance
+ * @param {array} array Array of numbers submitted by user.
+ */
+const getVariance = (array) => {
+    const mean = getMean(array);
+}
+
+/**
  * Handles submitted numbers
  * @function calculate
  */
