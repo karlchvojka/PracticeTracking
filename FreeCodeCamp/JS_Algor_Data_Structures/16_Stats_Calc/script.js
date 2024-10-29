@@ -24,7 +24,13 @@ const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length
  * @function getMedian
  * @param {array} array Array of numbers submitted by user
  */
-const getMedian = (array) => {};
+const getMedian = (array) => {
+    /**
+     * Sort array fron least to greatest
+     * @type {string[]}
+     */
+    const sorted = array.sort();
+};
 
 /**
  * Handles submitted numbers
