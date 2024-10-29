@@ -112,6 +112,15 @@ const getVariance = (array) => {
 };
 
 /**
+ * Get standard deviation
+ * @function getStandardDeviation
+ * @param {array} array Array of the numbers submitted by user.
+ */
+const getStandardDeviation = (array) => {
+    const variance = getVariance(array);
+}
+
+/**
  * Handles submitted numbers
  * @function calculate
  */
