@@ -74,8 +74,16 @@ const getMode = (array) => {
      * Find value that appears with highest frequency.
      */
     const highest = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
-
-    const mode = Object.keys(counts);
+    
+    /**
+     * Find if mode is multiple numbers with the same frequency, or a single number.
+     */
+    const mode = Object.keys(counts).filter((el) => counts[el] === counts[highest]);
+    
+    /**
+     * Return mode as string with elements separated by a space.
+     */
+    return mode.join(', ');
 };
 
 /**
