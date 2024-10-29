@@ -44,7 +44,12 @@ const getMedian = (array) => {
  * @function getMode
  * @param {array} array Array of numbers submitted by user.
  */
-const getMode = (array) => {};
+const getMode = (array) => {
+    /**
+     * Keeps track of counts
+     */
+    const counts = {};
+};
 
 /**
  * Handles submitted numbers
