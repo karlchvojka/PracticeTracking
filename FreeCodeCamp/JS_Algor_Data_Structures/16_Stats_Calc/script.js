@@ -29,7 +29,7 @@ const getMedian = (array) => {
      * Sort array fron least to greatest
      * @type {number[]}
      */
-    const sorted = array.sort((a, b) => {return a - b;});
+    const sorted = array.toSorted((a, b) => {return a - b;});
 };
 
 /**
