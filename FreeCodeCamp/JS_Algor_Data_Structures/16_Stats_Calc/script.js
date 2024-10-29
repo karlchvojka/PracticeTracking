@@ -49,7 +49,8 @@ const getMode = (array) => {
      * Keeps track of counts
      */
     const counts = {};
-   
+    let highest = 0;
+
     /**
      * For each element in the array:
      * - If the element exists, add one to the count object
@@ -65,6 +66,8 @@ const getMode = (array) => {
 
     if (new Set(Object.values(counts)).size === 1) {
         return null;
+    } else {
+        highest = Object.keys(counts);
     }
 };
 
