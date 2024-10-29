@@ -50,6 +50,8 @@ const getMode = (array) => {
      */
     const counts = {};
     
+    array.forEach((el) => {});
+
     return array;
 };
 
