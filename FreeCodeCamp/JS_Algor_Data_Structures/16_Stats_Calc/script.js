@@ -171,14 +171,19 @@ const calculate = () => {
     const variance = getVariance(numbers);
 
     /**
+     * Get Standard Deviation value
+     */
+    const standardDeviation = getStandardDeviation(numbers);
+
+    /**
      * Set values to display elements
      */
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
     document.querySelector("#range").textContent = range;
-    document.querySelector("variance").textContent = variance;
+    document.querySelector("#variance").textContent = variance;
+    document.querySelector("#standardDeviation").textContent = standardDeviation;
 };
-
 
 /* --- END APP LOGIC --- */
