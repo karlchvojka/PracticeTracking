@@ -27,9 +27,9 @@ const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length
 const getMedian = (array) => {
     /**
      * Sort array fron least to greatest
-     * @type {string[]}
+     * @type {number[]}
      */
-    const sorted = array.sort();
+    const sorted = array.sort((a, b) => {return a - b;});
 };
 
 /**
