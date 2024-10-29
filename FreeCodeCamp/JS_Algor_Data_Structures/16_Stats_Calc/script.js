@@ -155,12 +155,18 @@ const calculate = () => {
     const range = getRange(numbers);
 
     /**
+     * Get Variance value
+     */
+    const variance = getVariance(numbers);
+
+    /**
      * Set values to display elements
      */
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
     document.querySelector("#range").textContent = range;
+    document.querySelector("variance").textContent = variance;
 };
 
 
