@@ -62,11 +62,20 @@ const getMode = (array) => {
             counts[el] = 1;
         }
     });
-
+    
+    /**
+     * If Every value appears the same number of times, return null.
+     */
     if (new Set(Object.values(counts)).size === 1) {
         return null;
     } 
+
+    /**
+     * Find value that appears with highest frequency.
+     */
     const highest = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
+
+    const mode = Object.keys(counts);
 };
 
 /**
