@@ -49,6 +49,8 @@ const getMode = (array) => {
      * Keeps track of counts
      */
     const counts = {};
+    
+    return array;
 };
 
 /**
