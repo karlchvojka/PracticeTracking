@@ -19,6 +19,7 @@
  */
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 
+
 /**
  * Get Median of submitted array
  * @function getMedian
@@ -29,7 +30,13 @@ const getMedian = (array) => {
      * Sort array fron least to greatest
      * @type {number[]}
      */
-    const sorted = array.toSorted((a, b) => {return a - b;});
+    const sorted = array.sort((a, b) => {return a - b;});
+    
+    if (sorted.length % 2 === 0) {
+        return getMean(sorted);
+    } else {
+        return sorted[Math.floor(sorted.length / 2)];
+    }
 };
 
 /**
