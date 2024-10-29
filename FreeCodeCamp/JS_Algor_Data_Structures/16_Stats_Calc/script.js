@@ -119,6 +119,7 @@ const getVariance = (array) => {
 const getStandardDeviation = (array) => {
     const variance = getVariance(array);
     const standardDeviation = Math.sqrt(variance);
+    return standardDeviation;
 }
 
 /**
