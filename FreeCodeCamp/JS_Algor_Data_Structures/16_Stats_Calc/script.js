@@ -120,14 +120,16 @@ const calculate = () => {
     const median = getMedian(numbers);
 
     /**
-     * Display the mean value.
+     * Get Mode value
      */
-    document.querySelector("#mean").textContent = mean;
+    const mode = getMode(numbers);
 
     /**
-     * Display Median value
+     * Set values to display elements
      */
+    document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
+    document.querySelector("#mode").textContent = mode;
 };
 
 
