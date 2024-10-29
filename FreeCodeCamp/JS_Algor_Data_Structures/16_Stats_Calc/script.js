@@ -49,10 +49,21 @@ const getMode = (array) => {
      * Keeps track of counts
      */
     const counts = {};
-    
-    array.forEach((el) => {});
+   
+    /**
+     * For each element in the array:
+     * - If the element exists, add one to the count object
+     * - Else, create new one with element as key, set value to 1.
+     */
+    array.forEach((el) => {
+        if(counts[el]) {
+            counts[el] += 1;
+        } else {
+            counts[el] = 1;
+        }
+    });
 
-    return array;
+    return counts;
 };
 
 /**
