@@ -40,6 +40,13 @@ const getMedian = (array) => {
 };
 
 /**
+ * Get Mode of submitted array
+ * @function getMode
+ * @param {array} array Array of numbers submitted by user.
+ */
+const getMode = (array) => {};
+
+/**
  * Handles submitted numbers
  * @function calculate
  */
