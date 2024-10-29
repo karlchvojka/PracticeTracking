@@ -99,8 +99,6 @@ const calculate = () => {
      */
     const median = getMedian(numbers);
 
-    console.log(getMode(numbers));
-
     /**
      * Display the mean value.
      */
