@@ -62,6 +62,10 @@ const getMode = (array) => {
             counts[el] = 1;
         }
     });
+
+    if (new Set(Object.values(counts)).size === 1) {
+        return null;
+    }
 };
 
 /**
