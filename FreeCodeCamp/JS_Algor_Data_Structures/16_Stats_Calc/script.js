@@ -90,6 +90,7 @@ const getMode = (array) => {
  * Get Range of Submitted Array
  * @function getRange
  * @param {array} array Array of numbers submitted by users.
+ * @returns {number} Range of values.
  */
 const getRange = (array) => {
     return Math.max(...array) - Math.min(...array);
