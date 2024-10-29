@@ -49,7 +49,6 @@ const getMode = (array) => {
      * Keeps track of counts
      */
     const counts = {};
-    let highest = 0;
 
     /**
      * For each element in the array:
@@ -66,9 +65,8 @@ const getMode = (array) => {
 
     if (new Set(Object.values(counts)).size === 1) {
         return null;
-    } else {
-        highest = Object.keys(counts);
-    }
+    } 
+    const highest = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
 };
 
 /**
