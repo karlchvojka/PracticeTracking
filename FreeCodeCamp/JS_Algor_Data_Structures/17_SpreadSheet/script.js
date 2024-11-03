@@ -48,7 +48,10 @@ window.onload = () => {
     letters.forEach(() => createLabel());
     
     // Build a range of numbers 1 -> 99
-    range(1, 99).forEach((number) => {});
+    range(1, 99).forEach((number) => {
+        createLabel(number);
+        letters.forEach((letter) => {});
+    });
 }
 /* --- END INTERFACE VARIABILES --- */
 
