@@ -25,15 +25,24 @@ window.onload = () => {
         container.appendChild(label);
     };
 
-    // TODO: Flush out Function documentation
     /**
      * Generates a range of numbers
      * @function range
      * @param {number} start Start of range
      * @param {number} end End of range
-     * @returns {string} Returned range
+     * @returns {array} Array built from submitted start and end
      */
     const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);
+
+    // TODO: flush out comment docs
+    /**
+     * Generate a range from characters
+     * @function charRange
+     * @param {string} start Starting character
+     * @param {string} end Ending character
+     * @returns {array} Array built from start and end Params
+     */
+    const charRange = (start, end) => range(start, end);
 }
 /* --- END INTERFACE VARIABILES --- */
 
