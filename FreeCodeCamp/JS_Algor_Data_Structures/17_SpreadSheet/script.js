@@ -111,6 +111,16 @@ window.onload = () => {
 }
 /* --- END INTERFACE VARIABILES --- */
 
+/* --- EVENT HANDLERS --- */
+    /**
+     * Update event handler
+     * @function update
+     * @param {object} event Update event object
+     */
+    const update = (event) => {};
+
+/* --- END EVENT HANDLERS --- */
+
 /* --- APP DATA --- */
 /* --- END APP DATA --- */
 
