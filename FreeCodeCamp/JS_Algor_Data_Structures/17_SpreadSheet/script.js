@@ -6,6 +6,14 @@
 
 /* --- HELPER FUNCTIONS --- */
     /**
+     * Gets average
+     * @function average
+     * @param {array} nums Array of numbers
+     * @returns {number} Average of array.
+     */
+    const average = (nums) => sum(nums) / nums.length;
+
+    /**
      * Checks if number is even
      * @function isEven
      * @param {number} num Number to check
