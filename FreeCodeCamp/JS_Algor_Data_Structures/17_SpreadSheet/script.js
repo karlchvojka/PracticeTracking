@@ -6,6 +6,14 @@
 
 /* --- HELPER FUNCTIONS --- */
     /**
+     * Checks if number is even
+     * @function isEven
+     * @param {number} num Number to check
+     * @returns {bool} True if even, false if not.
+     */
+    const isEven = (num) => { return num % 2 === 0 };
+
+    /**
      * Generates a range of numbers
      * @function range
      * @param {number} start Start of range
