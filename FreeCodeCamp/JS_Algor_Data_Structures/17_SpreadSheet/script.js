@@ -18,7 +18,9 @@ window.onload = () => {
      * @param {string} name String of a name
      * @returns {string} Label
      */
-    const createLabel = (name) => {};
+    const createLabel = (name) => {
+        const label = document.createElement('div');
+    };
 }
 /* --- END INTERFACE VARIABILES --- */
 
