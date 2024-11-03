@@ -10,6 +10,15 @@
  */
 window.onload = () => {
     const container = document.getElementById('container');
+    
+    // TODO: Flush out param and returns docs
+    /**
+     * Create Label
+     * @function createLabel
+     * @param {string} name String of a name
+     * @returns {string} Label
+     */
+    const createLabel = (name) => {};
 }
 /* --- END INTERFACE VARIABILES --- */
 
