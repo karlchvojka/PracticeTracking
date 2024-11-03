@@ -4,6 +4,35 @@
  * Will build a SpreadSheet as an example of Functional Programming.
  */
 
+/* --- HELPER FUNCTIONS --- */
+    /**
+     * Generates a range of numbers
+     * @function range
+     * @param {number} start Start of range
+     * @param {number} end End of range
+     * @returns {array} Array built from submitted start and end
+     */
+    const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);
+
+    /**
+     * Generate a range from characters
+     * @function charRange
+     * @param {string} start Starting character
+     * @param {string} end Ending character
+     * @returns {array} Array built from start and end Params
+     */
+    const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
+
+    // TODO: clean up docs
+    /**
+     * Sum
+     * @function sum
+     * @param {array} nums Array of numbers
+     * @returns {number} Sum of the array
+     */
+    const sum = (nums) => nums.reduce((a, b) => a + b, 0);
+/* --- END HELPER FUNCTIONS --- */
+
 /* --- INTERFACE VARIABLES --- */
 /**
  * Windows Onload Event
@@ -23,24 +52,6 @@ window.onload = () => {
         label.textContent = name;
         container.appendChild(label);
     };
-
-    /**
-     * Generates a range of numbers
-     * @function range
-     * @param {number} start Start of range
-     * @param {number} end End of range
-     * @returns {array} Array built from submitted start and end
-     */
-    const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);
-
-    /**
-     * Generate a range from characters
-     * @function charRange
-     * @param {string} start Starting character
-     * @param {string} end Ending character
-     * @returns {array} Array built from start and end Params
-     */
-    const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
     // Create Array with range of A -> J,
     // Build label for each
