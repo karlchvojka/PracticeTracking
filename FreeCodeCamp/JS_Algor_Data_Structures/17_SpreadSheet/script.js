@@ -103,6 +103,9 @@ window.onload = () => {
             input.type = "text";
             input.id = letter + number;
             input.ariaLabel = letter + number;
+            
+            // Set input onchange to run update
+            input.onchange = update;
 
             // Append each as child to the container element
             container.appendChild(input);
