@@ -60,6 +60,12 @@
      * @returns {number} Sum of the array
      */
     const sum = (nums) => nums.reduce((a, b) => a + b, 0);
+
+const spreadsheetFunctions = {
+    average,
+    median,
+    sum,
+};
 /* --- END HELPER FUNCTIONS --- */
 
 /* --- INTERFACE VARIABLES --- */
