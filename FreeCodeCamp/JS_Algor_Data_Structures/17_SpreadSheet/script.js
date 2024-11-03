@@ -33,7 +33,6 @@ window.onload = () => {
      */
     const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);
 
-    // TODO: flush out comment docs
     /**
      * Generate a range from characters
      * @function charRange
@@ -43,8 +42,13 @@ window.onload = () => {
      */
     const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
+    // Create Array with range of A -> J,
+    // Build label for each
     const letters = charRange("A", "J");
     letters.forEach(() => createLabel());
+    
+    // Build a range of numbers 1 -> 99
+    range(1, 99).forEach((number) => {});
 }
 /* --- END INTERFACE VARIABILES --- */
 
