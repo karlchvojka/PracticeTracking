@@ -42,7 +42,7 @@ window.onload = () => {
      * @param {string} end Ending character
      * @returns {array} Array built from start and end Params
      */
-    const charRange = (start, end) => range(start, end);
+    const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0));
 }
 /* --- END INTERFACE VARIABILES --- */
 
