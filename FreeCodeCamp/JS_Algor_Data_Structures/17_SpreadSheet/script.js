@@ -10,13 +10,12 @@
  */
 window.onload = () => {
     const container = document.getElementById('container');
-    
-    // TODO: Flush out param and returns docs
+
     /**
      * Create Label
      * @function createLabel
      * @param {string} name String of a name
-     * @returns {string} Label
+     * @returns {string} HTML for Label element
      */
     const createLabel = (name) => {
         const label = document.createElement('div');
@@ -43,6 +42,8 @@ window.onload = () => {
      * @returns {array} Array built from start and end Params
      */
     const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
+
+    const letters = charRange("A", "J");
 }
 /* --- END INTERFACE VARIABILES --- */
 
