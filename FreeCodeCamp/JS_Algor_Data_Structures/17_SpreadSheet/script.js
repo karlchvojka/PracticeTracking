@@ -120,7 +120,10 @@ window.onload = () => {
      * @function update
      * @param {object} event Update event object
      */
-    const update = (event) => {};
+    const update = (event) => {
+        // The element that changed
+        const element = event.target;
+    };
 
 /* --- END EVENT HANDLERS --- */
 
