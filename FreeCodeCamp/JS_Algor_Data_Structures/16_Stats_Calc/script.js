@@ -55,13 +55,7 @@ const getMode = (array) => {
      * - If the element exists, add one to the count object
      * - Else, create new one with element as key, set value to 1.
      */
-    array.forEach((el) => {
-        if(counts[el]) {
-            counts[el] += 1;
-        } else {
-            counts[el] = 1;
-        }
-    });
+    array.forEach(el => counts[el] = counts[el] ? counts[el] + 1 : 1);
     
     /**
      * If Every value appears the same number of times, return null.
