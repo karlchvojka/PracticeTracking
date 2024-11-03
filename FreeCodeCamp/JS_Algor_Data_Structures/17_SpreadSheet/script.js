@@ -22,6 +22,16 @@
     const isEven = (num) => { return num % 2 === 0 };
 
     /**
+     * Get median value
+     * @function median
+     * @param {array} nums Array of numbers
+     * @return {number} Median value of the array
+     */
+    const median = (nums) => {
+        const sorted = nums.slice().sort((a, b) => a - b);
+    };
+
+    /**
      * Generates a range of numbers
      * @function range
      * @param {number} start Start of range
