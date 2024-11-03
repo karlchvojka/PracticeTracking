@@ -33,7 +33,7 @@ window.onload = () => {
      * @param {number} end End of range
      * @returns {string} Returned range
      */
-    const range = (start, end) => Array();
+    const range = (start, end) => Array(end - start + 1);
 }
 /* --- END INTERFACE VARIABILES --- */
 
