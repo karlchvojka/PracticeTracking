@@ -50,7 +50,13 @@ window.onload = () => {
     // Build a range of numbers 1 -> 99
     range(1, 99).forEach((number) => {
         createLabel(number);
-        letters.forEach((letter) => {});
+        letters.forEach((letter) => {
+            // For each create input element
+            // Set type, and id.
+            const input = document.createElement("input");
+            input.type = "text";
+            input.id = letter + number;
+        });
     });
 }
 /* --- END INTERFACE VARIABILES --- */
