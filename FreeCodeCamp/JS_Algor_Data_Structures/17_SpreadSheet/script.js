@@ -57,6 +57,9 @@ window.onload = () => {
             input.type = "text";
             input.id = letter + number;
             input.ariaLabel = letter + number;
+
+            // Append each as child to the container element
+            container.appendChild(input);
         });
     });
 }
