@@ -24,6 +24,16 @@ window.onload = () => {
         label.textContent = name;
         container.appendChild(label);
     };
+
+    // TODO: Flush out Function documentation
+    /**
+     * Generates a range of numbers
+     * @function range
+     * @param {number} start Start of range
+     * @param {number} end End of range
+     * @returns {string} Returned range
+     */
+    const range = (start, end) => Array();
 }
 /* --- END INTERFACE VARIABILES --- */
 
