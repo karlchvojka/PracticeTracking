@@ -98,7 +98,7 @@
     const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);
 
     /**
-     * Generate a range from characters
+     * Generate a range from submitted characters
      * @function charRange
      * @param {string} start Starting character
      * @param {string} end Ending character
