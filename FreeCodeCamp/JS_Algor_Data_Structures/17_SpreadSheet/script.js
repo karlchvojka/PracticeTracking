@@ -5,20 +5,38 @@
  */
 
 /* --- INFIX FUNCTIONS --- */
-const infixToFunction = {
-    "+": (x, y) => x + y,
-    "-": (x, y) => x - y,
-    "*": (x, y) => x * y,
-    "/": (x, y) => x / y
-};
-
-const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
-
-const highPrecedence = (str) => {
-    const result = /([\d.]+)([*\/])([\d.]+)/;
-    const str2 = infixEval(str, result);
-    return str2 === str ? str : highPrecedence(str2);
-};
+/* Functions to handle Mathematical calculations */
+    
+    /**
+     * Mathematixal infix definitions
+     */
+    const infixToFunction = {
+        "+": (x, y) => x + y,
+        "-": (x, y) => x - y,
+        "*": (x, y) => x * y,
+        "/": (x, y) => x / y
+    };
+    
+    /**
+     * Evaluate chosen infix
+     * @function infixEval
+     * @param {string} str Submitted string including mathematic equation
+     * @param {string} regex Regex pattern
+     * @returns {string} Mathematic result
+     */
+    const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
+    
+    /**
+     * Handle high precedence from the infix eval
+     * @function highPrecedence
+     * @param {string} str Submitted string including mathimatic equation
+     * @returns {string} evaluated string
+     */
+    const highPrecedence = (str) => {
+        const result = /([\d.]+)([*\/])([\d.]+)/;
+        const str2 = infixEval(str, result);
+        return str2 === str ? str : highPrecedence(str2);
+    };
 /* --- END INFIX FUNCTIONS --- */
 
 /* --- HELPER FUNCTIONS --- */
