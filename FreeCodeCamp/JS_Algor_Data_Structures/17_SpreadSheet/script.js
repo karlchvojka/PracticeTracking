@@ -106,7 +106,6 @@
      */
     const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
-    // TODO: clean up docs
     /**
      * Sum
      * @function sum
