@@ -123,6 +123,7 @@ window.onload = () => {
     const update = (event) => {
         // The element that changed
         const element = event.target;
+        const value = element.value.replace(/\s/g, '');
     };
 
 /* --- END EVENT HANDLERS --- */
