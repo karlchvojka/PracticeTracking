@@ -100,6 +100,13 @@ const spreadsheetFunctions = {
     median,
     sum,
 };
+
+// TODO: Flush out docs
+/**
+ * Apply function
+ * @function applyFunction
+ */
+const applyFunction = (str) => {};
 /* --- END HELPER FUNCTIONS --- */
 
 /* --- INTERFACE VARIABLES --- */
