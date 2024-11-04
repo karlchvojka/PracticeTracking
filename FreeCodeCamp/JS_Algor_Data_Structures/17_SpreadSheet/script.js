@@ -13,6 +13,14 @@
      */
     const average = (nums) => sum(nums) / nums.length;
 
+    // TODO: Flush out documentation
+    /**
+     * Eval formula
+     * @function evalFormula
+     */
+    const evalFormula = (x, cells) => {
+    };
+
     /**
      * Checks if number is even
      * @function isEven
