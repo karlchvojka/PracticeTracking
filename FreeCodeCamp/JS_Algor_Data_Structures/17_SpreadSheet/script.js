@@ -12,7 +12,7 @@ const infixToFunction = {
     "/": (x, y) => x / y
 };
 
-const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator]);
+const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](arg1, arg2));
 /* --- END INFIX FUNCTIONS --- */
 
 /* --- HELPER FUNCTIONS --- */
