@@ -105,6 +105,7 @@ const spreadsheetFunctions = {
     increment: nums => nums.map((num) => num + 1),
     lasttwo: nums => nums.slice(-2),
     median,
+    someeven: nums => nums.some((num) => isEven(num)),
     sum,
 };
 
