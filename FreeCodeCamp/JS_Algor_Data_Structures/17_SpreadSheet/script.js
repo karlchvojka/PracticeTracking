@@ -110,6 +110,7 @@ const applyFunction = (str) => {
     const noHigh = highPrecedence(str);
     const infix = /([\d.]+)([+-])([\d.]+)/;
     const str2 = infixEval(noHigh, infix);
+    const functionCall = /([a-z0-9]*)\(([0-9., ]*)\)(?!.*\()/i;
 };
 /* --- END HELPER FUNCTIONS --- */
 
