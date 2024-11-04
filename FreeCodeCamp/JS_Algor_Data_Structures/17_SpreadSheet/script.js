@@ -99,6 +99,7 @@ const highPrecedence = (str) => {
 
 const spreadsheetFunctions = {
     average,
+    even: nums => nums.filter(isEven),
     median,
     sum,
 };
