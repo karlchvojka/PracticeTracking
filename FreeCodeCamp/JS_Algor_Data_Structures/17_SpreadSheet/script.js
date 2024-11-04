@@ -16,7 +16,6 @@ const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, ar
 
 const highPrecedence = (str) => {
     const result = /([0-9])([*/])([0-9])/.test(str);
-    return result;
 };
 /* --- END INFIX FUNCTIONS --- */
 
