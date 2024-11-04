@@ -17,6 +17,7 @@ const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, ar
 const highPrecedence = (str) => {
     const result = /([\d.]+)([*\/])([\d.]+)/;
     const str2 = infixEval(str, result);
+    return str2 === str ? str : highPrecedence(str2);
 };
 /* --- END INFIX FUNCTIONS --- */
 
