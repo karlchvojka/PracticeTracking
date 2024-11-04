@@ -126,7 +126,7 @@ window.onload = () => {
         const value = element.value.replace(/\s/g, '');
         
         // Check if value is included in the input id.
-        if (!value.includes(element.id)) {
+        if (!value.includes(element.id) && value.charAt(0) === "=") {
         } else {
         }
     };
