@@ -215,6 +215,8 @@ window.onload = () => {
     const update = (event) => {
         // The element that changed
         const element = event.target;
+        
+        // The new submitted value
         const value = element.value.replace(/\s/g, '');
         
         // Check if value is included in the input id.
