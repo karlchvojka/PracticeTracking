@@ -50,7 +50,7 @@
 
     // TODO: Flush out documentation
     /**
-     * Eval formula
+     * Evaluate formula to be used
      * @function evalFormula
      * @param {array} cells The cells
      */
@@ -156,7 +156,7 @@ window.onload = () => {
     const container = document.getElementById('container');
 
     /**
-     * Create Label
+     * Create Label for cols and rows
      * @function createLabel
      * @param {string} name String of a name
      * @returns {string} HTML for Label element
