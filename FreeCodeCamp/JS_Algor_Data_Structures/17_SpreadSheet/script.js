@@ -106,7 +106,9 @@ const spreadsheetFunctions = {
  * Apply function
  * @function applyFunction
  */
-const applyFunction = (str) => {};
+const applyFunction = (str) => {
+    const noHigh = highPrecedence(str);
+};
 /* --- END HELPER FUNCTIONS --- */
 
 /* --- INTERFACE VARIABLES --- */
