@@ -98,6 +98,7 @@ const highPrecedence = (str) => {
     const sum = (nums) => nums.reduce((a, b) => a + b, 0);
 
 const spreadsheetFunctions = {
+    '': arg => arg,
     average,
     even: nums => nums.filter(isEven),
     everyeven: nums => nums.every(isEven),
