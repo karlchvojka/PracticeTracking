@@ -106,6 +106,7 @@ const spreadsheetFunctions = {
     increment: nums => nums.map((num) => num + 1),
     lasttwo: nums => nums.slice(-2),
     median,
+    nodupes: nums => [...new Set(nums)],
     random: ([x, y]) => Math.floor(Math.random() * y + x),
     range: nums => range(...nums),
     someeven: nums => nums.some((num) => isEven(num)),
