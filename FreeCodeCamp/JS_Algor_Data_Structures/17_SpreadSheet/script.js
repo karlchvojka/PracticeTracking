@@ -4,12 +4,16 @@
  * Will build a SpreadSheet as an example of Functional Programming.
  */
 
+/* --- INFIX FUNCTIONS --- */
 const infixToFunction = {
     "+": (x, y) => x + y,
     "-": (x, y) => x - y,
     "*": (x, y) => x * y,
     "/": (x, y) => x / y
 };
+
+const infixEval = (str, regex) => str.replace(regex, () => {});
+/* --- END INFIX FUNCTIONS --- */
 
 /* --- HELPER FUNCTIONS --- */
     /**
