@@ -15,7 +15,8 @@ const infixToFunction = {
 const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
 
 const highPrecedence = (str) => {
-    const result = /([0-9])([*/])([0-9])/.test(str);
+    const result = /([\d.]+)([*\/])([\d.]+)/;
+    const str2 = infixEval(str, result);
 };
 /* --- END INFIX FUNCTIONS --- */
 
