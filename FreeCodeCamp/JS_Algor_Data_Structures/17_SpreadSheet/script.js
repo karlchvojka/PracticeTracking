@@ -178,7 +178,7 @@ window.onload = () => {
         
         // Check if value is included in the input id.
         if (!value.includes(element.id) && value.charAt(0) === "=") {
-            element.value = evalFormula();
+            element.value = evalFormula(value.substring(1));
         } else {
         }
     };
