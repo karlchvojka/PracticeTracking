@@ -124,6 +124,11 @@ window.onload = () => {
         // The element that changed
         const element = event.target;
         const value = element.value.replace(/\s/g, '');
+        
+        // Check if value is included in the input id.
+        if (!value.includes(element.id)) {
+        } else {
+        }
     };
 
 /* --- END EVENT HANDLERS --- */
