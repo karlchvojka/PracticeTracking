@@ -174,6 +174,7 @@ window.onload = () => {
     letters.forEach(() => createLabel());
     
     // Build a range of numbers 1 -> 99
+    // Use range and labels to assign IDs for each input
     range(1, 99).forEach((number) => {
         createLabel(number);
         letters.forEach((letter) => {
