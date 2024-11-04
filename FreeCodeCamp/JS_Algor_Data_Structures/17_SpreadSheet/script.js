@@ -4,7 +4,9 @@
  * Will build a SpreadSheet as an example of Functional Programming.
  */
 
-const infixToFunction = {};
+const infixToFunction = {
+    "+": (x, y) => x + y
+};
 
 /* --- HELPER FUNCTIONS --- */
     /**
