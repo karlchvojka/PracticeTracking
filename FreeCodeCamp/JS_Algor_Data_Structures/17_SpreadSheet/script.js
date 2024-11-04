@@ -82,9 +82,18 @@
      * @return {number} Median value of the array
      */
     const median = (nums) => {
+        // Sort submitted array
         const sorted = nums.slice().sort((a, b) => a - b);
+
+        // Get array length
         const length = sorted.length;
+
+        // Find middle index
         const middle = length / 2 - 1;
+
+        // If length is an even number:
+        // Return average of the middle num and next one
+        // Else return middle num rounded up 
         return isEven(length) ? average([sorted[middle], sorted[middle + 1 ]]) : sorted[Math.ceil(middle)];
     };
 
@@ -114,20 +123,23 @@
      */
     const sum = (nums) => nums.reduce((a, b) => a + b, 0);
 
+/**
+ * Common SpreadSheet functions.
+ */
 const spreadsheetFunctions = {
     '': arg => arg,
     average,
     even: nums => nums.filter(isEven),
-    everyeven: nums => nums.every(isEven),
-    firsttwo: nums => nums.slice(0, 2),
+    everyEven: nums => nums.every(isEven),
+    firstTwo: nums => nums.slice(0, 2),
     has2: nums => nums.includes(2),
     increment: nums => nums.map((num) => num + 1),
-    lasttwo: nums => nums.slice(-2),
+    lastTwo: nums => nums.slice(-2),
     median,
-    nodupes: nums => [...new Set(nums)],
+    noDupes: nums => [...new Set(nums)],
     random: ([x, y]) => Math.floor(Math.random() * y + x),
     range: nums => range(...nums),
-    someeven: nums => nums.some((num) => isEven(num)),
+    someEven: nums => nums.some((num) => isEven(num)),
     sum,
 };
 
