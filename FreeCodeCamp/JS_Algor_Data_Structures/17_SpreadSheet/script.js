@@ -27,7 +27,7 @@
             const inner = (character) => {return idToText(character + num)};
             return inner;
         };
-        const addCharacters = (character1) => {};
+        const addCharacters = character1 => character2 => {};
     };
 
     /**
