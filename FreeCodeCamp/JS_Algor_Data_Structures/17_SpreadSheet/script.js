@@ -100,6 +100,7 @@ const highPrecedence = (str) => {
 const spreadsheetFunctions = {
     average,
     even: nums => nums.filter(isEven),
+    everyeven: nums => nums.every(isEven),
     firsttwo: nums => nums.slice(0, 2),
     has2: nums => nums.includes(2),
     increment: nums => nums.map((num) => num + 1),
