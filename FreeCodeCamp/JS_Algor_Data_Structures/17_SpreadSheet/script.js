@@ -13,6 +13,8 @@ const infixToFunction = {
 };
 
 const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
+
+const highPrecedence = (str) => {};
 /* --- END INFIX FUNCTIONS --- */
 
 /* --- HELPER FUNCTIONS --- */
