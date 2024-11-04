@@ -18,23 +18,29 @@
     };
     
     /**
-     * Evaluate chosen infix
+     * Evaluate chosen expression
      * @function infixEval
      * @param {string} str Submitted string including mathematic equation
      * @param {string} regex Regex pattern
-     * @returns {string} Mathematic result
+     * @returns {string} String of mathematic operation with numeric variables
      */
     const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
     
     /**
-     * Handle high precedence from the infix eval
+     * Figure out order of mathimatic operations
      * @function highPrecedence
      * @param {string} str Submitted string including mathimatic equation
      * @returns {string} evaluated string
      */
     const highPrecedence = (str) => {
+        // Pattern to check if num and then a * or / followed by another num.
         const result = /([\d.]+)([*\/])([\d.]+)/;
+
+        // Get full mathematical operation.
         const str2 = infixEval(str, result);
+        
+        // If str2 equals str return str.
+        // Else run highPrecedence Recursively on str2
         return str2 === str ? str : highPrecedence(str2);
     };
 /* --- END INFIX FUNCTIONS --- */
@@ -48,22 +54,57 @@
      */
     const average = (nums) => sum(nums) / nums.length;
 
-    // TODO: Flush out documentation
     /**
-     * Evaluate formula to be used
+     * Parse and evaluate the inputted string
      * @function evalFormula
-     * @param {array} cells The cells
+     * @param {string} x inputted string
+     * @param {array} cells Inputted Array. Expected Array of cells.
      */
     const evalFormula = (x, cells) => {
-        const idToText = (id) => cells.find((cell) => cell.id === id).value;
+        /* --- LOCAL VARIABLES --- */
+
+        // Regex Pattern to find cell IDs (eg: A32)
         const cellRegex = /[A-J][1-9][0-9]?/gi;
+
+        // Regex pattern to find Cell Ranges (eg: A32:B45)
         const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;
+        /* --- END LOCAL VARIABLES --- */
+        
+        /**
+         * Find value of a cell
+         * @function idToText
+         * @param {string} id ID of cell
+         * @returns {string} Value of cell.
+         */
+        const idToText = (id) => cells.find((cell) => cell.id === id).value;
+
+        /**
+         * Generate range from submitted string
+         * @function rangeFromString
+         * @param {number} num1 Number to start range
+         * @param {number} num2 Number to End range
+         * @returns {array} Generated Array
+         */
         const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));
+        
+        // idToText returns the value from the cell
         const elemValue = (num) => character => idToText(character + num);
+        
+        // Returns an array of function references
+        // each calls elemVal with num as a param
+        // each of which returns the value of each called cell id  
         const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));
         const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));
+        
+        // Get value of submitted cell by id.
         const cellExpanded = rangeExpanded.replace(cellRegex, (match) => idToText(match.toUpperCase()));
+        
+        // Getting solution of submitted operation, per cell value.
         const functionExpanded = applyFunction(cellExpanded);
+        
+        // If functionExpanded is equal to x
+        // Yes: return the value.
+        // No: recursively call evalForumal on the string. 
         return functionExpanded === x ? functionExpanded : evalFormula(functionExpanded, cells);
     };
 
@@ -143,18 +184,46 @@ const spreadsheetFunctions = {
     sum,
 };
 
-// TODO: Flush out docs
 /**
- * Apply function
+ * spreadsheetFunctions parser.
  * @function applyFunction
+ * @param {string} str String representing cell value(s) to be used
+ * @return 
  */
 const applyFunction = (str) => {
+    /* --- LOCAL VARIABLES --- */
+    // Parse/Evaluate multiplication and division operations.
     const noHigh = highPrecedence(str);
+
+    // Regex Pattern Addition and Subtraction operations.
     const infix = /([\d.]+)([+-])([\d.]+)/;
+
+    // Returns Addition or Subtraction operations as strings.
     const str2 = infixEval(noHigh, infix);
+
+    // Regex Pattern matching spreadsheetFunction calls
     const functionCall = /([a-z0-9]*)\(([0-9., ]*)\)(?!.*\()/i;
+    /* --- END LOCAL VARIABLES --- */
+
+    /**
+     * Split string of numbers into an Array of numbers
+     * @function toNumberList
+     * @param {string} args String of comma seperated numbers
+     * @returns {array} Array of numbers
+     */
     const toNumberList = args => args.split(",").map(parseFloat);
+
+    /**
+     * Core apply function
+     * @function apply
+     * @param {string} fn Name of the function to be called
+     * @param {string} args Arguments to be passed to selected function
+     * @returns {number|string|array} returned value from SpreadSheet function.
+     */
     const apply = (fn, args) => spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));
+
+    // If spreadsheetFunctions contains a property that matches fn (the function/operation name:
+    // Return the result of calling the function with the submitted arguments.
     return str2.replace(functionCall, (match, fn, args) => spreadsheetFunctions.hasOwnProperty(fn.toLowerCase()) ? apply(fn, args) : match);
 };
 /* --- END HELPER FUNCTIONS --- */
@@ -164,6 +233,7 @@ const applyFunction = (str) => {
  * Windows Onload Event
  */
 window.onload = () => {
+    // Get container element
     const container = document.getElementById('container');
 
     /**
@@ -220,16 +290,10 @@ window.onload = () => {
         const value = element.value.replace(/\s/g, '');
         
         // Check if value is included in the input id and if the first value is '='.
+        // If yes, set value to the result of evalFormula
         if (!value.includes(element.id) && value.charAt(0) === "=") {
             element.value = evalFormula(value.substring(1), Array.from(document.getElementById('container').children));
-        } else {
         }
     };
 
 /* --- END EVENT HANDLERS --- */
-
-/* --- APP DATA --- */
-/* --- END APP DATA --- */
-
-/* --- APP LOGIC --- */
-/* --- END APP LOGIC --- */
