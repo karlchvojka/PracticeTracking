@@ -219,7 +219,7 @@ window.onload = () => {
         // The new submitted value
         const value = element.value.replace(/\s/g, '');
         
-        // Check if value is included in the input id.
+        // Check if value is included in the input id and if the first value is '='.
         if (!value.includes(element.id) && value.charAt(0) === "=") {
             element.value = evalFormula(value.substring(1), Array.from(document.getElementById('container').children));
         } else {
