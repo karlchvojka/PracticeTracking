@@ -107,6 +107,7 @@ const spreadsheetFunctions = {
     lasttwo: nums => nums.slice(-2),
     median,
     random: ([x, y]) => Math.floor(Math.random() * y + x),
+    range: nums => range(nums[0], nums[1]),
     someeven: nums => nums.some((num) => isEven(num)),
     sum,
 };
