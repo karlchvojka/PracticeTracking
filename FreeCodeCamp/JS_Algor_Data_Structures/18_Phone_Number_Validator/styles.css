@@ -1,0 +1,70 @@
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* END GLOBAL STYLES */
+
+/** CSS REFERENCE COLORS */
+/* Darkest to lightest */
+/* 1B1B1E */
+/* 373F51 */
+/* 5BA4B0 */
+/* A9BCD0 */
+/* D8DBE2 */
+
+/* GLOBAL STYLES */
+body {
+    background-color: #1B1B1E;
+    color: #A9BCD0;
+}
+
+h1, h2, h3, h4, h5, h6, label, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* END GLOBAL STYLES */
+
+#container {
+    background-color: #373F51;
+    max-width: 60%;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    h1 {
+        text-align: center;
+    }
+
+    #interf-container {
+        label {
+            display: block;
+            margin-bottom: 20px;
+            text-transform: none;
+        }
+
+        input {
+            padding: 10px;
+            width: 100%;
+        }
+
+        #valid-controls {
+            margin: 10px auto;
+            max-width: 50%;
+            
+            button {
+                display: inline-block;
+                padding: 2%;
+                width: 48%;
+            }
+        }
+    }
+}
+
+.empty {
+    color: orange;
+}
