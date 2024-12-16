@@ -22,45 +22,99 @@ body {
     color: #A9BCD0;
 }
 
+/* FONT STYLES */
+
+/* HEADER FONT STYLES */
 h1, h2, h3, h4, h5, h6, label, button {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
 
+h1, h2, label {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+/* END HEADER STYLES */
+
+/* BODY TEXT STYLES */
+p {
+    font-family: "Noto Serif", serif;
+    font-size: 1rem;
+}
+/* END BODY TEXT STYLES */
+
+/* END FONT STYLES */
+
 /* END GLOBAL STYLES */
 
 #container {
     background-color: #373F51;
-    max-width: 60%;
+    max-width: 80%;
     margin: 2rem auto;
     padding: 2rem;
 
-    h1 {
-        text-align: center;
     }
 
     #interf-container {
         label {
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-transform: none;
         }
 
         input {
+            border: none;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
             padding: 10px;
-            width: 100%;
+            width: 50%;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
         }
 
         #valid-controls {
+            display: flex;
+            justify-content: space-between;
             margin: 10px auto;
             max-width: 50%;
             
             button {
-                display: inline-block;
+                background-color: #1B1B1E;
+                border: #5BA4B0;
+                border: 1px solid;
+                border-radius: 5px;
+                color: #5BA4B0;
+                font-size: 1.25rem;
                 padding: 2%;
                 width: 48%;
             }
+
+            button:hover {
+                background-color: #A9BCD0;
+                color: #1B1B1E;
+                cursor: pointer;
+            }
+        }
+
+        #results-title {
+             margin-top: 40px;    
+        }
+        #results-div {
+            border: 1px solid  #5BA4B0;
+            border-radius: 5px;
+            height: 40px;
+            margin: 0 auto;
+            min-height: 20%;
+            min-width: 80%;
+            width: 80%;
         }
     }
 }
