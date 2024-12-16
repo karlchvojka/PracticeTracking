@@ -36,6 +36,7 @@ const phoneRegEx = new RegExp( `${countCode}${areaCode}${dashCheck}${phoneNum}` 
 
 /* --- EVENT HANDLERS --- */
 
+// TODO: Edit description line in check button handler docs.
 /**
  * Check Button Handler
  *
@@ -62,8 +63,8 @@ const formStatus = (message, className) => {
     // Reset class list.
     resultsText.classList.remove(...resultsText.classList);
 
-    if (className === 'empty') {
-        resultsText.classList.add('empty');
+    if (className === 'empty_error') {
+        resultsText.classList.add('empty_error');
         resultsText.innerHTML = "Please enter a Valid Phone Number";
     }
 }
@@ -76,7 +77,7 @@ const formStatus = (message, className) => {
  */
 const verifyNum = (input) => {
     if (inputField.value === "") {
-        formStatus('default', 'empty'); 
+        formStatus('default', 'empty_error'); 
     }
 }
 

@@ -1,3 +1,4 @@
+/* TODO: Organize Global styles headers */
 /* GLOBAL STYLES */
 *,
 *::before,
@@ -58,8 +59,6 @@ p {
     margin: 2rem auto;
     padding: 2rem;
 
-    }
-
     #interf-container {
         label {
             display: block;
@@ -88,8 +87,7 @@ p {
             
             button {
                 background-color: #1B1B1E;
-                border: #5BA4B0;
-                border: 1px solid;
+                border: #5BA4B0 1px solid;
                 border-radius: 5px;
                 color: #5BA4B0;
                 font-size: 1.25rem;
@@ -110,15 +108,15 @@ p {
         #results-div {
             border: 1px solid  #5BA4B0;
             border-radius: 5px;
-            height: 40px;
+            height: auto;
             margin: 0 auto;
-            min-height: 20%;
-            min-width: 80%;
+            min-height: 20px;
+            padding: 10px;
             width: 80%;
+
+            .empty_error {
+                color: orange;
+            }
         }
     }
-}
-
-.empty {
-    color: orange;
 }
