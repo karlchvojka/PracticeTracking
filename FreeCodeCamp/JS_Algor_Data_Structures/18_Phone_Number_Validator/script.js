@@ -1,7 +1,7 @@
 /**
  * Phone Number Validation Functions
  *
- * Functions for handeling validation of phone numbers
+ * Functions for handling validation of phone numbers
  */
 
 /* --- INTERFACE VARIABLES --- */
@@ -22,7 +22,7 @@ const resultsText = document.getElementById('resultsText');
 /**
  * Regex Variables
  *
- * Variables to be used in RegEx tests to validate inputed data.
+ * Variables to be used in RegEx tests to validate inputted data.
  */
 
 const areaCode = '(\\([0-9]{3}\\)|[0-9]{3})';
@@ -36,11 +36,10 @@ const phoneRegEx = new RegExp( `${countCode}${areaCode}${dashCheck}${phoneNum}` 
 
 /* --- EVENT HANDLERS --- */
 
-// TODO: Edit description line in check button handler docs.
 /**
  * Check Button Handler
  *
- * Handles event of clicking the "Check" button"
+ * Handles event of clicking the "Check" button
  */
 checkBtn.addEventListener('click', () => {
     verifyNum(inputField.value);
