@@ -43,7 +43,16 @@ const phoneRegEx = new RegExp( `${countCode}${areaCode}${dashCheck}${phoneNum}` 
  */
 checkBtn.addEventListener('click', () => {
     verifyNum(inputField.value);
+});
+
+/**
+ * Clear button handler
+ * 
+ * Handles event of clicking the "Clear" button.
+ */
+clearBtn.addEventListener('click', () => {
     inputField.value = '';
+    resultsText.innerHTML = '';
 });
 
 /* --- END EVENT HANDLERS --- */
@@ -61,12 +70,15 @@ checkBtn.addEventListener('click', () => {
 const formStatus = (message, className) => {
     // Reset class list.
     resultsText.classList.remove(...resultsText.classList);
+    resultsText.innerHTML = '';
 
     if (className === 'empty_error') {
         resultsText.classList.add('empty_error');
         resultsText.innerHTML = "Please enter a Valid Phone Number";
+    } else {
+        resultsText.innerHTML = message + inputField.value;
     }
-}
+} 
 
 /**
  * Verify Number
@@ -75,8 +87,15 @@ const formStatus = (message, className) => {
  * @returns {boolean} Simple true or false. 
  */
 const verifyNum = (input) => {
+
+    const verifyTest = phoneRegEx.test(input);
+
     if (inputField.value === "") {
         formStatus('default', 'empty_error'); 
+    } else if (verifyTest === true) {
+        formStatus('Valid US number: ', 'valid')
+    } else if (verifyTest === false) {
+        formStatus('Invalid US number: ', 'false')
     }
 }
 
