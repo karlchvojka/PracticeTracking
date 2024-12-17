@@ -1,4 +1,8 @@
 /* --- GLOBAL RESET --- */
+html {
+    font-size: 16px;
+}
+
 *,
 *::before,
 *::after {
@@ -131,8 +135,33 @@ button, label {
 /* --- MEDIA QUERIES --- */
 
 /* --- MOBILE STYLES (SM) --- */
-@media (min-width: 640px) {
+@media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
 
+    #container {
+        position: relative;
+        height: calc(100vh - 2rem) ;
+        padding: 1rem;
+        margin: 1rem;
+        max-width: none;
+        width: calc(100% - 2rem);
+
+        #interface-container {
+            input {
+                margin: 0;
+                width: 100%;
+            }
+        
+
+            #valid-controls {
+                margin: 10px 0px;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
 }
 /* --- END MOBILE STYLES --- */
 
