@@ -14,7 +14,6 @@ const clearBtn = document.getElementById('clear-btn');
 const inputField = document.getElementById('user-input');
 const resultsDiv = document.getElementById('results-div');
 const resultsText = document.getElementById('resultsText');
-
 /* --- END INTERFACE VARIABLES --- */
 
 /* --- FUNCTIONAL VARIABLES --- */
@@ -24,7 +23,6 @@ const resultsText = document.getElementById('resultsText');
  *
  * Variables to be used in RegEx tests to validate inputted data.
  */
-
 const areaCode = '(\\([0-9]{3}\\)|[0-9]{3})';
 const countCode = '^(1\\s?)?';
 const dashCheck = '[\\s\\-]?';
@@ -58,7 +56,6 @@ clearBtn.addEventListener('click', () => {
 /* --- END EVENT HANDLERS --- */
 
 /* --- INTERFACE FUNCTIONS --- */
-
 /**
  * Form Status Handler
  * 
@@ -85,7 +82,7 @@ const formStatus = (message, className) => {
 /**
  * Verify Number
  * @function verifyNum
- * @param {string} string String of numbers to be verified.
+ * @param {string} input String of numbers to be verified.
  * @returns {boolean} Simple true or false. 
  */
 const verifyNum = (input) => {
@@ -100,6 +97,5 @@ const verifyNum = (input) => {
         formStatus('Invalid US number: ', "invalid")
     }
 }
-
 /* --- END INTERFACE FUNCTIONS --- */
 
