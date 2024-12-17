@@ -65,10 +65,9 @@ clearBtn.addEventListener('click', () => {
  * @param {string} className Class to be used to set class
  */
 const formStatus = (message, className) => {
-    // Reset class list.
+    // Reset Results display class list.
     resultsText.classList.remove(...resultsText.classList);
     resultsText.innerHTML = '';
-    console.log(className);
 
     if (className === 'empty_error') {
         resultsText.classList.add(className);
