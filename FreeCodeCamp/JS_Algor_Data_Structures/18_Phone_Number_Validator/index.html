@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <!-- EXTERNAL LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- Roboto Embed for headers -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Noto Serif for body text -->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- END EXTERNAL LINKS -->
 
+        <!-- LOCAL LINKS -->
         <link rel="stylesheet" href="./styles.css" />
+        <!-- END LOCAL LINKS -->
+
         <title>Phone Number Validator</title>
     </head>
+
     <body>
         <div id="container">
+
             <h1>Karl's Telephone Number Validator</h1>
+            
             <div id="interface-container">
                 <label for="user-input">Enter Phone Number to be validated:</label>
                 <input max-length="20" type="text" id="user-input" value>
+                
                 <div id="valid-controls">
                     <button class="button" id="check-btn">Check</button>
                     <button class="button" id="clear-btn">Clear</button>
                 </div>
+                
                 <h2 id="results-title">Results:</h2>
+                
                 <div id="results-div">
                     <p id="resultsText" class="default"></p>
                 </div>
             </div>
+
         </div>
+
+        <!-- INTERNAL SCRIPT INCLUDES -->
         <script src="./script.js"></script>
+        <!-- END INTERNAL SCRIPT INCLUDES -->
     </body>
+
 </html>
