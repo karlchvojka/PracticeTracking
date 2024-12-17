@@ -1,5 +1,4 @@
-/* TODO: Organize Global styles headers */
-/* GLOBAL STYLES */
+/* GLOBAL RESET */
 *,
 *::before,
 *::after {
@@ -7,15 +6,7 @@
     margin: 0;
     padding: 0;
 }
-/* END GLOBAL STYLES */
-
-/** CSS REFERENCE COLORS */
-/* Darkest to lightest */
-/* 1B1B1E */
-/* 373F51 */
-/* 5BA4B0 */
-/* A9BCD0 */
-/* D8DBE2 */
+/* END GLOBAL RESET */
 
 /* GLOBAL STYLES */
 body {
@@ -103,7 +94,8 @@ p {
         }
 
         #results-title {
-             margin-top: 40px;    
+            margin-bottom: 10px;
+            margin-top: 40px;    
         }
         #results-div {
             border: 1px solid  #5BA4B0;
