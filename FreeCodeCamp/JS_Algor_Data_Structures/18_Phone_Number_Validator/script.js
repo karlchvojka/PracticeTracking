@@ -71,11 +71,13 @@ const formStatus = (message, className) => {
     // Reset class list.
     resultsText.classList.remove(...resultsText.classList);
     resultsText.innerHTML = '';
+    console.log(className);
 
     if (className === 'empty_error') {
-        resultsText.classList.add('empty_error');
+        resultsText.classList.add(className);
         resultsText.innerHTML = "Please enter a Valid Phone Number";
     } else {
+        resultsText.classList.add(className);
         resultsText.innerHTML = message + inputField.value;
     }
 } 
@@ -91,11 +93,11 @@ const verifyNum = (input) => {
     const verifyTest = phoneRegEx.test(input);
 
     if (inputField.value === "") {
-        formStatus('default', 'empty_error'); 
+        formStatus('default', "empty_error"); 
     } else if (verifyTest === true) {
-        formStatus('Valid US number: ', 'valid')
+        formStatus('Valid US number: ', "valid")
     } else if (verifyTest === false) {
-        formStatus('Invalid US number: ', 'false')
+        formStatus('Invalid US number: ', "invalid")
     }
 }
 

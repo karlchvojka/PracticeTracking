@@ -117,6 +117,14 @@ p {
             .empty_error {
                 color: orange;
             }
+
+            .invalid {
+                color: red;
+            }
+
+            .valid {
+                color: green;
+            }
         }
     }
 }
