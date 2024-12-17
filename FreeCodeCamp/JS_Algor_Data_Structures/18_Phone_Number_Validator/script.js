@@ -80,6 +80,8 @@ const formStatus = (message, className) => {
 
 /**
  * Verify Number
+ * 
+ * Handles verifying input and processing result
  * @function verifyNum
  * @param {string} input String of numbers to be verified.
  * @returns {boolean} Simple true or false. 
