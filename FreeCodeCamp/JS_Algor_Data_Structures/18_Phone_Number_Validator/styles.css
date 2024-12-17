@@ -117,6 +117,10 @@ button, label {
             padding: 10px;
             width: 80%;
 
+            #resultsText {
+                text-align: center;
+            }
+
             .empty_error {
                 color: orange;
             }
@@ -126,7 +130,7 @@ button, label {
             }
 
             .valid {
-                color: green;
+                color: rgb(0, 184, 0);
             }
         }
     }
@@ -142,7 +146,7 @@ button, label {
 
     #container {
         position: relative;
-        height: calc(100vh - 2rem) ;
+        height: calc(100vh - 2rem);
         padding: 1rem;
         margin: 1rem;
         max-width: none;
@@ -166,13 +170,22 @@ button, label {
 /* --- END MOBILE STYLES --- */
 
 /* --- MEDIUM STYLES (MD) --- */
-@media (min-width: 768px) {
-
+@media only screen and (min-width: 768px) {
+    #container {
+        padding: 2rem;
+        max-width: none;
+        margin: 2rem;
+        width: calc(100% - 4rem);
+    }
 }
 /* --- END MEDIUM STYLES --- */
 
 /* --- LARGE STYLES (LG) --- */
 @media (min-width: 1024px) {
+    #container {
+        margin: 2rem auto;
+        max-width: 800px;
+    }
 
 }
 /* --- END LARGE STYLES --- */
