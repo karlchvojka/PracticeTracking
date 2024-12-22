@@ -154,7 +154,12 @@ class ShoppingCart {
         const currentProductCountSpan = document.getElementById(`product-count-for-id${product.id}`);
 
         // If the product is in the cart then:
-        currentProductCount > 1 ? currentProductCountSpan.textContent = `${currentProductCount}x` : undefined;
+        currentProductCount > 1
+            ? currentProductCountSpan.textContent = `${currentProductCount}x` 
+            : productsContainer.innerHTML +=`
+                <div class="product" id="dessert${id}">
+                </div>
+            `;
     };
 };
 
