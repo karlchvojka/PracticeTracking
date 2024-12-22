@@ -165,4 +165,6 @@ class ShoppingCart {
     };
 };
 
+const cart = new ShoppingCart();
+
 /* --- END INTERFACE FUNCTIONS --- */
