@@ -134,18 +134,27 @@ class ShoppingCart {
 
     /* Methods */
     addItem(id, products) {
+        // Create a copy of the product
         const product = products.find(
             (item) => { return item.id === id}
         );
         const { name, price } = product;
+        // Push the product to the ShoppingCart
         this.items.push(product);
 
+        // Create a object for tracking if the item is in the Cart
         const totalCountPerProduct = {};
         this.items.forEach((dessert) => {
             totalCountPerProduct[dessert.id] = (totalCountPerProduct[dessert.id] || 0) + 1;
         });
+        // Get current count of products
         const currentProductCount = totalCountPerProduct[product.id];
+
+        // Update interface
         const currentProductCountSpan = document.getElementById(`product-count-for-id${product.id}`);
+
+        // If the product is in the cart then:
+        currentProductCount > 1 ? undefined : undefined;
     };
 };
 
