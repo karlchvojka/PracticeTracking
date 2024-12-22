@@ -158,7 +158,7 @@ class ShoppingCart {
             ? currentProductCountSpan.textContent = `${currentProductCount}x` 
             : productsContainer.innerHTML +=`
                 <div class="product" id="dessert${id}">
-                    <p></p>
+                    <p><span class="product-count" id="product-count-for-id${id}" />${name}</p>
                     <p>${price}</p>
                 </div>
             `;
