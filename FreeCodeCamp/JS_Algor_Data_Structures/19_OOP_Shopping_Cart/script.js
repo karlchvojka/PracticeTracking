@@ -176,6 +176,8 @@ const cart = new ShoppingCart();
     }
 );
 
-cartBtn.addEventListener("click", () => {});
+cartBtn.addEventListener("click", () => {
+    const isCartShowing = !isCartShowing;
+});
 
 /* --- END INTERFACE FUNCTIONS --- */
