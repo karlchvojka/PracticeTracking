@@ -83,6 +83,7 @@ const products = [
 
 /* --- INTERFACE VARIABLES --- */
 /* Buttons */
+const addToCartBtns = document.getElementsByClassName('add-to-cart-btns');
 const cartBtn = document.getElementById('cart-btn');
 const clearCartBtn = document.getElementById('clear-cart-btn');
 const showHideCartSpan = document.getElementById('show-hide-cart');
