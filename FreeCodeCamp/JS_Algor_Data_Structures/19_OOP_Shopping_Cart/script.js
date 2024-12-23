@@ -168,4 +168,6 @@ class ShoppingCart {
 
 const cart = new ShoppingCart();
 
+[...addToCartBtns].forEach();
+
 /* --- END INTERFACE FUNCTIONS --- */
