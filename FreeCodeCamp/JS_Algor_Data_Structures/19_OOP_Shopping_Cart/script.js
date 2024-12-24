@@ -176,6 +176,7 @@ const cart = new ShoppingCart();
     (btn) => {
         btn.addEventListener("click", (event) => {
             cart.addItem(Number(event.target.id), products);
+            totalNumberOfItems.textContent = cart.getCounts();
         });
     }
 );
