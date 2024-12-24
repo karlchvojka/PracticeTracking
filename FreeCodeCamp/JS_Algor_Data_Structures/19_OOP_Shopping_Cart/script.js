@@ -179,6 +179,7 @@ const cart = new ShoppingCart();
 cartBtn.addEventListener("click", () => {
     const isCartShowing = !isCartShowing;
     showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
+    cartContainer.style.display = isCartShowing ? "block" : "none";
 });
 
 /* --- END INTERFACE FUNCTIONS --- */
