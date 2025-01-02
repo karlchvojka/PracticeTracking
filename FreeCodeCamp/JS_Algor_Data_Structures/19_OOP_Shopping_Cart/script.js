@@ -169,6 +169,8 @@ class ShoppingCart {
         return this.items.length;
     }
 
+    clearCart() {}
+
     calculateTaxes(amount) {
         return parseFloat(((this.taxRate / 100) * amount).toFixed(2));
     }
