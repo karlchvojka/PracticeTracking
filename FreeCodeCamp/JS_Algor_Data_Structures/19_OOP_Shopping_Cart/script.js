@@ -126,6 +126,7 @@ products.forEach(
     }
 );
 
+/** Class representing the shopping cart */
 class ShoppingCart {
     constructor() {
         this.items = [];
@@ -134,6 +135,12 @@ class ShoppingCart {
     }
 
     /* Methods */
+    /**
+     * Add item.
+     * @param {number} id - Product id.
+     * @param {array} products - Current Products.
+     * @return {string} productsContainer - String to be used to display added item.
+     */
     addItem(id, products) {
         // Create a copy of the product
         const product = products.find(
@@ -164,11 +171,18 @@ class ShoppingCart {
                 </div>
             `;
     };
-
+    
+    /**
+     * Get number of items in cart.
+     * @returns {number} The count of items in the cart.
+     */
     getCounts() {
         return this.items.length;
     }
-
+    
+    /**
+     * Clear cart from existing items
+     */
     clearCart() {
         if (!this.items.length) {
             alert("Your shopping cart is already empty");
@@ -186,11 +200,18 @@ class ShoppingCart {
             totalNumberOfItems.textContent = 0;
         }
     }
-
+    
+    /**
+     * Calculate taxes
+     * @param {number} amount - Subtotal
+     */
     calculateTaxes(amount) {
         return parseFloat(((this.taxRate / 100) * amount).toFixed(2));
     }
     
+    /**
+     * Calculate total of cart
+     */
     calculateTotal() {
         const subTotal = this.items.reduce((total, item) => total + item.price, 0);
         const tax = this.calculateTaxes(subTotal);
