@@ -111,7 +111,7 @@ let isCartShowing = false;
 /* --- INTERFACE FUNCTIONS --- */
 
 /**
- * Base Prooduct layout.
+ * Base Product layout.
  */
 products.forEach(
     ({ name, id, price, category }) => {
@@ -219,5 +219,7 @@ cartBtn.addEventListener("click", () => {
     showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
     cartContainer.style.display = isCartShowing ? "block" : "none";
 });
+
+clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
 
 /* --- END INTERFACE FUNCTIONS --- */
