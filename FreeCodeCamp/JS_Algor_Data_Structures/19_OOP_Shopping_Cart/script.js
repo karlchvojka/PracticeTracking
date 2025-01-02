@@ -169,7 +169,12 @@ class ShoppingCart {
         return this.items.length;
     }
 
-    clearCart() {}
+    clearCart() {
+        if (!this.items.length) {
+            alert("Your shopping cart is already empty");
+            return;
+        }
+    }
 
     calculateTaxes(amount) {
         return parseFloat(((this.taxRate / 100) * amount).toFixed(2));
