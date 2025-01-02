@@ -179,7 +179,11 @@ class ShoppingCart {
         if (isCartCleared) {
             this.items = [];
             this.total = 0;
-            productsContainer.innerHTML = '';  
+            productsContainer.innerHTML = '';
+            cartSubTotal.textContent = 0;
+            cartTaxes.textContent = 0;
+            cartTotal.textContent = 0;
+            totalNumberOfItems.textContent = 0;
         }
     }
 
