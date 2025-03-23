@@ -5,4 +5,4 @@ const startScreen = document.querySelector(".start-screen");
 const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 const ctx = canvas.getContext("2d");
 
-canvas.width
+canvas.width = innerWidth;
