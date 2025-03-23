@@ -130,4 +130,5 @@ window.addEventListener('keydown', ({ key }) => {
 });
 
 window.addEventListener('keyup', ({ key }) => {
+    movePlayer(key, 0, false);
 });
