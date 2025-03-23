@@ -73,6 +73,8 @@ class Platform {
     };
 };
 
+class CheckPoint {};
+
 const player = new Player();
 
 const platformPositions = [
