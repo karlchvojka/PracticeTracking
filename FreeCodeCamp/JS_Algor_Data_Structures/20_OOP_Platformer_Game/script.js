@@ -133,7 +133,9 @@ const animate = () => {
         if (collisionDetectionRules.every((rule) => rule)) {
             player.velocity.y = 0;
             return;
-        };
+        }
+
+        const platformDetectionRules = [];
     });
 };
 
