@@ -63,6 +63,7 @@ class Player {
 class Platform {
     constructor(x, y) {
         this.position = {x, y};
+        this.width = 200;
     };
 };
 
