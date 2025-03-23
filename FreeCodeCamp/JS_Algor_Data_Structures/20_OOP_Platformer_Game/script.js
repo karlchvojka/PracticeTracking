@@ -121,6 +121,8 @@ const animate = () => {
             });
         }
     }
+
+    platforms.forEach((platform) => {});
 };
 
 const keys = {
