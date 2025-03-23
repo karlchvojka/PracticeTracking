@@ -98,6 +98,9 @@ const movePlayer = (key, xVelocity, isPressed) => {
             if (xVelocity === 0) {
                 player.velocity.x = xVelocity;
             }
+            
+            player.velocity.x -= xVelocity;
+            break;
     };
 };
 
