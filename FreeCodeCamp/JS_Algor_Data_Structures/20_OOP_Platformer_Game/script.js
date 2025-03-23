@@ -66,6 +66,8 @@ class Platform {
         this.width = 200;
         this.height = proportionalSize(40);
     };
+
+    draw() {};
 };
 
 const player = new Player();
