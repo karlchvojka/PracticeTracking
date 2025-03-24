@@ -244,7 +244,9 @@ const startGame = () => {
     animate();
 };
 
-const showCheckpointScreen = (msg) => {};
+const showCheckpointScreen = (msg) => {
+    checkpointScreen.style.display = "block";
+};
 
 startBtn.addEventListener("click", startGame);
 
