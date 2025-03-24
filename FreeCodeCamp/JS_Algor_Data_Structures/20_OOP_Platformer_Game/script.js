@@ -206,7 +206,9 @@ const animate = () => {
             index === 0 || checkpoints[index - 1].claimed === true,
         ];
 
-        if (checkpointDetectionRules.every((rule) => rule)) {};
+        if (checkpointDetectionRules.every((rule) => rule)) {
+            checkpoint.claim();
+        };
     });
 };
 
