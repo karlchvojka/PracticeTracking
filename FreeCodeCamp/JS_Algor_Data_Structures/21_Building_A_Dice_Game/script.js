@@ -37,6 +37,12 @@ const updateStats = () => {
     roundElement.textContent = round;
 };
 
+const updateRadioOption = (index, score) => {
+    scoreInputs[index].disabled = false;
+    scoreInputs[index].value = score;
+    scoreSpans[index].textContent = `, score = ${score}`;
+};
+
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
         alert("Maximum Rolls Reached - Select a score");
