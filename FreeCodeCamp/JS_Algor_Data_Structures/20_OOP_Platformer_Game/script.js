@@ -244,6 +244,8 @@ const startGame = () => {
     animate();
 };
 
+const showCheckpointScreen = (msg) => {};
+
 startBtn.addEventListener("click", startGame);
 
 window.addEventListener('keydown', ({ key }) => {
