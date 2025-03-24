@@ -139,7 +139,7 @@ const animate = () => {
 
     checkpoints.forEach((checkpoint) => {
         checkpoint.draw();
-    };
+    })
 
     player.update();
 
