@@ -137,6 +137,10 @@ const animate = () => {
         platform.draw();
     });
 
+    checkpoints.forEach((checkpoint) => {
+        checkpoint.draw();
+    };
+
     player.update();
 
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
