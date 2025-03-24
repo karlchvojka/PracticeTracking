@@ -32,12 +32,18 @@ const rollDice = () => {
     });
 };
 
+const updateStats = () => {
+    rollsElement.textContent = rolls;
+    roundElement.textContent = round;
+};
+
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
         alert("Maximum Rolls Reached - Select a score");
     } else {
-        rollDice();
         rolls++;
+        rollDice();
+        updateStats();
     }
 
 });
