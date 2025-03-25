@@ -37,7 +37,7 @@ const updateStats = () => {
     roundElement.textContent = round;
 };
 
-const updateRadioOptions = (index, score) => {
+const updateRadioOption = (index, score) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = score;
     scoreSpans[index].textContent = `, score = ${score}`;
@@ -61,13 +61,30 @@ const getHighestDuplicates = (numArr) => {
     const maxCount = Math.max(...Object.values(counts));
 
     if (maxCount >= 4) {
-        updateRadioOptions(1, totalScore);
-        updateRadioOptions(0, totalScore);
+        updateRadioOption(1, totalScore);
+        updateRadioOption(0, totalScore);
     } else if(maxCount >= 3) {
-        updateRadioOptions(0, totalScore);
+        updateRadioOption(0, totalScore);
     } else {
-        updateRadioOptions(5, 0);
+        updateRadioOption(5, 0);
     }
+};
+
+const detectFullHouse = (diceValuesArr) => {
+    let value = {};
+    for(dice of diceValuesArr) {
+        if(value[dice]) {
+            value[dice] += 1;
+        } else {
+            value[dice] = 1;
+        }
+    }
+
+    const checkArr = [...Object.values(value)];
+    if(checkArr.includes((2 & 3))) {
+        updateRadioOption(2, 25);
+    }
+    updateRadioOption(5, 0);
 };
 
 const resetRadioOptions = () => {
@@ -97,8 +114,11 @@ rollDiceBtn.addEventListener("click", () => {
         alert("Maximum Rolls Reached - Select a score");
     } else {
         rolls++;
+        resetRadioOptions();
         rollDice();
         updateStats();
+        getHighestDuplicates(diceValuesArr);
+        detectFullHouse(diceValuesArr);
     }
 });
 
