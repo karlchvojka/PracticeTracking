@@ -120,6 +120,12 @@ keepScoreBtn.addEventListener("click", () => {
         updateStats();
         resetRadioOptions();
         updateScore(selectedValue, achieved);
+
+        if(round === 6) {
+            setTimeout(() => {
+                alert(`Game Over! Your final score: ${score}`)
+            }, 500)
+        }
     } else {
         alert("Please select an option or roll the dice.");
     }
