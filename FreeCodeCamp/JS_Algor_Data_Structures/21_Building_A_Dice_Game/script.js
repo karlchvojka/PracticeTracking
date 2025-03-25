@@ -44,7 +44,7 @@ const updateRadioOptions = (index, score) => {
 };
 
 const updateScore = (selectedValue, id) => {
-    score += parseInt(selectedValuse);
+    score += parseInt(selectedValue);
     totalScoreElement.textContent = score;
     scoreHistory.innerHTML += `<li>${id} : ${selectedValue}</li>`;
 }
@@ -100,5 +100,26 @@ rulesBtn.addEventListener("click", () => {
     } else {
         rulesBtn.textContent = "Show rules";
         rulesContainer.style.display = "none";
+    }
+});
+
+keepScoreBtn.addEventListener("click", () => {
+    let selectedOption = null;
+
+    for(const scoreInput of scoreInputs) {
+        if (scoreInput.checked) {
+            selectedOption = scoreInput;
+            break;
+        }
+    }
+    if(selectedOption) {
+        const value = parseInt(selectedOption.value);
+        const id = selectedOption.id;
+        updateScore(value, id);
+        resetRadioOptions();
+        totalScoreElement.textContent = score;
+        scoreHistory.innerHTML = `<li>${id} : ${value}</li>`;
+    } else {
+        alert("Select an option");
     }
 });
