@@ -80,6 +80,18 @@ const resetRadioOptions = () => {
     })
 }
 
+const resetGame = () => {
+    listOfAllDice.forEach(element => element.textContent = 0);
+
+    score = 0;
+    rolls = 0;
+    round = 1;
+    totalScoreElement.textContent = score;
+    rollsElement.textContent = rolls;
+    roundElement.textContent = round;
+    resetRadioOptions();
+};
+
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
         alert("Maximum Rolls Reached - Select a score");
@@ -88,7 +100,6 @@ rollDiceBtn.addEventListener("click", () => {
         rollDice();
         updateStats();
     }
-
 });
 
 rulesBtn.addEventListener("click", () => {
@@ -124,6 +135,7 @@ keepScoreBtn.addEventListener("click", () => {
         if(round === 6) {
             setTimeout(() => {
                 alert(`Game Over! Your final score: ${score}`)
+                resetGame();
             }, 500)
         }
     } else {
