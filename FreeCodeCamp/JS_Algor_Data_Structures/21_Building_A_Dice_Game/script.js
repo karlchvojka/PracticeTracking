@@ -37,10 +37,31 @@ const updateStats = () => {
     roundElement.textContent = round;
 };
 
-const updateRadioOption = (index, score) => {
+const updateRadioOptions = (index, score) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = score;
     scoreSpans[index].textContent = `, score = ${score}`;
+};
+
+const getHighestDuplicates = (numArr) => {
+    const counts = {};
+    let totalScore = 0;
+
+    numArr.forEach((number) => {
+        counts[number] = (counts[number] || 0) + 1;
+        totalScore += number;
+    });
+
+    const maxCount = Math.max(...Object.values(counts));
+
+    if (maxCount >= 4) {
+        updateRadioOptions(1, totalScore);
+        updateRadioOptions(0, totalScore);
+    } else if(maxCount >= 3) {
+        updateRadioOptions(0, totalScore);
+    } else {
+        updateRadioOptions(5, 0);
+    }
 };
 
 rollDiceBtn.addEventListener("click", () => {
