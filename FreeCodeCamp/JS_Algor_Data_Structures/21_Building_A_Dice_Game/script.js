@@ -65,8 +65,6 @@ const getHighestDuplicates = (numArr) => {
         updateRadioOption(0, totalScore);
     } else if(maxCount >= 3) {
         updateRadioOption(0, totalScore);
-    } else {
-        updateRadioOption(5, 0);
     }
 };
 
@@ -83,8 +81,6 @@ const detectFullHouse = (arr) => {
     if (hasThreeOfAKind && hasPair) {
         updateRadioOption(2, 25);
     }
-
-    updateRadioOption(5, 0);
 };
 
 const resetRadioOptions = () => {
@@ -124,8 +120,6 @@ const checkForStraights = (arr) => {
     if (largeStraights.includes(uniqueNumsStr)) {
         updateRadioOption(4, 40);
     }
-
-    updateRadioOption(5, 0);
 };
 
 rollDiceBtn.addEventListener("click", () => {
@@ -139,6 +133,7 @@ rollDiceBtn.addEventListener("click", () => {
         getHighestDuplicates(diceValuesArr);
         detectFullHouse(diceValuesArr);
         checkForStraights(diceValuesArr);
+        updateRadioOption(5, 0);
     }
 });
 
