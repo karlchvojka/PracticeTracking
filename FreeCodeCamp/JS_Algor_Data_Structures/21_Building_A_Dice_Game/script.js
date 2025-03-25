@@ -64,6 +64,16 @@ const getHighestDuplicates = (numArr) => {
     }
 };
 
+const resetRadioOptions = () => {
+    scoreInputs.forEach((e) => {
+        e.disabled = true;
+        e.checked = false;
+    })
+    scoreSpans.forEach((e) => {
+        e.textContent = "";
+    })
+}
+
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
         alert("Maximum Rolls Reached - Select a score");
