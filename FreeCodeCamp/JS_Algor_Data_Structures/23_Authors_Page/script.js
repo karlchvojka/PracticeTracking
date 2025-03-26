@@ -27,6 +27,8 @@ fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
         console.log(`There was an error: ${err}`);
     });
 
+const fetchMoreAuthors = () => {};
+
 /* --- END LOCAL DATA --- */
 
 const displayAuthors = (authors) => {
