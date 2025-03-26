@@ -19,6 +19,22 @@
     --dark-orange: #f89808;
 }
 
+/* Global Styles */
 body {
     background-color: var(--dark-grey);
+    color: var(--orange);
+    text-align: center;
 }
+
+h1 {
+    color: var(--golden-yellow);
+    text-transform: uppercase;
+}
+
+.container {
+    width: 33.3%;
+    margin: 0 auto;
+}
+/* END GLOBAL STYLES */
+
+
