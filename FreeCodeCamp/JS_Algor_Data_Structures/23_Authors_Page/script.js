@@ -29,7 +29,10 @@ fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
 /* --- END LOCAL DATA --- */
 
 const displayAuthors = (authors) => {
-    authors.forEach(({author, image, url, bio}, index => {
-        authorContainer.innerHTML += ``;
+    authors.forEach(({author, image, url, bio}, index) => {
+        authorContainer.innerHTML += `
+            <div id="${index}" class="user-card">
+            </div>
+        `;
     });
 };
