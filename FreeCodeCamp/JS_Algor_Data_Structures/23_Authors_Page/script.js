@@ -48,3 +48,7 @@ const displayAuthors = (authors) => {
         `;
     });
 };
+
+/* --- EVENT HANDLERS --- */
+loadMoreBtn.addEventListener('click', fetchMoreAuthors);
+/* --- END EVENT HANDLERS --- */
