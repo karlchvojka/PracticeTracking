@@ -27,7 +27,10 @@ fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
         console.log(`There was an error: ${err}`);
     });
 
-const fetchMoreAuthors = () => {};
+const fetchMoreAuthors = () => {
+    startingIndex += 8;
+    endingIndex += 8;
+};
 
 /* --- END LOCAL DATA --- */
 
