@@ -11,7 +11,7 @@ const loadMoreBtn = document.getElementById("load-more-btn");
 
 /* --- LOCAL DATA --- */
 fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
-    .then((res) => console.log(res))
+    .then((res) => res.json())
 
 /* --- END LOCAL DATA --- */
 
