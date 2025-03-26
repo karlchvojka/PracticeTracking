@@ -32,6 +32,8 @@ const fetchMoreAuthors = () => {
     endingIndex += 8;
 
     displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
+
+    if (authorDataArr.length <= endingIndex) {}
 };
 
 /* --- END LOCAL DATA --- */
