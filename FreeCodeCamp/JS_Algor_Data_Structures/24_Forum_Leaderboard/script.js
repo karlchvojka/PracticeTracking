@@ -39,6 +39,8 @@ const forumCategory = (id) => {
 
     if (allCategories.hasOwnProperty(id)) {
         const { className, category } = allCategories[id];
+        selectedCategory.className = className;
+        selectedCategory.category = category;
     }
 }
 
