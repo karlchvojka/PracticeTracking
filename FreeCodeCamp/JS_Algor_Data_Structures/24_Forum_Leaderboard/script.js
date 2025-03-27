@@ -6,10 +6,8 @@
 
 /* --- LOCAL DATA --- */
 const allCategories = {
-    299: {
-        category: 'Career Advice',
-        className: "career"
-    }
+    299: { category: 'Career Advice', className: "career" },
+    409: { category: "Project Feedback", className: "feedback" }
 };
 const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 const forumCategoryUrl = "https://forum.freecodecamp.org/c/";
