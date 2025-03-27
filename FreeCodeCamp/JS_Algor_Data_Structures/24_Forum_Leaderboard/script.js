@@ -32,7 +32,7 @@ const postsContainer = document.getElementById("posts-container");
  * @name forumCategory
  * @function
  * @param {string} id Category Id
- * @returns {string} Forum Category
+ * @returns {string} Forum Category link
  */
 const forumCategory = (id) => {
     let selectedCategory = {};
@@ -50,6 +50,8 @@ const forumCategory = (id) => {
     const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
     const linkText = selectedCategory.category;
     const linkClass = `category ${selectedCategory.className}`;
+
+    return `<a href="${url}"></a>`;
 };
 
 /**
