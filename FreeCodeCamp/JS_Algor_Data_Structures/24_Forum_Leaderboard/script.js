@@ -19,8 +19,9 @@ const postsContainer = document.getElementById("posts-container");
 
 /**
  * Fetches data Ascyncronously.
- * @name fetchData
- * @function
+ *
+ * @async
+ * @function fetchData
  */
 const fetchData = async () => {
     try {
@@ -37,7 +38,7 @@ fetchData();
  * Show latest posts on page
  * @name showLatestPosts
  * @function
- * @param {Array} data Data to be shown on the page.
+ * @param {Array} data Latest forum posts.
  */
 const showLatestPosts = (data) => {};
 /* --- END GLOBAL FUNCTIONS --- */
