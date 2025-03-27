@@ -34,7 +34,9 @@ const postsContainer = document.getElementById("posts-container");
  * @param {Array} posters Array of posters
  * @param {Array} users Array of users
  */
-const avatars = (posters, users) => {};
+const avatars = (posters, users) => {
+    return posters.map((poster) => {});
+};
 
 /**
  * Retrieve the Forum category
