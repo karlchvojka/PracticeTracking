@@ -35,7 +35,9 @@ const postsContainer = document.getElementById("posts-container");
  * @param {Array} users Array of users
  */
 const avatars = (posters, users) => {
-    return posters.map((poster) => {});
+    return posters.map((poster) => {
+        const user = users.find((user) => user.id === poster.user_id)
+    });
 };
 
 /**
