@@ -37,7 +37,9 @@ const postsContainer = document.getElementById("posts-container");
 const forumCategory = (id) => {
     let selectedCategory = {};
 
-    if (allCategories.hasOwnProperty(id)) {}
+    if (allCategories.hasOwnProperty(id)) {
+        const { className, category } = allCategories[id];
+    }
 }
 
 /**
