@@ -14,3 +14,13 @@ const forumTopicUrl = "https://forum.freecodecamp.org/t/";
 /* --- INTERFACE VARIABLES --- */
 const postsContainer = document.getElementById("posts-container");
 /* --- END INTERFACE VARIABLES --- */
+
+/* --- GLOBAL FUNCTIONS --- */
+
+/**
+ * Fetches data Ascyncronously.
+ * @name fetchData
+ * @function
+ */
+const fetchData = async () => {};
+/* --- END GLOBAL FUNCTIONS --- */
