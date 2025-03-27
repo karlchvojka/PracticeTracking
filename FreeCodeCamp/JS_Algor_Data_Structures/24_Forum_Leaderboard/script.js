@@ -41,5 +41,7 @@ fetchData();
  * @function
  * @param {Object} data Data from FCC.
  */
-const showLatestPosts = (data) => {};
+const showLatestPosts = (data) => {
+    const { topic_list, users } = data;
+};
 /* --- END GLOBAL FUNCTIONS --- */
