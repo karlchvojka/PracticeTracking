@@ -10,3 +10,7 @@ const forumCategoryUrl = "https://forum.freecodecamp.org/c/";
 const forumLatest = "https://cdn.freecodecamp.org/curriculum/forum-latest/latest.json";
 const forumTopicUrl = "https://forum.freecodecamp.org/t/";
 /* --- END LOCAL DATA --- */
+
+/* --- INTERFACE VARIABLES --- */
+const postsContainer = document.getElementById("posts-container");
+/* --- END INTERFACE VARIABLES --- */
