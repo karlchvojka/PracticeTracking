@@ -24,6 +24,7 @@ const postsContainer = document.getElementById("posts-container");
  */
 const fetchData = async () => {
     try {
+        const res = await fetch(forumLatest);
     } catch (err) {
     }
 };
