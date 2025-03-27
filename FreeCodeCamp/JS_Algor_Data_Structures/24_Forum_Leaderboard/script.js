@@ -32,4 +32,12 @@ const fetchData = async () => {
 };
 
 fetchData();
+
+/**
+ * Show latest posts on page
+ * @name showLatestPosts
+ * @function
+ * @param {Array} data Data to be shown on the page.
+ */
+const showLatestPosts = (data) => {};
 /* --- END GLOBAL FUNCTIONS --- */
