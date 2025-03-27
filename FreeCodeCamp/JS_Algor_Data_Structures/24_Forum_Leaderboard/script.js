@@ -22,5 +22,9 @@ const postsContainer = document.getElementById("posts-container");
  * @name fetchData
  * @function
  */
-const fetchData = async () => {};
+const fetchData = async () => {
+    try {
+    } catch (err) {
+    }
+};
 /* --- END GLOBAL FUNCTIONS --- */
