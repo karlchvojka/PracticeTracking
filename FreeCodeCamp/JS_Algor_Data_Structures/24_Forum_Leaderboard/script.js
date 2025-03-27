@@ -36,6 +36,17 @@ const fetchData = async () => {
 fetchData();
 
 /**
+ * Calculate how much time has passed since the topic had any activity.
+ * @name timeAgo
+ * @function
+ * @param {string} time Date of the last activity on a topic.
+ */
+const timeAgo = (time) => {
+    const currentTime = new Date();
+    const lastPost = new Date(time);
+}
+
+/**
  * Show latest posts on page
  * @name showLatestPosts
  * @function
