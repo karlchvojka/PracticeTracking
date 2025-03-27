@@ -58,6 +58,6 @@ const showLatestPosts = (data) => {
         } = item;
 
         return `<tr></tr>`;
-    });
+    }).join('');
 };
 /* --- END GLOBAL FUNCTIONS --- */
