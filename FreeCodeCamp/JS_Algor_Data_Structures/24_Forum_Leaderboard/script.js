@@ -61,6 +61,21 @@ const timeAgo = (time) => {
 }
 
 /**
+ * Format Views divided by 1000.
+ * @name viewCount
+ * @function
+ * @param {number} views
+ * @returns {string} To be displayed on the leaderboard.
+ */
+const viewCount = (views) => {
+    if (views >= 1000) {
+        return `${Math.floor(views / 1000)}k`
+    } else {
+        return views
+    }
+}
+
+/**
  * Show latest posts on page
  * @name showLatestPosts
  * @function
