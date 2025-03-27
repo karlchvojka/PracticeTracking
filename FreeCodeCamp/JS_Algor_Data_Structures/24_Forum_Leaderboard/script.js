@@ -42,6 +42,9 @@ const forumCategory = (id) => {
         selectedCategory.className = className;
         selectedCategory.category = category;
     } else {
+        selectedCategory.className = "general";
+        selectedCategory.category = "General";
+        selectedCategory.id = 1;
     }
 }
 
