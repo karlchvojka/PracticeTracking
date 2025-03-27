@@ -40,10 +40,24 @@ fetchData();
  * @name timeAgo
  * @function
  * @param {string} time Date of the last activity on a topic.
+ * @returns {string} A string to be displayed.
  */
 const timeAgo = (time) => {
     const currentTime = new Date();
     const lastPost = new Date(time);
+
+    /* Time Calculations */
+    const minuets = Math.floor((currentTime - lastPost) / 60000);
+    const hours = Math.floor((currentTime - lastPost) / 3600000);
+    const days = Math.floor((currentTime - lastPost) / 86400000);
+
+    if (minuets < 60) {
+        return `${minuets}m ago`
+    } else if (hours < 24) {
+        return `${hours}h ago`
+    } else {
+        return `${days}d ago`
+    }
 }
 
 /**
