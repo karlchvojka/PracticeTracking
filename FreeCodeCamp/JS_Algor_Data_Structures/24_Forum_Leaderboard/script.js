@@ -28,6 +28,15 @@ const postsContainer = document.getElementById("posts-container");
 /* --- GLOBAL FUNCTIONS --- */
 
 /**
+ * Create a list of avatar images of users participating in the conversation.
+ * @name avatars
+ * @function
+ * @param {Array} posters Array of posters
+ * @param {Array} users Array of users
+ */
+const avatars = (posters, users) => {};
+
+/**
  * Retrieve the Forum category
  * @name forumCategory
  * @function
