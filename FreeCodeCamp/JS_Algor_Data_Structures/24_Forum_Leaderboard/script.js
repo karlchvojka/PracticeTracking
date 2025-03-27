@@ -28,6 +28,15 @@ const postsContainer = document.getElementById("posts-container");
 /* --- GLOBAL FUNCTIONS --- */
 
 /**
+ * Retrieve the Forum category
+ * @name forumCategory
+ * @function
+ * @param {string} id Category Id
+ * @returns {string} Forum Category
+ */
+const forumCategory = (id) => {}
+
+/**
  * Fetches data Ascyncronously.
  *
  * @async
