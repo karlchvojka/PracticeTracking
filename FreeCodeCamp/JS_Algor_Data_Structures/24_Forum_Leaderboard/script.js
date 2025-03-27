@@ -39,7 +39,7 @@ fetchData();
  * Show latest posts on page
  * @name showLatestPosts
  * @function
- * @param {Array} data Latest forum posts.
+ * @param {Object} data Data from FCC.
  */
 const showLatestPosts = (data) => {};
 /* --- END GLOBAL FUNCTIONS --- */
