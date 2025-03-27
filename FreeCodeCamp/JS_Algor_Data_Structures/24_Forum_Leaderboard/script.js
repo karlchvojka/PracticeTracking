@@ -36,6 +36,8 @@ const postsContainer = document.getElementById("posts-container");
  */
 const forumCategory = (id) => {
     let selectedCategory = {};
+
+    if (allCategories.hasOwnProperty(id)) {}
 }
 
 /**
