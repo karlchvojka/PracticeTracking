@@ -34,7 +34,9 @@ const postsContainer = document.getElementById("posts-container");
  * @param {string} id Category Id
  * @returns {string} Forum Category
  */
-const forumCategory = (id) => {}
+const forumCategory = (id) => {
+    let selectedCategory = {};
+}
 
 /**
  * Fetches data Ascyncronously.
