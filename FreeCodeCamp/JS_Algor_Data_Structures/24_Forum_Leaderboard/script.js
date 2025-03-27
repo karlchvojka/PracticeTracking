@@ -5,6 +5,7 @@
  */
 
 /* --- LOCAL DATA --- */
+const allCategories = {};
 const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 const forumCategoryUrl = "https://forum.freecodecamp.org/c/";
 const forumLatest = "https://cdn.freecodecamp.org/curriculum/forum-latest/latest.json";
