@@ -46,7 +46,9 @@ const forumCategory = (id) => {
         selectedCategory.category = "General";
         selectedCategory.id = 1;
     }
-}
+    
+    const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
+};
 
 /**
  * Fetches data Ascyncronously.
