@@ -33,6 +33,7 @@ const postsContainer = document.getElementById("posts-container");
  * @function
  * @param {Array} posters Array of posters
  * @param {Array} users Array of users
+ * @returns {string} Image element of the users avatar
  */
 const avatars = (posters, users) => {
     return posters.map((poster) => {
@@ -41,6 +42,7 @@ const avatars = (posters, users) => {
         if (user) {
             const avatar = user.avatar_template.replace(/{size}/, 30);
             const userAvatarUrl = avatar.startsWith("/user_avatar/") ? avatarUrl.concat(avatar) : avatar;
+            return `<img src="${userAvatarUrl}" alt="${user.name}" />`;
         }
     });
 };
