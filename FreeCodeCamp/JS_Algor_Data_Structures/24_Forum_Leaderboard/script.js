@@ -40,6 +40,7 @@ fetchData();
  * @name showLatestPosts
  * @function
  * @param {Object} data Data from FCC.
+ * @returns {string} A string containing an HTML `<tr>` element with the given data.
  */
 const showLatestPosts = (data) => {
     const { topic_list, users } = data;
@@ -55,6 +56,8 @@ const showLatestPosts = (data) => {
             category_id,
             bumped_at 
         } = item;
+
+        return `<tr></tr>`;
     });
 };
 /* --- END GLOBAL FUNCTIONS --- */
