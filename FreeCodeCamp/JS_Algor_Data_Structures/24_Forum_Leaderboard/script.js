@@ -57,7 +57,14 @@ const showLatestPosts = (data) => {
             bumped_at 
         } = item;
 
-        return `<tr></tr>`;
+        return `
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>`;
     }).join('');
 };
 /* --- END GLOBAL FUNCTIONS --- */
