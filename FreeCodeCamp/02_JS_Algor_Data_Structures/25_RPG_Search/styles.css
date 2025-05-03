@@ -6,10 +6,7 @@
 
 /* --- END CSS IMPORTS --- */
 
-/* --- CSS VARIABLES --- */
-/* --- END CSS VARIABLES --- */
-
-/* --- GLOBAL RESET --- */
+/* --- GLOBAL STYLES --- */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -32,9 +29,6 @@ body {
   background-color: #303036;
   line-height: 1.5;
 }
-/* --- END GLOBAL RESET --- */
-
-/* --- GLOBAL STYLES --- */
 
 /* --- END GLOBAL STYLES --- */
 
@@ -179,7 +173,7 @@ header {
 }
 /* END SEARCH STYLES */
 
-/* RESULTS STYLES */
+/* SINGLE RESULTS STYLES */
 #bio-wrap {
   margin: 10px 0px;
 }
@@ -233,7 +227,37 @@ header {
   margin-bottom: 0;
   text-transform: uppercase;
 }
-/* END RESULTS STYLES */
+/* END SINGLE RESULTS STYLES */
+
+/* CREATURE FULL LIST STYLES */
+#results-list h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+.creature {
+  display: grid;
+  color: #ffffff;
+  column-gap:2%;
+  grid-template-columns: 10% 88%;
+  margin-bottom: 10px;
+}
+
+.creature div {
+  background-color: #0582CA;
+}
+.creature p {
+  line-height: 2.5;
+  margin-bottom: 0;
+}
+
+.creature .creature-id {
+  text-align: center;
+}
+
+.creature .creature-name {
+  padding-left: 10px;
+}
+/* END CREATURE FULL LIST STYLES */
 
 
 /* --- END ELEMENT STYLES --- */

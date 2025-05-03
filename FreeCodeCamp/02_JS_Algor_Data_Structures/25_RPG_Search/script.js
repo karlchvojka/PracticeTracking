@@ -77,6 +77,35 @@ const buildResults = (data) => {
 }
 
 /**
+ * Build List
+ * 
+ * Builds a simple list of Creature names and IDs
+ * 
+ * @function buildList
+ * @param {array} data Returned data from Creature API
+ * @returns {string} HTML structure with data
+ */
+const buildList = (data) => {
+  resultsContainer.innerHTML = 
+    `<div id="results-list">
+      <h3>Results List</h3>
+      <div class="creature-list">` 
+      + data.map(
+        function (creature) { return `
+          <div class="creature">
+            <div class="creature-id">
+              <p>` + creature.id + `</p>
+            </div>
+            <div class="creature-name">
+              <p>` + creature.name + `</p>
+            </div>
+          </div>`;
+        }
+      ).join('') + 
+    `</div>`;
+}
+
+/**
  * Fetch Data
  * 
  * @async
@@ -90,12 +119,11 @@ const fetchData = async (ident) => {
     if (ident) {
       const res = await fetch(fullUrl);
       const data = await res.json();
-      console.log(data);
       buildResults(data);
     } else {
       const res = await fetch(creatureListApiUrl);
       const data = await res.json();
-      console.log(data)
+      buildList(data);
     }
   } catch (err) {
     console.log(err);
@@ -105,13 +133,17 @@ const fetchData = async (ident) => {
 /* EVENT LISTENERS */
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
+
   const inputElement = document.querySelector("#search-input");
+
   history.replaceState({ query: inputElement.value }, "");
+
   fetchData(inputElement.value);
 });
 
 window.addEventListener("load", () => {
   const query = history.state?.query;
+  
   if (query) {
       document.querySelector("#search-input").value = query;
       performSearch();
