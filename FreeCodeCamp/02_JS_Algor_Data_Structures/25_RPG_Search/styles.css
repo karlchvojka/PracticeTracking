@@ -140,7 +140,7 @@ header {
   margin: 0 auto;
   margin-bottom: 5%;
   padding: 2%;
-  width: 50%;
+  width: 40%;
 }
 
 #search {
@@ -180,6 +180,10 @@ header {
 /* END SEARCH STYLES */
 
 /* RESULTS STYLES */
+#bio-wrap {
+  margin: 10px 0px;
+}
+
 #bio-wrap #creature-name-id h4 {
   margin-bottom: 10px;
 }
@@ -196,14 +200,19 @@ header {
 }
 
 #stats-wrap {
-  margin: 20px auto;
-  width: 70%;
+  margin: 0 auto;
+  width: 80%;
 }
 .stat {
   display: grid;
-  column-gap: 10%;
-  grid-template-columns: 60% 30%;
-  margin-bottom: 10px;
+  column-gap: 5%;
+  grid-template-columns: 60% 35%;
+  margin-bottom: 5px;
+}
+
+#stats-header h3{
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .stat div {
@@ -213,12 +222,13 @@ header {
 }
 
 .stat-title h3 {
+  font-weight: normal;
   margin-bottom: 0;
 }
 
 .stat-value p {
   font-size: 1.75rem;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.5;
   margin-bottom: 0;
   text-transform: uppercase;
