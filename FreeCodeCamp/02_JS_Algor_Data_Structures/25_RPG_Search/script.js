@@ -35,9 +35,11 @@ const buildResults = (data) => {
           <div id="height"><h5>Height: ${data.height}</h5></div>
         </div>
       </div>
-      <div id="creat-types">
-        <div class="type"><p>Water</p></div>
-      </div>
+      <div id="creat-types">` + data.types.map(
+        function (type) { return `
+          <div class="type"><p>` + type.name + `</p></div>`
+        }).join('') +
+      `</div>
       <div id="creat-special">
         <h5>${data.special.name}</h5>
         <p>${data.special.description}</p>
