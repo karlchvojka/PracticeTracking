@@ -30,79 +30,64 @@ body {
   line-height: 1.5;
 }
 
+h1, h2, h3, h4, h5, h6, p, a:link, a:visited, a:hover{
+  color: #000000;
+  text-transform: uppercase;
+}
 /* --- END GLOBAL STYLES --- */
 
 /* --- FONT STYLES --- */
 h1 {
   color: #00A6FB;
-  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.9rem;
   line-height: 1.5;
   margin-bottom: 20px;
   margin-top: 20px;
-  text-transform: uppercase;
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
 h4 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
   margin-bottom:20px;
-  text-transform: uppercase;
 }
 
 h5 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
-  text-transform: uppercase;
 }
 
 h6 {
-  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  text-transform: uppercase;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   margin-bottom:10px;
 }
 
 a {
-  font-family: "Roboto", sans-serif;
   font-size:1rem;
   text-decoration: none;
 }
 
 a:link, a:visited {
-  color: #000000;
   text-decoration: none;
-}
-
-a:hover {
-  color: #000000;
 }
 
 button {
@@ -205,14 +190,18 @@ header {
 }
 
 #stats-header h3{
+  color: #ffffff;
   font-weight: bold;
   margin-bottom: 0;
 }
 
 .stat div {
   background-color: #0582CA;
-  color: #F0EFF4;
   text-align: center;
+}
+
+.stat-title h3, .stat-value p {
+  color:#ffffff;
 }
 
 .stat-title h3 {
@@ -236,7 +225,6 @@ header {
 }
 .creature {
   display: grid;
-  color: #ffffff;
   column-gap:2%;
   grid-template-columns: 10% 88%;
   margin-bottom: 10px;
@@ -246,6 +234,7 @@ header {
   background-color: #0582CA;
 }
 .creature p {
+  color: #ffffff;
   line-height: 2.5;
   margin-bottom: 0;
 }
