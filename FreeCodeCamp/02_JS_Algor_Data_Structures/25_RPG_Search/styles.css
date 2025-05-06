@@ -30,11 +30,11 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a:link, a:visited, a:hover{
+h1, h2, h3, h4, h5, h6, p, a:link, a:visited, a:hover {
   color: #303036;
 }
 
-h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover{
+h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover {
   text-transform: uppercase;
 }
 
@@ -142,8 +142,8 @@ a:link, a:visited {
 }
 
 button {
-  background-color: #00A6FB;
   color: #ffffff;
+  background-color: #00A6FB;
   border: #000000;
   border-radius: 5px;
   font-weight: bold;
@@ -177,16 +177,16 @@ button {
 }
 
 #search input {
-  display: block;
   background-color: #F0EFF4;
   border: none;
+  display: block;
   margin: 10px;
   width: 70%;
 }
 
 #search button {
-  display: block;
   border-radius: 0px 10px 10px 0px;
+  display: block;
   width: 100px;
 }
 /* END SEARCH STYLES */
@@ -256,16 +256,16 @@ header {
 }
 
 #stats-wrap > h3 {
-  color: #ffffff;
   border-bottom: 1px solid #ffffff;
+  color: #ffffff;
   line-height: 1;
   margin-bottom: 10px;
   padding-bottom: 5px;
 }
 
 .stat {
-  display: grid;
   column-gap: 5%;
+  display: grid;
   grid-template-columns: 50% 10%;
   margin-bottom: 5px;
   margin-left: 10px;
@@ -273,7 +273,7 @@ header {
 }
 
 .stat-title > h3, .stat-value > p {
-  color:#ffffff;
+  color: #ffffff;
   font-weight: normal;
   font-size: 1rem;
   margin-bottom: 0px;
@@ -291,8 +291,8 @@ header {
   text-align: center;
 }
 .creature {
+  column-gap: 2%;
   display: grid;
-  column-gap:2%;
   grid-template-columns: 10% 88%;
   margin-bottom: 10px;
 }
@@ -342,193 +342,6 @@ header {
 
 /* --- EXTRA LARGE STYLES (XL) */
 @media (min-width: 1280px) {
-
-  /* --- FONT STYLES --- */
-h1 {
-  color: #00A6FB;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 1.9rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-h3 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-  margin-bottom:20px;
-}
-
-h5 {
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-h6 {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.2;
-  margin-bottom:10px;
-}
-
-a {
-  font-size:1rem;
-  text-decoration: none;
-}
-
-a:link, a:visited {
-  text-decoration: none;
-}
-
-button {
-  background-color: #00A6FB;
-  color: #ffffff;
-  border: #000000;
-  border-radius: 5px;
-  font-weight: bold;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* --- END FONT STYLES --- */
-
-/* --- ELEMENT STYLES --- */
-
-/* SEARCH STYLES */
-#search-wrap {
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-bottom: 5%;
-  padding: 2%;
-  width: 40%;
-}
-
-#search {
-  width: 100%;
-}
-
-#search input {
-  background-color: none;
-  border: none;
-  display: inline-block;
-  margin: 0 auto;
-  width: 70%;
-}
-
-#search button {
-  display: inline-block;
-  width: 100px;
-}
-/* END SEARCH STYLES */
-
-/* SINGLE RESULTS STYLES */
-header {
-  margin: 0 auto;
-  margin-top: 5%;
-  text-align: center;
-  width: 50%;
-}
-
-#bio-wrap {
-  margin: 10px 0px;
-}
-
-#bio-wrap #creature-name-id h4 {
-  margin-bottom: 10px;
-}
-
-#creature-name-id h4 span#creature-name {
-  margin-right: 10px;
-}
-
-#stats-wrap {
-  margin: 0 auto;
-  width: 80%;
-}
-.stat {
-  display: grid;
-  column-gap: 5%;
-  grid-template-columns: 60% 35%;
-  margin-bottom: 5px;
-}
-
-#stats-header h3{
-  color: #ffffff;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.stat div {
-  background-color: #0582CA;
-  text-align: center;
-}
-
-.stat-title h3, .stat-value p {
-  color:#ffffff;
-}
-
-.stat-title h3 {
-  font-weight: normal;
-  margin-bottom: 0;
-}
-
-.stat-value p {
-  font-size: 1.75rem;
-  font-weight: normal;
-  line-height: 1.5;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-/* END SINGLE RESULTS STYLES */
-
-/* CREATURE FULL LIST STYLES */
-#results-list h3 {
-  margin-top: 10px;
-  text-align: center;
-}
-.creature {
-  display: grid;
-  column-gap:2%;
-  grid-template-columns: 10% 88%;
-  margin-bottom: 10px;
-}
-
-.creature div {
-  background-color: #0582CA;
-}
-.creature p {
-  color: #ffffff;
-  line-height: 2.5;
-  margin-bottom: 0;
-}
-
-.creature .creature-id {
-  text-align: center;
-}
-
-.creature .creature-name {
-  padding-left: 10px;
-}
-/* END CREATURE FULL LIST STYLES */
 
 }
 /* --- END EXTRA LARGE STYLES --- */
