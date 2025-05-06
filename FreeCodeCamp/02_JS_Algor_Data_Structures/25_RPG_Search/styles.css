@@ -17,7 +17,6 @@
 }
 
 html {
-  /* Set default font size */
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -98,9 +97,6 @@ h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover {
 
 /* --- END GLOBAL STYLES --- */
 
-/* MOBILE FIRST STYLES */
-/* aka When Screen is less than 640px */
-
 /* --- FONT STYLES --- */
 h1 {
   color: #00A6FB;
@@ -152,10 +148,10 @@ a:link, a:visited {
 }
 
 button {
-  color: #ffffff;
   background-color: #00A6FB;
   border: #000000;
   border-radius: 5px;
+  color: #ffffff;
   font-weight: bold;
   padding: 5px;
   text-align: center;
@@ -350,10 +346,7 @@ header {
 }
 /* END CREATURE FULL LIST STYLES */
 
-
 /* --- END ELEMENT STYLES --- */
-
-/* --- STYLES --- */
 
 /* --- MEDIA QUERIES --- */
 
@@ -367,9 +360,7 @@ header {
 /* --- END MOBILE STYLES --- */
 
 /* --- MEDIUM STYLES (MD) --- */
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 /* --- END MEDIUM STYLES --- */
 
 /* --- LARGE STYLES (LG) --- */
@@ -386,16 +377,11 @@ header {
   .stat {
     width: 70%;
   }
-
 }
 /* --- END LARGE STYLES --- */
 
 /* --- EXTRA LARGE STYLES (XL) */
-@media (min-width: 1280px) {
-
-}
+@media (min-width: 1280px) {}
 /* --- END EXTRA LARGE STYLES --- */
 
 /* --- END MEDIA QUERIES --- */
-
-/* --- END STYLES --- */
