@@ -214,6 +214,7 @@ header {
 }
 
 #results {
+  display: none;
   background-color: #F0EFF4;
   border: none;
   border-color: #303036;
@@ -236,7 +237,7 @@ header {
   margin-right: 10px;
 }
 
-#creature-types {
+#types {
   background-color: #00132D;
   display: flex;
   padding: 10px 5px;

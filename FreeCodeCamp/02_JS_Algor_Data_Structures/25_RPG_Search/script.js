@@ -27,62 +27,27 @@ const buildResults = (data) => {
   const {
     stats
   } = data;
-
+  console.log(data);
   descContainer.style.display = "none";
+  resultsContainer.style.display = "grid";
   resultsContainer.style.border = "1px solid";
-  resultsContainer.innerHTML = `
-    <div id="bio-wrap">
-      <div id="creature-name-id">
-        <h2><span id="creature-name">${data.name}</span><span id="creature-id">#${data.id}</span></h2>
-      </div>
-      <div id="creature-types">` + data.types.map(
-        function (type) { return `
-          <div class="type `+ type.name +`"><p>` + type.name + `</p></div>`
-        }).join('') +
-      `</div>
-    </div>
-    <div id="stats-info">
-      <div id="creature-special">
-        <h3>Special: <span>${data.special.name}</span></h3>
-        <p>${data.special.description}</p>
-      </div>
-      <div id="stats-wrap">
-        <h3>Stats:</h3>
-        <div id="height" class="stat">
-          <div class="stat-title"><h3>Height:</h3></div>
-          <div class="stat-value"><p>${data.height}</p></div>
-        </div>
-        <div id="weight" class="stat">
-          <div class="stat-title"><h3>Weight:</h3></div>
-          <div class="stat-value"><p>${data.weight}</p></div>
-        </div>
-        <div id="hp" class="stat">
-          <div class="stat-title"><h3>HP:</h3></div>
-          <div class="stat-value"><p>${stats[0].base_stat}</p></div>
-        </div>
-        <div id="attack" class="stat">
-          <div class="stat-title"><h3>Attack:</h3></div>
-          <div class="stat-value"><p>${stats[1].base_stat}</p></div>
-        </div>
-        <div id="defense" class="stat">
-          <div class="stat-title"><h3>Defense:</h3></div>
-          <div class="stat-value"><p>${stats[2].base_stat}</p></div>
-        </div>
-        <div id="special-attack" class="stat">
-          <div class="stat-title"><h3>Special Attack:</h3></div>
-          <div class="stat-value"><p>${stats[3].base_stat}</p></div>
-        </div>
-        <div id="special-defense height" class="stat">
-          <div class="stat-title"><h3>Special Defense:</h3></div>
-          <div class="stat-value"><p>${stats[4].base_stat}</p></div>
-        </div>
-        <div id="speed" class="stat">
-          <div class="stat-title"><h3>Speed:</h3></div>
-          <div class="stat-value"><p>${stats[5].base_stat}</p></div>
-        </div>
-      </div>
-    </div>
-  `
+
+  document.getElementById("creature-name").innerText = data.name;
+  document.getElementById("creature-id").innerText = data.id;
+  document.getElementById("types").innerHTML = data.types.map(
+    function (type) { return `
+      <div class="type `+ type.name +`"><p>` + type.name + `</p></div>`
+    }).join('');
+  document.getElementById("special-title").innerText = data.special.name;
+  document.getElementById("special-description").innerText = data.special.description;
+  document.getElementById("height").innerText = data.height;
+  document.getElementById("weight").innerText = data.weight;
+  document.getElementById("hp").innerText = data.stats[0].base_stat;
+  document.getElementById("attack").innerText = data.stats[1].base_stat;
+  document.getElementById("defense").innerText = data.stats[2].base_stat;
+  document.getElementById("special-attack").innerText = data.stats[3].base_stat;
+  document.getElementById("special-defense").innerText = data.stats[4].base_stat;
+  document.getElementById("speed").innerText = data.stats[5].base_stat;
 }
 
 /**
@@ -135,7 +100,7 @@ const fetchData = async (ident) => {
       buildList(data);
     }
   } catch (err) {
-    console.log(err);
+    alert("Creature not found");
   }
 }
 
