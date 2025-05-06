@@ -32,20 +32,20 @@ const buildResults = (data) => {
   resultsContainer.style.display = "block";
   resultsContainer.innerHTML = `
     <div id="bio-wrap">
-      <div id="creature-name-id" class="section">
+      <div id="creature-name-id">
         <h2><span id="creature-name">${data.name}</span><span id="creature-id">#${data.id}</span></h2>
       </div>
-      <div id="creature-types" class="section">` + data.types.map(
+      <div id="creature-types">` + data.types.map(
         function (type) { return `
           <div class="type `+ type.name +`"><p>` + type.name + `</p></div>`
         }).join('') +
       `</div>
-      <div id="creature-special" class="section">
+      <div id="creature-special">
         <h3>Special: <span>${data.special.name}</span></h3>
         <p>${data.special.description}</p>
       </div>
     </div>
-    <div id="stats-wrap" class="section">
+    <div id="stats-wrap">
       <h3>Stats:</h3>
       <div id="height" class="stat">
         <div class="stat-title"><h3>Height:</h3></div>

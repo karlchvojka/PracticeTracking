@@ -43,7 +43,10 @@ h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover {
 
 .bug > p { color: #ffffff; }
 
-.dark { background-color: #111111; }
+.dark { 
+  background-color: #111111;
+  border: 1px solid #F0EFF4; 
+}
 
 .dark > p { color: #ffffff; }
 
@@ -71,7 +74,11 @@ h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover {
 
 .poison { background-color: #6BD425; }
 
-.psychic { background-color: #462255; }
+.psychic { 
+  background-color: #462255;
+  border: 1px solid #F0EFF4; 
+  border-radius: 10px;
+}
 
 .psychic > p { color: #ffffff }
 
@@ -95,8 +102,9 @@ h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover {
 /* --- FONT STYLES --- */
 h1 {
   color: #00A6FB;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  line-height: 1;
 }
 
 h2 {
@@ -158,6 +166,14 @@ button {
 /* --- ELEMENT STYLES --- */
 
 /* SEARCH STYLES */
+main {
+  padding: 0 2% 0 2%;
+}
+
+main > header {
+  margin-bottom: 10px;
+}
+
 #search-wrap {
   background-color: #303036;
   margin: 0 auto;
@@ -180,7 +196,7 @@ button {
   background-color: #F0EFF4;
   border: none;
   display: block;
-  margin: 10px;
+  margin: 7px;
   width: 70%;
 }
 
@@ -198,15 +214,15 @@ header {
 }
 
 #results {
+  background-color: #F0EFF4;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #303036;
   display: none;
 }
 
-.section {
-  padding: 10px;
-}
-
-#bio-wrap {
-  background-color: #A1CDF7;
+#creature-name-id {
+  padding: 5px;
 }
 
 #creature-name-id > h2 {
@@ -223,11 +239,11 @@ header {
   background-color: #00132D;
   display: flex;
   margin-bottom: 5px;
+  padding: 10px 5px;
 }
 
 .type {
   border-radius: 10px;
-  border: 1px solid #F0EFF4;
   padding: 5px 10px;
   margin-right: 5px;
   width: fit-content;
@@ -239,8 +255,13 @@ header {
   text-transform: uppercase;
 }
 
+#creature-special {
+  padding: 5px;
+}
+
 #creature-special > h3 {
   border-bottom: 1px solid #303036;
+  font-size: 1.2rem;
   line-height: 1;
   margin-bottom: 10px;
   padding-bottom: 5px;
@@ -253,23 +274,25 @@ header {
 
 #stats-wrap {
   background-color: #0582CA;
+  padding: 10px 5px 10px 5px;
 }
 
 #stats-wrap > h3 {
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
+  font-size: 1.2rem;
   line-height: 1;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
   padding-bottom: 5px;
 }
 
 .stat {
   column-gap: 5%;
   display: grid;
-  grid-template-columns: 50% 10%;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  width: 100%;
+  grid-template-columns: 75% 20%;
+  justify-content: center;
+  margin: 0 auto 5px auto;
+  width: 60%;
 }
 
 .stat-title > h3, .stat-value > p {
