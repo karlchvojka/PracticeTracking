@@ -243,7 +243,6 @@ header {
 #creature-types {
   background-color: #00132D;
   display: flex;
-  margin-bottom: 5px;
   padding: 10px 5px;
 }
 
@@ -283,7 +282,7 @@ header {
 
 #stats-wrap {
   background-color: #0582CA;
-  padding: 10px 5px 10px 5px;
+  padding: 5px;
 }
 
 #stats-wrap > h3 {
@@ -302,6 +301,10 @@ header {
   justify-content: center;
   margin: 0 auto 5px auto;
   width: 60%;
+}
+
+.stat:last-child {
+  margin-bottom: 0px;
 }
 
 .stat-title > h3, .stat-value > p {
@@ -372,9 +375,12 @@ header {
 /* --- LARGE STYLES (LG) --- */
 @media (min-width: 1024px) {
   #results {
+    max-width: 600px;
+  }
+
+  #stats-info {
     display: grid;
     grid-template-columns: 50% 50%;
-    max-width: 60%;
   }
 
   .stat {

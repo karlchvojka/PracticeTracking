@@ -40,44 +40,46 @@ const buildResults = (data) => {
           <div class="type `+ type.name +`"><p>` + type.name + `</p></div>`
         }).join('') +
       `</div>
+    </div>
+    <div id="stats-info">
       <div id="creature-special">
         <h3>Special: <span>${data.special.name}</span></h3>
         <p>${data.special.description}</p>
       </div>
-    </div>
-    <div id="stats-wrap">
-      <h3>Stats:</h3>
-      <div id="height" class="stat">
-        <div class="stat-title"><h3>Height:</h3></div>
-        <div class="stat-value"><p>${data.height}</p></div>
-      </div>
-      <div id="weight" class="stat">
-        <div class="stat-title"><h3>Weight:</h3></div>
-        <div class="stat-value"><p>${data.weight}</p></div>
-      </div>
-      <div id="hp" class="stat">
-        <div class="stat-title"><h3>HP:</h3></div>
-        <div class="stat-value"><p>${stats[0].base_stat}</p></div>
-      </div>
-      <div id="attack" class="stat">
-        <div class="stat-title"><h3>Attack:</h3></div>
-        <div class="stat-value"><p>${stats[1].base_stat}</p></div>
-      </div>
-      <div id="defense" class="stat">
-        <div class="stat-title"><h3>Defense:</h3></div>
-        <div class="stat-value"><p>${stats[2].base_stat}</p></div>
-      </div>
-      <div id="special-attack" class="stat">
-        <div class="stat-title"><h3>Special Attack:</h3></div>
-        <div class="stat-value"><p>${stats[3].base_stat}</p></div>
-      </div>
-      <div id="special-defense height" class="stat">
-        <div class="stat-title"><h3>Special Defense:</h3></div>
-        <div class="stat-value"><p>${stats[4].base_stat}</p></div>
-      </div>
-      <div id="speed" class="stat">
-        <div class="stat-title"><h3>Speed:</h3></div>
-        <div class="stat-value"><p>${stats[5].base_stat}</p></div>
+      <div id="stats-wrap">
+        <h3>Stats:</h3>
+        <div id="height" class="stat">
+          <div class="stat-title"><h3>Height:</h3></div>
+          <div class="stat-value"><p>${data.height}</p></div>
+        </div>
+        <div id="weight" class="stat">
+          <div class="stat-title"><h3>Weight:</h3></div>
+          <div class="stat-value"><p>${data.weight}</p></div>
+        </div>
+        <div id="hp" class="stat">
+          <div class="stat-title"><h3>HP:</h3></div>
+          <div class="stat-value"><p>${stats[0].base_stat}</p></div>
+        </div>
+        <div id="attack" class="stat">
+          <div class="stat-title"><h3>Attack:</h3></div>
+          <div class="stat-value"><p>${stats[1].base_stat}</p></div>
+        </div>
+        <div id="defense" class="stat">
+          <div class="stat-title"><h3>Defense:</h3></div>
+          <div class="stat-value"><p>${stats[2].base_stat}</p></div>
+        </div>
+        <div id="special-attack" class="stat">
+          <div class="stat-title"><h3>Special Attack:</h3></div>
+          <div class="stat-value"><p>${stats[3].base_stat}</p></div>
+        </div>
+        <div id="special-defense height" class="stat">
+          <div class="stat-title"><h3>Special Defense:</h3></div>
+          <div class="stat-value"><p>${stats[4].base_stat}</p></div>
+        </div>
+        <div id="speed" class="stat">
+          <div class="stat-title"><h3>Speed:</h3></div>
+          <div class="stat-value"><p>${stats[5].base_stat}</p></div>
+        </div>
       </div>
     </div>
   `
