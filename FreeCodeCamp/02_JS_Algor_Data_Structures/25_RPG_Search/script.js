@@ -29,7 +29,7 @@ const buildResults = (data) => {
   } = data;
 
   descContainer.style.display = "none";
-  resultsContainer.style.display = "block";
+  resultsContainer.style.border = "1px solid";
   resultsContainer.innerHTML = `
     <div id="bio-wrap">
       <div id="creature-name-id">

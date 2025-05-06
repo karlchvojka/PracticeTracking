@@ -39,6 +39,8 @@ h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover {
 }
 
 /* TYPE STYLES */
+.type { border: 1px solid #303036; }
+
 .bug { background-color: #588157; }
 
 .bug > p { color: #ffffff; }
@@ -217,10 +219,9 @@ header {
 
 #results {
   background-color: #F0EFF4;
-  border: 1px solid;
+  border: none;
   border-color: #303036;
   border-radius: 5px;
-  display: none;
   margin: 0 auto;
   max-width: 400px;
 }
@@ -370,6 +371,15 @@ header {
 
 /* --- LARGE STYLES (LG) --- */
 @media (min-width: 1024px) {
+  #results {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 60%;
+  }
+
+  .stat {
+    width: 70%;
+  }
 
 }
 /* --- END LARGE STYLES --- */
