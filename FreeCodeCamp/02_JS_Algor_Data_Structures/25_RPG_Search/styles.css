@@ -178,13 +178,15 @@ main > header {
   background-color: #303036;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding: 2%;
+  padding: 10px;
   width: 100%;
 }
 
 #search {
   background-color: #F0EFF4;
   border-radius: 10px;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 #search > form {
@@ -216,9 +218,11 @@ header {
 #results {
   background-color: #F0EFF4;
   border: 1px solid;
-  border-radius: 5px;
   border-color: #303036;
+  border-radius: 5px;
   display: none;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 #creature-name-id {
@@ -270,6 +274,10 @@ header {
 #creature-special > h3 > span {
   font-weight: normal;
   text-transform: none;
+}
+
+#creature-special > p {
+  margin-bottom: 5px;
 }
 
 #stats-wrap {
@@ -347,7 +355,10 @@ header {
 
 /* --- MOBILE STYLES (SM) --- */
 @media (min-width: 640px) {
-
+  #results {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 /* --- END MOBILE STYLES --- */
 
