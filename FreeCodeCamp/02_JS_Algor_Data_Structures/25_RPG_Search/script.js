@@ -10,6 +10,7 @@ const creatureListApiUrl = 'https://rpg-creature-api.freecodecamp.rocks/api/crea
 /* --- END LOCAL DATA --- */
 
 /* --- INTERFACE VARIABLES --- */
+const descContainer = document.getElementById("description");
 const resultsContainer = document.getElementById("results");
 const searchForm = document.getElementById("search-form");
 /* --- END INTERFACE VARIABLES --- */
@@ -26,29 +27,33 @@ const buildResults = (data) => {
   const {
     stats
   } = data;
+
+  descContainer.style.display = "none";
+  resultsContainer.style.display = "block";
   resultsContainer.innerHTML = `
     <div id="bio-wrap">
-      <div id="creature-name-id">
-        <h4><span id="creature-name">${data.name}</span><span id="creature-id">#${data.id}</span></h4>
-        <div id="height-weight">
-          <div id="weight"><h5>Weight: ${data.weight}</h5></div>
-          <div id="height"><h5>Height: ${data.height}</h5></div>
-        </div>
+      <div id="creature-name-id" class="section">
+        <h2><span id="creature-name">${data.name}</span><span id="creature-id">#${data.id}</span></h2>
       </div>
-      <div id="creat-types">` + data.types.map(
+      <div id="creature-types" class="section">` + data.types.map(
         function (type) { return `
-          <div class="type"><p>` + type.name + `</p></div>`
+          <div class="type `+ type.name +`"><p>` + type.name + `</p></div>`
         }).join('') +
       `</div>
-      <div id="creat-special">
-        <h5>${data.special.name}</h5>
+      <div id="creature-special" class="section">
+        <h3>Special: <span>${data.special.name}</span></h3>
         <p>${data.special.description}</p>
       </div>
     </div>
-    <div id="stats-wrap">
-      <div id="stats-header" class="stat">
-        <div><h3>Base</h3></div>
-        <div><h3>Stats</h3></div>
+    <div id="stats-wrap" class="section">
+      <h3>Stats:</h3>
+      <div id="height" class="stat">
+        <div class="stat-title"><h3>Height:</h3></div>
+        <div class="stat-value"><p>${data.height}</p></div>
+      </div>
+      <div id="weight" class="stat">
+        <div class="stat-title"><h3>Weight:</h3></div>
+        <div class="stat-value"><p>${data.weight}</p></div>
       </div>
       <div id="hp" class="stat">
         <div class="stat-title"><h3>HP:</h3></div>
@@ -63,11 +68,11 @@ const buildResults = (data) => {
         <div class="stat-value"><p>${stats[2].base_stat}</p></div>
       </div>
       <div id="special-attack" class="stat">
-        <div class="stat-title"><h3>Spec Att:</h3></div>
+        <div class="stat-title"><h3>Special Attack:</h3></div>
         <div class="stat-value"><p>${stats[3].base_stat}</p></div>
       </div>
       <div id="special-defense height" class="stat">
-        <div class="stat-title"><h3>Spec Def:</h3></div>
+        <div class="stat-title"><h3>Special Defense:</h3></div>
         <div class="stat-value"><p>${stats[4].base_stat}</p></div>
       </div>
       <div id="speed" class="stat">
@@ -141,15 +146,6 @@ document.querySelector("form").addEventListener("submit", (event) => {
   history.replaceState({ query: inputElement.value }, "");
 
   fetchData(inputElement.value);
-});
-
-window.addEventListener("load", () => {
-  const query = history.state?.query;
-  
-  if (query) {
-      document.querySelector("#search-input").value = query;
-      performSearch();
-  }
 });
 /* END EVENT LISTENERS */
 

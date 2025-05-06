@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <h1>RPG Creature Search App</h1>
-    </header>
+    <div id="search-wrap" class="container">
+      <div id="search">
+        <form id="search-form">
+          <input id="search-input" placeholder="Name or ID" />
+          <button id="searc-button">Search</button>
+        </form>
+      </div>
+    </div>
     <main>
-      <div id="search-wrap" class="container">
-        <div id="search">
-          <form id="search-form">
-            <label for="search-input">Search for Creature Name or ID:</label>
-            <div id="input-wrap">
-              <input id="search-input" />
-              <button id="searc-button">Search</button>
-            </div>
-          </form>
-        </div>
-        <div id="results">
-        </div>
+      <header>
+        <h1>RPG Creature Search</h1>
+      </header>
+      <div id="description" class="section">
+        <p>Welcome to the RPG Creature Search app.</p>
+        <p>Your premier source for information on RPG Creatures!</p>
+        <p>Please enter a Creature name or ID into the search box above to continue.</p>
+      </div>
+      <div id="results">
       </div>
     </main>
     <script src="./script.js"></script>

@@ -26,17 +26,324 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: #303036;
+  background-color: #F0EFF4;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6, p, a:link, a:visited, a:hover{
-  color: #000000;
+  color: #303036;
+}
+
+h1, h2, h3, h4, h5, h6, a:link, a:visited, a:hover{
   text-transform: uppercase;
 }
+
+/* TYPE STYLES */
+.bug { background-color: #588157; }
+
+.bug > p { color: #ffffff; }
+
+.dark { background-color: #111111; }
+
+.dark > p { color: #ffffff; }
+
+.dragon { background-color: #7BAE7F; }
+
+.electric { background-color: #4CC9F0; }
+
+.fairy { background-color: #FAD2E1; }
+
+.fire { background-color: #D62828; }
+
+.fire > p { color: #ffffff; }
+
+.flying { background-color: #828791; }
+
+.flying > p { color: #ffffff; }
+
+.ghost { background-color: #A2A3BB; }
+
+.grass { background-color: #A3B18A; }
+
+.ground { background-color: #D4A373; }
+
+.ice { background-color: #ADE8F4; }
+
+.poison { background-color: #6BD425; }
+
+.psychic { background-color: #462255; }
+
+.psychic > p { color: #ffffff }
+
+.rock { background-color: #ADB5BD; }
+
+.steel { background-color: #7F7B82; }
+
+.steel > p { color: #ffffff; }
+
+.water { background-color: #0077B6; }
+
+.water > p { color: #ffffff; }
+
+/* END TYPE STYLES */
+
 /* --- END GLOBAL STYLES --- */
 
+/* MOBILE FIRST STYLES */
+/* aka When Screen is less than 640px */
+
 /* --- FONT STYLES --- */
+h1 {
+  color: #00A6FB;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom:10px;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+button {
+  background-color: #00A6FB;
+  color: #ffffff;
+  border: #000000;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* --- END FONT STYLES --- */
+
+/* --- ELEMENT STYLES --- */
+
+/* SEARCH STYLES */
+#search-wrap {
+  background-color: #303036;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 2%;
+  width: 100%;
+}
+
+#search {
+  background-color: #F0EFF4;
+  border-radius: 10px;
+}
+
+#search > form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search input {
+  display: block;
+  background-color: #F0EFF4;
+  border: none;
+  margin: 10px;
+  width: 70%;
+}
+
+#search button {
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+  width: 100px;
+}
+/* END SEARCH STYLES */
+
+/* SINGLE RESULTS STYLES */
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#results {
+  display: none;
+}
+
+.section {
+  padding: 10px;
+}
+
+#bio-wrap {
+  background-color: #A1CDF7;
+}
+
+#creature-name-id > h2 {
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+#creature-name-id > h2 > span#creature-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#creature-types {
+  background-color: #00132D;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.type {
+  border-radius: 10px;
+  border: 1px solid #F0EFF4;
+  padding: 5px 10px;
+  margin-right: 5px;
+  width: fit-content;
+}
+
+.type > p {
+  font-size: 10px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+#creature-special > h3 {
+  border-bottom: 1px solid #303036;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+#creature-special > h3 > span {
+  font-weight: normal;
+  text-transform: none;
+}
+
+#stats-wrap {
+  background-color: #0582CA;
+}
+
+#stats-wrap > h3 {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.stat {
+  display: grid;
+  column-gap: 5%;
+  grid-template-columns: 50% 10%;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.stat-title > h3, .stat-value > p {
+  color:#ffffff;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
+.stat-value p {
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+/* END SINGLE RESULTS STYLES */
+
+/* CREATURE FULL LIST STYLES */
+#results-list h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+.creature {
+  display: grid;
+  column-gap:2%;
+  grid-template-columns: 10% 88%;
+  margin-bottom: 10px;
+}
+
+.creature div {
+  background-color: #0582CA;
+}
+.creature p {
+  color: #ffffff;
+  line-height: 2.5;
+  margin-bottom: 0;
+}
+
+.creature .creature-id {
+  text-align: center;
+}
+
+.creature .creature-name {
+  padding-left: 10px;
+}
+/* END CREATURE FULL LIST STYLES */
+
+
+/* --- END ELEMENT STYLES --- */
+
+/* --- STYLES --- */
+
+/* --- MEDIA QUERIES --- */
+
+/* --- MOBILE STYLES (SM) --- */
+@media (min-width: 640px) {
+
+}
+/* --- END MOBILE STYLES --- */
+
+/* --- MEDIUM STYLES (MD) --- */
+@media (min-width: 768px) {
+
+}
+/* --- END MEDIUM STYLES --- */
+
+/* --- LARGE STYLES (LG) --- */
+@media (min-width: 1024px) {
+
+}
+/* --- END LARGE STYLES --- */
+
+/* --- EXTRA LARGE STYLES (XL) */
+@media (min-width: 1280px) {
+
+  /* --- FONT STYLES --- */
 h1 {
   color: #00A6FB;
   font-size: 2rem;
@@ -105,16 +412,9 @@ button {
 /* --- END FONT STYLES --- */
 
 /* --- ELEMENT STYLES --- */
-header {
-  margin: 0 auto;
-  margin-top: 5%;
-  text-align: center;
-  width: 50%;
-}
 
 /* SEARCH STYLES */
 #search-wrap {
-  background-color: #F0EFF4;
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 5%;
@@ -126,39 +426,28 @@ header {
   width: 100%;
 }
 
-#search label {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-#search #input-wrap {
-  margin: 0 auto;
-  width: 70%;
-}
-
-#search #input-wrap input {
+#search input {
+  background-color: none;
+  border: none;
   display: inline-block;
   margin: 0 auto;
   width: 70%;
 }
 
-#input-wrap button {
+#search button {
   display: inline-block;
   width: 100px;
-}
-
-#input-wrap input {
-  padding: 5px;
-  width: auto;
 }
 /* END SEARCH STYLES */
 
 /* SINGLE RESULTS STYLES */
+header {
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+  width: 50%;
+}
+
 #bio-wrap {
   margin: 10px 0px;
 }
@@ -169,13 +458,6 @@ header {
 
 #creature-name-id h4 span#creature-name {
   margin-right: 10px;
-}
-
-#bio-wrap #height-weight {
-  display: grid;
-  column-gap: 10px;
-  grid-template-columns: 20% 50%;
-  margin-bottom: 10px;
 }
 
 #stats-wrap {
@@ -247,34 +529,6 @@ header {
   padding-left: 10px;
 }
 /* END CREATURE FULL LIST STYLES */
-
-
-/* --- END ELEMENT STYLES --- */
-
-/* --- STYLES --- */
-
-/* --- MEDIA QUERIES --- */
-
-/* --- MOBILE STYLES (SM) --- */
-@media (min-width: 640px) {
-
-}
-/* --- END MOBILE STYLES --- */
-
-/* --- MEDIUM STYLES (MD) --- */
-@media (min-width: 768px) {
-
-}
-/* --- END MEDIUM STYLES --- */
-
-/* --- LARGE STYLES (LG) --- */
-@media (min-width: 1024px) {
-
-}
-/* --- END LARGE STYLES --- */
-
-/* --- EXTRA LARGE STYLES (XL) */
-@media (min-width: 1280px) {
 
 }
 /* --- END EXTRA LARGE STYLES --- */
