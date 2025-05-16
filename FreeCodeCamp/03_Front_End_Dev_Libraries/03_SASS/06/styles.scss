@@ -1,0 +1,13 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@each $color in blue, black, red {
+  .#{$color}-bg {color: $color; background-color: $color; };
+}
+
+
+div {
+  height: 200px;
+  width: 200px;
+}

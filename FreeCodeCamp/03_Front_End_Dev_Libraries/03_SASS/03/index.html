@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>03 Create Reusable CSS with Mixins</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <style type='text/scss'>
+      @mixin shape($w, $h, $bg-color) {
+        width: $w;
+        height: $h;
+        background-color: $bg-color;
+      }
+
+      #square {
+        @include shape(50px, 50px, red);
+      }
+
+      #rect-a {
+        @include shape(100px, 50px, blue);
+      }
+
+      #rect-b {
+        @include shape(50px, 100px, orange);
+      }
+      </style>
+
+      <div id="square"></div>
+      <div id="rect-a"></div>
+      <div id="rect-b"></div>
+  </body>
+</html>
