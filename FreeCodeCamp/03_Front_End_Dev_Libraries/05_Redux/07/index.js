@@ -1,34 +1,28 @@
-const defaultState = {
-  authenticated: false
-};
+/**
+ * FreeCodeCamp - Redux - Lesson 07
+ *
+ * Dispatch an Action Event
+ */
 
-const authReducer = (state = defaultState, action) => {
-  switch (action.type) {
-    case "LOGIN":
-      return {
-        authenticated: true
-      };
+/**
+ * Define Store and initial state.
+ */
+const store = Redux.createStore(
+  (state = {login: false}) => state
+);
 
-    case "LOGOUT":
-      return {
-        authenticated: false
-      };
-
-    default:
-      return defaultState;
-  }
-};
-
-const store = Redux.createStore(authReducer);
-
-const loginUser = () => {
+/**
+ * Login Action
+ * Define login action
+ * @return {Object}
+ */
+const loginAction = () => {
   return {
     type: 'LOGIN'
   }
 };
 
-const logoutUSER = () => {
-  return {
-    type: 'LOGOUT'
-  }
-};
+/**
+ * Dispatch action to store.
+ */
+store.dispatch(loginAction());

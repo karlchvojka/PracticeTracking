@@ -4,13 +4,15 @@
  * Create a Redux store.
  */
 
+/**
+ * Reducer function
+ * NOTE: State param is usually an OBJ to handle mulitple values as INITIAL state.
+ * As this is a n example, we are passing a single value and so its a number.
+ * @param {number} state - Initial state
+ */
 const reducer = (state = 5) => {
   return state;
 }
-
-// Redux methods are available from the Redux object
-// For example: Redux.createStore()
-// Define the store here:
 
 const store = Redux.createStore(reducer);
 
