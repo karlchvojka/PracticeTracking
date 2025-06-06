@@ -48,5 +48,6 @@ const addTodo = (todo) => {
   }
 }
 
-/** REDUX STORE DECLARATION */
+/* --- REDUX STORE DEFINITION --- */
 const store = Redux.createStore(immutableReducer);
+/* --- END REDUX STORE DEFINITION --- */

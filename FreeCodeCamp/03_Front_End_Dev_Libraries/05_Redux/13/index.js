@@ -31,6 +31,7 @@ const incAction = () => { return {type: INCREMENT} };
 const decAction = () => { return {type: DECREMENT} };
 /* --- END ACTION CREATORS --- */
 
-/* REDUX STORE DECLARATION */
+/* --- REDUX STORE DEFINITION --- */
 const store = Redux.createStore(counterReducer);
+/* --- END REDUX STORE DEFINITION --- */
 

@@ -5,10 +5,10 @@
  * Expands on the Redux basics in the last lesson to include thunking middleware
  */
 
-/* --- ACTION DEFINITIONS --- */
+/* --- ACTION DECLARATIONS --- */
 const REQUESTING_DATA = 'REQUESTING_DATA'
 const RECIEVED_DATA = 'RECIEVED_DATA'
-/* --- END ACTION DEFINITIONS --- */
+/* --- END ACTION DECLARATIONS --- */
 
 /* --- ACTION CREATORS --- */
 const requestingData = () => { return {type: REQUESTING_DATA} }
@@ -20,7 +20,7 @@ const recievedData = (data) => { return {type: RECIEVED_DATA, users: data.users}
  *
  * Initializes Async into the Redux time line.
  */
-cost handleAsync = () => {
+const handleAsync = () => {
   return function(dispatch) {
     // Dispatch request action here:
     store.dispatch(requrestingData())
